@@ -34,41 +34,9 @@
       </div>
     </div>
     <div class="hero-visual" data-reveal data-delay="2">
-      <div class="map-card">
-        <h4 data-i18n="hero.mapt"></h4>
-        <div class="cap" data-i18n="hero.mapc"></div>
-        <div class="corridor-list">
-          <div class="corridor">
-            <span class="flag">🇨🇳</span>
-            <div class="route"><div class="from" data-i18n="dir.china"></div>
-              <div class="path"><span class="arrow"></span><span class="to" data-i18n="dir.toaz"></span></div></div>
-            <span class="mode" data-i18n="mode.multi"></span>
-          </div>
-          <div class="corridor">
-            <span class="flag">🇹🇷</span>
-            <div class="route"><div class="from" data-i18n="dir.turkey"></div>
-              <div class="path"><span class="arrow"></span><span class="to" data-i18n="dir.toaz"></span></div></div>
-            <span class="mode" data-i18n="mode.auto"></span>
-          </div>
-          <div class="corridor">
-            <span class="flag">🇮🇷</span>
-            <div class="route"><div class="from" data-i18n="dir.iran"></div>
-              <div class="path"><span class="arrow"></span><span class="to" data-i18n="dir.toaz"></span></div></div>
-            <span class="mode" data-i18n="mode.auto"></span>
-          </div>
-          <div class="corridor">
-            <span class="flag">🇷🇺</span>
-            <div class="route"><div class="from" data-i18n="dir.russia"></div>
-              <div class="path"><span class="arrow"></span><span class="to" data-i18n="dir.toaz"></span></div></div>
-            <span class="mode" data-i18n="mode.rail"></span>
-          </div>
-          <div class="corridor">
-            <span class="flag">🇰🇿</span>
-            <div class="route"><div class="from" data-i18n="dir.kz"></div>
-              <div class="path"><span class="arrow"></span><span class="to" data-i18n="dir.toaz"></span></div></div>
-            <span class="mode" data-i18n="mode.multi"></span>
-          </div>
-        </div>
+      <div class="globe-wrap">
+        <div id="globe" role="img" aria-label="Delivery routes from China, Türkiye, Iran, Russia and Kazakhstan to Azerbaijan"></div>
+        <div class="globe-hint" data-i18n="hero.mapc"></div>
       </div>
     </div>
   </div>
@@ -338,5 +306,7 @@
 <script src="js/i18n.js"></script>
 <script src="js/components.js"></script>
 <script src="js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/globe.js"></script>
 </body>
 </html>

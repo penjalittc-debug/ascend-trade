@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Направления доставки — Ascend Trade & Logistics</title>
+<meta name="description" content="Доставка грузов из Китая, Турции, Ирана, России и Казахстана в Азербайджан — Ascend Trade & Logistics.">
+<link rel="icon" href="assets/logo-main.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .dir-block{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center;padding:52px 0;border-bottom:1px solid var(--line)}
+  .dir-block:last-child{border-bottom:none}
+  .dir-block.rev .db-text{order:2}
+  .db-flag{aspect-ratio:16/11;border-radius:var(--radius-lg);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(135deg,var(--navy),var(--navy-deep))}
+  .db-flag .fl{font-size:6rem;filter:drop-shadow(0 8px 20px rgba(0,0,0,.4));z-index:1}
+  .db-flag .to{position:absolute;bottom:22px;right:26px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff;padding:7px 14px;border-radius:100px;font-family:var(--ff-head);font-weight:600;font-size:.85rem;backdrop-filter:blur(6px);z-index:1}
+  .db-flag::after{content:"";position:absolute;width:240px;height:240px;background:var(--red);filter:blur(90px);opacity:.3;border-radius:50%;top:-40px;left:-40px}
+  .db-meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px}
+  .db-pill{background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:12px 18px}
+  .db-pill .k{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--slate-light);font-weight:600}
+  .db-pill .v{font-family:var(--ff-head);font-weight:700;color:var(--navy);font-size:1.05rem;margin-top:2px}
+  .db-modes{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+  .db-modes span{font-size:.8rem;background:rgba(31,52,90,.07);color:var(--navy);padding:6px 13px;border-radius:8px;font-weight:600;font-family:var(--ff-head)}
+  @media(max-width:900px){.dir-block{grid-template-columns:1fr;gap:28px}.dir-block.rev .db-text{order:0}}
+</style>
+</head>
+<body data-page="directions">
+<div id="site-header"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumb" data-reveal><a href="index.html" data-i18n="nav.home"></a><span class="sep">/</span><span data-i18n="dr.crumb"></span></div>
+    <h1 data-reveal data-i18n="dr.htitle"></h1>
+    <p data-reveal data-delay="1" data-i18n="dr.hsub"></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- China -->
+    <div class="dir-block" data-reveal>
+      <div class="db-flag"><span class="fl">🇨🇳</span><span class="to">→ <span data-i18n="dir.toaz"></span></span></div>
+      <div class="db-text">
+        <span class="eyebrow"><span data-i18n="dir.china"></span> → <span data-i18n="dir.toaz"></span></span>
+        <h2 data-i18n="dir.china"></h2>
+        <p data-i18n="dr.china.long"></p>
+        <div class="db-meta">
+          <div class="db-pill"><div class="k" data-i18n="dr.transit"></div><div class="v">18–25 <span data-i18n="dr.days"></span></div></div>
+          <div class="db-pill"><div class="k" data-i18n="dr.modes"></div>
+            <div class="db-modes"><span data-i18n="mode.rail"></span><span data-i18n="mode.sea"></span><span data-i18n="mode.air"></span><span data-i18n="mode.multi"></span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Turkey -->
+    <div class="dir-block rev" data-reveal>
+      <div class="db-flag"><span class="fl">🇹🇷</span><span class="to">→ <span data-i18n="dir.toaz"></span></span></div>
+      <div class="db-text">
+        <span class="eyebrow"><span data-i18n="dir.turkey"></span> → <span data-i18n="dir.toaz"></span></span>
+        <h2 data-i18n="dir.turkey"></h2>
+        <p data-i18n="dr.turkey.long"></p>
+        <div class="db-meta">
+          <div class="db-pill"><div class="k" data-i18n="dr.transit"></div><div class="v">5–8 <span data-i18n="dr.days"></span></div></div>
+          <div class="db-pill"><div class="k" data-i18n="dr.modes"></div>
+            <div class="db-modes"><span data-i18n="mode.auto"></span><span data-i18n="mode.air"></span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Iran -->
+    <div class="dir-block" data-reveal>
+      <div class="db-flag"><span class="fl">🇮🇷</span><span class="to">→ <span data-i18n="dir.toaz"></span></span></div>
+      <div class="db-text">
+        <span class="eyebrow"><span data-i18n="dir.iran"></span> → <span data-i18n="dir.toaz"></span></span>
+        <h2 data-i18n="dir.iran"></h2>
+        <p data-i18n="dr.iran.long"></p>
+        <div class="db-meta">
+          <div class="db-pill"><div class="k" data-i18n="dr.transit"></div><div class="v">4–7 <span data-i18n="dr.days"></span></div></div>
+          <div class="db-pill"><div class="k" data-i18n="dr.modes"></div>
+            <div class="db-modes"><span data-i18n="mode.auto"></span><span data-i18n="mode.sea"></span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Russia -->
+    <div class="dir-block rev" data-reveal>
+      <div class="db-flag"><span class="fl">🇷🇺</span><span class="to">→ <span data-i18n="dir.toaz"></span></span></div>
+      <div class="db-text">
+        <span class="eyebrow"><span data-i18n="dir.russia"></span> → <span data-i18n="dir.toaz"></span></span>
+        <h2 data-i18n="dir.russia"></h2>
+        <p data-i18n="dr.russia.long"></p>
+        <div class="db-meta">
+          <div class="db-pill"><div class="k" data-i18n="dr.transit"></div><div class="v">6–10 <span data-i18n="dr.days"></span></div></div>
+          <div class="db-pill"><div class="k" data-i18n="dr.modes"></div>
+            <div class="db-modes"><span data-i18n="mode.auto"></span><span data-i18n="mode.rail"></span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kazakhstan -->
+    <div class="dir-block" data-reveal>
+      <div class="db-flag"><span class="fl">🇰🇿</span><span class="to">→ <span data-i18n="dir.toaz"></span></span></div>
+      <div class="db-text">
+        <span class="eyebrow"><span data-i18n="dir.kz"></span> → <span data-i18n="dir.toaz"></span></span>
+        <h2 data-i18n="dir.kz"></h2>
+        <p data-i18n="dr.kz.long"></p>
+        <div class="db-meta">
+          <div class="db-pill"><div class="k" data-i18n="dr.transit"></div><div class="v">12–18 <span data-i18n="dr.days"></span></div></div>
+          <div class="db-pill"><div class="k" data-i18n="dr.modes"></div>
+            <div class="db-modes"><span data-i18n="mode.rail"></span><span data-i18n="mode.auto"></span><span data-i18n="mode.multi"></span></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="cta" data-reveal>
+      <h2 data-i18n="cta.title"></h2>
+      <p data-i18n="cta.sub"></p>
+      <div class="btns">
+        <a class="btn btn-light" href="contact.html" data-i18n="cta.btn1"></a>
+        <a class="btn btn-outline-light" href="services.html" data-i18n="hero.cta2"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/i18n.js"></script>
+<script src="js/components.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

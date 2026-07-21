@@ -94,7 +94,7 @@
         </div>
         <div class="footer-bottom">
           <span>© <span data-year></span> Ascend Trade & Logistics. <span data-i18n="ft.rights"></span></span>
-          <a href="#" data-i18n="ft.privacy"></a>
+          <a href="privacy.html" data-i18n="ft.privacy"></a>
         </div>
       </div>
     </footer>`;

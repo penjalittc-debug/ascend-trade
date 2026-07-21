@@ -3,9 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Контакты — Ascend Trade & Logistics</title>
-<meta name="description" content="Свяжитесь с Ascend Trade & Logistics — консалтинг ВЭД и доставка грузов в Азербайджан.">
+<title>Əlaqə — Ascend Trade & Logistics</title>
+<meta name="description" content="Ascend Trade & Logistics ilə əlaqə saxlayın: sorğu göndərin və ya pulsuz hesablama sifariş edin. Bakı, Azərbaycan.">
+<link rel="canonical" href="https://ascend-trade.vercel.app/contact.html">
 <link rel="icon" href="assets/logo-main.png">
+<meta name="theme-color" content="#1F345A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ascend Trade & Logistics">
+<meta property="og:title" content="Əlaqə — Ascend Trade & Logistics">
+<meta property="og:description" content="Sorğu göndərin və ya pulsuz hesablama sifariş edin. Bakı, Azərbaycan.">
+<meta property="og:url" content="https://ascend-trade.vercel.app/contact.html">
+<meta property="og:image" content="https://ascend-trade.vercel.app/assets/logo-main.png">
+<meta name="twitter:card" content="summary">
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Ascend Trade & Logistics","image":"https://ascend-trade.vercel.app/assets/logo-main.png","url":"https://ascend-trade.vercel.app/","email":"info@ascendtrade.az","address":{"@type":"PostalAddress","addressLocality":"Bakı","addressCountry":"AZ"},"openingHours":"Mo-Fr 09:00-18:00","areaServed":["AZ","CN","TR","IR","RU","KZ"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -49,25 +60,30 @@
         </div>
       </div>
 
-      <form class="form" data-reveal data-delay="2" data-demo>
+      <form class="form" data-reveal data-delay="2" data-ajax action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="Yeni sorğu — Ascend Trade & Logistics">
+        <input type="hidden" name="from_name" value="Ascend Trade & Logistics">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
-          <div class="field"><label data-i18n="ct.fname"></label><input type="text" required></div>
-          <div class="field"><label data-i18n="ct.femail"></label><input type="email" required></div>
+          <div class="field"><label data-i18n="ct.fname"></label><input type="text" name="name" required></div>
+          <div class="field"><label data-i18n="ct.femail"></label><input type="email" name="email" required></div>
         </div>
         <div class="form-row">
-          <div class="field"><label data-i18n="ct.fphone"></label><input type="tel"></div>
+          <div class="field"><label data-i18n="ct.fphone"></label><input type="tel" name="phone"></div>
           <div class="field"><label data-i18n="ct.fsubject"></label>
-            <select>
-              <option data-i18n="ct.opt1"></option>
-              <option data-i18n="ct.opt2"></option>
-              <option data-i18n="ct.opt3"></option>
-              <option data-i18n="ct.opt4"></option>
-              <option data-i18n="ct.opt5"></option>
+            <select name="service">
+              <option value="FEA consulting" data-i18n="ct.opt1"></option>
+              <option value="Product sourcing" data-i18n="ct.opt2"></option>
+              <option value="Manufacturer search" data-i18n="ct.opt3"></option>
+              <option value="Cargo delivery" data-i18n="ct.opt4"></option>
+              <option value="Other" data-i18n="ct.opt5"></option>
             </select>
           </div>
         </div>
-        <div class="field"><label data-i18n="ct.fmsg"></label><textarea required></textarea></div>
+        <div class="field"><label data-i18n="ct.fmsg"></label><textarea name="message" required></textarea></div>
         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" data-i18n="ct.fsend"></button>
+        <p class="form-status" data-status hidden></p>
         <p style="font-size:.82rem;margin-top:14px;text-align:center" data-i18n="ct.note"></p>
       </form>
     </div>

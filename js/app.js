@@ -126,17 +126,34 @@
     });
   }
 
-  /* contact form (demo) */
+  /* contact form — real submit via Web3Forms */
   function initForm(){
-    const form = document.querySelector("form[data-demo]");
+    const form = document.querySelector("form[data-ajax]");
     if(!form) return;
-    form.addEventListener("submit", e=>{
+    const status = form.querySelector("[data-status]");
+    const MSG = {
+      ok:  { az:"Sorğunuz göndərildi. Tezliklə əlaqə saxlayacağıq.", ru:"Заявка отправлена. Мы скоро свяжемся с вами.", en:"Request sent. We'll get back to you shortly." },
+      err: { az:"Xəta baş verdi. Zəhmət olmasa bir az sonra yenidən cəhd edin.", ru:"Произошла ошибка. Попробуйте ещё раз чуть позже.", en:"Something went wrong. Please try again shortly." }
+    };
+    function say(kind){
+      if(!status) return;
+      const l = (localStorage.getItem("ascend_lang")||"az");
+      status.hidden = false;
+      status.className = "form-status " + (kind==="ok"?"ok":"err");
+      status.textContent = MSG[kind][l] || MSG[kind].az;
+    }
+    form.addEventListener("submit", async e=>{
       e.preventDefault();
       const btn = form.querySelector("button[type=submit]");
       const orig = btn.textContent;
-      btn.textContent = "✓";
-      btn.disabled = true;
-      setTimeout(()=>{ btn.textContent = orig; btn.disabled = false; form.reset(); }, 2200);
+      btn.disabled = true; btn.textContent = "…";
+      try{
+        const res = await fetch(form.action, { method:"POST", body:new FormData(form), headers:{ "Accept":"application/json" } });
+        const data = await res.json().catch(()=>({}));
+        if(res.ok && data.success){ say("ok"); form.reset(); }
+        else { say("err"); }
+      }catch(_){ say("err"); }
+      finally{ btn.disabled=false; btn.textContent=orig; }
     });
   }
 

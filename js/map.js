@@ -35,6 +35,10 @@
       .attr("preserveAspectRatio", "xMidYMid meet");
 
     var raf = [];
+    var vis = true;
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (e) { vis = e[0].isIntersecting; }, { threshold: 0.01 }).observe(el);
+    }
     d3.json(WORLD_URL).then(function (world) {
       var feats = topojson.feature(world, world.objects.countries).features;
       var region = { type:"Polygon", coordinates:[[[6,74],[142,74],[142,0],[6,0],[6,74]]] };
@@ -65,9 +69,11 @@
         var dot = svg.append("circle").attr("r", r).attr("fill", "#fff");
         var off = Math.random();
         function tick() {
-          off = (off + 0.0045) % 1;
-          var pt = node.getPointAtLength(off * len);
-          dot.attr("cx", pt.x).attr("cy", pt.y);
+          if (vis) {
+            off = (off + 0.0045) % 1;
+            var pt = node.getPointAtLength(off * len);
+            dot.attr("cx", pt.x).attr("cy", pt.y);
+          }
           raf.push(requestAnimationFrame(tick));
         }
         tick();
@@ -85,8 +91,10 @@
             .attr("fill", "none").attr("stroke", "#c23439").attr("stroke-width", 1.5).attr("opacity", 0.7);
           var t0 = performance.now();
           (function pulse() {
-            var s = (performance.now() - t0) % 1800 / 1800;
-            ring.attr("r", 6 + s * 10).attr("opacity", 0.7 * (1 - s));
+            if (vis) {
+              var s = (performance.now() - t0) % 1800 / 1800;
+              ring.attr("r", 6 + s * 10).attr("opacity", 0.7 * (1 - s));
+            }
             raf.push(requestAnimationFrame(pulse));
           })();
         }

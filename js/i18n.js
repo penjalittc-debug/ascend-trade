@@ -156,7 +156,15 @@ window.I18N = {
     "ct.phone":"Telefon","ct.email":"E-poçt","ct.addr":"Ünvan","ct.addrv":"Bakı, Azərbaycan","ct.hours":"İş saatları",
     "ct.fname":"Ad, Soyad","ct.femail":"E-poçt","ct.fphone":"Telefon","ct.fsubject":"Mövzu","ct.fmsg":"Mesajınız","ct.fsend":"Sorğunu göndər",
     "ct.opt1":"XİF konsaltinq","ct.opt2":"Malların axtarışı","ct.opt3":"İstehsalçı tapılması","ct.opt4":"Yük daşıma","ct.opt5":"Digər",
-    "ct.note":"Formu göndərməklə məxfilik siyasəti ilə razılaşırsınız."
+    "ct.note":"Formu göndərməklə məxfilik siyasəti ilə razılaşırsınız.",
+
+    /* privacy */
+    "pv.crumb":"Məxfilik","pv.htitle":"Məxfilik siyasəti","pv.updated":"Yenilənib: iyul 2026",
+    "pv.1t":"Hansı məlumatları toplayırıq","pv.1d":"Saytdakı form vasitəsilə ad, e-poçt, telefon, seçilmiş xidmət və müraciət mətnini toplayırıq.",
+    "pv.2t":"Məqsəd","pv.2d":"Məlumatlar yalnız sorğunuzla bağlı əlaqə üçün istifadə olunur. Onları marketinq üçün üçüncü tərəflərə satmır və ötürmürük.",
+    "pv.3t":"Emal","pv.3d":"Formun göndərilməsi Web3Forms xidməti ilə emal olunur və mesajı poçtumuza çatdırır. Məlumatlar saytda dərc olunmur.",
+    "pv.4t":"Saxlama","pv.4d":"Müraciətləri sorğunun emalı üçün lazım olan müddət ərzində saxlayır və tələbinizlə silirik.",
+    "pv.5t":"Hüquqlarınız","pv.5d":"Məlumatlarınızı dəqiqləşdirmək, dəyişmək və ya silmək üçün info@ascendtrade.az ünvanına yazın."
   },
 
   ru: {
@@ -299,7 +307,15 @@ window.I18N = {
     "ct.phone":"Телефон","ct.email":"Эл. почта","ct.addr":"Адрес","ct.addrv":"Баку, Азербайджан","ct.hours":"Часы работы",
     "ct.fname":"Имя и фамилия","ct.femail":"Эл. почта","ct.fphone":"Телефон","ct.fsubject":"Тема","ct.fmsg":"Ваше сообщение","ct.fsend":"Отправить заявку",
     "ct.opt1":"Консалтинг ВЭД","ct.opt2":"Поиск товаров","ct.opt3":"Поиск производителей","ct.opt4":"Доставка грузов","ct.opt5":"Другое",
-    "ct.note":"Отправляя форму, вы соглашаетесь с политикой конфиденциальности."
+    "ct.note":"Отправляя форму, вы соглашаетесь с политикой конфиденциальности.",
+
+    /* privacy */
+    "pv.crumb":"Конфиденциальность","pv.htitle":"Политика конфиденциальности","pv.updated":"Обновлено: июль 2026",
+    "pv.1t":"Какие данные мы собираем","pv.1d":"Через форму на сайте мы собираем имя, e-mail, телефон, выбранную услугу и текст обращения.",
+    "pv.2t":"Цель","pv.2d":"Данные используются только для связи по вашему запросу. Мы не продаём и не передаём их третьим лицам для маркетинга.",
+    "pv.3t":"Обработка","pv.3d":"Отправка формы обрабатывается сервисом Web3Forms, который доставляет сообщение на нашу почту. Данные не публикуются на сайте.",
+    "pv.4t":"Хранение","pv.4d":"Мы храним обращения столько, сколько необходимо для обработки запроса, и удаляем по вашему требованию.",
+    "pv.5t":"Ваши права","pv.5d":"Чтобы уточнить, изменить или удалить свои данные, напишите на info@ascendtrade.az."
   },
 
   en: {
@@ -442,6 +458,14 @@ window.I18N = {
     "ct.phone":"Phone","ct.email":"Email","ct.addr":"Address","ct.addrv":"Baku, Azerbaijan","ct.hours":"Working hours",
     "ct.fname":"Full name","ct.femail":"Email","ct.fphone":"Phone","ct.fsubject":"Subject","ct.fmsg":"Your message","ct.fsend":"Send request",
     "ct.opt1":"FEA consulting","ct.opt2":"Product sourcing","ct.opt3":"Manufacturer search","ct.opt4":"Cargo delivery","ct.opt5":"Other",
-    "ct.note":"By submitting the form you agree to the privacy policy."
+    "ct.note":"By submitting the form you agree to the privacy policy.",
+
+    /* privacy */
+    "pv.crumb":"Privacy","pv.htitle":"Privacy Policy","pv.updated":"Updated: July 2026",
+    "pv.1t":"What data we collect","pv.1d":"Through the form on the site we collect your name, email, phone, chosen service and message.",
+    "pv.2t":"Purpose","pv.2d":"The data is used only to contact you about your request. We do not sell or share it with third parties for marketing.",
+    "pv.3t":"Processing","pv.3d":"Form submissions are processed by Web3Forms, which delivers the message to our email. Data is not published on the site.",
+    "pv.4t":"Retention","pv.4d":"We keep requests for as long as needed to handle them and delete them on your request.",
+    "pv.5t":"Your rights","pv.5d":"To review, change or delete your data, email us at info@ascendtrade.az."
   }
 };

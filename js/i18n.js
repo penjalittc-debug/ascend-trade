@@ -57,6 +57,17 @@ window.I18N = {
     "aud.3":"Məhsul xəttini yeniləyən pərakəndə şəbəkələr və istehsalatlar",
     "aud.4":"Təhlükəsiz və vaxtında çatdırılma istəyən idxalçılar və e-ticarət",
 
+    /* legal documents */
+    "doc.eyebrow":"Hüquqi etibarlılıq","doc.title":"Real şirkətlər, vasitəçi deyil",
+    "doc.sub":"Vədlərimiz Rusiya və Çində qeydiyyatdan keçmiş hüquqi şəxslər və rəsmi ticarət nişanı ilə təsdiqlənir.",
+    "doc.1t":"Rusiyada hüquqi şəxs","doc.1d":"«Azizov Group» MMC, Moskva. OGRN 1247700473921, INN 9721235929. Rəsmi kontraktlar, valyuta nəzarəti və legal idxal.",
+    "doc.1tag":"Rusiya · 2024",
+    "doc.2t":"Qeydiyyatdan keçmiş ticarət nişanı","doc.2d":"RF Dövlət reyestrində № 1141251 ticarət nişanı. Brendin hüquqi qorunması, 2034-ə qədər etibarlıdır.",
+    "doc.2tag":"Rospatent",
+    "doc.3t":"Çində öz şirkətimiz","doc.3d":"Quançjouda ixrac-idxal şirkəti (广州亚世名进出口有限公司). Öz adımızdan rəsmi alış və ixrac rəsmiləşdirilməsi.",
+    "doc.3tag":"Çin · Quançjou",
+    "doc.view":"Sənədə bax",
+
     /* why us */
     "why.eyebrow":"Niyə Ascend Trade & Logistics","why.title":"Riskləri biz üzərimizə götürürük — siz biznesə fokuslanırsınız",
     "why.sub":"Hər mərhələdə şəffaflıq, cavabdehlik və nəticəyə yönəlmiş yanaşma.",
@@ -199,6 +210,17 @@ window.I18N = {
     "aud.3":"Ритейл-сетям и производствам, обновляющим товарные линейки",
     "aud.4":"Импортёрам и e-commerce, которым нужна безопасная и своевременная доставка",
 
+    /* legal documents */
+    "doc.eyebrow":"Юридическая надёжность","doc.title":"Реальные компании, а не посредник",
+    "doc.sub":"Наши обещания подкреплены зарегистрированными юрлицами в России и Китае и официальным товарным знаком.",
+    "doc.1t":"Юридическое лицо в России","doc.1d":"ООО «Азизов Групп», Москва. ОГРН 1247700473921, ИНН 9721235929. Официальные контракты, валютный контроль и легальный импорт.",
+    "doc.1tag":"Россия · 2024",
+    "doc.2t":"Зарегистрированный товарный знак","doc.2d":"Товарный знак № 1141251 в Государственном реестре РФ. Правовая защита бренда, действует до 2034 года.",
+    "doc.2tag":"Роспатент",
+    "doc.3t":"Собственная компания в Китае","doc.3d":"Экспортно-импортная компания в Гуанчжоу (广州亚世名进出口有限公司). Официальные закупки и экспортное оформление от нашего имени.",
+    "doc.3tag":"Китай · Гуанчжоу",
+    "doc.view":"Открыть документ",
+
     "why.eyebrow":"Почему Ascend Trade & Logistics","why.title":"Риски берём на себя — вы фокусируетесь на бизнесе",
     "why.sub":"Прозрачность, ответственность и ориентация на результат на каждом этапе.",
     "why.f1t":"Прозрачная цена","why.f1d":"Никаких скрытых платежей — все расходы считаем заранее и открыто.",
@@ -330,6 +352,17 @@ window.I18N = {
     "aud.2":"Businesses buying from the source without overpaying middlemen",
     "aud.3":"Retail chains and manufacturers refreshing their product lines",
     "aud.4":"Importers and e-commerce needing safe, on-time delivery",
+
+    /* legal documents */
+    "doc.eyebrow":"Legal presence","doc.title":"Real companies, not a middleman",
+    "doc.sub":"Our promises are backed by registered legal entities in Russia and China and an official trademark.",
+    "doc.1t":"Legal entity in Russia","doc.1d":"Azizov Group LLC, Moscow. OGRN 1247700473921, INN 9721235929. Official contracts, currency control and legal import.",
+    "doc.1tag":"Russia · 2024",
+    "doc.2t":"Registered trademark","doc.2d":"Trademark No. 1141251 in the State Register of Russia. Legal brand protection, valid until 2034.",
+    "doc.2tag":"Rospatent",
+    "doc.3t":"Our own company in China","doc.3d":"Import-export company in Guangzhou (广州亚世名进出口有限公司). Official purchasing and export documentation under our name.",
+    "doc.3tag":"China · Guangzhou",
+    "doc.view":"View document",
 
     "why.eyebrow":"Why Ascend Trade & Logistics","why.title":"We take on the risks — you focus on business",
     "why.sub":"Transparency, accountability and a result-driven approach at every stage.",

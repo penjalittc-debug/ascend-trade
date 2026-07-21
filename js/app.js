@@ -140,6 +140,25 @@
     });
   }
 
+  /* document lightbox */
+  function initLightbox(){
+    const lb = document.getElementById("lightbox");
+    if(!lb) return;
+    const img = lb.querySelector("img");
+    document.querySelectorAll(".doc-thumb").forEach(t=>{
+      t.addEventListener("click", ()=>{
+        const full = t.getAttribute("data-full");
+        const thumbImg = t.querySelector("img");
+        if(!thumbImg) return; // no image uploaded yet
+        img.src = full;
+        lb.classList.add("open");
+      });
+    });
+    const close = ()=> lb.classList.remove("open");
+    lb.addEventListener("click", close);
+    document.addEventListener("keydown", e=>{ if(e.key==="Escape") close(); });
+  }
+
   /* year */
   function initYear(){
     document.querySelectorAll("[data-year]").forEach(e=> e.textContent = new Date().getFullYear());
@@ -157,6 +176,7 @@
     initCounters();
     initFaq();
     initForm();
+    initLightbox();
     initYear();
   });
 })();

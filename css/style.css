@@ -234,6 +234,22 @@ body.menu-open .mobile-nav{transform:translateX(0)}
 .globe-hint{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);font-size:.78rem;color:rgba(255,255,255,.6);text-align:center;white-space:nowrap;z-index:3}
 @media(max-width:768px){.globe-wrap{max-width:340px}.globe-label{font-size:.66rem}}
 
+/* flat world map */
+.map-wrap{position:relative;width:100%;max-width:600px;aspect-ratio:4/3;margin:0 auto;border-radius:22px;overflow:hidden;background:radial-gradient(120% 120% at 68% 32%,#1e386640,transparent),linear-gradient(160deg,#1a2f57,var(--navy-deep));border:1px solid rgba(255,255,255,.1);box-shadow:var(--shadow-lg)}
+.map-wrap::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Cpath d='M0 20h40M20 0v40' stroke='%23ffffff' stroke-opacity='.04'/%3E%3C/svg%3E");z-index:0}
+.world-map{position:absolute;inset:0;z-index:1}
+.world-map svg{display:block;width:100%;height:100%}
+.map-lbl{font-family:var(--ff-head);font-weight:600;font-size:11px;fill:#e9b7b9;paint-order:stroke;stroke:#0e1a30;stroke-width:3px;stroke-linejoin:round}
+.map-lbl.hub{fill:#fff;font-size:12.5px}
+.map-cap{margin-top:16px;text-align:center;font-size:.8rem;color:rgba(255,255,255,.6)}
+@media(max-width:768px){.map-wrap{max-width:420px;aspect-ratio:1/1}.map-lbl{font-size:10px}}
+
+/* landmark line-art in cards */
+.dir-art{position:absolute;top:18px;left:22px;width:70px;height:50px;color:#e9b7b9;opacity:.92;z-index:1}
+.dir-art svg{width:100%;height:100%}
+.db-art{width:62%;max-width:230px;color:#e9b7b9;opacity:.94;z-index:1;position:relative}
+.db-art svg{width:100%;height:auto}
+
 .hero-scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.6);font-size:.78rem;display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--ff-head);letter-spacing:.15em}
 .hero-scroll .mouse{width:22px;height:36px;border:1.5px solid rgba(255,255,255,.4);border-radius:12px;position:relative}
 .hero-scroll .mouse::after{content:"";position:absolute;top:7px;left:50%;transform:translateX(-50%);width:3px;height:6px;background:#fff;border-radius:2px;animation:scrolldot 1.6s infinite}

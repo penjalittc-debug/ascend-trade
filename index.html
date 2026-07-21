@@ -34,10 +34,10 @@
       </div>
     </div>
     <div class="hero-visual" data-reveal data-delay="2">
-      <div class="globe-wrap">
-        <div id="globe" role="img" aria-label="Delivery routes from China, Türkiye, Iran, Russia and Kazakhstan to Azerbaijan"></div>
-        <div class="globe-hint" data-i18n="hero.mapc"></div>
+      <div class="map-wrap">
+        <div id="worldmap" class="world-map" role="img" aria-label="Delivery routes from China, Türkiye, Iran, Russia and Kazakhstan to Azerbaijan"></div>
       </div>
+      <div class="map-cap" data-i18n="hero.mapc"></div>
     </div>
   </div>
   <div class="hero-scroll"><span data-i18n="hero.scroll"></span><span class="mouse"></span></div>
@@ -285,27 +285,27 @@
     </div>
     <div class="grid grid-3">
       <a class="dir-card" href="directions.html" data-reveal data-delay="1">
-        <span class="flag-lg">🇨🇳</span><span class="tag" data-i18n="mode.multi"></span>
+        <span class="dir-art" data-landmark="china"></span><span class="tag" data-i18n="mode.multi"></span>
         <h3 data-i18n="dir.china"></h3><p data-i18n="dir.china.d"></p>
         <div class="modes"><span data-i18n="mode.rail"></span><span data-i18n="mode.sea"></span><span data-i18n="mode.air"></span></div>
       </a>
       <a class="dir-card" href="directions.html" data-reveal data-delay="2">
-        <span class="flag-lg">🇹🇷</span><span class="tag" data-i18n="mode.auto"></span>
+        <span class="dir-art" data-landmark="turkey"></span><span class="tag" data-i18n="mode.auto"></span>
         <h3 data-i18n="dir.turkey"></h3><p data-i18n="dir.turkey.d"></p>
         <div class="modes"><span data-i18n="mode.auto"></span><span data-i18n="mode.air"></span></div>
       </a>
       <a class="dir-card" href="directions.html" data-reveal data-delay="3">
-        <span class="flag-lg">🇮🇷</span><span class="tag" data-i18n="mode.auto"></span>
+        <span class="dir-art" data-landmark="iran"></span><span class="tag" data-i18n="mode.auto"></span>
         <h3 data-i18n="dir.iran"></h3><p data-i18n="dir.iran.d"></p>
         <div class="modes"><span data-i18n="mode.auto"></span><span data-i18n="mode.sea"></span></div>
       </a>
       <a class="dir-card" href="directions.html" data-reveal data-delay="1">
-        <span class="flag-lg">🇷🇺</span><span class="tag" data-i18n="mode.rail"></span>
+        <span class="dir-art" data-landmark="russia"></span><span class="tag" data-i18n="mode.rail"></span>
         <h3 data-i18n="dir.russia"></h3><p data-i18n="dir.russia.d"></p>
         <div class="modes"><span data-i18n="mode.auto"></span><span data-i18n="mode.rail"></span></div>
       </a>
       <a class="dir-card" href="directions.html" data-reveal data-delay="2">
-        <span class="flag-lg">🇰🇿</span><span class="tag" data-i18n="mode.multi"></span>
+        <span class="dir-art" data-landmark="kz"></span><span class="tag" data-i18n="mode.multi"></span>
         <h3 data-i18n="dir.kz"></h3><p data-i18n="dir.kz.d"></p>
         <div class="modes"><span data-i18n="mode.rail"></span><span data-i18n="mode.auto"></span></div>
       </a>
@@ -357,7 +357,9 @@
 <script src="js/i18n.js"></script>
 <script src="js/components.js"></script>
 <script src="js/app.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="js/globe.js"></script>
+<script src="js/landmarks.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+<script src="js/map.js"></script>
 </body>
 </html>

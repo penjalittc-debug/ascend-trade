@@ -23,13 +23,39 @@ window.I18N = {
     "trust.lead":"İşlədiyimiz istiqamətlər:",
 
     /* home services */
-    "hs.eyebrow":"Nə edirik","hs.title":"Xarici ticarətin tam dövrü — bir komandada",
-    "hs.sub":"Malın axtarışından və istehsalçının seçimindən tutmuş gömrük rəsmiləşdirilməsi və qapıya çatdırılmaya qədər.",
-    "hs.c1t":"XİF konsaltinq","hs.c1d":"İdxal-ixrac əməliyyatlarının qurulması, kontraktlar, valyuta nəzarəti və gömrük rəsmiləşdirilməsi üzrə tam müşayiət.",
-    "hs.c2t":"Malların axtarışı","hs.c2d":"Tələbinizə uyğun malın Çin, Türkiyə və digər bazarlarda axtarışı, qiymət və keyfiyyətin müqayisəsi.",
-    "hs.c3t":"Fabrik və istehsalçıların tapılması","hs.c3d":"Etibarlı zavodların yoxlanılması, auditi və birbaşa istehsalçı ilə əlaqələndirmə.",
-    "hs.c4t":"Yüklərin çatdırılması","hs.c4d":"Avtomobil, dəmir yolu, dəniz və hava daşımaları — qapıdan qapıya optimal marşrutla.",
+    "hs.eyebrow":"Nə edirik","hs.title":"Çinlə ticarətin tam dövrü — vasitəçisiz",
+    "hs.sub":"Təchizatçının axtarışından və öz brendiniz altında istehsaldan tutmuş təhlükəsiz sövdələşmə və açar-təslim çatdırılmaya qədər.",
+    "hs.c1t":"Mal və təchizatçı axtarışı","hs.c1d":"Lazımi malı və yoxlanılmış istehsalçını birbaşa tapırıq, qiymət-keyfiyyəti müqayisə edirik, nümunə sifariş edib yoxlayırıq.",
+    "hs.c2t":"Çində istehsal (OEM/ODM)","hs.c2d":"Məhsulun öz brendiniz altında istehsalı: zavodlarla danışıqlar, keyfiyyət nəzarəti və istehsal auditi.",
+    "hs.c3t":"Təhlükəsiz sövdələşmə: maliyyə və hüquq","hs.c3d":"Honq-Konq ofisi vasitəsilə ödənişlərin qorunması, ixrac rəsmiləşdirilməsi və təchizatçılarla mübahisələrin həlli.",
+    "hs.c4t":"Logistika və gömrük","hs.c4d":"Birbaşa müqavilələrlə multimodal daşıma və Çin, Türkiyə, İran, Rusiya, Qazaxıstandan gömrük rəsmiləşdirilməsi.",
     "hs.more":"Ətraflı",
+
+    /* USP infrastructure */
+    "usp.eyebrow":"İnfrastrukturumuz","usp.title":"Biz vasitəçi deyilik — biz sizin ticarət infrastrukturunuzuq",
+    "usp.sub":"Çinlə sövdələşmənin hər mərhələsində tam nəzarət — ödənişdən çatdırılmaya qədər.",
+    "usp.1t":"Çində öz ixrac şirkətimiz","usp.1d":"İxrac lisenziyası olmayan zavodlardan belə öz adımızdan rəsmi alış və sənədləşmə aparırıq.",
+    "usp.2t":"Honq-Konqda ödəniş ofisi","usp.2d":"Bank məhdudiyyətləri və bloklamalar olmadan sürətli, legal beynəlxalq köçürmələr.",
+    "usp.3t":"Təhlükəsiz sövdələşmə","usp.3d":"Ödənişin qorunmasına zəmanət veririk və qüsur/uyğunsuzluq halında təchizatçılarla mübahisələri sizin adınızdan aparırıq.",
+    "usp.4t":"Sanksiyalar altında iş","usp.4d":"Mürəkkəb geosiyasi şəraitdə təchizat təcrübəsi — məhdudiyyətlərdə də zəncir qırılmır.",
+    "usp.5t":"Çində və MDB-də komanda","usp.5d":"Çində yerli mütəxəssislər və MDB-də 5 il təcrübə: Rusiya, Qazaxıstan, Qırğızıstan.",
+    "usp.6t":"Birbaşa logistika","usp.6d":"Aparıcı logistika operatorları ilə birbaşa müqavilələr — minimum daşıma xərci.",
+
+    /* difference quote */
+    "diff.quote":"«Biz sadəcə mal tapmırıq — sizin üçün vasitəçisiz ticarət mexanizmi qururuq: Çin zavodları ilə birbaşa əlaqə və keyfiyyət zəmanəti. Bizimlə işləmək qlobal bazarda öz ofisinizə sahib olmaq deməkdir.»",
+
+    /* pain points */
+    "pain.eyebrow":"Tanış problemlər","pain.title":"Xarici ticarətin risklərini üzərimizə götürürük",
+    "pain.1":"Vasitəçilərdən asılılıq","pain.2":"Keyfiyyət və qüsur riski","pain.3":"Ödənişlərin bloklanması və gecikməsi",
+    "pain.4":"Zavodun ixrac lisenziyası yoxdur","pain.5":"Kontrakt riskləri və mübahisələr","pain.6":"Gömrük maneələri və gecikmələr",
+
+    /* target audience */
+    "aud.eyebrow":"Kimə kömək edirik","aud.title":"Müştərilərimiz",
+    "aud.sub":"Xarici bazarlara çıxan və mənbə ilə birbaşa işləmək istəyən B2B və B2C şirkətlər.",
+    "aud.1":"İstehsalını Çinə köçürən və ya zavodlarla birbaşa işləyən şirkətlər",
+    "aud.2":"Vasitəçiyə əlavə ödəmədən mənbədən alış edən biznes",
+    "aud.3":"Məhsul xəttini yeniləyən pərakəndə şəbəkələr və istehsalatlar",
+    "aud.4":"Təhlükəsiz və vaxtında çatdırılma istəyən idxalçılar və e-ticarət",
 
     /* why us */
     "why.eyebrow":"Niyə Ascend Trade & Logistics","why.title":"Riskləri biz üzərimizə götürürük — siz biznesə fokuslanırsınız",
@@ -139,13 +165,39 @@ window.I18N = {
 
     "trust.lead":"Работаем по направлениям:",
 
-    "hs.eyebrow":"Что мы делаем","hs.title":"Полный цикл ВЭД — в одной команде",
-    "hs.sub":"От поиска товара и подбора производителя до таможенного оформления и доставки до двери.",
-    "hs.c1t":"Консалтинг ВЭД","hs.c1d":"Построение импортно-экспортных операций, контракты, валютный контроль и таможенное оформление под ключ.",
-    "hs.c2t":"Поиск товаров","hs.c2d":"Находим нужный товар в Китае, Турции и других рынках, сравниваем цену и качество.",
-    "hs.c3t":"Поиск фабрик и производителей","hs.c3d":"Проверка и аудит надёжных заводов, выход напрямую на производителя без посредников.",
-    "hs.c4t":"Доставка грузов","hs.c4d":"Авто, ж/д, море и авиа — оптимальный маршрут «от двери до двери».",
+    "hs.eyebrow":"Что мы делаем","hs.title":"Полный цикл торговли с Китаем — без посредников",
+    "hs.sub":"От поиска поставщика и производства под вашим брендом до безопасной сделки и доставки под ключ.",
+    "hs.c1t":"Поиск товаров и поставщиков","hs.c1d":"Находим нужный товар и проверенного производителя напрямую, сравниваем цену и качество, заказываем и проверяем образцы.",
+    "hs.c2t":"Производство в Китае (OEM/ODM)","hs.c2d":"Выпуск продукции под вашим брендом: переговоры с заводами, контроль качества и аудит производств.",
+    "hs.c3t":"Безопасная сделка: финансы и право","hs.c3d":"Защита платежей через офис в Гонконге, экспортное оформление и решение споров с поставщиками.",
+    "hs.c4t":"Логистика и таможня","hs.c4d":"Мультимодальная доставка по прямым контрактам и таможенное оформление из Китая, Турции, Ирана, России и Казахстана.",
     "hs.more":"Подробнее",
+
+    /* USP infrastructure */
+    "usp.eyebrow":"Наша инфраструктура","usp.title":"Мы не посредник — мы ваша торговая инфраструктура",
+    "usp.sub":"Полный контроль на каждом этапе сделки с Китаем — от оплаты до доставки.",
+    "usp.1t":"Своя экспортная компания в Китае","usp.1d":"Официально закупаем и оформляем документы от своего имени — даже с фабрик без экспортной лицензии.",
+    "usp.2t":"Платёжный офис в Гонконге","usp.2d":"Быстрые и легальные международные переводы без банковских ограничений и блокировок.",
+    "usp.3t":"Безопасная сделка","usp.3d":"Гарантируем защиту платежа и ведём споры с поставщиками при браке или несоответствии — на вашей стороне.",
+    "usp.4t":"Работа под санкциями","usp.4d":"Опыт поставок в сложных геополитических условиях — цепочка не рвётся даже при ограничениях.",
+    "usp.5t":"Команда в Китае и СНГ","usp.5d":"Локальные специалисты в Китае и 5 лет опыта в СНГ: Россия, Казахстан, Киргизия.",
+    "usp.6t":"Прямая логистика","usp.6d":"Прямые контракты с ведущими логистами — минимальная стоимость перевозки.",
+
+    /* difference quote */
+    "diff.quote":"«Мы не просто находим товар — мы строим для вас торговый механизм без посредников: прямую связь с заводами Китая и гарантию качества. Работать с нами — значит иметь свой офис на глобальном рынке.»",
+
+    /* pain points */
+    "pain.eyebrow":"Знакомые проблемы","pain.title":"Мы снимаем риски внешней торговли",
+    "pain.1":"Зависимость от посредников","pain.2":"Риск качества и брака","pain.3":"Блокировка и задержка платежей",
+    "pain.4":"У завода нет экспортной лицензии","pain.5":"Риски и споры по контрактам","pain.6":"Таможенные барьеры и задержки",
+
+    /* target audience */
+    "aud.eyebrow":"Кому мы помогаем","aud.title":"Наши клиенты",
+    "aud.sub":"B2B и B2C компании, которые выходят на внешние рынки и хотят работать с источником напрямую.",
+    "aud.1":"Компаниям, которые переносят производство в Китай или работают напрямую с заводами",
+    "aud.2":"Бизнесу, который закупает у источника без переплаты посредникам",
+    "aud.3":"Ритейл-сетям и производствам, обновляющим товарные линейки",
+    "aud.4":"Импортёрам и e-commerce, которым нужна безопасная и своевременная доставка",
 
     "why.eyebrow":"Почему Ascend Trade & Logistics","why.title":"Риски берём на себя — вы фокусируетесь на бизнесе",
     "why.sub":"Прозрачность, ответственность и ориентация на результат на каждом этапе.",
@@ -245,13 +297,39 @@ window.I18N = {
 
     "trust.lead":"We operate on directions:",
 
-    "hs.eyebrow":"What we do","hs.title":"The full foreign-trade cycle — in one team",
-    "hs.sub":"From product sourcing and manufacturer selection to customs clearance and door delivery.",
-    "hs.c1t":"FEA consulting","hs.c1d":"Setting up import-export operations, contracts, currency control and customs clearance — turnkey.",
-    "hs.c2t":"Product sourcing","hs.c2d":"We find the right product in China, Türkiye and other markets, comparing price and quality.",
-    "hs.c3t":"Factory & manufacturer search","hs.c3d":"Verification and audit of reliable factories, reaching the manufacturer directly without middlemen.",
-    "hs.c4t":"Cargo delivery","hs.c4d":"Road, rail, sea and air — the optimal door-to-door route.",
+    "hs.eyebrow":"What we do","hs.title":"The full China trade cycle — without middlemen",
+    "hs.sub":"From supplier sourcing and production under your own brand to a secure deal and turnkey delivery.",
+    "hs.c1t":"Product & supplier sourcing","hs.c1d":"We find the right product and a verified manufacturer directly, compare price and quality, order and inspect samples.",
+    "hs.c2t":"Manufacturing in China (OEM/ODM)","hs.c2d":"Production under your own brand: factory negotiations, quality control and production audits.",
+    "hs.c3t":"Secure deal: finance & legal","hs.c3d":"Payment protection via our Hong Kong office, export documentation and dispute resolution with suppliers.",
+    "hs.c4t":"Logistics & customs","hs.c4d":"Multimodal delivery on direct contracts and customs clearance from China, Türkiye, Iran, Russia and Kazakhstan.",
     "hs.more":"Learn more",
+
+    /* USP infrastructure */
+    "usp.eyebrow":"Our infrastructure","usp.title":"We're not a middleman — we're your trade infrastructure",
+    "usp.sub":"Full control at every stage of your China deal — from payment to delivery.",
+    "usp.1t":"Our own export company in China","usp.1d":"We purchase officially and handle documentation under our own name — even from factories without an export license.",
+    "usp.2t":"Payment office in Hong Kong","usp.2d":"Fast, legal international transfers without banking restrictions or blocked payments.",
+    "usp.3t":"Secure deal","usp.3d":"We guarantee payment protection and handle disputes with suppliers over defects or non-compliance — on your side.",
+    "usp.4t":"Operating under sanctions","usp.4d":"Experience supplying under complex geopolitical conditions — the chain holds even under restrictions.",
+    "usp.5t":"Team in China and the CIS","usp.5d":"Local specialists in China and 5 years of experience across the CIS: Russia, Kazakhstan, Kyrgyzstan.",
+    "usp.6t":"Direct logistics","usp.6d":"Direct contracts with leading logistics operators — minimal transportation cost.",
+
+    /* difference quote */
+    "diff.quote":"“We don't just find products — we build a middleman-free trade mechanism for you: direct contact with Chinese factories and a quality guarantee. Working with us means having your own office in the global market.”",
+
+    /* pain points */
+    "pain.eyebrow":"Familiar problems","pain.title":"We take the risk out of foreign trade",
+    "pain.1":"Dependence on middlemen","pain.2":"Quality and defect risk","pain.3":"Blocked or delayed payments",
+    "pain.4":"Factory has no export license","pain.5":"Contract risks and disputes","pain.6":"Customs barriers and delays",
+
+    /* target audience */
+    "aud.eyebrow":"Who we help","aud.title":"Our clients",
+    "aud.sub":"B2B and B2C companies entering foreign markets who want to work with the source directly.",
+    "aud.1":"Companies relocating production to China or working directly with factories",
+    "aud.2":"Businesses buying from the source without overpaying middlemen",
+    "aud.3":"Retail chains and manufacturers refreshing their product lines",
+    "aud.4":"Importers and e-commerce needing safe, on-time delivery",
 
     "why.eyebrow":"Why Ascend Trade & Logistics","why.title":"We take on the risks — you focus on business",
     "why.sub":"Transparency, accountability and a result-driven approach at every stage.",

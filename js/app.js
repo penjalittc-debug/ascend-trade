@@ -130,12 +130,17 @@
   /* FAQ accordion */
   function initFaq(){
     document.querySelectorAll(".faq-q").forEach(q=>{
-      q.addEventListener("click", ()=>{
+      const toggle = ()=>{
         const item = q.parentElement;
         const open = item.classList.contains("open");
         item.classList.toggle("open");
+        q.setAttribute("aria-expanded", open ? "false" : "true");
         const a = item.querySelector(".faq-a");
         a.style.maxHeight = open ? null : a.scrollHeight + "px";
+      };
+      q.addEventListener("click", toggle);
+      q.addEventListener("keydown", e=>{
+        if(e.key === "Enter" || e.key === " "){ e.preventDefault(); toggle(); }
       });
     });
   }

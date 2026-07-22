@@ -23,7 +23,7 @@ window.SITE = {
 
   /* Аналитика — когда будут ID, вставь их сюда, подключится автоматически. Пусто = не грузится */
   analytics: {
-    ga4:       "",   // Google Analytics 4, формат "G-XXXXXXX"
+    ga4:       "G-V6PKS5WJ6F",   // Google Analytics 4
     metaPixel: ""    // Meta (Facebook/Instagram) Pixel, только цифры "1234567890123456"
   }
 };

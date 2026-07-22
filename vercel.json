@@ -1,8 +1,26 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "ascend-trade.vercel.app" }],
+      "destination": "https://ascend.az/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "ascend-trade.vercel.app" }],
+      "destination": "https://ascend.az/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "www.ascend.az" }],
+      "destination": "https://ascend.az/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.ascend.az" }],
       "destination": "https://ascend.az/:path*",
       "permanent": true
     }

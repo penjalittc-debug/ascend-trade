@@ -149,6 +149,16 @@ window.I18N = {
     "dr.iran.long":"İranla quru sərhəd keçidləri üzrə etibarlı avtomobil daşımaları və gömrük müşayiəti.",
     "dr.russia.long":"Rusiyadan avtomobil və dəmir yolu ilə müntəzəm yük axını, konsolidasiya və gömrük rəsmiləşdirilməsi.",
     "dr.kz.long":"Qazaxıstan və Mərkəzi Asiyadan Trans-Xəzər dəhlizi üzrə intermodal daşıma həlləri.",
+    /* landing: Çin → Azərbaycan */
+    "lp.cn.crumb":"Çin → Azərbaycan",
+    "lp.cn.htitle":"Çindən Azərbaycana yük daşıma",
+    "lp.cn.hsub":"Fabrik axtarışından gömrük rəsmiləşdirilməsinə qədər — Çindən Azərbaycana açar-təslim daşıma. Dəniz, dəmir yolu və hava marşrutları bir mərkəzdən.",
+    "lp.cn.introt":"Çindən Bakıya birbaşa daşıma",
+    "lp.cn.introd":"Çin istehsalçıları ilə birbaşa işləyirik: yükləri konsolidasiya edir, sənədləşməni hazırlayır və Trans-Xəzər dəhlizi ilə Azərbaycana çatdırırıq. Siz yalnız nəticəni alırsınız — qapıdan qapıya.",
+    "lp.cn.f1t":"Multimodal marşrutlar","lp.cn.f1d":"Dəniz, dəmir yolu və hava — yükün həcminə və təcililiyinə görə optimal variant.",
+    "lp.cn.f2t":"Gömrük və sənədlər","lp.cn.f2d":"İxrac rəsmiləşdirilməsi, TN VED kodları və Azərbaycanda gömrük müşayiəti tam bizim üzərimizdə.",
+    "lp.cn.f3t":"Açar-təslim","lp.cn.f3d":"Fabrik axtarışı, keyfiyyət nəzarəti, ödənişin qorunması və qapıya çatdırılma — bir müqavilə ilə.",
+    "ab.valeye":"Prinsiplərimiz",
 
     /* contact page */
     "ct.crumb":"Əlaqə","ct.htitle":"Bizimlə əlaqə saxlayın","ct.hsub":"Sorğunuzu göndərin — 24 saat ərzində sizinlə əlaqə saxlayaq.",
@@ -302,6 +312,16 @@ window.I18N = {
     "dr.iran.long":"Надёжные автоперевозки через сухопутные погранпереходы с Ираном и таможенное сопровождение.",
     "dr.russia.long":"Регулярный грузопоток из России авто и ж/д транспортом, консолидация и таможенное оформление.",
     "dr.kz.long":"Интермодальные решения доставки из Казахстана и Центральной Азии по Транскаспийскому коридору.",
+    /* landing: Китай → Азербайджан */
+    "lp.cn.crumb":"Китай → Азербайджан",
+    "lp.cn.htitle":"Доставка грузов из Китая в Азербайджан",
+    "lp.cn.hsub":"От поиска фабрики до таможни — доставка из Китая в Азербайджан под ключ. Морские, ж/д и авиамаршруты из одного окна.",
+    "lp.cn.introt":"Прямая доставка из Китая в Баку",
+    "lp.cn.introd":"Работаем напрямую с производителями Китая: консолидируем грузы, готовим документы и доставляем в Азербайджан через Транскаспийский коридор. Вы получаете результат — от двери до двери.",
+    "lp.cn.f1t":"Мультимодальные маршруты","lp.cn.f1d":"Море, ж/д и авиа — оптимальный вариант под объём и срочность груза.",
+    "lp.cn.f2t":"Таможня и документы","lp.cn.f2d":"Экспортное оформление, коды ТН ВЭД и таможенное сопровождение в Азербайджане — полностью на нас.",
+    "lp.cn.f3t":"Под ключ","lp.cn.f3d":"Поиск фабрики, контроль качества, защита платежа и доставка до двери — по одному договору.",
+    "ab.valeye":"Наши принципы",
 
     "ct.crumb":"Контакты","ct.htitle":"Свяжитесь с нами","ct.hsub":"Отправьте заявку — мы свяжемся с вами в течение 24 часов.",
     "ct.eyebrow":"Контакты","ct.title":"Обсудим ваш проект",
@@ -454,6 +474,16 @@ window.I18N = {
     "dr.iran.long":"Reliable road transport via land border crossings with Iran and customs support.",
     "dr.russia.long":"Regular cargo flow from Russia by road and rail, consolidation and customs clearance.",
     "dr.kz.long":"Intermodal delivery solutions from Kazakhstan and Central Asia via the Trans-Caspian corridor.",
+    /* landing: China → Azerbaijan */
+    "lp.cn.crumb":"China → Azerbaijan",
+    "lp.cn.htitle":"Cargo delivery from China to Azerbaijan",
+    "lp.cn.hsub":"From factory sourcing to customs — turnkey delivery from China to Azerbaijan. Sea, rail and air routes from a single window.",
+    "lp.cn.introt":"Direct delivery from China to Baku",
+    "lp.cn.introd":"We work directly with Chinese manufacturers: consolidate cargo, prepare documents and deliver to Azerbaijan via the Trans-Caspian corridor. You just get the result — door to door.",
+    "lp.cn.f1t":"Multimodal routes","lp.cn.f1d":"Sea, rail and air — the optimal option for your cargo volume and urgency.",
+    "lp.cn.f2t":"Customs & documents","lp.cn.f2d":"Export clearance, HS codes and customs support in Azerbaijan — fully handled by us.",
+    "lp.cn.f3t":"Turnkey","lp.cn.f3d":"Factory search, quality control, payment protection and door delivery — under one contract.",
+    "ab.valeye":"Our principles",
 
     "ct.crumb":"Contact","ct.htitle":"Get in touch","ct.hsub":"Send a request — we'll get back to you within 24 hours.",
     "ct.eyebrow":"Contact","ct.title":"Let's discuss your project",

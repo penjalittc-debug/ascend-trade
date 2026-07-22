@@ -172,6 +172,10 @@ body.menu-open .mobile-nav{transform:translateX(0)}
 .mobile-nav a{font-family:var(--ff-head);font-size:1.5rem;font-weight:600;color:#fff;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1)}
 .mobile-nav a.active{color:var(--red-400)}
 .mobile-nav .btn{margin-top:24px;align-self:flex-start}
+.mobile-lang{display:flex;gap:10px;margin-top:26px}
+.mobile-lang button{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:13px 8px;border:1.5px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:#fff;border-radius:12px;font-family:var(--ff-head);font-weight:600;font-size:1rem;cursor:pointer;transition:.25s}
+.mobile-lang button.active{background:var(--red);border-color:var(--red)}
+.mobile-lang .flag{font-size:1.15rem}
 
 /* ==========================================================================
    Hero

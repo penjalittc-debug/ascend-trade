@@ -35,7 +35,7 @@
     // update lang button label + active states
     const lbl = document.querySelector(".lang-btn .lang-cur");
     if(lbl) lbl.textContent = FLAGS[lang] + " " + lang.toUpperCase();
-    document.querySelectorAll(".lang-menu button").forEach(b=>{
+    document.querySelectorAll("[data-lang]").forEach(b=>{
       b.classList.toggle("active", b.dataset.lang === lang);
     });
     localStorage.setItem("ascend_lang", lang);
@@ -43,13 +43,19 @@
 
   function initLangSwitch(){
     const wrap = document.querySelector(".lang");
-    if(!wrap) return;
-    const btn = wrap.querySelector(".lang-btn");
-    btn.addEventListener("click", e=>{ e.stopPropagation(); wrap.classList.toggle("open"); });
-    wrap.querySelectorAll(".lang-menu button").forEach(b=>{
-      b.addEventListener("click", ()=>{ apply(b.dataset.lang); wrap.classList.remove("open"); });
+    if(wrap){
+      const btn = wrap.querySelector(".lang-btn");
+      btn.addEventListener("click", e=>{ e.stopPropagation(); wrap.classList.toggle("open"); });
+      document.addEventListener("click", ()=> wrap.classList.remove("open"));
+    }
+    // bind every language button (desktop dropdown + mobile menu)
+    document.querySelectorAll("[data-lang]").forEach(b=>{
+      b.addEventListener("click", ()=>{
+        apply(b.dataset.lang);
+        if(wrap) wrap.classList.remove("open");
+        document.body.classList.remove("menu-open");
+      });
     });
-    document.addEventListener("click", ()=> wrap.classList.remove("open"));
   }
 
   /* header scroll + on-dark */

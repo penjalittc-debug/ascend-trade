@@ -53,6 +53,11 @@
     </header>
     <div class="mobile-nav">
       ${mlinks}
+      <div class="mobile-lang">
+        <button data-lang="az"><span class="flag">🇦🇿</span> AZ</button>
+        <button data-lang="ru"><span class="flag">🇷🇺</span> RU</button>
+        <button data-lang="en"><span class="flag">🇬🇧</span> EN</button>
+      </div>
       <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta"></a>
     </div>`;
   }

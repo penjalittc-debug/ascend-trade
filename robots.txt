@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ascend-trade.vercel.app/sitemap.xml
+Sitemap: https://ascend.az/sitemap.xml

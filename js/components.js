@@ -3,7 +3,7 @@
    ========================================================================== */
 (function(){
   const PAGES = [
-    {href:"index.html",     key:"nav.home",       id:"home"},
+    {href:"/",              key:"nav.home",       id:"home"},
     {href:"about.html",     key:"nav.about",      id:"about"},
     {href:"services.html",  key:"nav.services",   id:"services"},
     {href:"directions.html",key:"nav.directions", id:"directions"},
@@ -36,7 +36,7 @@
     return `
     <header class="header" data-dark>
       <div class="container header-inner">
-        <a class="logo" href="index.html" aria-label="Ascend Trade & Logistics">
+        <a class="logo" href="/" aria-label="Ascend Trade & Logistics">
           <img class="logo-dark" src="assets/logo-main.png" alt="Ascend Trade & Logistics">
           <img class="logo-light" src="assets/logo-white.png" alt="Ascend Trade & Logistics">
         </a>

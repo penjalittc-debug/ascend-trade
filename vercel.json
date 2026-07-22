@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/",
       "has": [{ "type": "host", "value": "ascend-trade.vercel.app" }],
       "destination": "https://ascend.az/",

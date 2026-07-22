@@ -618,3 +618,32 @@ button:focus:not(:focus-visible){outline:none}
 @media (prefers-reduced-motion: reduce){
   .wa-float::after{animation:none;display:none}
 }
+
+/* ==========================================================================
+   Blog
+   ========================================================================== */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.post-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;transition:.3s var(--ease);text-decoration:none}
+.post-card:hover{box-shadow:var(--shadow);transform:translateY(-4px);border-color:transparent}
+.post-card .pc-top{aspect-ratio:16/9;background:linear-gradient(135deg,var(--navy),var(--navy-deep));position:relative;display:grid;place-items:center;overflow:hidden}
+.post-card .pc-top::after{content:"";position:absolute;width:200px;height:200px;background:var(--red);filter:blur(80px);opacity:.32;border-radius:50%;top:-30px;right:-30px}
+.post-card .pc-ic{width:54px;height:54px;color:#fff;opacity:.9;z-index:1}
+.post-card .pc-body{padding:24px 24px 26px;display:flex;flex-direction:column;flex:1}
+.post-card .pc-date{font-size:.78rem;color:var(--slate-light);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.post-card h3{font-size:1.15rem;margin:10px 0 10px;color:var(--ink);line-height:1.25}
+.post-card p{font-size:.94rem;margin-bottom:16px;flex:1}
+.post-card .more{margin-top:auto}
+
+/* article page */
+.article{max-width:760px;margin:0 auto}
+.article .a-meta{font-size:.85rem;color:var(--slate-light);font-weight:600;margin-bottom:28px}
+.article h2{font-size:1.5rem;margin:38px 0 14px}
+.article h3{font-size:1.2rem;margin:28px 0 10px}
+.article p{margin-bottom:16px;line-height:1.75}
+.article ul{margin:0 0 18px 0;padding-left:22px}
+.article li{color:var(--slate);margin-bottom:9px;line-height:1.65}
+.article .lead{font-size:1.12rem;color:var(--ink);font-weight:500;margin-bottom:26px}
+.article .a-cta{margin-top:40px;padding:28px;background:var(--bg-soft);border-radius:var(--radius-lg);text-align:center}
+.article .a-back{display:inline-block;margin-bottom:26px;color:var(--navy);font-weight:600;font-size:.92rem;text-decoration:none}
+@media(max-width:900px){.blog-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.blog-grid{grid-template-columns:1fr}}

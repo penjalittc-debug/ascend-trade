@@ -7,6 +7,7 @@
     {href:"about.html",     key:"nav.about",      id:"about"},
     {href:"services.html",  key:"nav.services",   id:"services"},
     {href:"directions.html",key:"nav.directions", id:"directions"},
+    {href:"blog.html",      key:"nav.blog",       id:"blog"},
     {href:"contact.html",   key:"nav.contact",    id:"contact"}
   ];
   const ICON = {

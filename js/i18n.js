@@ -7,7 +7,10 @@ window.I18N = {
     /* nav */
     "nav.home":"Ana səhifə","nav.about":"Haqqımızda","nav.services":"Xidmətlər",
     "nav.directions":"İstiqamətlər","nav.contact":"Əlaqə","nav.cta":"Sorğu göndər",
-    "nav.skip":"Əsas məzmuna keç",
+    "nav.skip":"Əsas məzmuna keç","nav.blog":"Bloq",
+    "bl.crumb":"Bloq","bl.htitle":"Bloq — XİF və logistika bələdçiləri",
+    "bl.hsub":"Çinlə ticarət, yük daşıma və gömrük haqqında praktiki bələdçilər.",
+    "bl.read":"Oxu","bl.back":"← Bloqa qayıt",
 
     /* hero */
     "hero.badge":"Çin · Türkiyə · İran · Rusiya · Qazaxıstan → Azərbaycan",
@@ -268,7 +271,10 @@ window.I18N = {
     "meta.langname":"RU",
     "nav.home":"Главная","nav.about":"О нас","nav.services":"Услуги",
     "nav.directions":"Направления","nav.contact":"Контакты","nav.cta":"Оставить заявку",
-    "nav.skip":"Перейти к содержимому",
+    "nav.skip":"Перейти к содержимому","nav.blog":"Блог",
+    "bl.crumb":"Блог","bl.htitle":"Блог — гайды по ВЭД и логистике",
+    "bl.hsub":"Практические гайды о торговле с Китаем, доставке и таможне.",
+    "bl.read":"Читать","bl.back":"← Назад в блог",
 
     "hero.badge":"Китай · Турция · Иран · Россия · Казахстан → Азербайджан",
     "hero.title":"Надёжный партнёр в вашей <span class='accent'>внешней торговле</span>",
@@ -516,7 +522,10 @@ window.I18N = {
     "meta.langname":"EN",
     "nav.home":"Home","nav.about":"About","nav.services":"Services",
     "nav.directions":"Directions","nav.contact":"Contact","nav.cta":"Get a quote",
-    "nav.skip":"Skip to main content",
+    "nav.skip":"Skip to main content","nav.blog":"Blog",
+    "bl.crumb":"Blog","bl.htitle":"Blog — foreign trade & logistics guides",
+    "bl.hsub":"Practical guides on China trade, freight and customs.",
+    "bl.read":"Read","bl.back":"← Back to blog",
 
     "hero.badge":"China · Türkiye · Iran · Russia · Kazakhstan → Azerbaijan",
     "hero.title":"Your reliable partner in <span class='accent'>foreign trade</span>",

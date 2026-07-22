@@ -10,4 +10,8 @@
   <url><loc>https://ascend.az/qazaxistandan-azerbaycana-yuk-dasima.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ascend.az/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ascend.az/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ascend.az/blog.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ascend.az/blog-cinden-mal-sifarisi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ascend.az/blog-dasima-novunu-secmek.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ascend.az/blog-gomruk-resmilesdirilmesi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

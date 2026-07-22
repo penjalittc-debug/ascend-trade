@@ -7,6 +7,7 @@ window.I18N = {
     /* nav */
     "nav.home":"Ana səhifə","nav.about":"Haqqımızda","nav.services":"Xidmətlər",
     "nav.directions":"İstiqamətlər","nav.contact":"Əlaqə","nav.cta":"Sorğu göndər",
+    "nav.skip":"Əsas məzmuna keç",
 
     /* hero */
     "hero.badge":"Çin · Türkiyə · İran · Rusiya · Qazaxıstan → Azərbaycan",
@@ -14,8 +15,8 @@ window.I18N = {
     "hero.sub":"Ascend Trade & Logistics — xarici iqtisadi fəaliyyət (XİF) üzrə konsaltinq, malların axtarışı, fabrik və istehsalçıların tapılması və yüklərin Azərbaycana çatdırılması üzrə tam həll.",
     "hero.cta1":"Pulsuz konsultasiya","hero.cta2":"Xidmətlər",
     "hero.stat1n":"5","hero.stat1l":"Daşıma istiqaməti",
-    "hero.stat2n":"12+","hero.stat2l":"İl bazar təcrübəsi",
-    "hero.stat3n":"360°","hero.stat3l":"Tam təchizat zənciri",
+    "hero.stat2n":"3","hero.stat2l":"Öz strukturumuz: Çin · Honq-Konq · RF",
+    "hero.stat3n":"360°","hero.stat3l":"Açar-təslim təchizat zənciri",
     "hero.mapt":"Daşıma istiqamətləri","hero.mapc":"Bütün istiqamətlər — bir mərkəzdən idarə olunur",
     "hero.scroll":"AŞAĞI",
 
@@ -77,10 +78,10 @@ window.I18N = {
     "why.f4t":"Onlayn izləmə","why.f4d":"Yükünüzün statusunu real vaxtda izləyin.",
 
     /* stats band */
-    "sb.s1n":"500","sb.s1s":"+","sb.s1t":"Uğurla çatdırılmış yük",
-    "sb.s2n":"5","sb.s2s":"","sb.s2t":"Daşıma istiqaməti",
-    "sb.s3n":"98","sb.s3s":"%","sb.s3t":"Vaxtında çatdırılma",
-    "sb.s4n":"24","sb.s4s":"/7","sb.s4t":"Dəstək və müşayiət",
+    "sb.s1n":"5","sb.s1s":"","sb.s1t":"Göndərən ölkə",
+    "sb.s2n":"3","sb.s2s":"","sb.s2t":"Öz yurisdiksiyalarımız",
+    "sb.s3n":"360°","sb.s3s":"","sb.s3t":"Açar-təslim logistika",
+    "sb.s4n":"TM","sb.s4s":"®","sb.s4t":"Rusiyada ticarət nişanı",
 
     /* process */
     "pr.eyebrow":"Necə işləyirik","pr.title":"Sadə və şəffaf 4 addım",
@@ -164,21 +165,22 @@ window.I18N = {
     "pv.2t":"Məqsəd","pv.2d":"Məlumatlar yalnız sorğunuzla bağlı əlaqə üçün istifadə olunur. Onları marketinq üçün üçüncü tərəflərə satmır və ötürmürük.",
     "pv.3t":"Emal","pv.3d":"Formun göndərilməsi Web3Forms xidməti ilə emal olunur və mesajı poçtumuza çatdırır. Məlumatlar saytda dərc olunmur.",
     "pv.4t":"Saxlama","pv.4d":"Müraciətləri sorğunun emalı üçün lazım olan müddət ərzində saxlayır və tələbinizlə silirik.",
-    "pv.5t":"Hüquqlarınız","pv.5d":"Məlumatlarınızı dəqiqləşdirmək, dəyişmək və ya silmək üçün info@ascendtrade.az ünvanına yazın."
+    "pv.5t":"Hüquqlarınız","pv.5d":"Məlumatlarınızı dəqiqləşdirmək, dəyişmək və ya silmək üçün Penjalittc@gmail.com ünvanına yazın."
   },
 
   ru: {
     "meta.langname":"RU",
     "nav.home":"Главная","nav.about":"О нас","nav.services":"Услуги",
     "nav.directions":"Направления","nav.contact":"Контакты","nav.cta":"Оставить заявку",
+    "nav.skip":"Перейти к содержимому",
 
     "hero.badge":"Китай · Турция · Иран · Россия · Казахстан → Азербайджан",
     "hero.title":"Надёжный партнёр в вашей <span class='accent'>внешней торговле</span>",
     "hero.sub":"Ascend Trade & Logistics — консалтинг ВЭД, поиск товаров, подбор фабрик и производителей, доставка грузов в Азербайджан. Полный цикл под ключ.",
     "hero.cta1":"Бесплатная консультация","hero.cta2":"Наши услуги",
     "hero.stat1n":"5","hero.stat1l":"Направлений доставки",
-    "hero.stat2n":"12+","hero.stat2l":"Лет опыта на рынке",
-    "hero.stat3n":"360°","hero.stat3l":"Полная цепочка поставок",
+    "hero.stat2n":"3","hero.stat2l":"Свои структуры: Китай · Гонконг · РФ",
+    "hero.stat3n":"360°","hero.stat3l":"Полный цикл под ключ",
     "hero.mapt":"Направления доставки","hero.mapc":"Все маршруты — из единого центра",
     "hero.scroll":"ВНИЗ",
 
@@ -236,10 +238,10 @@ window.I18N = {
     "why.f3t":"Проверенные партнёры","why.f3d":"Работаем только с проверенными заводами и перевозчиками.",
     "why.f4t":"Онлайн-отслеживание","why.f4d":"Следите за статусом груза в реальном времени.",
 
-    "sb.s1n":"500","sb.s1s":"+","sb.s1t":"Успешно доставленных грузов",
-    "sb.s2n":"5","sb.s2s":"","sb.s2t":"Направлений доставки",
-    "sb.s3n":"98","sb.s3s":"%","sb.s3t":"Доставок в срок",
-    "sb.s4n":"24","sb.s4s":"/7","sb.s4t":"Поддержка и сопровождение",
+    "sb.s1n":"5","sb.s1s":"","sb.s1t":"Стран-отправителей",
+    "sb.s2n":"3","sb.s2s":"","sb.s2t":"Собственные юрисдикции",
+    "sb.s3n":"360°","sb.s3s":"","sb.s3t":"Логистика под ключ",
+    "sb.s4n":"TM","sb.s4s":"®","sb.s4t":"Товарный знак РФ",
 
     "pr.eyebrow":"Как мы работаем","pr.title":"Простые и прозрачные 4 шага",
     "pr.s1t":"Заявка и бриф","pr.s1d":"Изучаем задачу, определяем цель и бюджет проекта.",
@@ -315,21 +317,22 @@ window.I18N = {
     "pv.2t":"Цель","pv.2d":"Данные используются только для связи по вашему запросу. Мы не продаём и не передаём их третьим лицам для маркетинга.",
     "pv.3t":"Обработка","pv.3d":"Отправка формы обрабатывается сервисом Web3Forms, который доставляет сообщение на нашу почту. Данные не публикуются на сайте.",
     "pv.4t":"Хранение","pv.4d":"Мы храним обращения столько, сколько необходимо для обработки запроса, и удаляем по вашему требованию.",
-    "pv.5t":"Ваши права","pv.5d":"Чтобы уточнить, изменить или удалить свои данные, напишите на info@ascendtrade.az."
+    "pv.5t":"Ваши права","pv.5d":"Чтобы уточнить, изменить или удалить свои данные, напишите на Penjalittc@gmail.com."
   },
 
   en: {
     "meta.langname":"EN",
     "nav.home":"Home","nav.about":"About","nav.services":"Services",
     "nav.directions":"Directions","nav.contact":"Contact","nav.cta":"Get a quote",
+    "nav.skip":"Skip to main content",
 
     "hero.badge":"China · Türkiye · Iran · Russia · Kazakhstan → Azerbaijan",
     "hero.title":"Your reliable partner in <span class='accent'>foreign trade</span>",
     "hero.sub":"Ascend Trade & Logistics — foreign-trade (FEA) consulting, product sourcing, factory & manufacturer search and cargo delivery to Azerbaijan. Full turnkey cycle.",
     "hero.cta1":"Free consultation","hero.cta2":"Our services",
     "hero.stat1n":"5","hero.stat1l":"Delivery directions",
-    "hero.stat2n":"12+","hero.stat2l":"Years of market expertise",
-    "hero.stat3n":"360°","hero.stat3l":"End-to-end supply chain",
+    "hero.stat2n":"3","hero.stat2l":"Own entities: China · Hong Kong · Russia",
+    "hero.stat3n":"360°","hero.stat3l":"End-to-end, turnkey",
     "hero.mapt":"Delivery directions","hero.mapc":"All routes — managed from one hub",
     "hero.scroll":"SCROLL",
 
@@ -387,10 +390,10 @@ window.I18N = {
     "why.f3t":"Vetted partners","why.f3d":"We work only with verified factories and carriers.",
     "why.f4t":"Online tracking","why.f4d":"Track your cargo status in real time.",
 
-    "sb.s1n":"500","sb.s1s":"+","sb.s1t":"Successfully delivered shipments",
-    "sb.s2n":"5","sb.s2s":"","sb.s2t":"Delivery directions",
-    "sb.s3n":"98","sb.s3s":"%","sb.s3t":"On-time delivery",
-    "sb.s4n":"24","sb.s4s":"/7","sb.s4t":"Support & guidance",
+    "sb.s1n":"5","sb.s1s":"","sb.s1t":"Origin countries",
+    "sb.s2n":"3","sb.s2s":"","sb.s2t":"Own jurisdictions",
+    "sb.s3n":"360°","sb.s3s":"","sb.s3t":"Turnkey logistics",
+    "sb.s4n":"TM","sb.s4s":"®","sb.s4t":"Registered trademark (RU)",
 
     "pr.eyebrow":"How we work","pr.title":"Simple and transparent — 4 steps",
     "pr.s1t":"Request & brief","pr.s1d":"We study your needs and define the goal and budget of the project.",
@@ -466,6 +469,6 @@ window.I18N = {
     "pv.2t":"Purpose","pv.2d":"The data is used only to contact you about your request. We do not sell or share it with third parties for marketing.",
     "pv.3t":"Processing","pv.3d":"Form submissions are processed by Web3Forms, which delivers the message to our email. Data is not published on the site.",
     "pv.4t":"Retention","pv.4d":"We keep requests for as long as needed to handle them and delete them on your request.",
-    "pv.5t":"Your rights","pv.5d":"To review, change or delete your data, email us at info@ascendtrade.az."
+    "pv.5t":"Your rights","pv.5d":"To review, change or delete your data, email us at Penjalittc@gmail.com."
   }
 };

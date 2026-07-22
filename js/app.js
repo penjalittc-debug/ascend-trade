@@ -45,8 +45,10 @@
     const wrap = document.querySelector(".lang");
     if(wrap){
       const btn = wrap.querySelector(".lang-btn");
-      btn.addEventListener("click", e=>{ e.stopPropagation(); wrap.classList.toggle("open"); });
-      document.addEventListener("click", ()=> wrap.classList.remove("open"));
+      const sync = ()=> btn.setAttribute("aria-expanded", wrap.classList.contains("open") ? "true" : "false");
+      btn.addEventListener("click", e=>{ e.stopPropagation(); wrap.classList.toggle("open"); sync(); });
+      document.addEventListener("click", ()=>{ wrap.classList.remove("open"); sync(); });
+      document.addEventListener("keydown", e=>{ if(e.key==="Escape"){ wrap.classList.remove("open"); sync(); } });
     }
     // bind every language button (desktop dropdown + mobile menu)
     document.querySelectorAll("[data-lang]").forEach(b=>{
@@ -81,9 +83,15 @@
   function initMenu(){
     const burger = document.querySelector(".burger");
     if(!burger) return;
-    burger.addEventListener("click", ()=> document.body.classList.toggle("menu-open"));
+    const sync = ()=> burger.setAttribute("aria-expanded", document.body.classList.contains("menu-open") ? "true" : "false");
+    burger.addEventListener("click", ()=>{ document.body.classList.toggle("menu-open"); sync(); });
     document.querySelectorAll(".mobile-nav a").forEach(a=>{
-      a.addEventListener("click", ()=> document.body.classList.remove("menu-open"));
+      a.addEventListener("click", ()=>{ document.body.classList.remove("menu-open"); sync(); });
+    });
+    document.addEventListener("keydown", e=>{
+      if(e.key==="Escape" && document.body.classList.contains("menu-open")){
+        document.body.classList.remove("menu-open"); sync(); burger.focus();
+      }
     });
   }
 
@@ -156,7 +164,11 @@
       try{
         const res = await fetch(form.action, { method:"POST", body:new FormData(form), headers:{ "Accept":"application/json" } });
         const data = await res.json().catch(()=>({}));
-        if(res.ok && data.success){ say("ok"); form.reset(); }
+        if(res.ok && data.success){
+          say("ok"); form.reset();
+          if(window.gtag) gtag("event", "generate_lead", { form: "contact" });
+          if(window.fbq)  fbq("track", "Lead");
+        }
         else { say("err"); }
       }catch(_){ say("err"); }
       finally{ btn.disabled=false; btn.textContent=orig; }
@@ -168,18 +180,45 @@
     const lb = document.getElementById("lightbox");
     if(!lb) return;
     const img = lb.querySelector("img");
+    const closeBtn = lb.querySelector(".lb-close");
+    let lastTrigger = null;
+    const open = (t)=>{
+      const thumbImg = t.querySelector("img");
+      if(!thumbImg) return; // no image uploaded yet
+      img.src = t.getAttribute("data-full");
+      img.alt = thumbImg.alt || "";
+      lb.classList.add("open");
+      lastTrigger = t;
+      if(closeBtn) closeBtn.focus();
+    };
+    const close = ()=>{
+      if(!lb.classList.contains("open")) return;
+      lb.classList.remove("open");
+      if(lastTrigger){ lastTrigger.focus(); lastTrigger = null; }
+    };
     document.querySelectorAll(".doc-thumb").forEach(t=>{
-      t.addEventListener("click", ()=>{
-        const full = t.getAttribute("data-full");
-        const thumbImg = t.querySelector("img");
-        if(!thumbImg) return; // no image uploaded yet
-        img.src = full;
-        lb.classList.add("open");
+      if(!t.querySelector("img")) return; // skip placeholders without an uploaded image
+      t.setAttribute("role", "button");
+      t.setAttribute("tabindex", "0");
+      if(!t.getAttribute("aria-label")){
+        const im = t.querySelector("img");
+        t.setAttribute("aria-label", (im && im.alt) ? im.alt : "Document");
+      }
+      t.addEventListener("click", ()=> open(t));
+      t.addEventListener("keydown", e=>{
+        if(e.key === "Enter" || e.key === " "){ e.preventDefault(); open(t); }
       });
     });
-    const close = ()=> lb.classList.remove("open");
+    if(closeBtn){
+      closeBtn.setAttribute("role", "button");
+      closeBtn.setAttribute("tabindex", "0");
+      closeBtn.setAttribute("aria-label", "Close");
+      closeBtn.addEventListener("keydown", e=>{
+        if(e.key === "Enter" || e.key === " "){ e.preventDefault(); close(); }
+      });
+    }
     lb.addEventListener("click", close);
-    document.addEventListener("keydown", e=>{ if(e.key==="Escape") close(); });
+    document.addEventListener("keydown", e=>{ if(e.key === "Escape") close(); });
   }
 
   /* year */
@@ -187,11 +226,60 @@
     document.querySelectorAll("[data-year]").forEach(e=> e.textContent = new Date().getFullYear());
   }
 
+  /* apply centralized site config (js/config.js) */
+  function applyConfig(){
+    const S = window.SITE || {};
+    // Web3Forms key
+    const key = document.querySelector('input[name="access_key"]');
+    if(key && S.web3formsKey) key.value = S.web3formsKey;
+    // phone links + display text (contact page etc.)
+    document.querySelectorAll('[data-site="phone"]').forEach(el=>{
+      if(!S.phone) return;
+      el.setAttribute("href", "tel:" + S.phone);
+      el.textContent = S.phoneDisplay || S.phone;
+    });
+    // phone CTA — set href only, keep translated label
+    document.querySelectorAll('[data-site="phone-cta"]').forEach(el=>{
+      if(S.phone) el.setAttribute("href", "tel:" + S.phone);
+    });
+    // email links + display text
+    document.querySelectorAll('[data-site="email"]').forEach(el=>{
+      if(!S.email) return;
+      el.setAttribute("href", "mailto:" + S.email);
+      el.textContent = S.email;
+    });
+    loadAnalytics(S.analytics || {});
+  }
+
+  /* load GA4 / Meta Pixel only when IDs are configured */
+  function loadAnalytics(a){
+    if(a.ga4){
+      const s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + a.ga4;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){ dataLayer.push(arguments); };
+      gtag("js", new Date());
+      gtag("config", a.ga4);
+    }
+    if(a.metaPixel){
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+      fbq("init", a.metaPixel);
+      fbq("track", "PageView");
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", ()=>{
     if(typeof window.renderChrome === "function"){
       window.renderChrome(document.body.getAttribute("data-page") || "");
     }
     apply(getLang());
+    applyConfig();
     initLangSwitch();
     initHeader();
     initMenu();

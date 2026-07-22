@@ -158,6 +158,27 @@ window.I18N = {
     "lp.cn.f1t":"Multimodal marşrutlar","lp.cn.f1d":"Dəniz, dəmir yolu və hava — yükün həcminə və təcililiyinə görə optimal variant.",
     "lp.cn.f2t":"Gömrük və sənədlər","lp.cn.f2d":"İxrac rəsmiləşdirilməsi, TN VED kodları və Azərbaycanda gömrük müşayiəti tam bizim üzərimizdə.",
     "lp.cn.f3t":"Açar-təslim","lp.cn.f3d":"Fabrik axtarışı, keyfiyyət nəzarəti, ödənişin qorunması və qapıya çatdırılma — bir müqavilə ilə.",
+    /* landing pages — shared blocks */
+    "lp.introt":"Birbaşa və etibarlı daşıma",
+    "lp.f1t":"Multimodal marşrutlar","lp.f1d":"Avtomobil, dəmir yolu, dəniz və hava — yükünüz üçün ən sərfəli marşrut.",
+    "lp.f2t":"Gömrük və sənədlər","lp.f2d":"İxrac rəsmiləşdirilməsi və Azərbaycanda gömrük müşayiəti tam bizim üzərimizdə.",
+    "lp.f3t":"Açar-təslim","lp.f3d":"Sənədlərdən qapıya çatdırılmaya qədər bütün mərhələləri bir müqavilə ilə idarə edirik.",
+    /* landing: Türkiyə → Azərbaycan */
+    "lp.tr.crumb":"Türkiyə → Azərbaycan",
+    "lp.tr.htitle":"Türkiyədən Azərbaycana yük daşıma",
+    "lp.tr.hsub":"Türkiyədən Azərbaycana sürətli avtomobil və hava daşımaları — 5–8 gündə, gömrük rəsmiləşdirilməsi ilə açar-təslim.",
+    /* landing: İran → Azərbaycan */
+    "lp.ir.crumb":"İran → Azərbaycan",
+    "lp.ir.htitle":"İrandan Azərbaycana yük daşıma",
+    "lp.ir.hsub":"İrandan Azərbaycana quru sərhəd üzrə etibarlı avtomobil daşımaları — 4–7 gündə, gömrük müşayiəti ilə.",
+    /* landing: Rusiya → Azərbaycan */
+    "lp.ru.crumb":"Rusiya → Azərbaycan",
+    "lp.ru.htitle":"Rusiyadan Azərbaycana yük daşıma",
+    "lp.ru.hsub":"Rusiyadan Azərbaycana müntəzəm avtomobil və dəmir yolu daşımaları — 6–10 gündə, konsolidasiya və gömrüklə.",
+    /* landing: Qazaxıstan → Azərbaycan */
+    "lp.kz.crumb":"Qazaxıstan → Azərbaycan",
+    "lp.kz.htitle":"Qazaxıstandan Azərbaycana yük daşıma",
+    "lp.kz.hsub":"Qazaxıstandan Azərbaycana Trans-Xəzər dəhlizi üzrə intermodal daşıma — 12–18 gündə, açar-təslim.",
     "ab.valeye":"Prinsiplərimiz",
 
     /* contact page */
@@ -321,6 +342,27 @@ window.I18N = {
     "lp.cn.f1t":"Мультимодальные маршруты","lp.cn.f1d":"Море, ж/д и авиа — оптимальный вариант под объём и срочность груза.",
     "lp.cn.f2t":"Таможня и документы","lp.cn.f2d":"Экспортное оформление, коды ТН ВЭД и таможенное сопровождение в Азербайджане — полностью на нас.",
     "lp.cn.f3t":"Под ключ","lp.cn.f3d":"Поиск фабрики, контроль качества, защита платежа и доставка до двери — по одному договору.",
+    /* landing pages — shared blocks */
+    "lp.introt":"Прямая и надёжная доставка",
+    "lp.f1t":"Мультимодальные маршруты","lp.f1d":"Авто, ж/д, море и авиа — самый выгодный маршрут для вашего груза.",
+    "lp.f2t":"Таможня и документы","lp.f2d":"Экспортное оформление и таможенное сопровождение в Азербайджане — полностью на нас.",
+    "lp.f3t":"Под ключ","lp.f3d":"От документов до доставки до двери — все этапы по одному договору.",
+    /* landing: Турция → Азербайджан */
+    "lp.tr.crumb":"Турция → Азербайджан",
+    "lp.tr.htitle":"Доставка грузов из Турции в Азербайджан",
+    "lp.tr.hsub":"Быстрые авто- и авиаперевозки из Турции в Азербайджан — за 5–8 дней, под ключ с таможней.",
+    /* landing: Иран → Азербайджан */
+    "lp.ir.crumb":"Иран → Азербайджан",
+    "lp.ir.htitle":"Доставка грузов из Ирана в Азербайджан",
+    "lp.ir.hsub":"Надёжные автоперевозки из Ирана в Азербайджан через сухопутную границу — за 4–7 дней, с таможенным сопровождением.",
+    /* landing: Россия → Азербайджан */
+    "lp.ru.crumb":"Россия → Азербайджан",
+    "lp.ru.htitle":"Доставка грузов из России в Азербайджан",
+    "lp.ru.hsub":"Регулярные авто- и ж/д перевозки из России в Азербайджан — за 6–10 дней, с консолидацией и таможней.",
+    /* landing: Казахстан → Азербайджан */
+    "lp.kz.crumb":"Казахстан → Азербайджан",
+    "lp.kz.htitle":"Доставка грузов из Казахстана в Азербайджан",
+    "lp.kz.hsub":"Интермодальная доставка из Казахстана в Азербайджан по Транскаспийскому коридору — за 12–18 дней, под ключ.",
     "ab.valeye":"Наши принципы",
 
     "ct.crumb":"Контакты","ct.htitle":"Свяжитесь с нами","ct.hsub":"Отправьте заявку — мы свяжемся с вами в течение 24 часов.",
@@ -483,6 +525,27 @@ window.I18N = {
     "lp.cn.f1t":"Multimodal routes","lp.cn.f1d":"Sea, rail and air — the optimal option for your cargo volume and urgency.",
     "lp.cn.f2t":"Customs & documents","lp.cn.f2d":"Export clearance, HS codes and customs support in Azerbaijan — fully handled by us.",
     "lp.cn.f3t":"Turnkey","lp.cn.f3d":"Factory search, quality control, payment protection and door delivery — under one contract.",
+    /* landing pages — shared blocks */
+    "lp.introt":"Direct and reliable delivery",
+    "lp.f1t":"Multimodal routes","lp.f1d":"Road, rail, sea and air — the most cost-effective route for your cargo.",
+    "lp.f2t":"Customs & documents","lp.f2d":"Export clearance and customs support in Azerbaijan — fully handled by us.",
+    "lp.f3t":"Turnkey","lp.f3d":"From documents to door delivery — all stages under one contract.",
+    /* landing: Türkiye → Azerbaijan */
+    "lp.tr.crumb":"Türkiye → Azerbaijan",
+    "lp.tr.htitle":"Cargo delivery from Türkiye to Azerbaijan",
+    "lp.tr.hsub":"Fast road and air transport from Türkiye to Azerbaijan — in 5–8 days, turnkey with customs.",
+    /* landing: Iran → Azerbaijan */
+    "lp.ir.crumb":"Iran → Azerbaijan",
+    "lp.ir.htitle":"Cargo delivery from Iran to Azerbaijan",
+    "lp.ir.hsub":"Reliable road transport from Iran to Azerbaijan via land border — in 4–7 days, with customs support.",
+    /* landing: Russia → Azerbaijan */
+    "lp.ru.crumb":"Russia → Azerbaijan",
+    "lp.ru.htitle":"Cargo delivery from Russia to Azerbaijan",
+    "lp.ru.hsub":"Regular road and rail transport from Russia to Azerbaijan — in 6–10 days, with consolidation and customs.",
+    /* landing: Kazakhstan → Azerbaijan */
+    "lp.kz.crumb":"Kazakhstan → Azerbaijan",
+    "lp.kz.htitle":"Cargo delivery from Kazakhstan to Azerbaijan",
+    "lp.kz.hsub":"Intermodal delivery from Kazakhstan to Azerbaijan via the Trans-Caspian corridor — in 12–18 days, turnkey.",
     "ab.valeye":"Our principles",
 
     "ct.crumb":"Contact","ct.htitle":"Get in touch","ct.hsub":"Send a request — we'll get back to you within 24 hours.",

@@ -193,6 +193,8 @@ window.I18N = {
     "faq.a5":"Hər ikisini. İstəsəniz yalnız daşımanı, istəsəniz tam dövrü — mal/fabrik axtarışı, keyfiyyət nəzarəti, ödəniş və çatdırılma — açar-təslim həyata keçiririk.",
     "faq.q6":"Yük zədələnərsə və ya uyğunsuzluq olarsa nə olur?",
     "faq.a6":"Təchizatçı ilə mübahisələri sizin adınızdan aparırıq və ödənişin qorunmasına çalışırıq. Yükləmədən əvvəl keyfiyyət yoxlaması bu riskləri minimuma endirir.",
+    "ct.consent":"Şəxsi məlumatlarımın <a href='privacy.html'>məxfilik siyasətinə</a> uyğun emalına razıyam.",
+    "e404.h":"Səhifə tapılmadı","e404.sub":"Axtardığınız səhifə mövcud deyil və ya köçürülüb.","e404.btn":"Ana səhifəyə qayıt",
     "ab.valeye":"Prinsiplərimiz",
 
     /* contact page */
@@ -391,6 +393,8 @@ window.I18N = {
     "faq.a5":"И то, и другое. Можем сделать только доставку, а можем полный цикл — поиск товара/фабрики, контроль качества, оплату и доставку под ключ.",
     "faq.q6":"Что если груз повреждён или не соответствует?",
     "faq.a6":"Ведём споры с поставщиком от вашего имени и добиваемся защиты платежа. Проверка качества до отгрузки сводит эти риски к минимуму.",
+    "ct.consent":"Согласен на обработку персональных данных согласно <a href='privacy.html'>политике конфиденциальности</a>.",
+    "e404.h":"Страница не найдена","e404.sub":"Запрашиваемая страница не существует или была перемещена.","e404.btn":"На главную",
     "ab.valeye":"Наши принципы",
 
     "ct.crumb":"Контакты","ct.htitle":"Свяжитесь с нами","ct.hsub":"Отправьте заявку — мы свяжемся с вами в течение 24 часов.",
@@ -588,6 +592,8 @@ window.I18N = {
     "faq.a5":"Both. We can do shipping only, or the full cycle — product/factory search, quality control, payment and delivery, turnkey.",
     "faq.q6":"What if the cargo is damaged or non-conforming?",
     "faq.a6":"We handle disputes with the supplier on your behalf and pursue payment protection. Pre-shipment quality checks minimize these risks.",
+    "ct.consent":"I agree to the processing of my personal data per the <a href='privacy.html'>privacy policy</a>.",
+    "e404.h":"Page not found","e404.sub":"The page you are looking for doesn't exist or has moved.","e404.btn":"Back to home",
     "ab.valeye":"Our principles",
 
     "ct.crumb":"Contact","ct.htitle":"Get in touch","ct.hsub":"Send a request — we'll get back to you within 24 hours.",

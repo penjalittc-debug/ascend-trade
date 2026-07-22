@@ -2,7 +2,7 @@
    ASCEND — Flat world map with animated routes to/from Azerbaijan (D3)
    ========================================================================== */
 (function () {
-  var WORLD_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+  var WORLD_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json";
 
   var NAMES = {
     az: { china:"Çin", turkey:"Türkiyə", iran:"İran", russia:"Rusiya", kz:"Qazaxıstan", hub:"Azərbaycan" },
@@ -34,7 +34,7 @@
       .attr("viewBox", "0 0 " + w + " " + h)
       .attr("preserveAspectRatio", "xMidYMid meet");
 
-    var raf = [];
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var vis = true;
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(function (e) { vis = e[0].isIntersecting; }, { threshold: 0.01 }).observe(el);
@@ -65,6 +65,7 @@
           .attr("fill", "none").attr("stroke", color)
           .attr("stroke-width", 1.4).attr("stroke-dasharray", "3 5")
           .attr("stroke-linecap", "round").attr("opacity", 0.7);
+        if (reduce) return;
         var node = p.node(); var len = node.getTotalLength() || 1;
         var dot = svg.append("circle").attr("r", r).attr("fill", "#fff");
         var off = Math.random();
@@ -74,7 +75,7 @@
             var pt = node.getPointAtLength(off * len);
             dot.attr("cx", pt.x).attr("cy", pt.y);
           }
-          raf.push(requestAnimationFrame(tick));
+          requestAnimationFrame(tick);
         }
         tick();
       }
@@ -86,7 +87,7 @@
       ORIGINS.concat([HUB]).forEach(function (pt) {
         var xy = proj(pt.ll); if (!xy) return;
         var g = svg.append("g").attr("data-k", pt.k);
-        if (pt.k === "hub") {
+        if (pt.k === "hub" && !reduce) {
           var ring = g.append("circle").attr("cx", xy[0]).attr("cy", xy[1]).attr("r", 6)
             .attr("fill", "none").attr("stroke", "#c23439").attr("stroke-width", 1.5).attr("opacity", 0.7);
           var t0 = performance.now();
@@ -95,7 +96,7 @@
               var s = (performance.now() - t0) % 1800 / 1800;
               ring.attr("r", 6 + s * 10).attr("opacity", 0.7 * (1 - s));
             }
-            raf.push(requestAnimationFrame(pulse));
+            requestAnimationFrame(pulse);
           })();
         }
         g.append("circle").attr("cx", xy[0]).attr("cy", xy[1])

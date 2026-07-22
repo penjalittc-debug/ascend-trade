@@ -247,6 +247,11 @@
     document.querySelectorAll('[data-site="phone-cta"]').forEach(el=>{
       if(S.phone) el.setAttribute("href", "tel:" + S.phone);
     });
+    // WhatsApp CTA — set wa.me href from config; hide button if not configured
+    document.querySelectorAll('[data-site="whatsapp-cta"]').forEach(el=>{
+      if(S.whatsapp){ el.setAttribute("href", "https://wa.me/" + S.whatsapp); }
+      else { el.style.display = "none"; }
+    });
     // email links + display text
     document.querySelectorAll('[data-site="email"]').forEach(el=>{
       if(!S.email) return;
@@ -279,6 +284,20 @@
     }
   }
 
+  /* fire analytics events on WhatsApp / phone clicks — importable as Google Ads conversions */
+  function initTracking(){
+    document.addEventListener("click", e=>{
+      const a = e.target.closest ? e.target.closest("a") : null;
+      if(!a) return;
+      const href = a.getAttribute("href") || "";
+      if(a.matches('[data-site="whatsapp-cta"]') || href.indexOf("wa.me") !== -1 || href.indexOf("api.whatsapp.com") !== -1){
+        if(window.gtag) gtag("event", "contact_whatsapp", { method: "whatsapp" });
+      } else if(href.indexOf("tel:") === 0){
+        if(window.gtag) gtag("event", "contact_phone", { method: "phone" });
+      }
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", ()=>{
     if(typeof window.renderChrome === "function"){
       window.renderChrome(document.body.getAttribute("data-page") || "");
@@ -294,5 +313,6 @@
     initForm();
     initLightbox();
     initYear();
+    initTracking();
   });
 })();

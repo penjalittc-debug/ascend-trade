@@ -20,6 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Ascend Trade & Logistics","image":"https://ascend.az/assets/logo-main.png","url":"https://ascend.az/","telephone":"+994516656575","email":"Penjalittc@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Bakı","addressCountry":"AZ"},"openingHours":"Mo-Fr 09:00-18:00","areaServed":["AZ","CN","TR","IR","RU","KZ"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana səhifə","item":"https://ascend.az/"},{"@type":"ListItem","position":2,"name":"Əlaqə","item":"https://ascend.az/contact"}]}</script>
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -70,10 +71,10 @@
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <div class="field"><label data-i18n="ct.fname">Ad, Soyad</label><input type="text" name="name" required></div>
-          <div class="field"><label data-i18n="ct.femail">E-poçt</label><input type="email" name="email" required></div>
+          <div class="field"><label data-i18n="ct.fphone">Telefon</label><input type="tel" name="phone" required></div>
         </div>
         <div class="form-row">
-          <div class="field"><label data-i18n="ct.fphone">Telefon</label><input type="tel" name="phone"></div>
+          <div class="field"><label><span data-i18n="ct.femail">E-poçt</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><input type="email" name="email"></div>
           <div class="field"><label data-i18n="ct.fsubject">Mövzu</label>
             <select name="service">
               <option value="FEA consulting" data-i18n="ct.opt1">XİF konsaltinq</option>
@@ -84,7 +85,7 @@
             </select>
           </div>
         </div>
-        <div class="field"><label data-i18n="ct.fmsg">Mesajınız</label><textarea name="message" required></textarea></div>
+        <div class="field"><label><span data-i18n="ct.fmsg">Mesajınız</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><textarea name="message"></textarea></div>
         <div class="field field-consent">
           <label style="display:flex;align-items:flex-start;gap:10px;font-size:.85rem;font-weight:400;color:var(--slate);cursor:pointer">
             <input type="checkbox" name="consent" required style="width:auto;margin-top:3px;flex:none;accent-color:var(--navy)">

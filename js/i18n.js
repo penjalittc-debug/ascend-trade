@@ -126,6 +126,8 @@ window.I18N = {
     "ab.mv1t":"Missiyamız","ab.mv1d":"Azərbaycan sahibkarları üçün xarici ticarəti aydın, təhlükəsiz və sərfəli etmək.",
     "ab.mv2t":"Vizyonumuz","ab.mv2d":"Regionda XİF və logistika üzrə ən etibarlı konsaltinq tərəfdaşı olmaq.",
     "ab.valt":"Dəyərlərimiz","ab.val1":"Şəffaflıq","ab.val1d":"Hər xərc və mərhələ açıqdır.","ab.val2":"Cavabdehlik","ab.val2d":"Verdiyimiz sözün arxasında dururuq.","ab.val3":"Nəticə","ab.val3d":"Prosesi deyil, nəticəni satırıq.","ab.val4":"Tərəfdaşlıq","ab.val4d":"Uzunmüddətli münasibət qururuq.",
+    "hero.ctawa":"WhatsApp-da yazın","ct.optional":"istəyə bağlı",
+    "team.eye":"Komanda","team.title":"Ascend-i idarə edən komanda","team.sub":"Çin, Azərbaycan və beynəlxalq bazarlarda təcrübəli mütəxəssislər.","team.n1":"Pencəli Əzizov","team.r1":"Baş direktor (CEO), təsisçi","team.n2":"Çao Zhiming","team.r2":"Şanxay ofisinin direktoru, şərik","team.n3":"Lisa Vey","team.r3":"İqtisadiyyat üzrə direktor","team.soonn":"Tezliklə","team.soonr":"Komandaya qoşulur",
 
     /* services page */
     "sv.crumb":"Xidmətlər","sv.htitle":"Xarici ticarətin tam spektrli xidmətləri",
@@ -387,6 +389,8 @@ window.I18N = {
     "ab.mv1t":"Наша миссия","ab.mv1d":"Сделать внешнюю торговлю понятной, безопасной и выгодной для предпринимателей Азербайджана.",
     "ab.mv2t":"Наше видение","ab.mv2d":"Стать самым надёжным консалтинговым партнёром в сфере ВЭД и логистики в регионе.",
     "ab.valt":"Наши ценности","ab.val1":"Прозрачность","ab.val1d":"Каждый расход и этап открыты.","ab.val2":"Ответственность","ab.val2d":"Держим слово и отвечаем за результат.","ab.val3":"Результат","ab.val3d":"Продаём результат, а не процесс.","ab.val4":"Партнёрство","ab.val4d":"Строим долгосрочные отношения.",
+    "hero.ctawa":"Написать в WhatsApp","ct.optional":"необязательно",
+    "team.eye":"Команда","team.title":"Команда, которая ведёт Ascend","team.sub":"Опытные специалисты в Китае, Азербайджане и на международных рынках.","team.n1":"Пенджали Азизов","team.r1":"Генеральный директор (CEO), основатель","team.n2":"Чао Чжимин","team.r2":"Директор офиса в Шанхае, партнёр","team.n3":"Лиза Вей","team.r3":"Директор по экономике","team.soonn":"Скоро","team.soonr":"Присоединяется к команде",
 
     "sv.crumb":"Услуги","sv.htitle":"Полный спектр услуг внешней торговли",
     "sv.hsub":"От консалтинга до доставки — доверьте все процессы одной команде.",
@@ -645,6 +649,8 @@ window.I18N = {
     "ab.mv1t":"Our mission","ab.mv1d":"To make foreign trade clear, safe and profitable for entrepreneurs in Azerbaijan.",
     "ab.mv2t":"Our vision","ab.mv2d":"To become the most reliable consulting partner in foreign trade and logistics in the region.",
     "ab.valt":"Our values","ab.val1":"Transparency","ab.val1d":"Every cost and stage is open.","ab.val2":"Accountability","ab.val2d":"We keep our word and own the result.","ab.val3":"Results","ab.val3d":"We sell results, not process.","ab.val4":"Partnership","ab.val4d":"We build long-term relationships.",
+    "hero.ctawa":"Message on WhatsApp","ct.optional":"optional",
+    "team.eye":"Team","team.title":"The team behind Ascend","team.sub":"Experienced specialists across China, Azerbaijan and international markets.","team.n1":"Pancali Azizov","team.r1":"CEO, Founder","team.n2":"Chao Zhiming","team.r2":"Director, Shanghai office · Partner","team.n3":"Lisa Vey","team.r3":"Director of Economics","team.soonn":"Coming soon","team.soonr":"Joining the team",
 
     "sv.crumb":"Services","sv.htitle":"A full spectrum of foreign-trade services",
     "sv.hsub":"From consulting to delivery — entrust every process to one team.",

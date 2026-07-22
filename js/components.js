@@ -4,11 +4,11 @@
 (function(){
   const PAGES = [
     {href:"/",              key:"nav.home",       id:"home"},
-    {href:"about.html",     key:"nav.about",      id:"about"},
-    {href:"services.html",  key:"nav.services",   id:"services"},
-    {href:"directions.html",key:"nav.directions", id:"directions"},
-    {href:"blog.html",      key:"nav.blog",       id:"blog"},
-    {href:"contact.html",   key:"nav.contact",    id:"contact"}
+    {href:"/about",     key:"nav.about",      id:"about"},
+    {href:"/services",  key:"nav.services",   id:"services"},
+    {href:"/directions",key:"nav.directions", id:"directions"},
+    {href:"/blog",      key:"nav.blog",       id:"blog"},
+    {href:"/contact",   key:"nav.contact",    id:"contact"}
   ];
   const ICON = {
     chevron:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>',
@@ -48,7 +48,7 @@
             <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language"><span class="lang-cur">🇦🇿 AZ</span> ${ICON.chevron}</button>
             <div class="lang-menu">${langBtns}</div>
           </div>
-          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta"></a>
+          <a class="btn btn-primary" href="/contact" data-i18n="nav.cta"></a>
           <button class="burger" aria-label="Menu" aria-controls="mobile-nav" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
       </div>
@@ -60,13 +60,13 @@
         <button data-lang="ru"><span class="flag">🇷🇺</span> RU</button>
         <button data-lang="en"><span class="flag">🇬🇧</span> EN</button>
       </div>
-      <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta"></a>
+      <a class="btn btn-primary" href="/contact" data-i18n="nav.cta"></a>
     </div>`;
   }
 
   function footer(){
     const S = window.SITE || {};
-    const svc = [["ft.svc1","services.html"],["ft.svc2","services.html"],["ft.svc3","services.html"],["ft.svc4","services.html"]]
+    const svc = [["ft.svc1","/services"],["ft.svc2","/services"],["ft.svc3","/services"],["ft.svc4","/services"]]
       .map(([k,h])=>`<li><a href="${h}" data-i18n="${k}"></a></li>`).join("");
     const nav = PAGES.map(p=>`<li><a href="${p.href}" data-i18n="${p.key}"></a></li>`).join("");
 
@@ -109,7 +109,7 @@
         </div>
         <div class="footer-bottom">
           <span>© <span data-year></span> Ascend Trade & Logistics. <span data-i18n="ft.rights"></span></span>
-          <a href="privacy.html" data-i18n="ft.privacy"></a>
+          <a href="/privacy" data-i18n="ft.privacy"></a>
         </div>
       </div>
     </footer>`;

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>İstiqamətlər — Çin, Rusiya, Qazaxıstan → Azərbaycan | Ascend Trade & Logistics</title>
-<meta name="description" content="Çin, Rusiya və Qazaxıstandan Azərbaycana yük daşıma marşrutları, təxmini tranzit müddətləri və nəqliyyat növləri.">
+<meta name="description" content="Çin, Rusiya və Qazaxıstandan Azərbaycana marşrutlar: hər dəhliz üzrə real çatdırılma pəncərəsi, nəyin müddətə təsir etdiyi və bəyannamə sizin şirkət adına.">
 <link rel="canonical" href="https://ascend.az/directions">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-c.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-c.png">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Ascend Trade & Logistics">
 <meta property="og:title" content="Daşıma istiqamətləri — Ascend Trade & Logistics">
-<meta property="og:description" content="Çin, Rusiya və Qazaxıstandan Azərbaycana yük daşıma.">
+<meta property="og:description" content="Hər dəhliz üzrə real çatdırılma pəncərəsi və müddətə təsir edən amillər: dəmir yolu, avtomobil, dəniz, hava.">
 <meta property="og:url" content="https://ascend.az/directions">
 <meta property="og:image" content="https://ascend.az/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -37,7 +37,34 @@
   .db-pill .v{font-family:var(--ff-head);font-weight:700;color:var(--navy);font-size:1.05rem;margin-top:2px}
   .db-modes{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
   .db-modes span{font-size:.8rem;background:rgba(31,52,90,.07);color:var(--navy);padding:6px 13px;border-radius:8px;font-weight:600;font-family:var(--ff-head)}
-  @media(max-width:900px){.dir-block{grid-template-columns:1fr;gap:28px}.dir-block.rev .db-text{order:0}}
+  /* transit-time table (dr.tt.*) — на десктопе таблица, на мобильном карточки */
+  .tt-wrap{border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;background:#fff}
+  .tt{width:100%;border-collapse:collapse}
+  .tt th,.tt td{padding:18px 22px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+  .tt thead th{background:var(--bg-soft);font-family:var(--ff-head);font-weight:600;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-light)}
+  .tt tbody th{font-family:var(--ff-head);font-weight:600;font-size:.97rem;color:var(--navy);width:36%}
+  .tt tbody td{font-size:.94rem;color:var(--slate)}
+  .tt tbody tr:last-child th,.tt tbody tr:last-child td{border-bottom:none}
+  .tt .tt-d{font-family:var(--ff-head);font-weight:700;font-size:1.02rem;color:var(--navy);white-space:nowrap}
+  .tt-k{display:none}
+  .tt-note{max-width:680px;margin-top:24px;font-size:.95rem}
+  .tt-upd{max-width:680px;margin-top:10px;font-size:.82rem;color:var(--slate-light)}
+  .tt-why{max-width:680px;margin-top:46px}
+  .tt-why h3{margin-bottom:14px}
+  .tt-why p+p{margin-top:14px}
+  @media(max-width:900px){
+    .dir-block{grid-template-columns:1fr;gap:28px}.dir-block.rev .db-text{order:0}
+    .tt-wrap{border:none;border-radius:0;background:transparent;overflow:visible}
+    .tt,.tt tbody,.tt tr,.tt th,.tt td{display:block;width:auto}
+    .tt thead{display:none}
+    .tt tbody tr{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px}
+    .tt tbody tr:last-child{margin-bottom:0}
+    .tt th,.tt td{padding:0;border-bottom:none}
+    .tt tbody th{width:auto;margin-bottom:14px}
+    .tt tbody td+td{margin-top:14px}
+    .tt .tt-d{white-space:normal}
+    .tt-k{display:block;font-family:var(--ff-head);font-weight:600;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-light);margin-bottom:3px}
+  }
 </style>
 </head>
 <body data-page="directions">
@@ -102,6 +129,67 @@
         </div>
         <a class="more" href="/qazaxistandan-azerbaycana-yuk-dasima" style="margin-top:18px;display:inline-block"><span data-i18n="hs.more">Ətraflı</span> →</a>
       </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TRANSIT TIMES -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow" data-i18n="dr.tt.eyebrow">Müddətlər</span>
+      <h2 data-i18n="dr.tt.title">Hər dəhliz üzrə real çatdırılma pəncərəsi</h2>
+      <p data-i18n="dr.tt.sub">Cədvəldəki müddətlər zavodun qapısından Bakıdakı anbaradək sayılır: partiyanın yığılması, yolda keçən vaxt və gömrük daxil. Bunlar bazar üzrə tipik pəncərələrdir, vəd deyil — sizin yükünüz üçün tarixlər hesablamada verilir və müqavilədə sabitlənir.</p>
+    </div>
+
+    <div class="tt-wrap" data-reveal>
+      <table class="tt">
+        <thead>
+          <tr>
+            <th scope="col" data-i18n="dr.tt.h1">Dəhliz</th>
+            <th scope="col" data-i18n="dr.tt.h2">Zavodun qapısından Bakıdakı anbaradək</th>
+            <th scope="col" data-i18n="dr.tt.h3">Müddətə nə təsir edir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" data-i18n="dr.tt.r1a">Dəmir yolu, tam konteyner (FCL) · Sian → Aktau/Kuryk → bərə → Ələt</th>
+            <td><span class="tt-k" data-i18n="dr.tt.h2">Zavodun qapısından Bakıdakı anbaradək</span><span class="tt-d" data-i18n="dr.tt.r1b">22–32 gün</span></td>
+            <td><span class="tt-k" data-i18n="dr.tt.h3">Müddətə nə təsir edir</span><span data-i18n="dr.tt.r1c">Zavoddan anbara gətirmə, Xəzər bərəsinin növbəsi, Xorqosda rels eninin dəyişdirilməsi</span></td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="dr.tt.r2a">Dəmir yolu, yığma yük (LCL)</th>
+            <td><span class="tt-k" data-i18n="dr.tt.h2">Zavodun qapısından Bakıdakı anbaradək</span><span class="tt-d" data-i18n="dr.tt.r2b">26–38 gün</span></td>
+            <td><span class="tt-k" data-i18n="dr.tt.h3">Müddətə nə təsir edir</span><span data-i18n="dr.tt.r2c">Partiyanın anbarda yığılması — adətən 7–21 gün; Bakıda konteynerin boşaldılması</span></td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="dr.tt.r3a">Avtomobil · Urumçi → Xorqos → Aktau → bərə → Ələt</th>
+            <td><span class="tt-k" data-i18n="dr.tt.h2">Zavodun qapısından Bakıdakı anbaradək</span><span class="tt-d" data-i18n="dr.tt.r3b">24–33 gün</span></td>
+            <td><span class="tt-k" data-i18n="dr.tt.h3">Müddətə nə təsir edir</span><span data-i18n="dr.tt.r3c">Şərqi Çindən Urumçiyə xətti reys, bərə növbəsi, sərhəd keçidində gözləmə</span></td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="dr.tt.r4a">Dəniz · Cənubi Çin limanları → Poti → avtomobillə Bakıya</th>
+            <td><span class="tt-k" data-i18n="dr.tt.h2">Zavodun qapısından Bakıdakı anbaradək</span><span class="tt-d" data-i18n="dr.tt.r4b">40–55 gün</span></td>
+            <td><span class="tt-k" data-i18n="dr.tt.h3">Müddətə nə təsir edir</span><span data-i18n="dr.tt.r4c">Xəttin cədvəli və aktarmalar, Poti limanında emal, Gürcüstan sərhədi</span></td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="dr.tt.r5a">Hava yolu</th>
+            <td><span class="tt-k" data-i18n="dr.tt.h2">Zavodun qapısından Bakıdakı anbaradək</span><span class="tt-d" data-i18n="dr.tt.r5b">7–12 gün</span></td>
+            <td><span class="tt-k" data-i18n="dr.tt.h3">Müddətə nə təsir edir</span><span data-i18n="dr.tt.r5c">Reysdə yer tapılması və bron, aktarma, Bakıda gömrük</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="tt-note" data-reveal data-i18n="dr.tt.note">Müddəti zavodun qapısından sizin anbaradək sayırıq: gətirmə, yığılma, yol və gömrük daxil. Başqa rəqəmlərlə müqayisə edəndə soruşun, hansı nöqtədən hansına qədər sayılır: «stansiyadan stansiyaya» müddət 8–31 gün qısa görünür, çünki zavoddan gətirməni, partiyanın yığılmasını və rəsmiləşdirməni içinə almır.</p>
+    <p class="tt-upd" data-reveal data-i18n="dr.tt.upd">Müddət pəncərələri 24.08.2026 tarixinə uyğundur.</p>
+
+    <div class="tt-why" data-reveal>
+      <h3 data-i18n="dr.tt.wt">Niyə dəqiq tarix vəd etmirik</h3>
+      <p data-i18n="dr.tt.wd1">Orta dəhlizdə bir həlqə var ki, onu nə pulla sürətləndirmək, nə də plana salmaq olur — Xəzər bərəsi. Bərələr həftədə 2–4 dəfə gedir, keçidin özü 18–24 saat çəkir, növbə isə mövsümdən və hava şəraitindən asılı olaraq bir neçə günə uzanır. Ona görə müqavilədə yola salma tarixini sabitləyirik, çatmanı isə pəncərə ilə göstəririk. Bərədə və ya sərhəddə gecikmə olarsa, həmin gün xəbər verib alternativ marşrut təklif edirik. Bir gözəl tarix deyib sonra onu izah etməkdənsə, əvvəldən düz rəqəmi demək daha faydalıdır.</p>
+      <p data-i18n="dr.tt.wd2">İkinci amil təqvimdir. Çin Yeni ili ərəfəsində zavodlar sifarişləri bağlayır, sonra 1–2 həftə dayanır, işə düşəndə isə növbə yaranır: 2027-ci ildə bayram 6 fevrala düşür. Bu pəncərəyə düşən sifarişi əvvəlcədən planlaşdırırıq — ya bayramdan əvvəl yola salırıq, ya da şüurlu şəkildə sonraya keçiririk.</p>
+      <a class="more" href="/contact" style="margin-top:18px;display:inline-block"><span data-i18n="dr.tt.cta">Yükünüz üçün hesablama alın</span> →</a>
     </div>
 
   </div>

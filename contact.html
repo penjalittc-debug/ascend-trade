@@ -68,15 +68,16 @@
         <input type="hidden" name="access_key" value=""><!-- заполняется из js/config.js (SITE.web3formsKey) -->
         <input type="hidden" name="subject" value="Yeni sorğu — Ascend Trade & Logistics">
         <input type="hidden" name="from_name" value="Ascend Trade & Logistics">
+        <input type="hidden" name="consent_version" value="2026-08-24">
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
-          <div class="field"><label data-i18n="ct.fname">Ad, Soyad</label><input type="text" name="name" required></div>
-          <div class="field"><label data-i18n="ct.fphone">Telefon</label><input type="tel" name="phone" required></div>
+          <div class="field"><label for="ct-name" data-i18n="ct.fname">Ad, Soyad</label><input type="text" id="ct-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="ct-phone" data-i18n="ct.fphone">Telefon</label><input type="tel" id="ct-phone" name="phone" autocomplete="tel" required></div>
         </div>
         <div class="form-row">
-          <div class="field"><label><span data-i18n="ct.femail">E-poçt</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><input type="email" name="email"></div>
-          <div class="field"><label data-i18n="ct.fsubject">Mövzu</label>
-            <select name="service">
+          <div class="field"><label for="ct-email"><span data-i18n="ct.femail">E-poçt</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><input type="email" id="ct-email" name="email" autocomplete="email"></div>
+          <div class="field"><label for="ct-service" data-i18n="ct.fsubject">Mövzu</label>
+            <select id="ct-service" name="service">
               <option value="FEA consulting" data-i18n="ct.opt1">XİF konsaltinq</option>
               <option value="Product sourcing" data-i18n="ct.opt2">Malların axtarışı</option>
               <option value="Manufacturer search" data-i18n="ct.opt3">İstehsalçı tapılması</option>
@@ -85,16 +86,16 @@
             </select>
           </div>
         </div>
-        <div class="field"><label><span data-i18n="ct.fmsg">Mesajınız</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><textarea name="message"></textarea></div>
+        <div class="field"><label for="ct-message"><span data-i18n="ct.fmsg">Mesajınız</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><textarea id="ct-message" name="message"></textarea></div>
         <div class="field field-consent">
           <label style="display:flex;align-items:flex-start;gap:10px;font-size:.85rem;font-weight:400;color:var(--slate);cursor:pointer">
             <input type="checkbox" name="consent" required style="width:auto;margin-top:3px;flex:none;accent-color:var(--navy)">
-            <span data-i18n="ct.consent">Adım, telefonum, e-poçtum və müraciət mətnimin bu sorğuya cavab vermək üçün emalına razıyam, o cümlədən məlumatların Web3Forms (ABŞ) xidmətinə ötürülməsinə. <a href='/privacy'>Necə emal edirik</a>.</span>
+            <span data-i18n="ct.consent">Adım, telefonum, e-poçtum və müraciət mətnimin bu sorğuya cavab vermək üçün emalına razıyam, o cümlədən məlumatların Web3Forms (ABŞ) xidmətinə ötürülməsinə. <a href='/privacy' target='_blank' rel='noopener'>Necə emal edirik</a>.</span>
           </label>
         </div>
         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" data-i18n="ct.fsend">Sorğunu göndər</button>
-        <p class="form-status" data-status hidden></p>
-        <p class="form-note" style="font-size:.82rem;margin-top:14px;text-align:center" data-i18n="ct.note">Məlumatların operatoru — Ascend Consulting MMC. Sorğu Web3Forms (ABŞ) vasitəsilə şirkətin poçt qutusuna gəlir və müraciət tarixindən 24 ay saxlanılır, sonra silinir. Razılığı istənilən vaxt Penjalittc@gmail.com ünvanına yazaraq geri götürə bilərsiniz — 7 iş günü ərzində cavab veririk. Tam mətn — <a href='/privacy'>məxfilik siyasətində</a>.</p>
+        <p class="form-status" data-status role="status" aria-live="polite" hidden></p>
+        <p class="form-note" style="font-size:.82rem;margin-top:14px;text-align:left" data-i18n="ct.note">Məlumatların operatoru — Ascend Consulting MMC. Sorğu Web3Forms (ABŞ) vasitəsilə şirkətin poçt qutusuna gəlir və müraciət tarixindən 24 ay saxlanılır, sonra silinir. Razılığı istənilən vaxt <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a> ünvanına yazaraq geri götürə bilərsiniz — 7 iş günü ərzində cavab veririk. Tam mətn — <a href='/privacy' target='_blank' rel='noopener'>məxfilik siyasətində</a>.</p>
       </form>
     </div>
   </div>

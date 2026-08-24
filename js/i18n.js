@@ -28,12 +28,27 @@ window.I18N = {
 
     /* home services */
     "hs.eyebrow":"Nə edirik","hs.title":"Çinlə ticarətin tam dövrü — vasitəçisiz",
-    "hs.sub":"Təchizatçının axtarışından və öz brendiniz altında istehsaldan tutmuş təhlükəsiz sövdələşmə və açar-təslim çatdırılmaya qədər.",
+    "hs.sub":"Bu dörd xidməti ayrıca da, bir zəncir kimi də götürmək olar: axtarış, istehsal, sövdələşmənin müşayiəti, daşıma və gömrük.",
     "hs.c1t":"Mal və təchizatçı axtarışı","hs.c1d":"Lazımi malı və yoxlanılmış istehsalçını birbaşa tapırıq, qiymət-keyfiyyəti müqayisə edirik, nümunə sifariş edib yoxlayırıq.",
     "hs.c2t":"Çində istehsal (OEM/ODM)","hs.c2d":"Məhsulun öz brendiniz altında istehsalı: zavodlarla danışıqlar, keyfiyyət nəzarəti və istehsal auditi.",
     "hs.c3t":"Sövdələşmənin müşayiəti","hs.c3d":"Zavodun ödənişdən əvvəl yoxlanılması, yükləmədən əvvəl partiyanın nəzarəti, müqavilədə mərhələli ödəniş şərtləri və qüsur halında təchizatçı ilə danışıqlar.",
     "hs.c4t":"Logistika və gömrük","hs.c4d":"Birbaşa müqavilələrlə multimodal daşıma və Çin, Rusiya, Qazaxıstandan gömrük rəsmiləşdirilməsi.",
     "hs.more":"Ətraflı",
+
+    /* home: idxalın forması (white import) */
+    "wi.eyebrow":"İdxalın forması",
+    "wi.title":"Malı iki cür gətirmək olar. Fərq — sizdə qalan sənədlərdədir",
+    "wi.sub":"Kimin necə işlədiyini qiymətləndirmirik. Sadəcə göstəririk: rəsmi idxalda nə alırsınız və hansı risk sizin üzərinizdə qalır. Seçim sizindir.",
+    "wi.1t":"Bəyannamə sizin şirkət adına",
+    "wi.1d":"İdxal bəyannaməsi sizin şirkətiniz adına rəsmiləşdirilir, onu Dövlət Gömrük Komitəsinin reyestrindəki gömrük təmsilçisi təqdim edir. Müqavilə, hesab-faktura, ixrac bəyannaməsi, daşıma və ödəniş sənədləri — tam paket sizdə qalır. Yük başqa şəxsin adına rəsmiləşdirilirsə, bu sənədlərin heç biri sizdə olmur.",
+    "wi.2t":"Gömrük dəyəri necə yoxlanılır",
+    "wi.2d":"Gömrük bəyan edilən dəyəri öz bazaları ilə tutuşdurur — risk təhlili sistemi ARAS və «Qiymət-Daycest» (Price Digest) qiymət kataloqu (Vahid metodika, 21.01.2026, b. 2.2.2). Şübhə üçün əsaslardan biri birbaşa belə yazılıb: eyni mal əvvəllər daha baha gətirilib (b. 8.13.2). Dəyər düzəldilərsə, fərqi ödəmək lazım gəlir; qeyri-dəqiq bəyannamə isə İnzibati Xətalar Məcəlləsinin 482.2-ci maddəsi üzrə malın dəyərinin 30–60 %-i həcmində cərimədir. Dəyərə nəzarət buraxılışdan sonra da davam edir — yoxlama üç ildən sonra da mümkündür. Ona görə qiyməti sənədlərlə əvvəlcədən əsaslandırırıq.",
+    "wi.3t":"ƏDV 18 % — sizin bəyannamənizlə",
+    "wi.3d":"İdxalda ƏDV dərəcəsi 18 %-dir; baza gömrük dəyəri üstəgəl rüsum və vergilərdir (AR Vergi Məcəlləsi, m. 162). Rəsmi idxalda bu məbləğ sizin şirkətiniz adına ödənilir və ödəniş sənədi sizdə qalır — mühasibatlığınız onunla işləyir. Yük sizin adınıza rəsmiləşdirilmirsə, belə bir sənəd ümumiyyətlə yaranmır.",
+    "wi.4t":"Birbaşa Çindən — artıq həlqələr olmadan",
+    "wi.4d":"Azərbaycan idxalı malın mənşə ölkəsi üzrə sayır, Çin isə ixracı göndəriş ölkəsi üzrə. İki gömrüyün rəqəmlərini üst-üstə qoyanda görünür: Çin mənşəli malın xeyli hissəsi ölkəyə birbaşa deyil, üçüncü ölkələrdəki alıcı-satıcılar vasitəsilə gəlir. Hər əlavə həlqə — əlavə marja və sizə aid olmayan daha bir sənəd. Biz Quançjoudakı öz şirkətimizlə zavodla birbaşa işləyirik.",
+    "wi.note":"Nə vəd etmirik: rüsum, ƏDV və yığımların yekun məbləğini gömrük orqanı kod və gömrük dəyəri üzrə müəyyən edir. Göndərişdən əvvəlki hesablamamız təxminidir — və biz onu məhz göndərişdən əvvəl verməyi qayda sayırıq, sonra yox.",
+    "wi.cta":"Göndərişdən əvvəl hesablama alın",
 
     /* USP infrastructure */
     "usp.eyebrow":"İnfrastrukturumuz","usp.title":"Biz vasitəçi deyilik — biz sizin ticarət infrastrukturunuzuq",
@@ -113,7 +128,8 @@ window.I18N = {
     "ft.nav":"Naviqasiya","ft.services":"Xidmətlər","ft.contact":"Əlaqə",
     "ft.svc1":"XİF konsaltinq","ft.svc2":"Malların axtarışı","ft.svc3":"İstehsalçı tapılması","ft.svc4":"Yük daşıma",
     "ft.rights":"Bütün hüquqlar qorunur.","ft.privacy":"Məxfilik siyasəti","ft.terms":"Xidmət şərtləri",
-    "ft.legal":"«Azizov Group» MMC · OGRN 1247700473921 · INN 9721235929 · Moskva, Rusiya",
+    /* реквизиты Ascend Consulting MMC добавить, когда владелец пришлёт VÖEN/адрес */
+    "ft.legal":"",
     "ft.hours":"B.e–Cümə: 09:00–18:00",
 
     /* about page */
@@ -143,6 +159,7 @@ window.I18N = {
     "sv.4eye":"04 — Yük daşıma","sv.4t":"Yüklərin çatdırılması və logistika",
     "sv.4d":"Avtomobil, dəmir yolu, dəniz və hava daşımaları — hər yük üçün ən sərfəli marşrut və nəqliyyat növü.",
     "sv.4f1":"Multimodal daşıma və marşrutun optimallaşdırılması","sv.4f2":"Yüklərin konsolidasiyası (birləşdirilməsi)","sv.4f3":"Gömrük rəsmiləşdirilməsi və sənədləşmə","sv.4f4":"Qapıdan qapıya çatdırılma və sığorta",
+    "sv.4note":"Bəyannamə sizin şirkət adına rəsmiləşdirilir: idxal bəyannaməsi, ƏDV-nin ödənilməsini təsdiqləyən sənəd və malın mənşə sənədləri sizdə qalır. Gömrük bəyan edilən dəyəri ARAS və qiymət kataloqları üzrə yoxladığı üçün qiyməti sənədlərlə əvvəlcədən əsaslandırırıq. Rüsum, ƏDV və yığımların yekun məbləğini gömrük orqanı müəyyən edir — göndərişdən əvvəlki hesablamamız təxminidir.",
 
     /* directions page */
     "dr.crumb":"İstiqamətlər","dr.htitle":"Daşıma istiqamətləri",
@@ -152,6 +169,32 @@ window.I18N = {
     "dr.china.long":"Çin istehsalçıları ilə birbaşa iş, yüklərin konsolidasiyası və Trans-Xəzər dəhlizi vasitəsilə multimodal daşıma. Fabrik axtarışı və keyfiyyət nəzarəti daxil.",
     "dr.russia.long":"Rusiyadan avtomobil və dəmir yolu ilə müntəzəm yük axını, konsolidasiya və gömrük rəsmiləşdirilməsi.",
     "dr.kz.long":"Qazaxıstan və Mərkəzi Asiyadan Trans-Xəzər dəhlizi üzrə intermodal daşıma həlləri.",
+    /* directions: müddət cədvəli */
+    "dr.tt.eyebrow":"Müddətlər",
+    "dr.tt.title":"Hər dəhliz üzrə real çatdırılma pəncərəsi",
+    "dr.tt.sub":"Cədvəldəki müddətlər zavodun qapısından Bakıdakı anbaradək sayılır: partiyanın yığılması, yolda keçən vaxt və gömrük daxil. Bunlar bazar üzrə tipik pəncərələrdir, vəd deyil — sizin yükünüz üçün tarixlər hesablamada verilir və müqavilədə sabitlənir.",
+    "dr.tt.h1":"Dəhliz","dr.tt.h2":"Zavodun qapısından Bakıdakı anbaradək","dr.tt.h3":"Müddətə nə təsir edir",
+    "dr.tt.r1a":"Dəmir yolu, tam konteyner (FCL) · Sian → Aktau/Kuryk → bərə → Ələt",
+    "dr.tt.r1b":"22–32 gün",
+    "dr.tt.r1c":"Zavoddan anbara gətirmə, Xəzər bərəsinin növbəsi, Xorqosda rels eninin dəyişdirilməsi",
+    "dr.tt.r2a":"Dəmir yolu, yığma yük (LCL)",
+    "dr.tt.r2b":"26–38 gün",
+    "dr.tt.r2c":"Partiyanın anbarda yığılması — adətən 7–21 gün; Bakıda konteynerin boşaldılması",
+    "dr.tt.r3a":"Avtomobil · Urumçi → Xorqos → Aktau → bərə → Ələt",
+    "dr.tt.r3b":"24–33 gün",
+    "dr.tt.r3c":"Şərqi Çindən Urumçiyə xətti reys, bərə növbəsi, sərhəd keçidində gözləmə",
+    "dr.tt.r4a":"Dəniz · Cənubi Çin limanları → Poti → avtomobillə Bakıya",
+    "dr.tt.r4b":"40–55 gün",
+    "dr.tt.r4c":"Xəttin cədvəli və aktarmalar, Poti limanında emal, Gürcüstan sərhədi",
+    "dr.tt.r5a":"Hava yolu",
+    "dr.tt.r5b":"7–12 gün",
+    "dr.tt.r5c":"Reysdə yer tapılması və bron, aktarma, Bakıda gömrük",
+    "dr.tt.note":"Müddəti zavodun qapısından sizin anbaradək sayırıq: gətirmə, yığılma, yol və gömrük daxil. Başqa rəqəmlərlə müqayisə edəndə soruşun, hansı nöqtədən hansına qədər sayılır: «stansiyadan stansiyaya» müddət 8–31 gün qısa görünür, çünki zavoddan gətirməni, partiyanın yığılmasını və rəsmiləşdirməni içinə almır.",
+    "dr.tt.upd":"Müddət pəncərələri 24.08.2026 tarixinə uyğundur.",
+    "dr.tt.wt":"Niyə dəqiq tarix vəd etmirik",
+    "dr.tt.wd1":"Orta dəhlizdə bir həlqə var ki, onu nə pulla sürətləndirmək, nə də plana salmaq olur — Xəzər bərəsi. Bərələr həftədə 2–4 dəfə gedir, keçidin özü 18–24 saat çəkir, növbə isə mövsümdən və hava şəraitindən asılı olaraq bir neçə günə uzanır. Ona görə müqavilədə yola salma tarixini sabitləyirik, çatmanı isə pəncərə ilə göstəririk. Bərədə və ya sərhəddə gecikmə olarsa, həmin gün xəbər verib alternativ marşrut təklif edirik. Bir gözəl tarix deyib sonra onu izah etməkdənsə, əvvəldən düz rəqəmi demək daha faydalıdır.",
+    "dr.tt.wd2":"İkinci amil təqvimdir. Çin Yeni ili ərəfəsində zavodlar sifarişləri bağlayır, sonra 1–2 həftə dayanır, işə düşəndə isə növbə yaranır: 2027-ci ildə bayram 6 fevrala düşür. Bu pəncərəyə düşən sifarişi əvvəlcədən planlaşdırırıq — ya bayramdan əvvəl yola salırıq, ya da şüurlu şəkildə sonraya keçiririk.",
+    "dr.tt.cta":"Yükünüz üçün hesablama alın",
     /* landing: Çin → Azərbaycan */
     "lp.cn.crumb":"Çin → Azərbaycan",
     "lp.cn.htitle":"Çindən Azərbaycana yük daşıma",
@@ -177,7 +220,7 @@ window.I18N = {
     /* FAQ */
     "faq.eyebrow":"Suallar","faq.title":"Tez-tez verilən suallar",
     "faq.q1":"Çindən Azərbaycana çatdırılma nə qədər çəkir?",
-    "faq.a1":"Müddət dəhlizdən və mövsümdən asılıdır: marşrut, nəqliyyat növü, Xəzər keçidinin yüklənməsi və gömrükdəki növbə. Ona görə hamı üçün bir rəqəm demirik: müqavilədə yola salma tarixini və çatma pəncərəsini sabitləyirik, hesablamanı isə həcm, çəki və yükləmə nöqtəsi dəqiqləşdikdən sonra veririk.",
+    "faq.a1":"«Çindən Azərbaycana çatdırılma neçə gün çəkir?» — cavab dəhlizdən və mövsümdən asılıdır. Müddətə dörd şey təsir edir: partiyanın Çindəki anbarda yığılması, seçilmiş marşrut və nəqliyyat növü, Xəzər bərəsinin növbəsi və gömrükdə rəsmiləşdirmə. Ona görə hamı üçün bir rəqəm demirik: dəhlizlər üzrə real pəncərələri «İstiqamətlər» səhifəsində açıq göstəririk, sizin yükünüz üçün isə həcm, çəki və yükləmə nöqtəsi dəqiqləşdikdən sonra hesablama veririk — müqavilədə yola salma tarixi və çatma pəncərəsi sabitlənir.",
     "faq.q2":"Gömrük rəsmiləşdirilməsini siz həll edirsiniz?",
     "faq.a2":"İxrac sənədlərini Çində hazırlayır, malın gömrük kodunu seçir və Azərbaycanda idxal rəsmiləşdirilməsini müşayiət edirik. Bəyannaməni Dövlət Gömrük Komitəsinin reyestrindəki gömrük təmsilçisi təqdim edir və o, sizin şirkət adına rəsmiləşdirilir — sənədlərin tam paketi sizdə qalır. Rüsum, ƏDV və yığımların yekun məbləğini kod və gömrük dəyəri üzrə gömrük orqanı müəyyən edir; göndərişdən əvvəlki hesablamamız təxminidir.",
     "faq.q3":"Ödəniş necə aparılır?",
@@ -188,6 +231,11 @@ window.I18N = {
     "faq.a5":"Hər ikisini. İstəsəniz yalnız daşımanı, istəsəniz tam dövrü — mal/fabrik axtarışı, keyfiyyət nəzarəti, ödəniş və çatdırılma — açar-təslim həyata keçiririk.",
     "faq.q6":"Yük zədələnərsə və ya uyğunsuzluq olarsa nə olur?",
     "faq.a6":"Əvvəlcə qeydə alırıq: foto, yoxlama hesabatı, anbarda qəbul aktı. Sonra sizin adınızdan təchizatçı ilə danışıqları aparırıq — partiyanın dəyişdirilməsi, düzəliş, endirim və ya geri qaytarma, müqavilədə hansı nəzərdə tutulubsa. Məhz buna görə təsdiqlənmiş nümunə və yükləmədən əvvəl yoxlama tələb edirik: yük Çindən çıxandan sonra təsir imkanı azalır.",
+    /* FAQ — birinci sualın dəhliz variantları (RU/KZ lendinqləri) */
+    "faq.q1ru":"Rusiyadan Azərbaycana yük neçə gün çəkir?",
+    "faq.a1ru":"Bu dəhliz Çin marşrutundan qısadır: yük Rusiyadan avtomobil və ya dəmir yolu ilə gəlir, Xəzər bərəsi burada yoxdur. Müddətə üç şey təsir edir: yükün Rusiyada toplanma nöqtəsi, Samur/Yalama keçidindəki növbə və gömrük rəsmiləşdirilməsi. Hamı üçün bir rəqəm demirik — yükləmə nöqtəsi, həcm və çəki məlum olandan sonra hesablama veririk; müqavilədə yola salma tarixi və çatma pəncərəsi sabitlənir.",
+    "faq.q1kz":"Qazaxıstandan Azərbaycana yük neçə gün çəkir?",
+    "faq.a1kz":"Qazaxıstan marşrutu Xəzərdən keçir: dəmir yolu və ya avtomobil Aktau/Kuryk limanına qədər, sonra bərə ilə Ələt limanına. Müddəti müəyyən edən əsas amil məhz bərədir — reyslər həftədə 2–4 dəfədir, keçid 18–24 saat çəkir, növbə isə mövsümə görə uzanır. Ona görə müqavilədə yola salma tarixini sabitləyir, çatmanı pəncərə ilə göstəririk; bərədə gecikmə olarsa, həmin gün xəbər veririk.",
     /* services — transport modes */
     "svc.modes.eyebrow":"Nəqliyyat növləri","svc.modes.title":"Yükünüz üçün optimal marşrut",
     "svc.modes.sub":"Həcm, təcililik və büdcəyə görə ən sərfəli daşıma növünü seçirik — və ya bir neçəsini birləşdiririk (multimodal).",
@@ -230,7 +278,7 @@ window.I18N = {
     "g.3t":"Yükləmədən əvvəl yoxlama","g.3d":"Partiyanı yükləmədən əvvəl razılaşdırılmış nümunə ilə tutuşdururuq: say, komplektlik, markalanma, qablaşdırma. Fotolu hesabat sizə göndərilir.",
     "g.4t":"Müqavilədə tarix","g.4d":"Müqavilədə yola salma tarixini və çatma pəncərəsini sabitləyirik. Xəzər keçidində və sərhəddə növbə bizim nəzarətimizdən kənardır — belə hallarda eyni gün xəbər veririk.",
     "g.5t":"Müqavilə üzrə məsuliyyət","g.5d":"Tərəflərin öhdəlikləri, məsuliyyət hədləri və pretenziya qaydası müqavilədə yazılır. Mübahisəli halları yazışma ilə deyil, müqavilə ilə həll edirik.",
-    "ct.consent":"Adım, telefonum, e-poçtum və müraciət mətnimin bu sorğuya cavab vermək üçün emalına razıyam, o cümlədən məlumatların Web3Forms (ABŞ) xidmətinə ötürülməsinə. <a href='/privacy'>Necə emal edirik</a>.",
+    "ct.consent":"Adım, telefonum, e-poçtum və müraciət mətnimin bu sorğuya cavab vermək üçün emalına razıyam, o cümlədən məlumatların Web3Forms (ABŞ) xidmətinə ötürülməsinə. <a href='/privacy' target='_blank' rel='noopener'>Necə emal edirik</a>.",
     "e404.h":"Səhifə tapılmadı","e404.sub":"Axtardığınız səhifə mövcud deyil və ya köçürülüb.","e404.btn":"Ana səhifəyə qayıt",
     "ab.valeye":"Prinsiplərimiz",
 
@@ -241,18 +289,19 @@ window.I18N = {
     "ct.phone":"Telefon","ct.email":"E-poçt","ct.addr":"Ünvan","ct.addrv":"Bakı, Azərbaycan","ct.hours":"İş saatları",
     "ct.fname":"Ad, Soyad","ct.femail":"E-poçt","ct.fphone":"Telefon","ct.fsubject":"Mövzu","ct.fmsg":"Mesajınız","ct.fsend":"Sorğunu göndər",
     "ct.opt1":"XİF konsaltinq","ct.opt2":"Malların axtarışı","ct.opt3":"İstehsalçı tapılması","ct.opt4":"Yük daşıma","ct.opt5":"Digər",
-    "ct.note":"Məlumatların operatoru — Ascend Consulting MMC. Sorğu Web3Forms (ABŞ) vasitəsilə şirkətin poçt qutusuna gəlir və müraciət tarixindən 24 ay saxlanılır, sonra silinir. Razılığı istənilən vaxt Penjalittc@gmail.com ünvanına yazaraq geri götürə bilərsiniz — 7 iş günü ərzində cavab veririk. Tam mətn — <a href='/privacy'>məxfilik siyasətində</a>.",
+    "ct.note":"Məlumatların operatoru — Ascend Consulting MMC. Sorğu Web3Forms (ABŞ) vasitəsilə şirkətin poçt qutusuna gəlir və müraciət tarixindən 24 ay saxlanılır, sonra silinir. Razılığı istənilən vaxt <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a> ünvanına yazaraq geri götürə bilərsiniz — 7 iş günü ərzində cavab veririk. Tam mətn — <a href='/privacy' target='_blank' rel='noopener'>məxfilik siyasətində</a>.",
 
     /* privacy */
     "pv.crumb":"Məxfilik","pv.htitle":"Məxfilik siyasəti","pv.updated":"Yenilənib: 24.08.2026",
-    "pv.0t":"Məlumatları kim emal edir","pv.0d":"Operator — Ascend Consulting MMC. Şəxsi məlumatlarla bağlı müraciətlər: Penjalittc@gmail.com.",
+    "pv.0t":"Məlumatları kim emal edir","pv.0d":"Operator — Ascend Consulting MMC. Şəxsi məlumatlarla bağlı müraciətlər: <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a>.",
     "pv.1t":"Hansı məlumatları toplayırıq","pv.1d":"Formdan: ad, telefon, e-poçt (istəyə bağlı), seçilmiş xidmət və müraciət mətni. Saytın ziyarəti barədə: baxılan səhifələr, cihaz, keçid mənbəyi və Google Analytics kuki identifikatoru.",
     "pv.2t":"Məqsəd və hüquqi əsas","pv.2d":"Form məlumatlarını yalnız sorğunuza cavab vermək və hesablama hazırlamaq üçün istifadə edirik. Hüquqi əsas — formdakı xananı işarələməklə verdiyiniz razılıq. Məlumatları satmır və marketinq üçün üçüncü şəxslərə vermirik.",
     "pv.3t":"Sorğu necə emal olunur","pv.3d":"Form Web3Forms xidməti vasitəsilə göndərilir və məktub şirkətin poçt qutusuna çatdırılır. Sorğu məlumatları saytda dərc olunmur və saytın bazasında saxlanılmır.",
     "pv.6t":"Kimə ötürülür və transsərhəd ötürmə","pv.6d":"Sorğu Web3Forms (ABŞ) xidmətindən keçir və Google-da (ABŞ) yerləşən poçt qutusuna gəlir; ziyarət statistikasını Google Analytics (ABŞ) emal edir. Bu — şəxsi məlumatların transsərhəd ötürülməsidir: formdakı xananı işarələməklə buna razılıq verirsiniz. Başqa alıcı yoxdur.",
     "pv.4t":"Saxlama müddəti","pv.4d":"Müraciətləri müraciət tarixindən 24 ay saxlayırıq, sonra silirik. Razılığı geri götürsəniz — daha tez silirik, aşağıda göstərilən müddətdə.",
-    "pv.5t":"Hüquqlarınız","pv.5d":"Hansı məlumatlarınızın bizdə olduğunu öyrənmək, onların düzəldilməsini və ya silinməsini tələb etmək, emalı qadağan etmək və razılığı geri götürmək hüququnuz var. Penjalittc@gmail.com ünvanına yazın — 7 iş günü ərzində cavab veririk; üçüncü şəxslərə müraciət tələb olunarsa, müddət 14 günə qədər uzana bilər.",
-    "pv.7t":"Məlumatların qorunması","pv.7d":"Sorğulara yalnız sizin müraciətinizi aparan əməkdaşların girişi var. [ПРОВЕРИТЬ С ЮРИСТОМ + УТОЧНИТЬ У КЛИЕНТА: tədbirlərin siyahısı]",
+    "pv.5t":"Hüquqlarınız","pv.5d":"Hansı məlumatlarınızın bizdə olduğunu öyrənmək, onların düzəldilməsini və ya silinməsini tələb etmək, emalı qadağan etmək və razılığı geri götürmək hüququnuz var. <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a> ünvanına yazın — 7 iş günü ərzində cavab veririk; üçüncü şəxslərə müraciət tələb olunarsa, müddət 14 günə qədər uzana bilər.",
+    /* pv.7d — текст пишется, когда меры защиты подтверждены; блок в privacy.html закомментирован */
+    "pv.7t":"Məlumatların qorunması","pv.7d":"",
     "pv.8t":"Kuki və analitika","pv.8d":"Sayt ziyarət statistikası üçün Google Analytics 4-dən istifadə edir. Yığımı brauzer parametrləri və ya Google Analytics Opt-out əlavəsi ilə söndürmək olar.",
 
     /* terms of service */
@@ -288,12 +337,27 @@ window.I18N = {
     "trust.lead":"Работаем по направлениям:",
 
     "hs.eyebrow":"Что мы делаем","hs.title":"Полный цикл торговли с Китаем — без посредников",
-    "hs.sub":"От поиска поставщика и производства под вашим брендом до безопасной сделки и доставки под ключ.",
+    "hs.sub":"Эти четыре услуги можно взять по отдельности или как одну цепочку: поиск, производство, сопровождение сделки, доставка и таможня.",
     "hs.c1t":"Поиск товаров и поставщиков","hs.c1d":"Находим нужный товар и проверенного производителя напрямую, сравниваем цену и качество, заказываем и проверяем образцы.",
     "hs.c2t":"Производство в Китае (OEM/ODM)","hs.c2d":"Выпуск продукции под вашим брендом: переговоры с заводами, контроль качества и аудит производств.",
     "hs.c3t":"Сопровождение сделки","hs.c3d":"Проверка фабрики до оплаты, инспекция партии перед отгрузкой, поэтапные условия оплаты в контракте и переговоры с поставщиком при браке.",
     "hs.c4t":"Логистика и таможня","hs.c4d":"Мультимодальная доставка по прямым контрактам и таможенное оформление из Китая, России и Казахстана.",
     "hs.more":"Подробнее",
+
+    /* home: форма ввоза (white import) */
+    "wi.eyebrow":"Форма ввоза",
+    "wi.title":"Товар можно привезти двумя способами. Разница — в документах, которые останутся у вас",
+    "wi.sub":"Мы не оцениваем, кто как работает. Показываем только одно: что вы получаете при официальном ввозе и какой риск остаётся на вас. Выбирать вам.",
+    "wi.1t":"Декларация на вашу компанию",
+    "wi.1d":"Импортная декларация оформляется на вашу компанию, подаёт её таможенный представитель из реестра ГТК. Контракт, инвойс, экспортная декларация, транспортные и платёжные документы — полный пакет остаётся у вас. Если груз оформлен на другое лицо, ни одного из этих документов у вас не появляется.",
+    "wi.2t":"Как проверяется таможенная стоимость",
+    "wi.2d":"Таможня сверяет заявленную стоимость со своими базами — системой анализа рисков ARAS и ценовым каталогом Price Digest (Единая методика от 21.01.2026, п. 2.2.2). Одно из оснований для сомнения записано прямо так: этот же товар раньше ввозили дороже (п. 8.13.2). Если стоимость скорректируют, разницу придётся доплатить, а за недостоверное декларирование ст. 482.2 КоАП даёт штраф 30–60 % стоимости товара. Контроль стоимости продолжается и после выпуска — проверка возможна и через три года. Поэтому цену мы обосновываем документами заранее.",
+    "wi.3t":"НДС 18 % — по вашей декларации",
+    "wi.3d":"Ставка НДС при ввозе — 18 %, база: таможенная стоимость плюс пошлина и налоги (ст. 162 НК АР). При официальном ввозе эта сумма уплачивается за вашу компанию, и документ об уплате остаётся у вас — с ним работает ваша бухгалтерия. Если груз оформлен не на вас, такого документа не возникает вообще.",
+    "wi.4t":"Напрямую из Китая — без лишних звеньев",
+    "wi.4d":"Азербайджан считает импорт по стране происхождения товара, Китай считает экспорт по стране отгрузки. Если сложить цифры двух таможен, видно: заметная часть товара китайского происхождения приходит в страну не напрямую, а через перепродавцов в третьих странах. Каждое лишнее звено — это лишняя наценка и ещё один документ, который не ваш. Мы работаем с фабрикой напрямую, через свою компанию в Гуанчжоу.",
+    "wi.note":"Чего мы не обещаем: итоговую сумму пошлины, НДС и сборов определяет таможенный орган по коду и таможенной стоимости. Наш расчёт до отправки — ориентировочный, и мы считаем нормой давать его именно до отправки, а не после.",
+    "wi.cta":"Получить расчёт до отправки",
 
     /* USP infrastructure */
     "usp.eyebrow":"Наша инфраструктура","usp.title":"Мы не посредник — мы ваша торговая инфраструктура",
@@ -367,7 +431,8 @@ window.I18N = {
     "ft.nav":"Навигация","ft.services":"Услуги","ft.contact":"Контакты",
     "ft.svc1":"Консалтинг ВЭД","ft.svc2":"Поиск товаров","ft.svc3":"Поиск производителей","ft.svc4":"Доставка грузов",
     "ft.rights":"Все права защищены.","ft.privacy":"Политика конфиденциальности","ft.terms":"Условия оказания услуг",
-    "ft.legal":"ООО «Азизов Групп» · ОГРН 1247700473921 · ИНН 9721235929 · Москва, Россия",
+    /* реквизиты Ascend Consulting MMC добавить, когда владелец пришлёт VÖEN/адрес */
+    "ft.legal":"",
     "ft.hours":"Пн–Пт: 09:00–18:00",
 
     "ab.crumb":"О нас","ab.htitle":"Упрощаем вашу внешнюю торговлю",
@@ -395,6 +460,7 @@ window.I18N = {
     "sv.4eye":"04 — Доставка грузов","sv.4t":"Доставка грузов и логистика",
     "sv.4d":"Авто, ж/д, море и авиа — самый выгодный маршрут и вид транспорта под каждый груз.",
     "sv.4f1":"Мультимодальная доставка и оптимизация маршрута","sv.4f2":"Консолидация (объединение) грузов","sv.4f3":"Таможенное оформление и документация","sv.4f4":"Доставка «от двери до двери» и страхование",
+    "sv.4note":"Декларация оформляется на вашу компанию: импортная декларация, документ об уплате НДС и документы о происхождении товара остаются у вас. Таможня сверяет заявленную стоимость по ARAS и ценовым каталогам, поэтому цену мы обосновываем документами заранее. Итоговую сумму пошлины, НДС и сборов определяет таможенный орган — наш расчёт до отправки ориентировочный.",
 
     "dr.crumb":"Направления","dr.htitle":"Направления доставки",
     "dr.hsub":"Из Китая, России и Казахстана в Азербайджан — оптимальное решение по каждому маршруту.",
@@ -403,6 +469,32 @@ window.I18N = {
     "dr.china.long":"Прямая работа с производителями Китая, консолидация грузов и мультимодальная доставка через Транскаспийский коридор. Включая поиск фабрик и контроль качества.",
     "dr.russia.long":"Регулярный грузопоток из России авто и ж/д транспортом, консолидация и таможенное оформление.",
     "dr.kz.long":"Интермодальные решения доставки из Казахстана и Центральной Азии по Транскаспийскому коридору.",
+    /* directions: таблица сроков */
+    "dr.tt.eyebrow":"Сроки",
+    "dr.tt.title":"Реальное окно доставки по каждому коридору",
+    "dr.tt.sub":"Сроки в таблице — от двери фабрики до склада в Баку: накопление партии, время в пути и таможня внутри. Это типичные для рынка окна, а не обещание: даты под ваш груз мы даём в расчёте и фиксируем в договоре.",
+    "dr.tt.h1":"Коридор","dr.tt.h2":"От двери фабрики до склада в Баку","dr.tt.h3":"Что влияет на срок",
+    "dr.tt.r1a":"Ж/д, полный контейнер (FCL) · Сиань → Актау/Курык → паром → Алят",
+    "dr.tt.r1b":"22–32 дня",
+    "dr.tt.r1c":"Подвоз с фабрики, очередь на каспийский паром, смена колеи в Хоргосе",
+    "dr.tt.r2a":"Ж/д, сборный груз (LCL)",
+    "dr.tt.r2b":"26–38 дней",
+    "dr.tt.r2c":"Накопление партии на складе — обычно 7–21 день; разгрузка контейнера в Баку",
+    "dr.tt.r3a":"Авто · Урумчи → Хоргос → Актау → паром → Алят",
+    "dr.tt.r3b":"24–33 дня",
+    "dr.tt.r3c":"Линейный рейс из восточного Китая в Урумчи, очередь на паром, ожидание на границе",
+    "dr.tt.r4a":"Море · порты Южного Китая → Поти → авто в Баку",
+    "dr.tt.r4b":"40–55 дней",
+    "dr.tt.r4c":"Расписание линии и перевалки, обработка в порту Поти, грузинская граница",
+    "dr.tt.r5a":"Авиа",
+    "dr.tt.r5b":"7–12 дней",
+    "dr.tt.r5c":"Наличие места на рейсе и букинг, стыковки, таможня в Баку",
+    "dr.tt.note":"Мы считаем срок от двери фабрики до вашего склада: подвоз, накопление, дорога и таможня внутри. Сравнивая с другими цифрами, спросите, от какой точки до какой они считаются: срок «станция — станция» выглядит короче на 8–31 день, потому что не включает подвоз с фабрики, накопление партии и оформление.",
+    "dr.tt.upd":"Окна сроков актуальны на 24.08.2026.",
+    "dr.tt.wt":"Почему мы не обещаем точную дату",
+    "dr.tt.wd1":"В Среднем коридоре есть звено, которое нельзя ни ускорить деньгами, ни поставить в план, — каспийский паром. Паромы ходят 2–4 раза в неделю, сам переход занимает 18–24 часа, а очередь в зависимости от сезона и погоды растягивается на несколько дней. Поэтому в договоре мы фиксируем дату отправки, а прибытие даём окном. Если задержка на пароме или на границе всё-таки случилась — сообщаем в тот же день и предлагаем альтернативный маршрут. Назвать одну красивую дату и потом её объяснять хуже, чем сразу сказать честную.",
+    "dr.tt.wd2":"Второй фактор — календарь. Перед китайским Новым годом фабрики закрывают заказы, потом 1–2 недели стоят, а на рестарте образуется очередь: в 2027 году праздник приходится на 6 февраля. Заказ, попадающий в это окно, мы планируем заранее — либо отгружаем до праздника, либо сознательно переносим на после.",
+    "dr.tt.cta":"Получить расчёт под ваш груз",
     /* landing: Китай → Азербайджан */
     "lp.cn.crumb":"Китай → Азербайджан",
     "lp.cn.htitle":"Доставка грузов из Китая в Азербайджан",
@@ -428,7 +520,7 @@ window.I18N = {
     /* FAQ */
     "faq.eyebrow":"Вопросы","faq.title":"Частые вопросы",
     "faq.q1":"Сколько занимает доставка из Китая в Азербайджан?",
-    "faq.a1":"Срок зависит от коридора и сезона: маршрут, вид транспорта, загрузка каспийской переправы и очередь на таможне. Поэтому мы не называем одну цифру для всех: в договоре фиксируем дату отправки и окно прибытия, а расчёт даём после того, как уточним объём, вес и точку отгрузки.",
+    "faq.a1":"Ответ зависит от коридора и сезона. На срок влияют четыре вещи: накопление партии на складе в Китае, выбранный маршрут и вид транспорта, очередь на каспийском пароме и оформление на таможне. Поэтому мы не называем одну цифру для всех: реальные окна по коридорам открыто показываем на странице «Направления», а под ваш груз даём расчёт после того, как уточним объём, вес и точку отгрузки — дата отправки и окно прибытия фиксируются в договоре.",
     "faq.q2":"Растаможку вы берёте на себя?",
     "faq.a2":"Мы готовим экспортные документы в Китае, подбираем код товара и сопровождаем импортное оформление в Азербайджане. Декларацию подаёт таможенный представитель из реестра ГТК, а оформляется она на вашу компанию — полный пакет документов остаётся у вас. Итоговую сумму пошлины, НДС и сборов определяет таможенный орган по коду и таможенной стоимости; наш расчёт до отправки — ориентировочный.",
     "faq.q3":"Как происходит оплата?",
@@ -439,6 +531,11 @@ window.I18N = {
     "faq.a5":"И то, и другое. Можем сделать только доставку, а можем полный цикл — поиск товара/фабрики, контроль качества, оплату и доставку под ключ.",
     "faq.q6":"Что если груз повреждён или не соответствует?",
     "faq.a6":"Сначала фиксация: фотографии, отчёт инспекции, акт приёмки на складе. Дальше ведём переговоры с поставщиком от вашего имени — замена партии, доработка, скидка или возврат, что предусмотрено контрактом. Поэтому мы и настаиваем на утверждённом образце и проверке до отгрузки: после выхода груза из Китая рычагов меньше.",
+    /* FAQ — коридорные варианты первого вопроса (RU/KZ лендинги) */
+    "faq.q1ru":"Сколько дней идёт груз из России в Азербайджан?",
+    "faq.a1ru":"Этот коридор короче китайского: груз идёт автомобилем или по железной дороге, каспийского парома в нём нет. На срок влияют три вещи: точка отправки в России, очередь на переходе Самур / Ялама и таможенное оформление. Одну цифру для всех не называем — расчёт даём, когда известны точка отгрузки, объём и вес; в договоре фиксируем дату отправки и окно прибытия.",
+    "faq.q1kz":"Сколько дней идёт груз из Казахстана в Азербайджан?",
+    "faq.a1kz":"Казахстанский маршрут идёт через Каспий: ж/д или авто до порта Актау / Курык, дальше паром в порт Алят. Главный фактор срока — именно паром: рейсы 2–4 раза в неделю, переход 18–24 часа, очередь в зависимости от сезона растягивается. Поэтому в договоре фиксируем дату отправки, а прибытие даём окном; если задержка на пароме случилась — сообщаем в тот же день.",
     /* services — transport modes */
     "svc.modes.eyebrow":"Виды транспорта","svc.modes.title":"Оптимальный маршрут для вашего груза",
     "svc.modes.sub":"Подбираем самый выгодный вид доставки по объёму, срочности и бюджету — или комбинируем несколько (мультимодально).",
@@ -481,7 +578,7 @@ window.I18N = {
     "g.3t":"Инспекция перед отгрузкой","g.3d":"Сверяем партию с утверждённым образцом до отгрузки: количество, комплектность, маркировка, упаковка. Отчёт с фотографиями отправляем вам.",
     "g.4t":"Дата в договоре","g.4d":"В договоре фиксируем дату отправки и окно прибытия. Очередь на каспийской переправе и на границе от нас не зависит — о таких задержках сообщаем в тот же день.",
     "g.5t":"Ответственность по договору","g.5d":"Обязательства сторон, пределы ответственности и порядок претензий описаны в договоре. Спорные ситуации решаем по нему, а не по переписке.",
-    "ct.consent":"Согласен на обработку моих имени, телефона, e-mail и текста обращения для ответа на эту заявку, включая передачу данных сервису Web3Forms (США). <a href='/privacy'>Как мы их обрабатываем</a>.",
+    "ct.consent":"Согласен на обработку моих имени, телефона, e-mail и текста обращения для ответа на эту заявку, включая передачу данных сервису Web3Forms (США). <a href='/privacy' target='_blank' rel='noopener'>Как мы их обрабатываем</a>.",
     "e404.h":"Страница не найдена","e404.sub":"Запрашиваемая страница не существует или была перемещена.","e404.btn":"На главную",
     "ab.valeye":"Наши принципы",
 
@@ -491,18 +588,19 @@ window.I18N = {
     "ct.phone":"Телефон","ct.email":"Эл. почта","ct.addr":"Адрес","ct.addrv":"Баку, Азербайджан","ct.hours":"Часы работы",
     "ct.fname":"Имя и фамилия","ct.femail":"Эл. почта","ct.fphone":"Телефон","ct.fsubject":"Тема","ct.fmsg":"Ваше сообщение","ct.fsend":"Отправить заявку",
     "ct.opt1":"Консалтинг ВЭД","ct.opt2":"Поиск товаров","ct.opt3":"Поиск производителей","ct.opt4":"Доставка грузов","ct.opt5":"Другое",
-    "ct.note":"Оператор данных — Ascend Consulting MMC. Заявка проходит через Web3Forms (США), приходит на почтовый ящик компании и хранится 24 месяца с даты обращения, затем удаляется. Согласие можно отозвать письмом на Penjalittc@gmail.com — отвечаем в течение 7 рабочих дней. Полный текст — в <a href='/privacy'>политике конфиденциальности</a>.",
+    "ct.note":"Оператор данных — Ascend Consulting MMC. Заявка проходит через Web3Forms (США), приходит на почтовый ящик компании и хранится 24 месяца с даты обращения, затем удаляется. Согласие можно отозвать письмом на <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a> — отвечаем в течение 7 рабочих дней. Полный текст — в <a href='/privacy' target='_blank' rel='noopener'>политике конфиденциальности</a>.",
 
     /* privacy */
     "pv.crumb":"Конфиденциальность","pv.htitle":"Политика конфиденциальности","pv.updated":"Обновлено: 24.08.2026",
-    "pv.0t":"Кто обрабатывает данные","pv.0d":"Оператор — Ascend Consulting MMC. Обращения по персональным данным: Penjalittc@gmail.com.",
+    "pv.0t":"Кто обрабатывает данные","pv.0d":"Оператор — Ascend Consulting MMC. Обращения по персональным данным: <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a>.",
     "pv.1t":"Какие данные мы собираем","pv.1d":"Из формы: имя, телефон, e-mail (необязательно), выбранная услуга и текст обращения. О визите на сайт: просмотренные страницы, устройство, источник перехода и cookie-идентификатор Google Analytics.",
     "pv.2t":"Цель и основание","pv.2d":"Данные из формы используем только для ответа на вашу заявку и подготовки расчёта. Основание — ваше согласие, которое вы даёте, отмечая галочку у формы. Мы не продаём данные и не передаём их третьим лицам для маркетинга.",
     "pv.3t":"Как обрабатывается заявка","pv.3d":"Форма отправляется через сервис Web3Forms, письмо приходит на почтовый ящик компании. Данные заявки на сайте не публикуются и в базе сайта не хранятся.",
     "pv.6t":"Кому передаются данные и трансграничная передача","pv.6d":"Заявка проходит через Web3Forms (США) и приходит на почтовый ящик, размещённый у Google (США); статистику посещений обрабатывает Google Analytics (США). Это трансграничная передача персональных данных: отмечая галочку у формы, вы даёте на неё согласие. Других получателей нет.",
     "pv.4t":"Срок хранения","pv.4d":"Заявки храним 24 месяца с даты обращения, затем удаляем. Если вы отозвали согласие — удаляем раньше, в срок, указанный ниже.",
-    "pv.5t":"Ваши права","pv.5d":"Вы вправе узнать, какие ваши данные у нас есть, потребовать их исправления или удаления, запретить обработку и отозвать согласие. Напишите на Penjalittc@gmail.com — ответим в течение 7 рабочих дней; если для ответа нужно обращение к третьим лицам, срок может быть продлён до 14 дней.",
-    "pv.7t":"Защита данных","pv.7d":"Доступ к заявкам есть только у сотрудников, которые ведут ваше обращение. [ПРОВЕРИТЬ С ЮРИСТОМ + УТОЧНИТЬ У КЛИЕНТА: перечень мер]",
+    "pv.5t":"Ваши права","pv.5d":"Вы вправе узнать, какие ваши данные у нас есть, потребовать их исправления или удаления, запретить обработку и отозвать согласие. Напишите на <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a> — ответим в течение 7 рабочих дней; если для ответа нужно обращение к третьим лицам, срок может быть продлён до 14 дней.",
+    /* pv.7d — текст пишется, когда меры защиты подтверждены; блок в privacy.html закомментирован */
+    "pv.7t":"Защита данных","pv.7d":"",
     "pv.8t":"Cookie и аналитика","pv.8d":"Сайт использует Google Analytics 4 для статистики посещений. Отключить сбор можно настройками браузера или расширением Google Analytics Opt-out.",
 
     /* terms of service */
@@ -538,12 +636,27 @@ window.I18N = {
     "trust.lead":"We operate on directions:",
 
     "hs.eyebrow":"What we do","hs.title":"The full China trade cycle — without middlemen",
-    "hs.sub":"From supplier sourcing and production under your own brand to a secure deal and turnkey delivery.",
+    "hs.sub":"You can take these four services separately or as a single chain: sourcing, manufacturing, deal support, delivery and customs.",
     "hs.c1t":"Product & supplier sourcing","hs.c1d":"We find the right product and a verified manufacturer directly, compare price and quality, order and inspect samples.",
     "hs.c2t":"Manufacturing in China (OEM/ODM)","hs.c2d":"Production under your own brand: factory negotiations, quality control and production audits.",
     "hs.c3t":"Deal support","hs.c3d":"Factory verification before payment, pre-shipment inspection, staged payment terms in the contract and negotiations with the supplier in case of defects.",
     "hs.c4t":"Logistics & customs","hs.c4d":"Multimodal delivery on direct contracts and customs clearance from China, Russia and Kazakhstan.",
     "hs.more":"Learn more",
+
+    /* home: import format (white import) */
+    "wi.eyebrow":"Import format",
+    "wi.title":"There are two ways to bring goods in. The difference is the documents you are left holding",
+    "wi.sub":"We do not judge how anyone else works. We show one thing: what you get with official import and which risk stays with you. The choice is yours.",
+    "wi.1t":"The declaration is in your company's name",
+    "wi.1d":"The import declaration is issued in your company's name and filed by a customs representative from the State Customs Committee register. Contract, invoice, export declaration, transport and payment documents — the full set stays with you. If the cargo is cleared in someone else's name, you end up holding none of them.",
+    "wi.2t":"How the customs value is checked",
+    "wi.2d":"Customs compares the declared value against its own databases — the ARAS risk analysis system and the Price Digest catalogue (Unified Methodology of 21 Jan 2026, cl. 2.2.2). One listed ground for doubt reads literally like this: the same goods were previously imported at a higher price (cl. 8.13.2). If the value is adjusted, the difference has to be paid, and misdeclaration carries a fine of 30–60 % of the value of the goods under art. 482.2 of the Code of Administrative Offences. Value control continues after release — a check is possible even three years later. This is why we justify the price with documents up front.",
+    "wi.3t":"18 % VAT — under your declaration",
+    "wi.3d":"Import VAT is 18 %, charged on the customs value plus duty and taxes (art. 162 of the Tax Code). With official import that amount is paid for your company and the payment document stays with you — your accountants work with it. If the cargo is not cleared in your name, no such document exists at all.",
+    "wi.4t":"Straight from China — without extra links",
+    "wi.4d":"Azerbaijan counts imports by country of origin; China counts exports by country of shipment. Put the two customs datasets side by side and it shows: a large share of Chinese-origin goods reaches the country not directly but through resellers in third countries. Every extra link is an extra margin and one more document that is not yours. We work with the factory directly, through our own company in Guangzhou.",
+    "wi.note":"What we do not promise: the final amount of duty, VAT and fees is set by the customs authority based on the code and the customs value. Our pre-shipment calculation is an estimate — and we treat giving it before the shipment, not after, as the standard.",
+    "wi.cta":"Get a pre-shipment calculation",
 
     /* USP infrastructure */
     "usp.eyebrow":"Our infrastructure","usp.title":"We're not a middleman — we're your trade infrastructure",
@@ -617,7 +730,8 @@ window.I18N = {
     "ft.nav":"Navigation","ft.services":"Services","ft.contact":"Contact",
     "ft.svc1":"FEA consulting","ft.svc2":"Product sourcing","ft.svc3":"Manufacturer search","ft.svc4":"Cargo delivery",
     "ft.rights":"All rights reserved.","ft.privacy":"Privacy policy","ft.terms":"Terms of service",
-    "ft.legal":"Azizov Group LLC · OGRN 1247700473921 · INN 9721235929 · Moscow, Russia",
+    /* реквизиты Ascend Consulting MMC добавить, когда владелец пришлёт VÖEN/адрес */
+    "ft.legal":"",
     "ft.hours":"Mon–Fri: 09:00–18:00",
 
     "ab.crumb":"About","ab.htitle":"We simplify your foreign trade",
@@ -645,6 +759,7 @@ window.I18N = {
     "sv.4eye":"04 — Cargo delivery","sv.4t":"Cargo delivery & logistics",
     "sv.4d":"Road, rail, sea and air — the most cost-effective route and transport mode for each shipment.",
     "sv.4f1":"Multimodal delivery and route optimization","sv.4f2":"Cargo consolidation","sv.4f3":"Customs clearance and documentation","sv.4f4":"Door-to-door delivery and insurance",
+    "sv.4note":"The declaration is issued in your company's name: the import declaration, the VAT payment document and the origin documents stay with you. Customs checks the declared value against ARAS and price catalogues, so we justify the price with documents up front. The final amount of duty, VAT and fees is set by the customs authority — our pre-shipment calculation is an estimate.",
 
     "dr.crumb":"Directions","dr.htitle":"Delivery directions",
     "dr.hsub":"From China, Russia and Kazakhstan to Azerbaijan — an optimal solution for each route.",
@@ -653,6 +768,32 @@ window.I18N = {
     "dr.china.long":"Direct work with Chinese manufacturers, cargo consolidation and multimodal delivery via the Trans-Caspian corridor. Including factory search and quality control.",
     "dr.russia.long":"Regular cargo flow from Russia by road and rail, consolidation and customs clearance.",
     "dr.kz.long":"Intermodal delivery solutions from Kazakhstan and Central Asia via the Trans-Caspian corridor.",
+    /* directions: transit time table */
+    "dr.tt.eyebrow":"Transit times",
+    "dr.tt.title":"A realistic delivery window for each corridor",
+    "dr.tt.sub":"The times below run from the factory door to your warehouse in Baku: batch consolidation, transit and customs included. These are typical market windows, not a promise: dates for your cargo are given in the quote and fixed in the contract.",
+    "dr.tt.h1":"Corridor","dr.tt.h2":"Factory door → warehouse in Baku","dr.tt.h3":"What affects the time",
+    "dr.tt.r1a":"Rail, full container (FCL) · Xi'an → Aktau/Kuryk → ferry → Alat",
+    "dr.tt.r1b":"22–32 days",
+    "dr.tt.r1c":"Pickup from the factory, the Caspian ferry queue, the gauge change at Khorgos",
+    "dr.tt.r2a":"Rail, groupage (LCL)",
+    "dr.tt.r2b":"26–38 days",
+    "dr.tt.r2c":"Batch build-up at the warehouse — usually 7–21 days; container unloading in Baku",
+    "dr.tt.r3a":"Road · Urumqi → Khorgos → Aktau → ferry → Alat",
+    "dr.tt.r3b":"24–33 days",
+    "dr.tt.r3c":"Line haul from eastern China to Urumqi, the ferry queue, waiting at the border",
+    "dr.tt.r4a":"Sea · South China ports → Poti → road to Baku",
+    "dr.tt.r4b":"40–55 days",
+    "dr.tt.r4c":"The sailing schedule and transhipments, handling at Poti, the Georgian border",
+    "dr.tt.r5a":"Air",
+    "dr.tt.r5b":"7–12 days",
+    "dr.tt.r5c":"Space availability and booking, connections, customs in Baku",
+    "dr.tt.note":"We count from the factory door to your warehouse: pickup, consolidation, transit and customs included. When you compare other numbers, ask which point to which point they cover — a “station to station” figure looks 8–31 days shorter because it excludes pickup, batch build-up and clearance.",
+    "dr.tt.upd":"Transit windows as of 24 Aug 2026.",
+    "dr.tt.wt":"Why we do not promise an exact date",
+    "dr.tt.wd1":"The Middle Corridor has one link you cannot speed up with money or put on a schedule — the Caspian ferry. Ferries sail 2–4 times a week, the crossing itself takes 18–24 hours, and the queue stretches by several days depending on the season and the weather. That is why the contract fixes the departure date and gives arrival as a window. If a delay at the ferry or at the border does happen, we tell you the same day and offer an alternative route. Naming one convenient date and then explaining it away is worse than giving the honest one up front.",
+    "dr.tt.wd2":"The second factor is the calendar. Before Chinese New Year factories close their order books, then stand still for 1–2 weeks, and on restart a queue builds up: in 2027 the holiday falls on 6 February. An order that lands in that window we plan in advance — either shipped before the holiday or deliberately moved to after it.",
+    "dr.tt.cta":"Get a calculation for your cargo",
     /* landing: China → Azerbaijan */
     "lp.cn.crumb":"China → Azerbaijan",
     "lp.cn.htitle":"Cargo delivery from China to Azerbaijan",
@@ -678,7 +819,7 @@ window.I18N = {
     /* FAQ */
     "faq.eyebrow":"FAQ","faq.title":"Frequently asked questions",
     "faq.q1":"How long does delivery from China to Azerbaijan take?",
-    "faq.a1":"It depends on the corridor and the season: the route, the transport mode, the load on the Caspian crossing and the customs queue. That is why we do not quote one number for everyone: the contract fixes the departure date and an arrival window, and we give a calculation once we know the volume, weight and pickup point.",
+    "faq.a1":"It depends on the corridor and the season. Four things drive the transit time: batch build-up at the warehouse in China, the chosen route and transport mode, the Caspian ferry queue and customs clearance. That is why we do not quote one number for everyone: the realistic windows per corridor are published openly on the Directions page, and for your cargo we issue a calculation once the volume, weight and pickup point are known — the departure date and the arrival window are fixed in the contract.",
     "faq.q2":"Do you handle customs clearance?",
     "faq.a2":"We prepare the export documents in China, determine the HS code and support import clearance in Azerbaijan. The declaration is filed by a customs representative from the State Customs Committee register and is issued in your company's name — you keep the full set of documents. The final amount of duty, VAT and fees is set by the customs authority based on the code and the customs value; our pre-shipment calculation is an estimate.",
     "faq.q3":"How does payment work?",
@@ -689,6 +830,11 @@ window.I18N = {
     "faq.a5":"Both. We can do shipping only, or the full cycle — product/factory search, quality control, payment and delivery, turnkey.",
     "faq.q6":"What if the cargo is damaged or non-conforming?",
     "faq.a6":"First we document it: photos, the inspection report, the warehouse acceptance record. Then we negotiate with the supplier on your behalf — replacement, rework, discount or refund, whichever the contract provides. This is exactly why we insist on an approved sample and a pre-shipment check: once the cargo leaves China, there is less leverage.",
+    /* FAQ — corridor-specific first question (RU/KZ landings) */
+    "faq.q1ru":"How many days does cargo take from Russia to Azerbaijan?",
+    "faq.a1ru":"This corridor is shorter than the Chinese one: cargo moves by road or rail and there is no Caspian ferry. Three things drive the time: the pickup point in Russia, the queue at the Samur / Yalama crossing and customs clearance. We do not quote one number for everyone — we issue a calculation once the pickup point, volume and weight are known; the contract fixes the departure date and an arrival window.",
+    "faq.q1kz":"How many days does cargo take from Kazakhstan to Azerbaijan?",
+    "faq.a1kz":"The Kazakh route crosses the Caspian: rail or road to Aktau / Kuryk, then a ferry to the port of Alat. The ferry is what drives the time: 2–4 sailings a week, an 18–24 hour crossing, and a queue that stretches with the season. So the contract fixes the departure date and gives arrival as a window; if the ferry does hold us up, we tell you the same day.",
     /* services — transport modes */
     "svc.modes.eyebrow":"Transport modes","svc.modes.title":"The optimal route for your cargo",
     "svc.modes.sub":"We pick the most cost-effective mode by volume, urgency and budget — or combine several (multimodal).",
@@ -731,7 +877,7 @@ window.I18N = {
     "g.3t":"Pre-shipment inspection","g.3d":"We check the batch against the approved sample before shipment: quantity, completeness, labelling, packaging. You get a photo report.",
     "g.4t":"A date in the contract","g.4d":"The contract fixes the departure date and an arrival window. Queues at the Caspian crossing and at the border are outside our control — we report such delays the same day.",
     "g.5t":"Liability under the contract","g.5d":"The parties' obligations, liability limits and the claims procedure are set out in the contract. Disputes are resolved by the contract, not by chat history.",
-    "ct.consent":"I consent to the processing of my name, phone, email and message to reply to this request, including the transfer of the data to Web3Forms (USA). <a href='/privacy'>How we process it</a>.",
+    "ct.consent":"I consent to the processing of my name, phone, email and message to reply to this request, including the transfer of the data to Web3Forms (USA). <a href='/privacy' target='_blank' rel='noopener'>How we process it</a>.",
     "e404.h":"Page not found","e404.sub":"The page you are looking for doesn't exist or has moved.","e404.btn":"Back to home",
     "ab.valeye":"Our principles",
 
@@ -741,18 +887,19 @@ window.I18N = {
     "ct.phone":"Phone","ct.email":"Email","ct.addr":"Address","ct.addrv":"Baku, Azerbaijan","ct.hours":"Working hours",
     "ct.fname":"Full name","ct.femail":"Email","ct.fphone":"Phone","ct.fsubject":"Subject","ct.fmsg":"Your message","ct.fsend":"Send request",
     "ct.opt1":"FEA consulting","ct.opt2":"Product sourcing","ct.opt3":"Manufacturer search","ct.opt4":"Cargo delivery","ct.opt5":"Other",
-    "ct.note":"The data operator is Ascend Consulting MMC. The request goes through Web3Forms (USA), arrives at the company mailbox and is stored for 24 months from the date of the request, then deleted. You can withdraw consent by writing to Penjalittc@gmail.com — we reply within 7 working days. Full text in the <a href='/privacy'>privacy policy</a>.",
+    "ct.note":"The data operator is Ascend Consulting MMC. The request goes through Web3Forms (USA), arrives at the company mailbox and is stored for 24 months from the date of the request, then deleted. You can withdraw consent by writing to <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a> — we reply within 7 working days. Full text in the <a href='/privacy' target='_blank' rel='noopener'>privacy policy</a>.",
 
     /* privacy */
     "pv.crumb":"Privacy","pv.htitle":"Privacy Policy","pv.updated":"Updated: 24.08.2026",
-    "pv.0t":"Who processes the data","pv.0d":"The operator is Ascend Consulting MMC. Personal data enquiries: Penjalittc@gmail.com.",
+    "pv.0t":"Who processes the data","pv.0d":"The operator is Ascend Consulting MMC. Personal data enquiries: <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a>.",
     "pv.1t":"What data we collect","pv.1d":"From the form: name, phone, email (optional), the chosen service and the message. About the visit: pages viewed, device, referral source and the Google Analytics cookie identifier.",
     "pv.2t":"Purpose and legal basis","pv.2d":"We use the form data only to reply to your request and prepare a quote. The basis is your consent given by ticking the box. We do not sell the data and do not share it with third parties for marketing.",
     "pv.3t":"How the request is processed","pv.3d":"The form is sent through Web3Forms and the message is delivered to the company mailbox. Request data is not published on the site and is not stored in a site database.",
     "pv.6t":"Recipients and cross-border transfer","pv.6d":"The request passes through Web3Forms (USA) and arrives at a mailbox hosted by Google (USA); visit statistics are processed by Google Analytics (USA). This is a cross-border transfer of personal data: by ticking the box you consent to it. There are no other recipients.",
     "pv.4t":"Retention period","pv.4d":"We keep requests for 24 months from the date of the request, then delete them. If you withdraw consent we delete them sooner, within the period stated below.",
-    "pv.5t":"Your rights","pv.5d":"You may find out what data we hold, request its correction or deletion, object to processing and withdraw consent. Write to Penjalittc@gmail.com — we reply within 7 working days; if third parties must be contacted, the period may extend to 14 days.",
-    "pv.7t":"Data protection","pv.7d":"Only the employees handling your request have access to it. [ПРОВЕРИТЬ С ЮРИСТОМ + УТОЧНИТЬ У КЛИЕНТА]",
+    "pv.5t":"Your rights","pv.5d":"You may find out what data we hold, request its correction or deletion, object to processing and withdraw consent. Write to <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a> — we reply within 7 working days; if third parties must be contacted, the period may extend to 14 days.",
+    /* pv.7d — текст пишется, когда меры защиты подтверждены; блок в privacy.html закомментирован */
+    "pv.7t":"Data protection","pv.7d":"",
     "pv.8t":"Cookies and analytics","pv.8d":"The site uses Google Analytics 4 for visit statistics. You can opt out via browser settings or the Google Analytics Opt-out add-on.",
 
     /* terms of service */

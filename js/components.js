@@ -80,6 +80,13 @@
 
     const phoneLi = S.phone ? `<li>${ICON.phone}<a href="tel:${S.phone}">${S.phoneDisplay||S.phone}</a></li>` : "";
     const mailLi  = S.email ? `<li>${ICON.mail}<a href="mailto:${S.email}">${S.email}</a></li>` : "";
+
+    // Реквизиты юрлица: строку выводим, только если ft.legal реально заполнен, —
+    // иначе в подвале остаётся пустой отступ. Реквизиты Ascend Consulting MMC
+    // добавить, когда владелец пришлёт VÖEN/адрес.
+    const D = window.I18N || {};
+    const hasLegal = Object.keys(D).some(l => (D[l] && D[l]["ft.legal"] || "").trim());
+    const legalP = hasLegal ? `<p class="f-legal" data-i18n="ft.legal"></p>` : "";
     return `
     <footer class="footer">
       <div class="container">
@@ -107,9 +114,7 @@
             </ul>
           </div>
         </div>
-        <!-- Реквизиты юрлица (ключ ft.legal). Строка азербайджанского юрлица сюда не добавляется,
-             пока нет реальных реквизитов: плейсхолдеры в подвал не выводим. -->
-        <p class="f-legal" data-i18n="ft.legal"></p>
+        ${legalP}
         <div class="footer-bottom">
           <span>© <span data-year></span> Ascend Trade & Logistics. <span data-i18n="ft.rights"></span></span>
           <span class="f-legal-links">

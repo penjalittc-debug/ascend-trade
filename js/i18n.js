@@ -14,8 +14,8 @@ window.I18N = {
 
     /* hero */
     "hero.badge":"Çin · Rusiya · Qazaxıstan → Azərbaycan",
-    "hero.title":"Xarici ticarətiniz üçün açar-təslim həll — <span class='accent'>zəmanətlə</span>",
-    "hero.sub":"Mal və fabrik axtarışı, öz brendiniz altında istehsal, Honq-Konq üzərindən qorunan ödəniş və 3 istiqamət üzrə çatdırılma. Vasitəçilər zənciri deyil — bir etibarlı tərəfdaş.",
+    "hero.title":"Çindən Azərbaycana alış və çatdırılma — <span class='accent'>sənədlər sizin şirkət adına</span>",
+    "hero.sub":"Malı və fabriki tapırıq, partiyanı yükləmədən əvvəl yoxlayırıq, daşıyırıq və gömrükdə rəsmiləşdiririk. Vasitəçilər zənciri əvəzinə bir müqavilə.",
     "hero.cta1":"Pulsuz konsultasiya","hero.cta2":"Xidmətlər",
     "hero.stat1n":"3","hero.stat1l":"Daşıma istiqaməti",
     "hero.stat2n":"3","hero.stat2l":"Öz strukturumuz: Çin · Honq-Konq · RF",
@@ -31,7 +31,7 @@ window.I18N = {
     "hs.sub":"Təchizatçının axtarışından və öz brendiniz altında istehsaldan tutmuş təhlükəsiz sövdələşmə və açar-təslim çatdırılmaya qədər.",
     "hs.c1t":"Mal və təchizatçı axtarışı","hs.c1d":"Lazımi malı və yoxlanılmış istehsalçını birbaşa tapırıq, qiymət-keyfiyyəti müqayisə edirik, nümunə sifariş edib yoxlayırıq.",
     "hs.c2t":"Çində istehsal (OEM/ODM)","hs.c2d":"Məhsulun öz brendiniz altında istehsalı: zavodlarla danışıqlar, keyfiyyət nəzarəti və istehsal auditi.",
-    "hs.c3t":"Təhlükəsiz sövdələşmə: maliyyə və hüquq","hs.c3d":"Honq-Konq ofisi vasitəsilə ödənişlərin qorunması, ixrac rəsmiləşdirilməsi və təchizatçılarla mübahisələrin həlli.",
+    "hs.c3t":"Sövdələşmənin müşayiəti","hs.c3d":"Zavodun ödənişdən əvvəl yoxlanılması, yükləmədən əvvəl partiyanın nəzarəti, müqavilədə mərhələli ödəniş şərtləri və qüsur halında təchizatçı ilə danışıqlar.",
     "hs.c4t":"Logistika və gömrük","hs.c4d":"Birbaşa müqavilələrlə multimodal daşıma və Çin, Rusiya, Qazaxıstandan gömrük rəsmiləşdirilməsi.",
     "hs.more":"Ətraflı",
 
@@ -39,14 +39,14 @@ window.I18N = {
     "usp.eyebrow":"İnfrastrukturumuz","usp.title":"Biz vasitəçi deyilik — biz sizin ticarət infrastrukturunuzuq",
     "usp.sub":"Çinlə sövdələşmənin hər mərhələsində tam nəzarət — ödənişdən çatdırılmaya qədər.",
     "usp.1t":"Çində öz ixrac şirkətimiz","usp.1d":"İxrac lisenziyası olmayan zavodlardan belə öz adımızdan rəsmi alış və sənədləşmə aparırıq.",
-    "usp.2t":"Honq-Konqda ödəniş ofisi","usp.2d":"Bank məhdudiyyətləri və bloklamalar olmadan sürətli, legal beynəlxalq köçürmələr.",
-    "usp.3t":"Təhlükəsiz sövdələşmə","usp.3d":"Ödənişin qorunmasına zəmanət veririk və qüsur/uyğunsuzluq halında təchizatçılarla mübahisələri sizin adınızdan aparırıq.",
+    "usp.2t":"Honq-Konqda ofisimiz","usp.2d":"Təchizatçı ilə müqaviləni, hesab-fakturanı və ixrac sənədlərini özümüz hazırlayırıq. Ödəniş şərtləri mərhələlidir və müqavilədə sabitlənir.",
+    "usp.3t":"Yükləmədən əvvəl yoxlama","usp.3d":"Zavodu sifarişdən əvvəl yoxlayırıq, partiyanı isə yükləmədən əvvəl razılaşdırılmış nümunə üzrə nəzarətdən keçiririk. Uyğunsuzluq olarsa, təchizatçı ilə danışıqları sizin adınızdan biz aparırıq.",
     "usp.4t":"Sanksiyalar altında iş","usp.4d":"Mürəkkəb geosiyasi şəraitdə təchizat təcrübəsi — məhdudiyyətlərdə də zəncir qırılmır.",
     "usp.5t":"Çində və MDB-də komanda","usp.5d":"Çində yerli mütəxəssislər və MDB-də 5 il təcrübə: Rusiya, Qazaxıstan, Qırğızıstan.",
     "usp.6t":"Birbaşa logistika","usp.6d":"Aparıcı logistika operatorları ilə birbaşa müqavilələr — minimum daşıma xərci.",
 
     /* difference quote */
-    "diff.quote":"«Biz sadəcə mal tapmırıq — sizin üçün vasitəçisiz ticarət mexanizmi qururuq: Çin zavodları ilə birbaşa əlaqə və keyfiyyət zəmanəti. Bizimlə işləmək qlobal bazarda öz ofisinizə sahib olmaq deməkdir.»",
+    "diff.quote":"«Biz sadəcə mal tapmırıq. Quançjouda öz şirkətimiz var: zavoda özümüz gedirik, partiyanı Quançjoudakı anbarda qəbul edir və sənədlərlə yola salırıq. Sizin üçün bu — ofis saxlamadan Çində öz ofisiniz deməkdir.»",
 
     /* pain points */
     "pain.eyebrow":"Tanış problemlər","pain.title":"Xarici ticarətin risklərini üzərimizə götürürük",
@@ -81,7 +81,7 @@ window.I18N = {
     "why.f4t":"Onlayn izləmə","why.f4d":"Yükünüzün statusunu real vaxtda izləyin.",
 
     /* stats band */
-    "sb.s1n":"5","sb.s1s":"","sb.s1t":"Göndərən ölkə",
+    "sb.s1n":"3","sb.s1s":"","sb.s1t":"Göndərən ölkə",
     "sb.s2n":"3","sb.s2s":"","sb.s2t":"Öz yurisdiksiyalarımız",
     "sb.s3n":"360°","sb.s3s":"","sb.s3t":"Açar-təslim logistika",
     "sb.s4n":"TM","sb.s4s":"®","sb.s4t":"Rusiyada ticarət nişanı",
@@ -112,7 +112,8 @@ window.I18N = {
     "ft.about":"XİF konsaltinq, malların və istehsalçıların axtarışı, Çin, Rusiya və Qazaxıstandan Azərbaycana yüklərin çatdırılması.",
     "ft.nav":"Naviqasiya","ft.services":"Xidmətlər","ft.contact":"Əlaqə",
     "ft.svc1":"XİF konsaltinq","ft.svc2":"Malların axtarışı","ft.svc3":"İstehsalçı tapılması","ft.svc4":"Yük daşıma",
-    "ft.rights":"Bütün hüquqlar qorunur.","ft.privacy":"Məxfilik siyasəti",
+    "ft.rights":"Bütün hüquqlar qorunur.","ft.privacy":"Məxfilik siyasəti","ft.terms":"Xidmət şərtləri",
+    "ft.legal":"«Azizov Group» MMC · OGRN 1247700473921 · INN 9721235929 · Moskva, Rusiya",
     "ft.hours":"B.e–Cümə: 09:00–18:00",
 
     /* about page */
@@ -125,7 +126,7 @@ window.I18N = {
     "ab.mv2t":"Vizyonumuz","ab.mv2d":"Regionda XİF və logistika üzrə ən etibarlı konsaltinq tərəfdaşı olmaq.",
     "ab.valt":"Dəyərlərimiz","ab.val1":"Şəffaflıq","ab.val1d":"Hər xərc və mərhələ açıqdır.","ab.val2":"Cavabdehlik","ab.val2d":"Verdiyimiz sözün arxasında dururuq.","ab.val3":"Nəticə","ab.val3d":"Prosesi deyil, nəticəni satırıq.","ab.val4":"Tərəfdaşlıq","ab.val4d":"Uzunmüddətli münasibət qururuq.",
     "hero.ctawa":"WhatsApp-da yazın","ct.optional":"istəyə bağlı",
-    "team.eye":"Komanda","team.title":"Ascend-i idarə edən komanda","team.sub":"Çin, Azərbaycan və beynəlxalq bazarlarda təcrübəli mütəxəssislər.","team.n1":"Pencəli Əzizov","team.r1":"Baş direktor (CEO), təsisçi","team.n2":"Çao Zhiming","team.r2":"Şanxay ofisinin direktoru, şərik","team.n3":"Lisa Vey","team.r3":"İqtisadiyyat üzrə direktor","team.soonn":"Tezliklə","team.soonr":"Komandaya qoşulur",
+    "team.eye":"Komanda","team.title":"Ascend-i idarə edən komanda","team.sub":"Çin, Azərbaycan və beynəlxalq bazarlarda təcrübəli mütəxəssislər.","team.n1":"Pencəli Əzizov","team.r1":"Baş direktor (CEO), təsisçi","team.n2":"Çao Zhiming","team.r2":"Quançjou ofisinin direktoru, şərik","team.n3":"Lisa Vey","team.r3":"İqtisadiyyat üzrə direktor","team.soonn":"Tezliklə","team.soonr":"Komandaya qoşulur",
 
     /* services page */
     "sv.crumb":"Xidmətlər","sv.htitle":"Xarici ticarətin tam spektrli xidmətləri",
@@ -147,6 +148,7 @@ window.I18N = {
     "dr.crumb":"İstiqamətlər","dr.htitle":"Daşıma istiqamətləri",
     "dr.hsub":"Çin, Rusiya və Qazaxıstandan Azərbaycana — hər marşrut üzrə optimal həll.",
     "dr.transit":"Təxmini tranzit","dr.modes":"Nəqliyyat növləri","dr.days":"gün",
+    "dr.transitv":"hesablamada dəqiqləşdirilir",
     "dr.china.long":"Çin istehsalçıları ilə birbaşa iş, yüklərin konsolidasiyası və Trans-Xəzər dəhlizi vasitəsilə multimodal daşıma. Fabrik axtarışı və keyfiyyət nəzarəti daxil.",
     "dr.russia.long":"Rusiyadan avtomobil və dəmir yolu ilə müntəzəm yük axını, konsolidasiya və gömrük rəsmiləşdirilməsi.",
     "dr.kz.long":"Qazaxıstan və Mərkəzi Asiyadan Trans-Xəzər dəhlizi üzrə intermodal daşıma həlləri.",
@@ -157,35 +159,35 @@ window.I18N = {
     "lp.cn.introt":"Çindən Bakıya birbaşa daşıma",
     "lp.cn.introd":"Çin istehsalçıları ilə birbaşa işləyirik: yükləri konsolidasiya edir, sənədləşməni hazırlayır və Trans-Xəzər dəhlizi ilə Azərbaycana çatdırırıq. Siz yalnız nəticəni alırsınız — qapıdan qapıya.",
     "lp.cn.f1t":"Multimodal marşrutlar","lp.cn.f1d":"Dəniz, dəmir yolu və hava — yükün həcminə və təcililiyinə görə optimal variant.",
-    "lp.cn.f2t":"Gömrük və sənədlər","lp.cn.f2d":"İxrac rəsmiləşdirilməsi, TN VED kodları və Azərbaycanda gömrük müşayiəti tam bizim üzərimizdə.",
-    "lp.cn.f3t":"Açar-təslim","lp.cn.f3d":"Fabrik axtarışı, keyfiyyət nəzarəti, ödənişin qorunması və qapıya çatdırılma — bir müqavilə ilə.",
+    "lp.cn.f2t":"Gömrük və sənədlər","lp.cn.f2d":"Çində ixrac rəsmiləşdirilməsi, malın gömrük kodunun seçimi və Azərbaycanda idxal bəyannaməsinin müşayiəti. Bəyannamə sizin şirkət adına rəsmiləşdirilir.",
+    "lp.cn.f3t":"Açar-təslim","lp.cn.f3d":"Fabrik axtarışı, yükləmədən əvvəl yoxlama, daşıma və gömrük rəsmiləşdirilməsi — bir müqavilə ilə.",
     /* landing pages — shared blocks */
     "lp.introt":"Birbaşa və etibarlı daşıma",
     "lp.f1t":"Multimodal marşrutlar","lp.f1d":"Avtomobil, dəmir yolu, dəniz və hava — yükünüz üçün ən sərfəli marşrut.",
-    "lp.f2t":"Gömrük və sənədlər","lp.f2d":"İxrac rəsmiləşdirilməsi və Azərbaycanda gömrük müşayiəti tam bizim üzərimizdə.",
+    "lp.f2t":"Gömrük və sənədlər","lp.f2d":"İxrac rəsmiləşdirilməsi və Azərbaycanda idxal bəyannaməsinin müşayiəti. Bəyannamə sizin şirkət adına rəsmiləşdirilir.",
     "lp.f3t":"Açar-təslim","lp.f3d":"Sənədlərdən qapıya çatdırılmaya qədər bütün mərhələləri bir müqavilə ilə idarə edirik.",
     /* landing: Rusiya → Azərbaycan */
     "lp.ru.crumb":"Rusiya → Azərbaycan",
     "lp.ru.htitle":"Rusiyadan Azərbaycana yük daşıma",
-    "lp.ru.hsub":"Rusiyadan Azərbaycana müntəzəm avtomobil və dəmir yolu daşımaları — 6–10 gündə, konsolidasiya və gömrüklə.",
+    "lp.ru.hsub":"Rusiyadan Azərbaycana müntəzəm avtomobil və dəmir yolu daşımaları: yığma yüklərin konsolidasiyası, sənədlər və gömrük rəsmiləşdirilməsi.",
     /* landing: Qazaxıstan → Azərbaycan */
     "lp.kz.crumb":"Qazaxıstan → Azərbaycan",
     "lp.kz.htitle":"Qazaxıstandan Azərbaycana yük daşıma",
-    "lp.kz.hsub":"Qazaxıstandan Azərbaycana Trans-Xəzər dəhlizi üzrə intermodal daşıma — 12–18 gündə, açar-təslim.",
+    "lp.kz.hsub":"Qazaxıstandan Azərbaycana Trans-Xəzər dəhlizi üzrə intermodal daşıma: dəmir yolu və avtomobil plecləri, konsolidasiya və gömrük.",
     /* FAQ */
     "faq.eyebrow":"Suallar","faq.title":"Tez-tez verilən suallar",
     "faq.q1":"Çindən Azərbaycana çatdırılma nə qədər çəkir?",
-    "faq.a1":"Marşrutdan asılıdır: Çindən 18–25 gün, Rusiyadan 6–10, Qazaxıstandan 12–18 gün. Dəqiq müddəti yükün həcmi və nəqliyyat növünə görə hesablama zamanı deyirik.",
+    "faq.a1":"Müddət dəhlizdən və mövsümdən asılıdır: marşrut, nəqliyyat növü, Xəzər keçidinin yüklənməsi və gömrükdəki növbə. Ona görə hamı üçün bir rəqəm demirik: müqavilədə yola salma tarixini və çatma pəncərəsini sabitləyirik, hesablamanı isə həcm, çəki və yükləmə nöqtəsi dəqiqləşdikdən sonra veririk.",
     "faq.q2":"Gömrük rəsmiləşdirilməsini siz həll edirsiniz?",
-    "faq.a2":"Bəli. İxrac sənədləri, TN VED kodlarının təyini və Azərbaycanda idxal gömrüyü tam bizim üzərimizdədir. Siz gömrük prosedurları ilə məşğul olmursunuz.",
+    "faq.a2":"İxrac sənədlərini Çində hazırlayır, malın gömrük kodunu seçir və Azərbaycanda idxal rəsmiləşdirilməsini müşayiət edirik. Bəyannaməni Dövlət Gömrük Komitəsinin reyestrindəki gömrük təmsilçisi təqdim edir və o, sizin şirkət adına rəsmiləşdirilir — sənədlərin tam paketi sizdə qalır. Rüsum, ƏDV və yığımların yekun məbləğini kod və gömrük dəyəri üzrə gömrük orqanı müəyyən edir; göndərişdən əvvəlki hesablamamız təxminidir.",
     "faq.q3":"Ödəniş necə aparılır?",
-    "faq.a3":"Sifarişin şərtlərini əvvəlcədən razılaşdırırıq. Çin təchizatçısına ödənişlər Honq-Konq ofisimiz vasitəsilə qorunur; təfərrüatları konsultasiya zamanı fərdi müzakirə edirik.",
+    "faq.a3":"Ödəniş şərtləri təchizatçı ilə müqavilədə sabitlənir: bir qayda olaraq istehsalın başlanması üçün avans, qalan hissə isə partiya yükləmədən əvvəlki yoxlamadan keçdikdən sonra. Bu şərtləri imzalanmadan əvvəl razılaşdırırıq və sənədlərin üst-üstə düşməsinə nəzarət edirik: müqavilə, hesab-faktura, ixrac bəyannaməsi və ödənişi alan tərəf eyni şəxs olmalıdır.",
     "faq.q4":"Minimal yük həcmi varmı?",
     "faq.a4":"Xeyr, sabit minimum yoxdur. Həm kiçik partiyalar (konsolidasiya ilə), həm də tam konteyner daşımaları ilə işləyirik. Kiçik həcmlər üçün başqa müştərilərin yükü ilə birləşdirmə təklif edirik.",
     "faq.q5":"Yalnız daşıma, yoxsa mal axtarışı da edirsiniz?",
     "faq.a5":"Hər ikisini. İstəsəniz yalnız daşımanı, istəsəniz tam dövrü — mal/fabrik axtarışı, keyfiyyət nəzarəti, ödəniş və çatdırılma — açar-təslim həyata keçiririk.",
     "faq.q6":"Yük zədələnərsə və ya uyğunsuzluq olarsa nə olur?",
-    "faq.a6":"Təchizatçı ilə mübahisələri sizin adınızdan aparırıq və ödənişin qorunmasına çalışırıq. Yükləmədən əvvəl keyfiyyət yoxlaması bu riskləri minimuma endirir.",
+    "faq.a6":"Əvvəlcə qeydə alırıq: foto, yoxlama hesabatı, anbarda qəbul aktı. Sonra sizin adınızdan təchizatçı ilə danışıqları aparırıq — partiyanın dəyişdirilməsi, düzəliş, endirim və ya geri qaytarma, müqavilədə hansı nəzərdə tutulubsa. Məhz buna görə təsdiqlənmiş nümunə və yükləmədən əvvəl yoxlama tələb edirik: yük Çindən çıxandan sonra təsir imkanı azalır.",
     /* services — transport modes */
     "svc.modes.eyebrow":"Nəqliyyat növləri","svc.modes.title":"Yükünüz üçün optimal marşrut",
     "svc.modes.sub":"Həcm, təcililik və büdcəyə görə ən sərfəli daşıma növünü seçirik — və ya bir neçəsini birləşdiririk (multimodal).",
@@ -199,7 +201,7 @@ window.I18N = {
     "lp.cn.s1":"Mal və yoxlanılmış təchizatçının axtarışı",
     "lp.cn.s2":"Fabrikin auditi və keyfiyyət nəzarəti",
     "lp.cn.s3":"Öz brendiniz altında istehsal (OEM/ODM)",
-    "lp.cn.s4":"Honq-Konq ofisi ilə ödənişin qorunması",
+    "lp.cn.s4":"Yükləmədən əvvəl partiyanın yoxlanması və müqavilə üzrə mərhələli ödəniş",
     "lp.cn.s5":"Yüklərin konsolidasiyası və qablaşdırma",
     "lp.cn.s6":"Gömrük rəsmiləşdirilməsi və qapıya çatdırılma",
     /* russia — what we offer */
@@ -222,13 +224,13 @@ window.I18N = {
     "svc.a2t":"Yükün sığortası","svc.a2d":"Daşınma müddətində yükün sığortalanması — zədə və ya itki riskini üzərinizdən götürürük.",
     "svc.a3t":"Xüsusi yüklər","svc.a3d":"İriqabaritli və ağırçəkili, temperatur rejimli, avtomobil və texnika daşımaları — qeyri-standart yüklər üçün həllər.",
     /* guarantees */
-    "g.eyebrow":"Zəmanətlər","g.title":"İlk sifarişdə də təhlükəsizdir",
-    "g.1t":"Ödənişin qorunması","g.1d":"Çin təchizatçısına ödəniş Honq-Konq ofisimiz vasitəsilə qorunur — riski üzərinizə almırsınız.",
-    "g.2t":"Yükün sığortası","g.2d":"Daşınma müddətində yük sığortalanır — zədə və ya itki halında qorunursunuz.",
-    "g.3t":"Qüsura görə kompensasiya","g.3d":"Fabrik yoxlaması aparırıq; qüsur və ya uyğunsuzluq halında kompensasiya edirik.",
-    "g.4t":"Sabit müddət","g.4d":"Çatdırılma müddəti müqavilədə sabitlənir — sözdə deyil, sənəddə.",
-    "g.5t":"Avansın qaytarılması","g.5d":"Öhdəlik bizim təqsirimizlə pozularsa, avansı qaytarırıq.",
-    "ct.consent":"Şəxsi məlumatlarımın <a href='privacy.html'>məxfilik siyasətinə</a> uyğun emalına razıyam.",
+    "g.eyebrow":"Riskləri necə azaldırıq","g.title":"Sövdələşmədə beş nəzarət nöqtəsi",
+    "g.1t":"Mərhələli ödəniş","g.1d":"Ödəniş şərtləri təchizatçı ilə müqavilədə sabitlənir: istehsalın başlanması üçün avans, qalan hissə isə partiya yoxlamadan keçdikdən sonra. Sxemi imzalanmadan əvvəl razılaşdırırıq.",
+    "g.2t":"Yükün sığortası","g.2d":"Yükü daşınma müddətinə sığortalamaq mümkündür. Sığorta məbləği, əhatə dairəsi və polisin qiyməti sizin göndərişiniz üçün hesablamada göstərilir.",
+    "g.3t":"Yükləmədən əvvəl yoxlama","g.3d":"Partiyanı yükləmədən əvvəl razılaşdırılmış nümunə ilə tutuşdururuq: say, komplektlik, markalanma, qablaşdırma. Fotolu hesabat sizə göndərilir.",
+    "g.4t":"Müqavilədə tarix","g.4d":"Müqavilədə yola salma tarixini və çatma pəncərəsini sabitləyirik. Xəzər keçidində və sərhəddə növbə bizim nəzarətimizdən kənardır — belə hallarda eyni gün xəbər veririk.",
+    "g.5t":"Müqavilə üzrə məsuliyyət","g.5d":"Tərəflərin öhdəlikləri, məsuliyyət hədləri və pretenziya qaydası müqavilədə yazılır. Mübahisəli halları yazışma ilə deyil, müqavilə ilə həll edirik.",
+    "ct.consent":"Adım, telefonum, e-poçtum və müraciət mətnimin bu sorğuya cavab vermək üçün emalına razıyam, o cümlədən məlumatların Web3Forms (ABŞ) xidmətinə ötürülməsinə. <a href='/privacy'>Necə emal edirik</a>.",
     "e404.h":"Səhifə tapılmadı","e404.sub":"Axtardığınız səhifə mövcud deyil və ya köçürülüb.","e404.btn":"Ana səhifəyə qayıt",
     "ab.valeye":"Prinsiplərimiz",
 
@@ -239,15 +241,29 @@ window.I18N = {
     "ct.phone":"Telefon","ct.email":"E-poçt","ct.addr":"Ünvan","ct.addrv":"Bakı, Azərbaycan","ct.hours":"İş saatları",
     "ct.fname":"Ad, Soyad","ct.femail":"E-poçt","ct.fphone":"Telefon","ct.fsubject":"Mövzu","ct.fmsg":"Mesajınız","ct.fsend":"Sorğunu göndər",
     "ct.opt1":"XİF konsaltinq","ct.opt2":"Malların axtarışı","ct.opt3":"İstehsalçı tapılması","ct.opt4":"Yük daşıma","ct.opt5":"Digər",
-    "ct.note":"Formu göndərməklə məxfilik siyasəti ilə razılaşırsınız.",
+    "ct.note":"Məlumatların operatoru — Ascend Consulting MMC. Sorğu Web3Forms (ABŞ) vasitəsilə şirkətin poçt qutusuna gəlir və müraciət tarixindən 24 ay saxlanılır, sonra silinir. Razılığı istənilən vaxt Penjalittc@gmail.com ünvanına yazaraq geri götürə bilərsiniz — 7 iş günü ərzində cavab veririk. Tam mətn — <a href='/privacy'>məxfilik siyasətində</a>.",
 
     /* privacy */
-    "pv.crumb":"Məxfilik","pv.htitle":"Məxfilik siyasəti","pv.updated":"Yenilənib: iyul 2026",
-    "pv.1t":"Hansı məlumatları toplayırıq","pv.1d":"Saytdakı form vasitəsilə ad, e-poçt, telefon, seçilmiş xidmət və müraciət mətnini toplayırıq.",
-    "pv.2t":"Məqsəd","pv.2d":"Məlumatlar yalnız sorğunuzla bağlı əlaqə üçün istifadə olunur. Onları marketinq üçün üçüncü tərəflərə satmır və ötürmürük.",
-    "pv.3t":"Emal","pv.3d":"Formun göndərilməsi Web3Forms xidməti ilə emal olunur və mesajı poçtumuza çatdırır. Məlumatlar saytda dərc olunmur.",
-    "pv.4t":"Saxlama","pv.4d":"Müraciətləri sorğunun emalı üçün lazım olan müddət ərzində saxlayır və tələbinizlə silirik.",
-    "pv.5t":"Hüquqlarınız","pv.5d":"Məlumatlarınızı dəqiqləşdirmək, dəyişmək və ya silmək üçün Penjalittc@gmail.com ünvanına yazın."
+    "pv.crumb":"Məxfilik","pv.htitle":"Məxfilik siyasəti","pv.updated":"Yenilənib: 24.08.2026",
+    "pv.0t":"Məlumatları kim emal edir","pv.0d":"Operator — Ascend Consulting MMC. Şəxsi məlumatlarla bağlı müraciətlər: Penjalittc@gmail.com.",
+    "pv.1t":"Hansı məlumatları toplayırıq","pv.1d":"Formdan: ad, telefon, e-poçt (istəyə bağlı), seçilmiş xidmət və müraciət mətni. Saytın ziyarəti barədə: baxılan səhifələr, cihaz, keçid mənbəyi və Google Analytics kuki identifikatoru.",
+    "pv.2t":"Məqsəd və hüquqi əsas","pv.2d":"Form məlumatlarını yalnız sorğunuza cavab vermək və hesablama hazırlamaq üçün istifadə edirik. Hüquqi əsas — formdakı xananı işarələməklə verdiyiniz razılıq. Məlumatları satmır və marketinq üçün üçüncü şəxslərə vermirik.",
+    "pv.3t":"Sorğu necə emal olunur","pv.3d":"Form Web3Forms xidməti vasitəsilə göndərilir və məktub şirkətin poçt qutusuna çatdırılır. Sorğu məlumatları saytda dərc olunmur və saytın bazasında saxlanılmır.",
+    "pv.6t":"Kimə ötürülür və transsərhəd ötürmə","pv.6d":"Sorğu Web3Forms (ABŞ) xidmətindən keçir və Google-da (ABŞ) yerləşən poçt qutusuna gəlir; ziyarət statistikasını Google Analytics (ABŞ) emal edir. Bu — şəxsi məlumatların transsərhəd ötürülməsidir: formdakı xananı işarələməklə buna razılıq verirsiniz. Başqa alıcı yoxdur.",
+    "pv.4t":"Saxlama müddəti","pv.4d":"Müraciətləri müraciət tarixindən 24 ay saxlayırıq, sonra silirik. Razılığı geri götürsəniz — daha tez silirik, aşağıda göstərilən müddətdə.",
+    "pv.5t":"Hüquqlarınız","pv.5d":"Hansı məlumatlarınızın bizdə olduğunu öyrənmək, onların düzəldilməsini və ya silinməsini tələb etmək, emalı qadağan etmək və razılığı geri götürmək hüququnuz var. Penjalittc@gmail.com ünvanına yazın — 7 iş günü ərzində cavab veririk; üçüncü şəxslərə müraciət tələb olunarsa, müddət 14 günə qədər uzana bilər.",
+    "pv.7t":"Məlumatların qorunması","pv.7d":"Sorğulara yalnız sizin müraciətinizi aparan əməkdaşların girişi var. [ПРОВЕРИТЬ С ЮРИСТОМ + УТОЧНИТЬ У КЛИЕНТА: tədbirlərin siyahısı]",
+    "pv.8t":"Kuki və analitika","pv.8d":"Sayt ziyarət statistikası üçün Google Analytics 4-dən istifadə edir. Yığımı brauzer parametrləri və ya Google Analytics Opt-out əlavəsi ilə söndürmək olar.",
+
+    /* terms of service */
+    "tr.crumb":"Xidmət şərtləri","tr.htitle":"Xidmətlərin göstərilmə şərtləri","tr.updated":"Yenilənib: 24.08.2026",
+    "tr.1t":"Nə edirik","tr.1d":"Yükün daşınmasını təşkil edir və xarici ticarət əməliyyatlarını müşayiət edirik: mal və fabrik axtarışı, təchizatçının yoxlanılması, yükləmədən əvvəl partiyanın nəzarəti, Çində konsolidasiya, daşıma, sənədlərin hazırlanması və gömrük rəsmiləşdirilməsinin müşayiəti.",
+    "tr.2t":"Nə etmirik","tr.2d":"Bank, ödəniş və hüquq xidmətləri göstərmirik, sığortaçı deyilik və dövlət orqanlarının qərarına zəmanət vermirik. Rüsum, ƏDV və yığımların yekun məbləğini gömrük orqanı müəyyən edir.",
+    "tr.3t":"Müqavilə əsasında işləyirik","tr.3d":"Hər göndəriş müqavilə və sifariş sorğusu ilə rəsmiləşir: predmet, marşrut, yükün elan edilmiş dəyəri, tarif, müddətlər, tərəflərin məsuliyyəti və pretenziya qaydası.",
+    "tr.4t":"Bəyannaməni kim verir","tr.4d":"Bəyannamə sizin şirkət adına rəsmiləşdirilir, onu Dövlət Gömrük Komitəsinin reyestrindəki gömrük təmsilçisi təqdim edir. Bəyannamədəki məlumatların düzgünlüyünə görə məsuliyyət bəyannaməçinin üzərindədir — buna görə sənədləri birlikdə hazırlayırıq.",
+    "tr.5t":"Qiymət necə hesablanır","tr.5d":"Hesabda xidmət haqqımız və əvəzi ödənilən xərclər (fraxt, keçid, saxlama, yığımlar) ayrıca göstərilir. Göndərişdən əvvəlki hesablama təxminidir. USD→AZN məzənnəsi hesabın verildiyi tarixə sabitlənir.",
+    "tr.6t":"Müddətlər","tr.6d":"Müqavilədə yola salma tarixini və çatma pəncərəsini sabitləyirik. Xəzər keçidində, sərhəddə və gömrükdə gecikmələr bizim nəzarətimizdən kənardır; belə hallarda eyni gün məlumat verir və alternativ marşrut təklif edirik.",
+    "tr.8t":"Şəxsi məlumatlar","tr.8d":"Sorğu formasından gələn məlumatların emalı <a href='/privacy'>məxfilik siyasəti</a> ilə tənzimlənir."
   },
 
   ru: {
@@ -260,8 +276,8 @@ window.I18N = {
     "bl.read":"Читать","bl.back":"← Назад в блог",
 
     "hero.badge":"Китай · Россия · Казахстан → Азербайджан",
-    "hero.title":"Внешняя торговля под ключ — <span class='accent'>с гарантиями</span>",
-    "hero.sub":"Поиск товара и фабрики, производство под вашим брендом, защищённая оплата через Гонконг и доставка по 3 направлениям. Не цепочка посредников — один надёжный партнёр.",
+    "hero.title":"Закупка и доставка из Китая в Азербайджан — <span class='accent'>с документами на вашу компанию</span>",
+    "hero.sub":"Находим товар и фабрику, проверяем партию перед отгрузкой, везём и оформляем на таможне. Один договор вместо цепочки посредников.",
     "hero.cta1":"Бесплатная консультация","hero.cta2":"Наши услуги",
     "hero.stat1n":"3","hero.stat1l":"Направлений доставки",
     "hero.stat2n":"3","hero.stat2l":"Свои структуры: Китай · Гонконг · РФ",
@@ -275,7 +291,7 @@ window.I18N = {
     "hs.sub":"От поиска поставщика и производства под вашим брендом до безопасной сделки и доставки под ключ.",
     "hs.c1t":"Поиск товаров и поставщиков","hs.c1d":"Находим нужный товар и проверенного производителя напрямую, сравниваем цену и качество, заказываем и проверяем образцы.",
     "hs.c2t":"Производство в Китае (OEM/ODM)","hs.c2d":"Выпуск продукции под вашим брендом: переговоры с заводами, контроль качества и аудит производств.",
-    "hs.c3t":"Безопасная сделка: финансы и право","hs.c3d":"Защита платежей через офис в Гонконге, экспортное оформление и решение споров с поставщиками.",
+    "hs.c3t":"Сопровождение сделки","hs.c3d":"Проверка фабрики до оплаты, инспекция партии перед отгрузкой, поэтапные условия оплаты в контракте и переговоры с поставщиком при браке.",
     "hs.c4t":"Логистика и таможня","hs.c4d":"Мультимодальная доставка по прямым контрактам и таможенное оформление из Китая, России и Казахстана.",
     "hs.more":"Подробнее",
 
@@ -283,14 +299,14 @@ window.I18N = {
     "usp.eyebrow":"Наша инфраструктура","usp.title":"Мы не посредник — мы ваша торговая инфраструктура",
     "usp.sub":"Полный контроль на каждом этапе сделки с Китаем — от оплаты до доставки.",
     "usp.1t":"Своя экспортная компания в Китае","usp.1d":"Официально закупаем и оформляем документы от своего имени — даже с фабрик без экспортной лицензии.",
-    "usp.2t":"Платёжный офис в Гонконге","usp.2d":"Быстрые и легальные международные переводы без банковских ограничений и блокировок.",
-    "usp.3t":"Безопасная сделка","usp.3d":"Гарантируем защиту платежа и ведём споры с поставщиками при браке или несоответствии — на вашей стороне.",
+    "usp.2t":"Офис в Гонконге","usp.2d":"Контракт с поставщиком, инвойс и экспортные документы готовим сами. Условия оплаты — поэтапные, они фиксируются в контракте.",
+    "usp.3t":"Проверка до отгрузки","usp.3d":"Проверяем фабрику до заказа, а партию — перед отгрузкой, по согласованному образцу. При несоответствии переговоры с поставщиком ведём от вашего имени.",
     "usp.4t":"Работа под санкциями","usp.4d":"Опыт поставок в сложных геополитических условиях — цепочка не рвётся даже при ограничениях.",
     "usp.5t":"Команда в Китае и СНГ","usp.5d":"Локальные специалисты в Китае и 5 лет опыта в СНГ: Россия, Казахстан, Киргизия.",
     "usp.6t":"Прямая логистика","usp.6d":"Прямые контракты с ведущими логистами — минимальная стоимость перевозки.",
 
     /* difference quote */
-    "diff.quote":"«Мы не просто находим товар — мы строим для вас торговый механизм без посредников: прямую связь с заводами Китая и гарантию качества. Работать с нами — значит иметь свой офис на глобальном рынке.»",
+    "diff.quote":"«Мы не просто находим товар. У нас своя компания в Гуанчжоу: мы сами приезжаем на завод, принимаем партию на складе в Гуанчжоу и отправляем её с документами. Для вас это свой офис в Китае — без содержания офиса.»",
 
     /* pain points */
     "pain.eyebrow":"Знакомые проблемы","pain.title":"Мы снимаем риски внешней торговли",
@@ -323,7 +339,7 @@ window.I18N = {
     "why.f3t":"Проверенные партнёры","why.f3d":"Работаем только с проверенными заводами и перевозчиками.",
     "why.f4t":"Онлайн-отслеживание","why.f4d":"Следите за статусом груза в реальном времени.",
 
-    "sb.s1n":"5","sb.s1s":"","sb.s1t":"Стран-отправителей",
+    "sb.s1n":"3","sb.s1s":"","sb.s1t":"Стран-отправителей",
     "sb.s2n":"3","sb.s2s":"","sb.s2t":"Собственные юрисдикции",
     "sb.s3n":"360°","sb.s3s":"","sb.s3t":"Логистика под ключ",
     "sb.s4n":"TM","sb.s4s":"®","sb.s4t":"Товарный знак РФ",
@@ -350,7 +366,8 @@ window.I18N = {
     "ft.about":"Консалтинг ВЭД, поиск товаров и производителей, доставка грузов из Китая, России и Казахстана в Азербайджан.",
     "ft.nav":"Навигация","ft.services":"Услуги","ft.contact":"Контакты",
     "ft.svc1":"Консалтинг ВЭД","ft.svc2":"Поиск товаров","ft.svc3":"Поиск производителей","ft.svc4":"Доставка грузов",
-    "ft.rights":"Все права защищены.","ft.privacy":"Политика конфиденциальности",
+    "ft.rights":"Все права защищены.","ft.privacy":"Политика конфиденциальности","ft.terms":"Условия оказания услуг",
+    "ft.legal":"ООО «Азизов Групп» · ОГРН 1247700473921 · ИНН 9721235929 · Москва, Россия",
     "ft.hours":"Пн–Пт: 09:00–18:00",
 
     "ab.crumb":"О нас","ab.htitle":"Упрощаем вашу внешнюю торговлю",
@@ -362,7 +379,7 @@ window.I18N = {
     "ab.mv2t":"Наше видение","ab.mv2d":"Стать самым надёжным консалтинговым партнёром в сфере ВЭД и логистики в регионе.",
     "ab.valt":"Наши ценности","ab.val1":"Прозрачность","ab.val1d":"Каждый расход и этап открыты.","ab.val2":"Ответственность","ab.val2d":"Держим слово и отвечаем за результат.","ab.val3":"Результат","ab.val3d":"Продаём результат, а не процесс.","ab.val4":"Партнёрство","ab.val4d":"Строим долгосрочные отношения.",
     "hero.ctawa":"Написать в WhatsApp","ct.optional":"необязательно",
-    "team.eye":"Команда","team.title":"Команда, которая ведёт Ascend","team.sub":"Опытные специалисты в Китае, Азербайджане и на международных рынках.","team.n1":"Пенджали Азизов","team.r1":"Генеральный директор (CEO), основатель","team.n2":"Чао Чжимин","team.r2":"Директор офиса в Шанхае, партнёр","team.n3":"Лиза Вей","team.r3":"Директор по экономике","team.soonn":"Скоро","team.soonr":"Присоединяется к команде",
+    "team.eye":"Команда","team.title":"Команда, которая ведёт Ascend","team.sub":"Опытные специалисты в Китае, Азербайджане и на международных рынках.","team.n1":"Пенджали Азизов","team.r1":"Генеральный директор (CEO), основатель","team.n2":"Чао Чжимин","team.r2":"Директор офиса в Гуанчжоу, партнёр","team.n3":"Лиза Вей","team.r3":"Директор по экономике","team.soonn":"Скоро","team.soonr":"Присоединяется к команде",
 
     "sv.crumb":"Услуги","sv.htitle":"Полный спектр услуг внешней торговли",
     "sv.hsub":"От консалтинга до доставки — доверьте все процессы одной команде.",
@@ -382,6 +399,7 @@ window.I18N = {
     "dr.crumb":"Направления","dr.htitle":"Направления доставки",
     "dr.hsub":"Из Китая, России и Казахстана в Азербайджан — оптимальное решение по каждому маршруту.",
     "dr.transit":"Примерный транзит","dr.modes":"Виды транспорта","dr.days":"дней",
+    "dr.transitv":"уточняется в расчёте",
     "dr.china.long":"Прямая работа с производителями Китая, консолидация грузов и мультимодальная доставка через Транскаспийский коридор. Включая поиск фабрик и контроль качества.",
     "dr.russia.long":"Регулярный грузопоток из России авто и ж/д транспортом, консолидация и таможенное оформление.",
     "dr.kz.long":"Интермодальные решения доставки из Казахстана и Центральной Азии по Транскаспийскому коридору.",
@@ -392,35 +410,35 @@ window.I18N = {
     "lp.cn.introt":"Прямая доставка из Китая в Баку",
     "lp.cn.introd":"Работаем напрямую с производителями Китая: консолидируем грузы, готовим документы и доставляем в Азербайджан через Транскаспийский коридор. Вы получаете результат — от двери до двери.",
     "lp.cn.f1t":"Мультимодальные маршруты","lp.cn.f1d":"Море, ж/д и авиа — оптимальный вариант под объём и срочность груза.",
-    "lp.cn.f2t":"Таможня и документы","lp.cn.f2d":"Экспортное оформление, коды ТН ВЭД и таможенное сопровождение в Азербайджане — полностью на нас.",
-    "lp.cn.f3t":"Под ключ","lp.cn.f3d":"Поиск фабрики, контроль качества, защита платежа и доставка до двери — по одному договору.",
+    "lp.cn.f2t":"Таможня и документы","lp.cn.f2d":"Экспортное оформление в Китае, подбор кода товара и сопровождение импортной декларации в Азербайджане. Декларация оформляется на вашу компанию.",
+    "lp.cn.f3t":"Под ключ","lp.cn.f3d":"Поиск фабрики, инспекция перед отгрузкой, доставка и таможенное оформление — по одному договору.",
     /* landing pages — shared blocks */
     "lp.introt":"Прямая и надёжная доставка",
     "lp.f1t":"Мультимодальные маршруты","lp.f1d":"Авто, ж/д, море и авиа — самый выгодный маршрут для вашего груза.",
-    "lp.f2t":"Таможня и документы","lp.f2d":"Экспортное оформление и таможенное сопровождение в Азербайджане — полностью на нас.",
+    "lp.f2t":"Таможня и документы","lp.f2d":"Экспортное оформление и сопровождение импортной декларации в Азербайджане. Декларация оформляется на вашу компанию.",
     "lp.f3t":"Под ключ","lp.f3d":"От документов до доставки до двери — все этапы по одному договору.",
     /* landing: Россия → Азербайджан */
     "lp.ru.crumb":"Россия → Азербайджан",
     "lp.ru.htitle":"Доставка грузов из России в Азербайджан",
-    "lp.ru.hsub":"Регулярные авто- и ж/д перевозки из России в Азербайджан — за 6–10 дней, с консолидацией и таможней.",
+    "lp.ru.hsub":"Регулярные авто- и ж/д перевозки из России в Азербайджан: консолидация сборных грузов, документы и таможенное оформление.",
     /* landing: Казахстан → Азербайджан */
     "lp.kz.crumb":"Казахстан → Азербайджан",
     "lp.kz.htitle":"Доставка грузов из Казахстана в Азербайджан",
-    "lp.kz.hsub":"Интермодальная доставка из Казахстана в Азербайджан по Транскаспийскому коридору — за 12–18 дней, под ключ.",
+    "lp.kz.hsub":"Интермодальная доставка из Казахстана в Азербайджан по Транскаспийскому коридору: ж/д и авто плечи, консолидация и таможня.",
     /* FAQ */
     "faq.eyebrow":"Вопросы","faq.title":"Частые вопросы",
     "faq.q1":"Сколько занимает доставка из Китая в Азербайджан?",
-    "faq.a1":"Зависит от маршрута: из Китая 18–25 дней, из России 6–10, из Казахстана 12–18 дней. Точный срок называем при расчёте — по объёму груза и виду транспорта.",
+    "faq.a1":"Срок зависит от коридора и сезона: маршрут, вид транспорта, загрузка каспийской переправы и очередь на таможне. Поэтому мы не называем одну цифру для всех: в договоре фиксируем дату отправки и окно прибытия, а расчёт даём после того, как уточним объём, вес и точку отгрузки.",
     "faq.q2":"Растаможку вы берёте на себя?",
-    "faq.a2":"Да. Экспортные документы, подбор кодов ТН ВЭД и импортная таможня в Азербайджане — полностью на нас. Вам не нужно заниматься таможенными процедурами.",
+    "faq.a2":"Мы готовим экспортные документы в Китае, подбираем код товара и сопровождаем импортное оформление в Азербайджане. Декларацию подаёт таможенный представитель из реестра ГТК, а оформляется она на вашу компанию — полный пакет документов остаётся у вас. Итоговую сумму пошлины, НДС и сборов определяет таможенный орган по коду и таможенной стоимости; наш расчёт до отправки — ориентировочный.",
     "faq.q3":"Как происходит оплата?",
-    "faq.a3":"Условия сделки согласуем заранее. Платежи китайскому поставщику защищены через наш офис в Гонконге; детали обсуждаем индивидуально на консультации.",
+    "faq.a3":"Условия оплаты фиксируются в контракте с поставщиком: как правило, аванс на запуск производства и остаток после того, как партия прошла проверку перед отгрузкой. Эти условия согласуем до подписания и следим, чтобы документы сделки совпадали: контракт, инвойс, экспортная декларация и получатель платежа — одно и то же лицо.",
     "faq.q4":"Есть ли минимальный объём груза?",
     "faq.a4":"Нет, фиксированного минимума нет. Работаем и с небольшими партиями (через консолидацию), и с полными контейнерами. Для малых объёмов предлагаем объединение с грузами других клиентов.",
     "faq.q5":"Вы только возите или ищете товар и фабрику?",
     "faq.a5":"И то, и другое. Можем сделать только доставку, а можем полный цикл — поиск товара/фабрики, контроль качества, оплату и доставку под ключ.",
     "faq.q6":"Что если груз повреждён или не соответствует?",
-    "faq.a6":"Ведём споры с поставщиком от вашего имени и добиваемся защиты платежа. Проверка качества до отгрузки сводит эти риски к минимуму.",
+    "faq.a6":"Сначала фиксация: фотографии, отчёт инспекции, акт приёмки на складе. Дальше ведём переговоры с поставщиком от вашего имени — замена партии, доработка, скидка или возврат, что предусмотрено контрактом. Поэтому мы и настаиваем на утверждённом образце и проверке до отгрузки: после выхода груза из Китая рычагов меньше.",
     /* services — transport modes */
     "svc.modes.eyebrow":"Виды транспорта","svc.modes.title":"Оптимальный маршрут для вашего груза",
     "svc.modes.sub":"Подбираем самый выгодный вид доставки по объёму, срочности и бюджету — или комбинируем несколько (мультимодально).",
@@ -434,7 +452,7 @@ window.I18N = {
     "lp.cn.s1":"Поиск товара и проверенного поставщика",
     "lp.cn.s2":"Аудит фабрики и контроль качества",
     "lp.cn.s3":"Производство под вашим брендом (OEM/ODM)",
-    "lp.cn.s4":"Защита платежа через офис в Гонконге",
+    "lp.cn.s4":"Инспекция партии перед отгрузкой и поэтапная оплата по контракту",
     "lp.cn.s5":"Консолидация грузов и упаковка",
     "lp.cn.s6":"Таможенное оформление и доставка до двери",
     /* russia — what we offer */
@@ -457,13 +475,13 @@ window.I18N = {
     "svc.a2t":"Страхование груза","svc.a2d":"Страхование груза на время перевозки — снимаем с вас риск повреждения или потери.",
     "svc.a3t":"Спецгрузы","svc.a3d":"Негабаритные и тяжёлые, температурные, авто и техника — решения для нестандартных грузов.",
     /* guarantees */
-    "g.eyebrow":"Гарантии","g.title":"Безопасно даже на первом заказе",
-    "g.1t":"Защита оплаты","g.1d":"Оплата китайскому поставщику защищена через наш офис в Гонконге — вы не берёте риск на себя.",
-    "g.2t":"Страхование груза","g.2d":"На время перевозки груз застрахован — вы защищены при повреждении или потере.",
-    "g.3t":"Компенсация за брак","g.3d":"Проводим инспекцию фабрики; при браке или несоответствии — компенсируем.",
-    "g.4t":"Фиксированные сроки","g.4d":"Срок доставки фиксируется в договоре — не на словах, а в документе.",
-    "g.5t":"Возврат предоплаты","g.5d":"Если обязательство сорвано по нашей вине — возвращаем предоплату.",
-    "ct.consent":"Согласен на обработку персональных данных согласно <a href='privacy.html'>политике конфиденциальности</a>.",
+    "g.eyebrow":"Как мы снижаем риски","g.title":"Пять точек контроля в сделке",
+    "g.1t":"Поэтапная оплата","g.1d":"Условия оплаты фиксируем в контракте с поставщиком: аванс на запуск производства, остаток — после того, как партия прошла проверку. Схему согласуем до подписания.",
+    "g.2t":"Страхование груза","g.2d":"Груз можно застраховать на время перевозки. Страховая сумма, покрытие и стоимость полиса указываются в расчёте под вашу отгрузку.",
+    "g.3t":"Инспекция перед отгрузкой","g.3d":"Сверяем партию с утверждённым образцом до отгрузки: количество, комплектность, маркировка, упаковка. Отчёт с фотографиями отправляем вам.",
+    "g.4t":"Дата в договоре","g.4d":"В договоре фиксируем дату отправки и окно прибытия. Очередь на каспийской переправе и на границе от нас не зависит — о таких задержках сообщаем в тот же день.",
+    "g.5t":"Ответственность по договору","g.5d":"Обязательства сторон, пределы ответственности и порядок претензий описаны в договоре. Спорные ситуации решаем по нему, а не по переписке.",
+    "ct.consent":"Согласен на обработку моих имени, телефона, e-mail и текста обращения для ответа на эту заявку, включая передачу данных сервису Web3Forms (США). <a href='/privacy'>Как мы их обрабатываем</a>.",
     "e404.h":"Страница не найдена","e404.sub":"Запрашиваемая страница не существует или была перемещена.","e404.btn":"На главную",
     "ab.valeye":"Наши принципы",
 
@@ -473,15 +491,29 @@ window.I18N = {
     "ct.phone":"Телефон","ct.email":"Эл. почта","ct.addr":"Адрес","ct.addrv":"Баку, Азербайджан","ct.hours":"Часы работы",
     "ct.fname":"Имя и фамилия","ct.femail":"Эл. почта","ct.fphone":"Телефон","ct.fsubject":"Тема","ct.fmsg":"Ваше сообщение","ct.fsend":"Отправить заявку",
     "ct.opt1":"Консалтинг ВЭД","ct.opt2":"Поиск товаров","ct.opt3":"Поиск производителей","ct.opt4":"Доставка грузов","ct.opt5":"Другое",
-    "ct.note":"Отправляя форму, вы соглашаетесь с политикой конфиденциальности.",
+    "ct.note":"Оператор данных — Ascend Consulting MMC. Заявка проходит через Web3Forms (США), приходит на почтовый ящик компании и хранится 24 месяца с даты обращения, затем удаляется. Согласие можно отозвать письмом на Penjalittc@gmail.com — отвечаем в течение 7 рабочих дней. Полный текст — в <a href='/privacy'>политике конфиденциальности</a>.",
 
     /* privacy */
-    "pv.crumb":"Конфиденциальность","pv.htitle":"Политика конфиденциальности","pv.updated":"Обновлено: июль 2026",
-    "pv.1t":"Какие данные мы собираем","pv.1d":"Через форму на сайте мы собираем имя, e-mail, телефон, выбранную услугу и текст обращения.",
-    "pv.2t":"Цель","pv.2d":"Данные используются только для связи по вашему запросу. Мы не продаём и не передаём их третьим лицам для маркетинга.",
-    "pv.3t":"Обработка","pv.3d":"Отправка формы обрабатывается сервисом Web3Forms, который доставляет сообщение на нашу почту. Данные не публикуются на сайте.",
-    "pv.4t":"Хранение","pv.4d":"Мы храним обращения столько, сколько необходимо для обработки запроса, и удаляем по вашему требованию.",
-    "pv.5t":"Ваши права","pv.5d":"Чтобы уточнить, изменить или удалить свои данные, напишите на Penjalittc@gmail.com."
+    "pv.crumb":"Конфиденциальность","pv.htitle":"Политика конфиденциальности","pv.updated":"Обновлено: 24.08.2026",
+    "pv.0t":"Кто обрабатывает данные","pv.0d":"Оператор — Ascend Consulting MMC. Обращения по персональным данным: Penjalittc@gmail.com.",
+    "pv.1t":"Какие данные мы собираем","pv.1d":"Из формы: имя, телефон, e-mail (необязательно), выбранная услуга и текст обращения. О визите на сайт: просмотренные страницы, устройство, источник перехода и cookie-идентификатор Google Analytics.",
+    "pv.2t":"Цель и основание","pv.2d":"Данные из формы используем только для ответа на вашу заявку и подготовки расчёта. Основание — ваше согласие, которое вы даёте, отмечая галочку у формы. Мы не продаём данные и не передаём их третьим лицам для маркетинга.",
+    "pv.3t":"Как обрабатывается заявка","pv.3d":"Форма отправляется через сервис Web3Forms, письмо приходит на почтовый ящик компании. Данные заявки на сайте не публикуются и в базе сайта не хранятся.",
+    "pv.6t":"Кому передаются данные и трансграничная передача","pv.6d":"Заявка проходит через Web3Forms (США) и приходит на почтовый ящик, размещённый у Google (США); статистику посещений обрабатывает Google Analytics (США). Это трансграничная передача персональных данных: отмечая галочку у формы, вы даёте на неё согласие. Других получателей нет.",
+    "pv.4t":"Срок хранения","pv.4d":"Заявки храним 24 месяца с даты обращения, затем удаляем. Если вы отозвали согласие — удаляем раньше, в срок, указанный ниже.",
+    "pv.5t":"Ваши права","pv.5d":"Вы вправе узнать, какие ваши данные у нас есть, потребовать их исправления или удаления, запретить обработку и отозвать согласие. Напишите на Penjalittc@gmail.com — ответим в течение 7 рабочих дней; если для ответа нужно обращение к третьим лицам, срок может быть продлён до 14 дней.",
+    "pv.7t":"Защита данных","pv.7d":"Доступ к заявкам есть только у сотрудников, которые ведут ваше обращение. [ПРОВЕРИТЬ С ЮРИСТОМ + УТОЧНИТЬ У КЛИЕНТА: перечень мер]",
+    "pv.8t":"Cookie и аналитика","pv.8d":"Сайт использует Google Analytics 4 для статистики посещений. Отключить сбор можно настройками браузера или расширением Google Analytics Opt-out.",
+
+    /* terms of service */
+    "tr.crumb":"Условия","tr.htitle":"Условия оказания услуг","tr.updated":"Обновлено: 24.08.2026",
+    "tr.1t":"Что мы делаем","tr.1d":"Организуем перевозку груза и сопровождаем внешнеторговую операцию: поиск товара и фабрики, проверка поставщика, инспекция партии перед отгрузкой, консолидация в Китае, перевозка, подготовка документов и сопровождение таможенного оформления.",
+    "tr.2t":"Чего мы не делаем","tr.2d":"Мы не оказываем банковских, платёжных и юридических услуг, не являемся страховщиком и не гарантируем решений государственных органов. Итоговую сумму пошлины, НДС и сборов определяет таможенный орган.",
+    "tr.3t":"Работаем по договору","tr.3d":"Каждая отгрузка оформляется договором и заявкой: предмет, маршрут, объявленная ценность груза, тариф, сроки, ответственность сторон и порядок претензий.",
+    "tr.4t":"Кто подаёт декларацию","tr.4d":"Декларация оформляется на вашу компанию, подаёт её таможенный представитель из реестра ГТК. Ответственность за достоверность сведений в декларации несёт декларант — поэтому документы мы готовим вместе с вами.",
+    "tr.5t":"Как считается стоимость","tr.5d":"В счёте отдельно указаны наше вознаграждение и возмещаемые расходы (фрахт, перевалка, хранение, сборы). Расчёт до отправки — ориентировочный. Курс USD→AZN фиксируется на дату выставления счёта.",
+    "tr.6t":"Сроки","tr.6d":"В договоре фиксируем дату отправки и окно прибытия. Задержки на каспийской переправе, на границе и на таможне от нас не зависят; в таких случаях сообщаем в тот же день и предлагаем альтернативный маршрут.",
+    "tr.8t":"Персональные данные","tr.8d":"Обработка данных из формы заявки описана в <a href='/privacy'>политике конфиденциальности</a>."
   },
 
   en: {
@@ -494,8 +526,8 @@ window.I18N = {
     "bl.read":"Read","bl.back":"← Back to blog",
 
     "hero.badge":"China · Russia · Kazakhstan → Azerbaijan",
-    "hero.title":"Turnkey foreign trade — <span class='accent'>with guarantees</span>",
-    "hero.sub":"Product and factory sourcing, manufacturing under your brand, protected payment via Hong Kong and delivery across 3 routes. Not a chain of middlemen — one reliable partner.",
+    "hero.title":"Sourcing and delivery from China to Azerbaijan — <span class='accent'>documents in your company's name</span>",
+    "hero.sub":"We find the product and the factory, inspect the batch before shipment, ship it and clear customs. One contract instead of a chain of middlemen.",
     "hero.cta1":"Free consultation","hero.cta2":"Our services",
     "hero.stat1n":"3","hero.stat1l":"Delivery directions",
     "hero.stat2n":"3","hero.stat2l":"Own entities: China · Hong Kong · Russia",
@@ -509,7 +541,7 @@ window.I18N = {
     "hs.sub":"From supplier sourcing and production under your own brand to a secure deal and turnkey delivery.",
     "hs.c1t":"Product & supplier sourcing","hs.c1d":"We find the right product and a verified manufacturer directly, compare price and quality, order and inspect samples.",
     "hs.c2t":"Manufacturing in China (OEM/ODM)","hs.c2d":"Production under your own brand: factory negotiations, quality control and production audits.",
-    "hs.c3t":"Secure deal: finance & legal","hs.c3d":"Payment protection via our Hong Kong office, export documentation and dispute resolution with suppliers.",
+    "hs.c3t":"Deal support","hs.c3d":"Factory verification before payment, pre-shipment inspection, staged payment terms in the contract and negotiations with the supplier in case of defects.",
     "hs.c4t":"Logistics & customs","hs.c4d":"Multimodal delivery on direct contracts and customs clearance from China, Russia and Kazakhstan.",
     "hs.more":"Learn more",
 
@@ -517,14 +549,14 @@ window.I18N = {
     "usp.eyebrow":"Our infrastructure","usp.title":"We're not a middleman — we're your trade infrastructure",
     "usp.sub":"Full control at every stage of your China deal — from payment to delivery.",
     "usp.1t":"Our own export company in China","usp.1d":"We purchase officially and handle documentation under our own name — even from factories without an export license.",
-    "usp.2t":"Payment office in Hong Kong","usp.2d":"Fast, legal international transfers without banking restrictions or blocked payments.",
-    "usp.3t":"Secure deal","usp.3d":"We guarantee payment protection and handle disputes with suppliers over defects or non-compliance — on your side.",
+    "usp.2t":"Our Hong Kong office","usp.2d":"We prepare the supplier contract, invoice and export documents ourselves. Payment terms are staged and fixed in the contract.",
+    "usp.3t":"Pre-shipment inspection","usp.3d":"We verify the factory before the order and inspect the batch before shipment against the approved sample. If something does not match, we negotiate with the supplier on your behalf.",
     "usp.4t":"Operating under sanctions","usp.4d":"Experience supplying under complex geopolitical conditions — the chain holds even under restrictions.",
     "usp.5t":"Team in China and the CIS","usp.5d":"Local specialists in China and 5 years of experience across the CIS: Russia, Kazakhstan, Kyrgyzstan.",
     "usp.6t":"Direct logistics","usp.6d":"Direct contracts with leading logistics operators — minimal transportation cost.",
 
     /* difference quote */
-    "diff.quote":"“We don't just find products — we build a middleman-free trade mechanism for you: direct contact with Chinese factories and a quality guarantee. Working with us means having your own office in the global market.”",
+    "diff.quote":"“We don't just find products. We have our own company in Guangzhou: we visit the factory ourselves, receive the batch at the warehouse in Guangzhou and ship it with the documents. For you it is your own office in China — without running one.”",
 
     /* pain points */
     "pain.eyebrow":"Familiar problems","pain.title":"We take the risk out of foreign trade",
@@ -557,7 +589,7 @@ window.I18N = {
     "why.f3t":"Vetted partners","why.f3d":"We work only with verified factories and carriers.",
     "why.f4t":"Online tracking","why.f4d":"Track your cargo status in real time.",
 
-    "sb.s1n":"5","sb.s1s":"","sb.s1t":"Origin countries",
+    "sb.s1n":"3","sb.s1s":"","sb.s1t":"Origin countries",
     "sb.s2n":"3","sb.s2s":"","sb.s2t":"Own jurisdictions",
     "sb.s3n":"360°","sb.s3s":"","sb.s3t":"Turnkey logistics",
     "sb.s4n":"TM","sb.s4s":"®","sb.s4t":"Registered trademark (RU)",
@@ -584,7 +616,8 @@ window.I18N = {
     "ft.about":"FEA consulting, product and manufacturer sourcing, cargo delivery from China, Russia and Kazakhstan to Azerbaijan.",
     "ft.nav":"Navigation","ft.services":"Services","ft.contact":"Contact",
     "ft.svc1":"FEA consulting","ft.svc2":"Product sourcing","ft.svc3":"Manufacturer search","ft.svc4":"Cargo delivery",
-    "ft.rights":"All rights reserved.","ft.privacy":"Privacy policy",
+    "ft.rights":"All rights reserved.","ft.privacy":"Privacy policy","ft.terms":"Terms of service",
+    "ft.legal":"Azizov Group LLC · OGRN 1247700473921 · INN 9721235929 · Moscow, Russia",
     "ft.hours":"Mon–Fri: 09:00–18:00",
 
     "ab.crumb":"About","ab.htitle":"We simplify your foreign trade",
@@ -596,7 +629,7 @@ window.I18N = {
     "ab.mv2t":"Our vision","ab.mv2d":"To become the most reliable consulting partner in foreign trade and logistics in the region.",
     "ab.valt":"Our values","ab.val1":"Transparency","ab.val1d":"Every cost and stage is open.","ab.val2":"Accountability","ab.val2d":"We keep our word and own the result.","ab.val3":"Results","ab.val3d":"We sell results, not process.","ab.val4":"Partnership","ab.val4d":"We build long-term relationships.",
     "hero.ctawa":"Message on WhatsApp","ct.optional":"optional",
-    "team.eye":"Team","team.title":"The team behind Ascend","team.sub":"Experienced specialists across China, Azerbaijan and international markets.","team.n1":"Pancali Azizov","team.r1":"CEO, Founder","team.n2":"Chao Zhiming","team.r2":"Director, Shanghai office · Partner","team.n3":"Lisa Vey","team.r3":"Director of Economics","team.soonn":"Coming soon","team.soonr":"Joining the team",
+    "team.eye":"Team","team.title":"The team behind Ascend","team.sub":"Experienced specialists across China, Azerbaijan and international markets.","team.n1":"Pancali Azizov","team.r1":"CEO, Founder","team.n2":"Chao Zhiming","team.r2":"Director, Guangzhou office · Partner","team.n3":"Lisa Vey","team.r3":"Director of Economics","team.soonn":"Coming soon","team.soonr":"Joining the team",
 
     "sv.crumb":"Services","sv.htitle":"A full spectrum of foreign-trade services",
     "sv.hsub":"From consulting to delivery — entrust every process to one team.",
@@ -616,6 +649,7 @@ window.I18N = {
     "dr.crumb":"Directions","dr.htitle":"Delivery directions",
     "dr.hsub":"From China, Russia and Kazakhstan to Azerbaijan — an optimal solution for each route.",
     "dr.transit":"Approx. transit","dr.modes":"Transport modes","dr.days":"days",
+    "dr.transitv":"confirmed in the quote",
     "dr.china.long":"Direct work with Chinese manufacturers, cargo consolidation and multimodal delivery via the Trans-Caspian corridor. Including factory search and quality control.",
     "dr.russia.long":"Regular cargo flow from Russia by road and rail, consolidation and customs clearance.",
     "dr.kz.long":"Intermodal delivery solutions from Kazakhstan and Central Asia via the Trans-Caspian corridor.",
@@ -626,35 +660,35 @@ window.I18N = {
     "lp.cn.introt":"Direct delivery from China to Baku",
     "lp.cn.introd":"We work directly with Chinese manufacturers: consolidate cargo, prepare documents and deliver to Azerbaijan via the Trans-Caspian corridor. You just get the result — door to door.",
     "lp.cn.f1t":"Multimodal routes","lp.cn.f1d":"Sea, rail and air — the optimal option for your cargo volume and urgency.",
-    "lp.cn.f2t":"Customs & documents","lp.cn.f2d":"Export clearance, HS codes and customs support in Azerbaijan — fully handled by us.",
-    "lp.cn.f3t":"Turnkey","lp.cn.f3d":"Factory search, quality control, payment protection and door delivery — under one contract.",
+    "lp.cn.f2t":"Customs & documents","lp.cn.f2d":"Export clearance in China, HS code determination and support of the import declaration in Azerbaijan. The declaration is issued to your company.",
+    "lp.cn.f3t":"Turnkey","lp.cn.f3d":"Factory sourcing, pre-shipment inspection, delivery and customs clearance — under one contract.",
     /* landing pages — shared blocks */
     "lp.introt":"Direct and reliable delivery",
     "lp.f1t":"Multimodal routes","lp.f1d":"Road, rail, sea and air — the most cost-effective route for your cargo.",
-    "lp.f2t":"Customs & documents","lp.f2d":"Export clearance and customs support in Azerbaijan — fully handled by us.",
+    "lp.f2t":"Customs & documents","lp.f2d":"Export clearance and support of the import declaration in Azerbaijan. The declaration is issued to your company.",
     "lp.f3t":"Turnkey","lp.f3d":"From documents to door delivery — all stages under one contract.",
     /* landing: Russia → Azerbaijan */
     "lp.ru.crumb":"Russia → Azerbaijan",
     "lp.ru.htitle":"Cargo delivery from Russia to Azerbaijan",
-    "lp.ru.hsub":"Regular road and rail transport from Russia to Azerbaijan — in 6–10 days, with consolidation and customs.",
+    "lp.ru.hsub":"Regular road and rail transport from Russia to Azerbaijan: consolidation of part-loads, documents and customs clearance.",
     /* landing: Kazakhstan → Azerbaijan */
     "lp.kz.crumb":"Kazakhstan → Azerbaijan",
     "lp.kz.htitle":"Cargo delivery from Kazakhstan to Azerbaijan",
-    "lp.kz.hsub":"Intermodal delivery from Kazakhstan to Azerbaijan via the Trans-Caspian corridor — in 12–18 days, turnkey.",
+    "lp.kz.hsub":"Intermodal delivery from Kazakhstan to Azerbaijan via the Trans-Caspian corridor: rail and road legs, consolidation and customs.",
     /* FAQ */
     "faq.eyebrow":"FAQ","faq.title":"Frequently asked questions",
     "faq.q1":"How long does delivery from China to Azerbaijan take?",
-    "faq.a1":"It depends on the route: 18–25 days from China, 6–10 from Russia, 12–18 from Kazakhstan. We confirm the exact time during the quote, based on cargo volume and transport mode.",
+    "faq.a1":"It depends on the corridor and the season: the route, the transport mode, the load on the Caspian crossing and the customs queue. That is why we do not quote one number for everyone: the contract fixes the departure date and an arrival window, and we give a calculation once we know the volume, weight and pickup point.",
     "faq.q2":"Do you handle customs clearance?",
-    "faq.a2":"Yes. Export documents, HS code classification and import customs in Azerbaijan are fully on us. You don't deal with customs procedures.",
+    "faq.a2":"We prepare the export documents in China, determine the HS code and support import clearance in Azerbaijan. The declaration is filed by a customs representative from the State Customs Committee register and is issued in your company's name — you keep the full set of documents. The final amount of duty, VAT and fees is set by the customs authority based on the code and the customs value; our pre-shipment calculation is an estimate.",
     "faq.q3":"How does payment work?",
-    "faq.a3":"We agree the deal terms in advance. Payments to the Chinese supplier are protected via our Hong Kong office; details are discussed individually during the consultation.",
+    "faq.a3":"Payment terms are set in the supplier contract: typically an advance to start production and the balance once the batch has passed the pre-shipment check. We agree these terms before signing and make sure the deal documents match: contract, invoice, export declaration and payment recipient must be the same entity.",
     "faq.q4":"Is there a minimum cargo volume?",
     "faq.a4":"No fixed minimum. We handle both small batches (via consolidation) and full containers. For small volumes we offer consolidation with other clients' cargo.",
     "faq.q5":"Do you only ship, or also source products and factories?",
     "faq.a5":"Both. We can do shipping only, or the full cycle — product/factory search, quality control, payment and delivery, turnkey.",
     "faq.q6":"What if the cargo is damaged or non-conforming?",
-    "faq.a6":"We handle disputes with the supplier on your behalf and pursue payment protection. Pre-shipment quality checks minimize these risks.",
+    "faq.a6":"First we document it: photos, the inspection report, the warehouse acceptance record. Then we negotiate with the supplier on your behalf — replacement, rework, discount or refund, whichever the contract provides. This is exactly why we insist on an approved sample and a pre-shipment check: once the cargo leaves China, there is less leverage.",
     /* services — transport modes */
     "svc.modes.eyebrow":"Transport modes","svc.modes.title":"The optimal route for your cargo",
     "svc.modes.sub":"We pick the most cost-effective mode by volume, urgency and budget — or combine several (multimodal).",
@@ -668,7 +702,7 @@ window.I18N = {
     "lp.cn.s1":"Product and verified supplier search",
     "lp.cn.s2":"Factory audit and quality control",
     "lp.cn.s3":"Manufacturing under your brand (OEM/ODM)",
-    "lp.cn.s4":"Payment protection via our Hong Kong office",
+    "lp.cn.s4":"Pre-shipment inspection and staged payment under the contract",
     "lp.cn.s5":"Cargo consolidation and packaging",
     "lp.cn.s6":"Customs clearance and door delivery",
     /* russia — what we offer */
@@ -691,13 +725,13 @@ window.I18N = {
     "svc.a2t":"Cargo insurance","svc.a2d":"Cargo insurance for the duration of transport — we take the risk of damage or loss off your shoulders.",
     "svc.a3t":"Special cargo","svc.a3d":"Oversized and heavy, temperature-controlled, vehicles and machinery — solutions for non-standard cargo.",
     /* guarantees */
-    "g.eyebrow":"Guarantees","g.title":"Safe even on your first order",
-    "g.1t":"Payment protection","g.1d":"Payment to the Chinese supplier is protected via our Hong Kong office — you don't take the risk.",
-    "g.2t":"Cargo insurance","g.2d":"Cargo is insured during transport — you're protected against damage or loss.",
-    "g.3t":"Defect compensation","g.3d":"We inspect the factory; if there's a defect or mismatch — we compensate.",
-    "g.4t":"Fixed deadlines","g.4d":"Delivery time is fixed in the contract — not in words, in a document.",
-    "g.5t":"Prepayment refund","g.5d":"If the commitment fails through our fault — we return the prepayment.",
-    "ct.consent":"I agree to the processing of my personal data per the <a href='privacy.html'>privacy policy</a>.",
+    "g.eyebrow":"How we reduce risk","g.title":"Five control points in the deal",
+    "g.1t":"Staged payment","g.1d":"Payment terms are fixed in the supplier contract: an advance to start production, the balance after the batch has passed inspection. We agree the scheme before signing.",
+    "g.2t":"Cargo insurance","g.2d":"The cargo can be insured for the duration of transport. The sum insured, the cover and the premium are stated in the quote for your shipment.",
+    "g.3t":"Pre-shipment inspection","g.3d":"We check the batch against the approved sample before shipment: quantity, completeness, labelling, packaging. You get a photo report.",
+    "g.4t":"A date in the contract","g.4d":"The contract fixes the departure date and an arrival window. Queues at the Caspian crossing and at the border are outside our control — we report such delays the same day.",
+    "g.5t":"Liability under the contract","g.5d":"The parties' obligations, liability limits and the claims procedure are set out in the contract. Disputes are resolved by the contract, not by chat history.",
+    "ct.consent":"I consent to the processing of my name, phone, email and message to reply to this request, including the transfer of the data to Web3Forms (USA). <a href='/privacy'>How we process it</a>.",
     "e404.h":"Page not found","e404.sub":"The page you are looking for doesn't exist or has moved.","e404.btn":"Back to home",
     "ab.valeye":"Our principles",
 
@@ -707,14 +741,28 @@ window.I18N = {
     "ct.phone":"Phone","ct.email":"Email","ct.addr":"Address","ct.addrv":"Baku, Azerbaijan","ct.hours":"Working hours",
     "ct.fname":"Full name","ct.femail":"Email","ct.fphone":"Phone","ct.fsubject":"Subject","ct.fmsg":"Your message","ct.fsend":"Send request",
     "ct.opt1":"FEA consulting","ct.opt2":"Product sourcing","ct.opt3":"Manufacturer search","ct.opt4":"Cargo delivery","ct.opt5":"Other",
-    "ct.note":"By submitting the form you agree to the privacy policy.",
+    "ct.note":"The data operator is Ascend Consulting MMC. The request goes through Web3Forms (USA), arrives at the company mailbox and is stored for 24 months from the date of the request, then deleted. You can withdraw consent by writing to Penjalittc@gmail.com — we reply within 7 working days. Full text in the <a href='/privacy'>privacy policy</a>.",
 
     /* privacy */
-    "pv.crumb":"Privacy","pv.htitle":"Privacy Policy","pv.updated":"Updated: July 2026",
-    "pv.1t":"What data we collect","pv.1d":"Through the form on the site we collect your name, email, phone, chosen service and message.",
-    "pv.2t":"Purpose","pv.2d":"The data is used only to contact you about your request. We do not sell or share it with third parties for marketing.",
-    "pv.3t":"Processing","pv.3d":"Form submissions are processed by Web3Forms, which delivers the message to our email. Data is not published on the site.",
-    "pv.4t":"Retention","pv.4d":"We keep requests for as long as needed to handle them and delete them on your request.",
-    "pv.5t":"Your rights","pv.5d":"To review, change or delete your data, email us at Penjalittc@gmail.com."
+    "pv.crumb":"Privacy","pv.htitle":"Privacy Policy","pv.updated":"Updated: 24.08.2026",
+    "pv.0t":"Who processes the data","pv.0d":"The operator is Ascend Consulting MMC. Personal data enquiries: Penjalittc@gmail.com.",
+    "pv.1t":"What data we collect","pv.1d":"From the form: name, phone, email (optional), the chosen service and the message. About the visit: pages viewed, device, referral source and the Google Analytics cookie identifier.",
+    "pv.2t":"Purpose and legal basis","pv.2d":"We use the form data only to reply to your request and prepare a quote. The basis is your consent given by ticking the box. We do not sell the data and do not share it with third parties for marketing.",
+    "pv.3t":"How the request is processed","pv.3d":"The form is sent through Web3Forms and the message is delivered to the company mailbox. Request data is not published on the site and is not stored in a site database.",
+    "pv.6t":"Recipients and cross-border transfer","pv.6d":"The request passes through Web3Forms (USA) and arrives at a mailbox hosted by Google (USA); visit statistics are processed by Google Analytics (USA). This is a cross-border transfer of personal data: by ticking the box you consent to it. There are no other recipients.",
+    "pv.4t":"Retention period","pv.4d":"We keep requests for 24 months from the date of the request, then delete them. If you withdraw consent we delete them sooner, within the period stated below.",
+    "pv.5t":"Your rights","pv.5d":"You may find out what data we hold, request its correction or deletion, object to processing and withdraw consent. Write to Penjalittc@gmail.com — we reply within 7 working days; if third parties must be contacted, the period may extend to 14 days.",
+    "pv.7t":"Data protection","pv.7d":"Only the employees handling your request have access to it. [ПРОВЕРИТЬ С ЮРИСТОМ + УТОЧНИТЬ У КЛИЕНТА]",
+    "pv.8t":"Cookies and analytics","pv.8d":"The site uses Google Analytics 4 for visit statistics. You can opt out via browser settings or the Google Analytics Opt-out add-on.",
+
+    /* terms of service */
+    "tr.crumb":"Terms","tr.htitle":"Terms of service","tr.updated":"Updated: 24.08.2026",
+    "tr.1t":"What we do","tr.1d":"We arrange cargo transport and support the foreign trade transaction: product and factory sourcing, supplier verification, pre-shipment inspection, consolidation in China, transport, document preparation and customs clearance support.",
+    "tr.2t":"What we do not do","tr.2d":"We do not provide banking, payment or legal services, we are not an insurer and we do not guarantee decisions of government bodies. The final amount of duty, VAT and fees is set by the customs authority.",
+    "tr.3t":"We work under a contract","tr.3d":"Every shipment is covered by a contract and a booking: subject, route, declared value of the cargo, rate, deadlines, liability of the parties and the claims procedure.",
+    "tr.4t":"Who files the declaration","tr.4d":"The declaration is issued in your company's name and filed by a customs representative from the State Customs Committee register. Responsibility for the accuracy of the declaration lies with the declarant — which is why we prepare the documents together with you.",
+    "tr.5t":"How the price is calculated","tr.5d":"The invoice states our fee and reimbursable costs (freight, handling, storage, fees) separately. The pre-shipment calculation is an estimate. The USD→AZN rate is fixed at the invoice date.",
+    "tr.6t":"Deadlines","tr.6d":"The contract fixes the departure date and an arrival window. Delays at the Caspian crossing, at the border and at customs are outside our control; in such cases we notify you the same day and propose an alternative route.",
+    "tr.8t":"Personal data","tr.8d":"Processing of data from the request form is described in the <a href='/privacy'>privacy policy</a>."
   }
 };

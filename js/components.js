@@ -107,9 +107,15 @@
             </ul>
           </div>
         </div>
+        <!-- Реквизиты юрлица (ключ ft.legal). Строка азербайджанского юрлица сюда не добавляется,
+             пока нет реальных реквизитов: плейсхолдеры в подвал не выводим. -->
+        <p class="f-legal" data-i18n="ft.legal"></p>
         <div class="footer-bottom">
           <span>© <span data-year></span> Ascend Trade & Logistics. <span data-i18n="ft.rights"></span></span>
-          <a href="/privacy" data-i18n="ft.privacy"></a>
+          <span class="f-legal-links">
+            <a href="/privacy" data-i18n="ft.privacy"></a>
+            <a href="/terms" data-i18n="ft.terms"></a>
+          </span>
         </div>
       </div>
     </footer>`;

@@ -71,8 +71,8 @@
         <input type="hidden" name="consent_version" value="2026-08-24">
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
-          <div class="field"><label for="ct-name" data-i18n="ct.fname">Ad, Soyad</label><input type="text" id="ct-name" name="name" autocomplete="name" required></div>
-          <div class="field"><label for="ct-phone" data-i18n="ct.fphone">Telefon</label><input type="tel" id="ct-phone" name="phone" autocomplete="tel" required></div>
+          <div class="field"><label for="ct-name" data-i18n="ct.fname">Ad, Soyad</label><input type="text" id="ct-name" name="name" autocomplete="name" maxlength="80" required></div>
+          <div class="field"><label for="ct-phone" data-i18n="ct.fphone">Telefon</label><input type="tel" id="ct-phone" name="phone" autocomplete="tel" inputmode="tel" maxlength="25" pattern="[0-9+\(\)\.\s\-]{7,25}" required></div>
         </div>
         <div class="form-row">
           <div class="field"><label for="ct-email"><span data-i18n="ct.femail">E-poçt</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><input type="email" id="ct-email" name="email" autocomplete="email"></div>
@@ -86,7 +86,7 @@
             </select>
           </div>
         </div>
-        <div class="field"><label for="ct-message"><span data-i18n="ct.fmsg">Mesajınız</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><textarea id="ct-message" name="message"></textarea></div>
+        <div class="field"><label for="ct-message"><span data-i18n="ct.fmsg">Mesajınız</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><textarea id="ct-message" name="message" maxlength="3000"></textarea></div>
         <div class="field field-consent">
           <label style="display:flex;align-items:flex-start;gap:10px;font-size:.85rem;font-weight:400;color:var(--slate);cursor:pointer">
             <input type="checkbox" name="consent" required style="width:auto;margin-top:3px;flex:none;accent-color:var(--navy)">

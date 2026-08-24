@@ -10,7 +10,7 @@
    НЕ СЧИТАЕТ и не должен: фрахт, услуги брокера, хранение, СВХ, услуги Ascend,
    маржу. Ограничение из docs/research/06-legal-risks.md §7.1 п.1.
 
-   ИСТОЧНИК СТАВОК — docs/research/07-customs-barriers.md (составлен 24.08.2026).
+   ИСТОЧНИК СТАВОК — internal rate research (составлен 24.08.2026).
    Каждая строка данных ниже помечена ссылкой на раздел документа. Ставки
    в коде НЕ выдумываются: если по категории в 07 однозначной ставки нет,
    категории здесь нет (см. отчёт backend'а: пробелы по гл. 48, 50–60, 68, 70, 72–73).
@@ -31,7 +31,7 @@
      <script src="/js/customs-calc.js" defer></script>
      <script src="/js/app.js" defer></script>
    Инициализация автоматическая по атрибуту data-customs-calc.
-   Полный образец разметки и стилей — docs/site/calc-widget-spec.md.
+   Полный образец разметки и стилей — widget spec.
 
    ОБРАЗЕЦ РАЗМЕТКИ (рабочий, скопировать на страницу):
 
@@ -39,6 +39,9 @@
      <form class="calc-form" data-calc-form>
        <div class="field">
          <label for="cc-cat" data-i18n="calc.f.category">Malın kateqoriyası</label>
+         <!-- список строится здесь же, в JS (fillSelect перезаписывает содержимое);
+              на странице U2 те же <option> продублированы статически — чтобы
+              категории были видны без JS и попадали в индекс -->
          <select id="cc-cat" name="category" data-calc-field="category"></select>
          <p class="calc-hint" data-calc-hint hidden></p>
        </div>
@@ -73,7 +76,7 @@
            </label>
            <input id="cc-fx" name="fx" type="text" inputmode="decimal"
                   autocomplete="off" data-calc-field="fx"
-                  data-i18n-ph="calc.ph.fx" placeholder="1,70">
+                  data-i18n-ph="calc.ph.fx" placeholder="1.70">
          </div>
        </div>
        <button type="submit" class="btn btn-primary"
@@ -149,7 +152,7 @@
 
   /* ------------------------------------------------------------------------
      4. КАТЕГОРИИ.
-     Все ставки — из docs/research/07-customs-barriers.md, дата документа 24.08.2026,
+     Все ставки — из internal rate research, дата документа 24.08.2026,
      первоисточник ставок — ПКМ АР № 500 от 17.11.2017 с изменениями.
      ОГОВОРКА ИЗ ИСТОЧНИКА (07 §1.1 и §14 п.1): разбор сделан по редакции
      ПКМ № 500 примерно 2021 года; картина «какая ставка доминирует по главе»
@@ -249,7 +252,7 @@
   ];
 
   /* Категории, СОЗНАТЕЛЬНО не включённые (нужен вход, которого в этой форме нет,
-     либо в 07 нет ставки) — перечислены в docs/site/calc-widget-spec.md:
+     либо в 07 нет ставки) — перечислены в widget spec:
        мобильные устройства (акциз 20 AZN/шт — нужен ввод количества),
        вейпы и жидкости (2 AZN/шт, 100 AZN/л — нужно количество/объём),
        легковые авто (пошлина и акциз по см³ — нужен объём двигателя),
@@ -257,7 +260,9 @@
        (гл. 68, 70, 72, 73), автозапчасти (8708) — по этим главам ставок в 07 нет. */
 
   var MAX_AMOUNT = 1e9;   // защита от мусора и от переполнения вёрстки
-  var MAX_FX     = 1000;  // здравый предел для «своего курса»
+  var MIN_FX     = 0.5;   // нижняя граница «своего курса»: ниже — заведомо опечатка
+  var MAX_FX     = 100;   // верхняя граница; за ней курс тоже опечатка, а не курс
+  var MIN_GOODS  = 1;     // партия дешевле 1 USD — опечатка, а не коммерческий импорт
 
   /* ---------------------------- вспомогательное ---------------------------- */
 
@@ -271,20 +276,69 @@
     return Math.floor(((now || Date.now()) - t) / 86400000);
   }
 
+  /* Приведение «1 234,56» / «1.234.567» / «1,234.56» к машинному «1234.56».
+     Правила однозначные, догадок нет — иначе «10,000» тихо превращалось
+     в 10, а «1.500» — в 1,5:
+       • есть и точка, и запятая — последний из них десятичный, прочие тысячные;
+       • один и тот же разделитель встречается несколько раз — все они тысячные;
+       • разделитель один и после него 1–2 или 4+ цифр — десятичный;
+       • разделитель один, после него РОВНО 3 цифры, а до — 1–3: по вводу не понять,
+         тысячи это или дробь → ошибка calc.err.separator, угадывать нельзя.
+     Группы тысячных обязаны быть по 3 цифры, иначе это мусор («1.2.3»). */
+  function normalizeSeparators(s) {
+    var lastDot = s.lastIndexOf("."), lastComma = s.lastIndexOf(",");
+    if (lastDot === -1 && lastComma === -1) return { value: s };
+
+    var dec = null;                       // десятичный разделитель (null — его нет)
+    var group;                            // разделитель тысяч
+    if (lastDot !== -1 && lastComma !== -1) {
+      dec   = lastDot > lastComma ? "." : ",";
+      group = dec === "." ? "," : ".";
+    } else {
+      var sep = lastDot !== -1 ? "." : ",";
+      if (s.indexOf(sep) !== s.lastIndexOf(sep)) {
+        group = sep;                      // «1.234.567» / «1,234,567» — только тысячные
+      } else {
+        var tail = s.slice(s.lastIndexOf(sep) + 1);
+        var head = s.slice(0, s.indexOf(sep));
+        if (tail.length === 3 && /^\d{1,3}$/.test(head)) return { error: "calc.err.separator" };
+        dec = sep;
+        group = dec === "." ? "," : ".";   // второго символа в строке нет
+      }
+    }
+
+    var intPart = s, frac = "";
+    if (dec !== null) {
+      var at = s.lastIndexOf(dec);
+      intPart = s.slice(0, at);
+      frac = s.slice(at + 1);
+      if (!/^\d+$/.test(frac)) return { error: "calc.err.number" };
+    }
+    if (intPart.indexOf(group) !== -1) {
+      if (!new RegExp("^\\d{1,3}(\\" + group + "\\d{3})+$").test(intPart)) return { error: "calc.err.number" };
+      intPart = intPart.split(group).join("");
+    }
+    return { value: dec === null ? intPart : intPart + "." + frac };
+  }
+
   /* Разбор пользовательской суммы. Возвращает {value} или {error:<ключ i18n>}. */
   function parseAmount(raw, opts) {
     opts = opts || {};
     if (raw === undefined || raw === null) raw = "";
-    var s = String(raw).replace(/[\s\u00A0\u202F\u2009]/g, "").replace(",", ".");
+    var s = String(raw).replace(/[\s\u00A0\u202F\u2009]/g, "");
     if (s === "") {
       if (opts.required) return { error: "calc.err.required" };
       return { value: 0 };
     }
     if (s.charAt(0) === "-") return { error: "calc.err.negative" };
+    var norm = normalizeSeparators(s);
+    if (norm.error) return { error: norm.error };
+    s = norm.value;
     if (!/^\d+(\.\d+)?$/.test(s)) return { error: "calc.err.number" };
     var v = parseFloat(s);
     if (!isFinite(v)) return { error: "calc.err.number" };
     if (opts.required && v <= 0) return { error: "calc.err.positive" };
+    if (opts.min !== undefined && v < opts.min) return { error: "calc.err.min" };
     if (v > (opts.max || MAX_AMOUNT)) return { error: "calc.err.toobig" };
     return { value: v };
   }
@@ -317,7 +371,7 @@
     var cat = findCategory(input.category);
     if (!cat) errors.push({ field: "category", key: "calc.err.category" });
 
-    var goods = parseAmount(input.goods, { required: true });
+    var goods = parseAmount(input.goods, { required: true, min: MIN_GOODS });
     if (goods.error) errors.push({ field: "goods", key: goods.error });
 
     var freight = parseAmount(input.freight);
@@ -336,6 +390,9 @@
       var fx = parseAmount(rawFx, { required: true, max: MAX_FX });
       if (fx.error) {
         errors.push({ field: "fx", key: fx.error === "calc.err.toobig" ? "calc.err.fx" : fx.error });
+      } else if (fx.value < MIN_FX) {
+        /* курс ниже 0,5 AZN за доллар — опечатка (например, «0,17» вместо «1,70») */
+        errors.push({ field: "fx", key: "calc.err.fx" });
       } else {
         fxValue = fx.value;
         fxSource = "user";
@@ -507,7 +564,8 @@
     form.setAttribute("novalidate", "novalidate");
 
     var field = function (name) { return root.querySelector('[data-calc-field="' + name + '"]'); };
-    var lastResult = null;
+    var lastResult = null;   // последний УСПЕШНЫЙ расчёт — для перерисовки при смене языка
+    var live = false;        // пользователь уже жал «рассчитать» → пересчитываем на лету
 
     /* --- select: список категорий строится из CATEGORIES, а не из разметки --- */
     function fillSelect() {
@@ -543,10 +601,17 @@
       root.querySelectorAll("[data-calc-error]").forEach(function (n) { n.remove(); });
       root.querySelectorAll("[data-calc-field]").forEach(function (n) {
         n.removeAttribute("aria-invalid");
+        if ((n.getAttribute("aria-describedby") || "").indexOf("cc-err-") === 0) {
+          n.removeAttribute("aria-describedby");
+        }
       });
     }
 
-    function showErrors(errors) {
+    /* submit=true — пользователь нажал «рассчитать»: тогда и только тогда
+       уводим фокус на первое невалидное поле и дублируем сводку ошибок
+       в aria-live-область. При живом пересчёте по input фокус не воруем
+       и экранный диктор не перебиваем — человек ещё печатает. */
+    function showErrors(errors, submit) {
       clearErrors();
       errors.forEach(function (e) {
         var input = field(e.field);
@@ -554,8 +619,14 @@
         input.setAttribute("aria-invalid", "true");
         var p = el("p", "calc-error", t(e.key));
         p.setAttribute("data-calc-error", "");
+        p.id = "cc-err-" + e.field;
+        input.setAttribute("aria-describedby", p.id);
         (input.parentNode || root).appendChild(p);
       });
+      if (!submit) return;
+      var sum = el("p", "calc-error calc-errsum", errors.map(function (e) { return t(e.key); }).join(" "));
+      sum.setAttribute("data-calc-error", "");
+      out.appendChild(sum);
       var first = root.querySelector('[aria-invalid="true"]');
       if (first && typeof first.focus === "function") first.focus();
     }
@@ -600,7 +671,7 @@
       });
     }
 
-    function run() {
+    function run(submit) {
       var res = calculate({
         category: select.value,
         goods: field("goods") ? field("goods").value : "",
@@ -608,7 +679,13 @@
         insurance: field("insurance") ? field("insurance").value : "",
         fx: field("fx") ? field("fx").value : ""
       });
-      if (!res.ok) { lastResult = null; out.hidden = true; showErrors(res.errors); return; }
+      if (!res.ok) {
+        /* при живом пересчёте таблицу не сносим: человек стирает цифру,
+           чтобы ввести новую, — результат не должен прыгать под курсором */
+        if (submit) { lastResult = null; clear(out); out.hidden = false; }
+        showErrors(res.errors, submit);
+        return;
+      }
       clearErrors();
       lastResult = res;
       render(res);
@@ -616,15 +693,16 @@
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();   // ничего никуда не отправляем
-      run();
+      live = true;
+      run(true);
     });
     select.addEventListener("change", function () {
       showHint();
-      if (lastResult) run();
+      if (live) run(false);
     });
     root.querySelectorAll("[data-calc-field]").forEach(function (n) {
       if (n === select) return;
-      n.addEventListener("input", function () { if (lastResult) run(); });
+      n.addEventListener("input", function () { if (live) run(false); });
     });
 
     /* перерисовка при смене языка: app.js меняет <html lang> */

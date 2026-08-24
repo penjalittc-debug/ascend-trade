@@ -103,8 +103,16 @@
 
   function footer(){
     const S = window.SITE || {};
-    const svc = [["ft.svc1","/services"],["ft.svc2","/services"],["ft.svc3","/services"],["ft.svc4","/services"]]
-      .map(([k,h])=>`<li><a href="${h}" data-i18n="${k}"></a></li>`).join("");
+    /* Адрес — только на существующую страницу. У «Поиска товаров» (ft.svc2)
+       и «Поиска производителей» (ft.svc3) отдельных страниц пока нет, как и
+       у консалтинга ВЭД (ft.svc1) — они ведут на хаб /services. Появится
+       страница — поменять адрес здесь, одной строкой. */
+    const svc = [
+      ["ft.svc1","/services"],                              // XİF konsaltinq — страницы нет
+      ["ft.svc2","/services"],                              // Malların axtarışı — страницы нет
+      ["ft.svc3","/services"],                              // İstehsalçı tapılması — страницы нет
+      ["ft.svc4","/cin-azerbaycan-konteyner-dasinmasi"]     // Yük daşıma → контейнерная доставка
+    ].map(([k,h])=>`<li><a href="${h}" data-i18n="${k}"></a></li>`).join("");
     const nav = PAGES.map(p=>`<li><a href="${p.href}" data-i18n="${p.key}"></a></li>`).join("");
 
     // socials — render only the ones that are configured (no dead "#" links)

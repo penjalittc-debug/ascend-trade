@@ -165,13 +165,28 @@
   /* FAQ accordion */
   function initFaq(){
     document.querySelectorAll(".faq-q").forEach(q=>{
+      const item = q.parentElement;
+      const a = item.querySelector(".faq-a");
+      if(!a) return;
+      /* когда раскрытие доиграло — снимаем фиксированную высоту. Иначе
+         замороженный max-height обрезает ответ, если текст стал выше:
+         при переключении языка (ru/en длиннее az) или при повороте экрана. */
+      a.addEventListener("transitionend", e=>{
+        if(e.propertyName === "max-height" && item.classList.contains("open")) a.style.maxHeight = "none";
+      });
       const toggle = ()=>{
-        const item = q.parentElement;
         const open = item.classList.contains("open");
-        item.classList.toggle("open");
+        if(open){
+          /* из "none" анимировать не с чего — возвращаем текущую высоту в пикселях */
+          a.style.maxHeight = a.scrollHeight + "px";
+          void a.offsetHeight;
+          item.classList.remove("open");
+          a.style.maxHeight = null;
+        } else {
+          item.classList.add("open");
+          a.style.maxHeight = a.scrollHeight + "px";
+        }
         q.setAttribute("aria-expanded", open ? "false" : "true");
-        const a = item.querySelector(".faq-a");
-        a.style.maxHeight = open ? null : a.scrollHeight + "px";
       };
       q.addEventListener("click", toggle);
       q.addEventListener("keydown", e=>{
@@ -196,17 +211,24 @@
       status.className = "form-status " + (kind==="ok"?"ok":"err");
       status.textContent = MSG[kind][l] || MSG[kind].az;
     }
+    /* какая именно форма дала лид: скрытые поля service / page есть на страницах
+       услуг и коридора; на /contact их нет — тогда остаётся "contact" */
+    function formId(){
+      const el = form.querySelector('input[name="service"], input[name="page"]');
+      return (el && el.value) || "contact";
+    }
     form.addEventListener("submit", async e=>{
       e.preventDefault();
       const btn = form.querySelector("button[type=submit]");
       const orig = btn.textContent;
+      const lead = formId();
       btn.disabled = true; btn.textContent = "…";
       try{
         const res = await fetch(form.action, { method:"POST", body:new FormData(form), headers:{ "Accept":"application/json" } });
         const data = await res.json().catch(()=>({}));
         if(res.ok && data.success){
           say("ok"); form.reset();
-          if(window.gtag) gtag("event", "generate_lead", { form: "contact" });
+          if(window.gtag) gtag("event", "generate_lead", { form: lead });
           if(window.fbq)  fbq("track", "Lead");
         }
         else { say("err"); }
@@ -269,9 +291,11 @@
   /* apply centralized site config (js/config.js) */
   function applyConfig(){
     const S = window.SITE || {};
-    // Web3Forms key
+    // Web3Forms key — пишем и value, и defaultValue: после успешной отправки
+    // форма делает reset(), а он возвращает поля к defaultValue (в разметке он
+    // пустой). Без второй строки вторая заявка подряд уходила бы без ключа.
     const key = document.querySelector('input[name="access_key"]');
-    if(key && S.web3formsKey) key.value = S.web3formsKey;
+    if(key && S.web3formsKey) key.value = key.defaultValue = S.web3formsKey;
     // phone links + display text (contact page etc.)
     document.querySelectorAll('[data-site="phone"]').forEach(el=>{
       if(!S.phone) return;

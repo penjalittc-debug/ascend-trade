@@ -18,8 +18,8 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<!-- Курс и ставки виджета живут в js/customs-calc.js (объект FX, дата 24.08.2026, срок годности 90 дней).
-     Даты в текстах (sp.u2.src.upd) обновлять вместе с ним — хвост П33 в content-plan.md. -->
+<!-- FX rate and duty rates live in js/customs-calc.js (FX object, checked 24.08.2026, 90-day shelf life);
+     dates in the copy (sp.u2.src.upd) must be updated together with it -->
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Customs duty calculation","name":"Gömrük rüsumu kalkulyatoru — idxal ödənişləri","description":"İdxal ödənişlərinin təxmini hesablanması: gömrük rüsumu 0/5/15 %, aksizli kateqoriyalar üçün aksiz, ƏDV 18 % və rəsmiləşdirmə yığımları. Yekun məbləği gömrük orqanı müəyyən edir.","provider":{"@type":"Organization","name":"Ascend Trade & Logistics","url":"https://ascend.az/"},"areaServed":{"@type":"Country","name":"Azerbaijan"},"url":"https://ascend.az/gomruk-rusumu-kalkulyatoru"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana səhifə","item":"https://ascend.az/"},{"@type":"ListItem","position":2,"name":"Xidmətlər","item":"https://ascend.az/services"},{"@type":"ListItem","position":3,"name":"Gömrük kalkulyatoru","item":"https://ascend.az/gomruk-rusumu-kalkulyatoru"}]}</script>
@@ -83,7 +83,7 @@
 <div id="site-header"></div>
 <main id="main">
 
-<!-- 1. ПЕРВЫЙ ЭКРАН -->
+<!-- 1. HERO -->
 <section class="page-hero">
   <div class="container">
     <div class="crumb" data-reveal><a href="/" data-i18n="nav.home">Ana səhifə</a><span class="sep">/</span><a href="/services" data-i18n="nav.services">Xidmətlər</a><span class="sep">/</span><span data-i18n="sp.u2.crumb">Gömrük kalkulyatoru</span></div>
@@ -99,7 +99,7 @@
   </div>
 </section>
 
-<!-- 2. КОМУ ПОДХОДИТ / КОМУ НЕТ -->
+<!-- 2. FIT / NOT A FIT -->
 <section class="section">
   <div class="container">
     <div class="section-head" data-reveal>
@@ -124,7 +124,7 @@
   </div>
 </section>
 
-<!-- 3. ВИДЖЕТ + ЧТО СЧИТАЕТ / ЧЕГО НЕ СЧИТАЕТ -->
+<!-- 3. WIDGET + WHAT IT DOES AND DOES NOT COUNT -->
 <section class="section" style="background:var(--bg-soft)">
   <div class="container">
     <div class="section-head center mx-auto" data-reveal>
@@ -133,14 +133,37 @@
       <p data-i18n="sp.u2.calc.sub">Malın kateqoriyasını seçin, dəyəri və fraxtı daxil edin — kalkulyator gömrük dəyərini (CIF), rüsumu, aksizli kateqoriyalar üçün aksizi, ƏDV 18 %-i və rəsmiləşdirmə yığımlarını ayrı-ayrı sətirlərlə göstərəcək. Dərəcəni kateqoriya verir; qrupun içində dərəcə konkret koddan asılı olanda kalkulyator bunu ayrıca xatırladır — kodu məhz buna görə sifarişdən əvvəl dəqiqləşdirmək lazımdır.</p>
     </div>
 
-    <!-- виджет: разметка из docs/site/calc-widget-spec.md §2, логика — js/customs-calc.js -->
+    <!-- calculator widget: markup sample and logic both live in js/customs-calc.js -->
     <div class="sp-calc">
       <div class="calc form" data-customs-calc data-reveal>
         <form class="calc-form" data-calc-form>
 
           <div class="field">
             <label for="cc-cat" data-i18n="calc.f.category">Malın kateqoriyası</label>
-            <select id="cc-cat" name="category" data-calc-field="category"></select>
+            <!-- az options are static so the list is visible without JS and to crawlers;
+                 js/customs-calc.js (fillSelect) rewrites them from CATEGORIES on init
+                 and on every language switch — edit rates and chapters there, not here -->
+            <select id="cc-cat" name="category" data-calc-field="category">
+              <option value="">— kateqoriyanı seçin —</option>
+              <option value="apparel">Geyim (trikotaj və toxuculuq) · 61, 62</option>
+              <option value="footwear">Ayaqqabı · 64</option>
+              <option value="bags">Çanta, çamadan, dəri qalanteriya · 4202, 4203</option>
+              <option value="hometextile">Ev tekstili: yataq dəsti, pərdə, dəsmal · 63</option>
+              <option value="furniture">Mebel · 9401, 9403, 9404</option>
+              <option value="lighting">İşıqlandırma cihazları · 9405</option>
+              <option value="tableware">Keramika və çini qab-qacaq · 6911–6913</option>
+              <option value="tiles">Keramik plitə · 6907</option>
+              <option value="plastics">Plastik qab, təsərrüfat malları, dekor · 3923, 3924, 3926</option>
+              <option value="toys">Oyuncaqlar (elektroniksiz) · 9503</option>
+              <option value="sportgoods">İdman inventarı, stolüstü oyunlar, konsollar · 9504, 9506</option>
+              <option value="appliances">Məişət texnikası və radiomodulsuz elektronika · 8508, 8516, 8518, 8528</option>
+              <option value="computers">Kompüter, printer, qida bloku · 8471, 8443, 8504</option>
+              <option value="powertools">Elektrik və pnevmatik alət · 8467</option>
+              <option value="handtools">Əl aləti və dəyişən alət · 82 (8205, 8207)</option>
+              <option value="machinery">İstehsalat avadanlığı və dəzgahlar · 84</option>
+              <option value="cosmetics">Kosmetika və ətriyyat · 33</option>
+              <option value="fur">Təbii xəzdən məmulatlar · 43</option>
+            </select>
             <p class="calc-hint" data-calc-hint hidden></p>
           </div>
 
@@ -176,7 +199,7 @@
               </label>
               <input id="cc-fx" name="fx" type="text" inputmode="decimal"
                      autocomplete="off" data-calc-field="fx"
-                     data-i18n-ph="calc.ph.fx" placeholder="1,70">
+                     data-i18n-ph="calc.ph.fx" placeholder="1.70">
             </div>
           </div>
 
@@ -191,6 +214,10 @@
         <p class="form-note calc-source" style="font-size:.78rem;margin-top:10px" data-calc-source></p>
       </div>
     </div>
+
+    <noscript>
+      <p class="sp-disc">Kalkulyator JavaScript tələb edir — dəqiq hesablama üçün <a href="#hesablama">müraciət göndərin</a>.</p>
+    </noscript>
 
     <p class="sp-disc" data-reveal data-i18n="sp.u2.disc">Hesablama təxminidir. Kalkulyator dövlətə ödənişləri göstərir — bu, Ascend-in tarifi deyil. Yekun məbləği gömrük orqanı malın kodu və gömrük dəyəri üzrə müəyyən edir. Manatla ödəniş hesablama tarixinə Azərbaycan Mərkəzi Bankının məzənnəsi ilə aparılır.</p>
 
@@ -218,7 +245,7 @@
   </div>
 </section>
 
-<!-- 4. ЧТО ВЛИЯЕТ НА ИТОГ -->
+<!-- 4. WHAT DRIVES THE TOTAL -->
 <section class="section">
   <div class="container">
     <div class="section-head" data-reveal>
@@ -246,7 +273,7 @@
   </div>
 </section>
 
-<!-- 5. КОГДА ПОЯВЛЯЕТСЯ ТОЧНАЯ ЦИФРА -->
+<!-- 5. WHEN THE EXACT FIGURE APPEARS -->
 <section class="section" style="background:var(--bg-soft)">
   <div class="container">
     <div class="split">
@@ -270,7 +297,7 @@
   </div>
 </section>
 
-<!-- 6. НА ЧЁМ ПОСТРОЕН РАСЧЁТ -->
+<!-- 6. SOURCES BEHIND THE MATH -->
 <section class="section">
   <div class="container">
     <div class="section-head" data-reveal>
@@ -315,7 +342,7 @@
   </div>
 </section>
 
-<!-- 8. ФОРМА -->
+<!-- 8. FORM -->
 <section class="section" id="hesablama">
   <div class="container">
     <div class="section-head center mx-auto" data-reveal>
@@ -323,15 +350,16 @@
       <p data-i18n="sp.u2.fm.sub">Mövqe siyahısını göndərin — kodu yoxlayır, dərəcəni sənədlə əsaslandırır və ödənişləri 12 saat ərzində hesablayırıq.</p>
     </div>
     <form class="form sp-form" data-reveal data-delay="1" data-ajax action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value=""><!-- заполняется из js/config.js (SITE.web3formsKey) -->
+      <input type="hidden" name="access_key" value=""><!-- filled from js/config.js (SITE.web3formsKey) -->
       <input type="hidden" name="subject" value="Sorğu — Gömrük kalkulyatoru">
       <input type="hidden" name="from_name" value="Ascend Trade & Logistics">
       <input type="hidden" name="service" value="U2 kalkulyator">
       <input type="hidden" name="page" value="/gomruk-rusumu-kalkulyatoru">
       <input type="hidden" name="consent_version" value="2026-08-24">
       <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-      <div class="field"><label for="u2-phone"><span data-i18n="sp.form.l1">Telefon</span> <span class="sp-req" aria-hidden="true">*</span></label><input type="tel" id="u2-phone" name="phone" autocomplete="tel" placeholder="+994 XX XXX XX XX" data-i18n-ph="sp.form.p1" required></div>
-      <div class="field"><label for="u2-cargo"><span data-i18n="sp.form.l2">Yük və ya vəzifə</span> <span class="sp-req" aria-hidden="true">*</span></label><textarea id="u2-cargo" name="cargo" rows="2" placeholder="Nə gətirirsiniz, hansı həcmdə və neçə təchizatçıdan" data-i18n-ph="sp.form.p2" required></textarea></div>
+      <div class="field"><label for="u2-name"><span data-i18n="ct.fname">Ad, Soyad</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><input type="text" id="u2-name" name="name" autocomplete="name" maxlength="80"></div>
+      <div class="field"><label for="u2-phone"><span data-i18n="sp.form.l1">Telefon</span> <span class="sp-req" aria-hidden="true">*</span></label><input type="tel" id="u2-phone" name="phone" autocomplete="tel" inputmode="tel" maxlength="25" pattern="[0-9+\(\)\.\s\-]{7,25}" placeholder="+994 XX XXX XX XX" data-i18n-ph="sp.form.p1" required></div>
+      <div class="field"><label for="u2-cargo"><span data-i18n="sp.form.l2">Yük və ya vəzifə</span> <span class="sp-req" aria-hidden="true">*</span></label><textarea id="u2-cargo" name="cargo" rows="2" maxlength="3000" placeholder="Nə gətirirsiniz, hansı həcmdə və neçə təchizatçıdan" data-i18n-ph="sp.form.p2" required></textarea></div>
       <div class="field field-consent">
         <label style="display:flex;align-items:flex-start;gap:10px;font-size:.85rem;font-weight:400;color:var(--slate);cursor:pointer">
           <input type="checkbox" name="consent" required style="width:auto;margin-top:3px;flex:none;accent-color:var(--navy)">
@@ -348,7 +376,7 @@
   </div>
 </section>
 
-<!-- 8b. ДАЛЬШЕ -->
+<!-- 8b. WHAT TO READ NEXT -->
 <section class="section" style="background:var(--bg-soft)">
   <div class="container">
     <div class="section-head center mx-auto" data-reveal>

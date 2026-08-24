@@ -18,8 +18,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<!-- Блок фотографий склада (sp.u3.ph.*) закомментирован: ждём реальные фото от владельца (П29).
-     Стоковых картинок не ставим. Раскомментировать, когда придут фото. -->
+<!-- photo block: pending assets — see the commented-out section below, no stock imagery -->
 <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Warehousing and cargo consolidation","name":"Quançjouda anbar və yüklərin konsolidasiyası","description":"Quançjoudakı konsolidasiya anbarımız: sifariş nömrəsi üzrə qəbul, sayım və ölçmə, foto hesabat, yenidən qablaşdırma və markalanma, bir neçə təchizatçıdan gələn yerin bir göndərişdə birləşdirilməsi. İlk 20 gün saxlama pulsuzdur.","provider":{"@type":"Organization","name":"Ascend Trade & Logistics","url":"https://ascend.az/"},"areaServed":{"@type":"Country","name":"Azerbaijan"},"url":"https://ascend.az/cin-anbari-konsolidasiya"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana səhifə","item":"https://ascend.az/"},{"@type":"ListItem","position":2,"name":"Xidmətlər","item":"https://ascend.az/services"},{"@type":"ListItem","position":3,"name":"Çin anbarı və konsolidasiya","item":"https://ascend.az/cin-anbari-konsolidasiya"}]}</script>
@@ -93,7 +92,7 @@
 <div id="site-header"></div>
 <main id="main">
 
-<!-- 1. ПЕРВЫЙ ЭКРАН -->
+<!-- 1. HERO -->
 <section class="page-hero">
   <div class="container">
     <div class="crumb" data-reveal><a href="/" data-i18n="nav.home">Ana səhifə</a><span class="sep">/</span><a href="/services" data-i18n="nav.services">Xidmətlər</a><span class="sep">/</span><span data-i18n="sp.u3.crumb">Çin anbarı və konsolidasiya</span></div>
@@ -109,7 +108,7 @@
   </div>
 </section>
 
-<!-- 2. КОМУ ПОДХОДИТ / КОМУ НЕТ -->
+<!-- 2. FIT / NOT A FIT -->
 <section class="section">
   <div class="container">
     <div class="section-head" data-reveal>
@@ -135,7 +134,7 @@
   </div>
 </section>
 
-<!-- 3. ЧТО ВХОДИТ / ЧТО НЕТ / ГРАНИЦЫ -->
+<!-- 3. SCOPE / OUT OF SCOPE -->
 <section class="section" style="background:var(--bg-soft)">
   <div class="container">
     <div class="section-head" data-reveal>
@@ -170,7 +169,7 @@
   </div>
 </section>
 
-<!-- 4. КАК ЭТО РАБОТАЕТ -->
+<!-- 4. HOW IT WORKS -->
 <section class="section">
   <div class="container">
     <div class="section-head" data-reveal>
@@ -187,8 +186,8 @@
   </div>
 </section>
 
-<!-- 4-БИС. ФОТОГРАФИИ СКЛАДА — раскомментировать, когда придут реальные фото владельца (П29).
-     Файлы положить в assets/warehouse/ (WebP, 800×600), стоковые картинки не ставим.
+<!-- 4b. WAREHOUSE PHOTOS — photo block: pending assets. Uncomment when real photos arrive;
+     files go to assets/warehouse/ (WebP, 800x600). No stock imagery.
 <section class="section" style="background:#f5f7fb">
   <div class="container">
     <div class="section-head center mx-auto" data-reveal>
@@ -213,7 +212,7 @@
 </section>
 -->
 
-<!-- 5. СТОИМОСТЬ: ОТ ЧЕГО ЗАВИСИТ И ЧТО БЕСПЛАТНО -->
+<!-- 5. COST: DRIVERS AND WHAT IS FREE -->
 <section class="section" style="background:var(--bg-soft)">
   <div class="container">
     <div class="section-head" data-reveal>
@@ -247,7 +246,7 @@
   </div>
 </section>
 
-<!-- 6. ДОКАЗАТЕЛЬСТВА -->
+<!-- 6. PROOF -->
 <section class="section">
   <div class="container">
     <div class="section-head" data-reveal>
@@ -332,7 +331,7 @@
   </div>
 </section>
 
-<!-- 8. ФОРМА -->
+<!-- 8. FORM -->
 <section class="section" id="hesablama">
   <div class="container">
     <div class="section-head center mx-auto" data-reveal>
@@ -340,15 +339,16 @@
       <p data-i18n="sp.u3.fm.sub">Nə göndərmək lazımdır: mövqe siyahısı və təchizatçıların sayı. Cavabında hesablamanı 12 saat ərzində, anbarın ünvanını və qəbul kodunuzu isə razılaşdırmadan sonra veririk.</p>
     </div>
     <form class="form sp-form" data-reveal data-delay="1" data-ajax action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value=""><!-- заполняется из js/config.js (SITE.web3formsKey) -->
+      <input type="hidden" name="access_key" value=""><!-- filled from js/config.js (SITE.web3formsKey) -->
       <input type="hidden" name="subject" value="Sorğu — Çin anbarı və konsolidasiya">
       <input type="hidden" name="from_name" value="Ascend Trade & Logistics">
       <input type="hidden" name="service" value="U3 anbar">
       <input type="hidden" name="page" value="/cin-anbari-konsolidasiya">
       <input type="hidden" name="consent_version" value="2026-08-24">
       <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-      <div class="field"><label for="u3-phone"><span data-i18n="sp.form.l1">Telefon</span> <span class="sp-req" aria-hidden="true">*</span></label><input type="tel" id="u3-phone" name="phone" autocomplete="tel" placeholder="+994 XX XXX XX XX" data-i18n-ph="sp.form.p1" required></div>
-      <div class="field"><label for="u3-cargo"><span data-i18n="sp.form.l2">Yük və ya vəzifə</span> <span class="sp-req" aria-hidden="true">*</span></label><textarea id="u3-cargo" name="cargo" rows="2" placeholder="Nə gətirirsiniz, hansı həcmdə və neçə təchizatçıdan" data-i18n-ph="sp.form.p2" required></textarea></div>
+      <div class="field"><label for="u3-name"><span data-i18n="ct.fname">Ad, Soyad</span> <span style="color:var(--slate-light);font-weight:400">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span></label><input type="text" id="u3-name" name="name" autocomplete="name" maxlength="80"></div>
+      <div class="field"><label for="u3-phone"><span data-i18n="sp.form.l1">Telefon</span> <span class="sp-req" aria-hidden="true">*</span></label><input type="tel" id="u3-phone" name="phone" autocomplete="tel" inputmode="tel" maxlength="25" pattern="[0-9+\(\)\.\s\-]{7,25}" placeholder="+994 XX XXX XX XX" data-i18n-ph="sp.form.p1" required></div>
+      <div class="field"><label for="u3-cargo"><span data-i18n="sp.form.l2">Yük və ya vəzifə</span> <span class="sp-req" aria-hidden="true">*</span></label><textarea id="u3-cargo" name="cargo" rows="2" maxlength="3000" placeholder="Nə gətirirsiniz, hansı həcmdə və neçə təchizatçıdan" data-i18n-ph="sp.form.p2" required></textarea></div>
       <div class="field field-consent">
         <label style="display:flex;align-items:flex-start;gap:10px;font-size:.85rem;font-weight:400;color:var(--slate);cursor:pointer">
           <input type="checkbox" name="consent" required style="width:auto;margin-top:3px;flex:none;accent-color:var(--navy)">
@@ -365,7 +365,7 @@
   </div>
 </section>
 
-<!-- 8b. ДАЛЬШЕ -->
+<!-- 8b. WHAT TO READ NEXT -->
 <section class="section" style="background:var(--bg-soft)">
   <div class="container">
     <div class="section-head center mx-auto" data-reveal>

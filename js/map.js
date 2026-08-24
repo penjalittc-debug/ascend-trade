@@ -5,24 +5,22 @@
   var WORLD_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json";
 
   var NAMES = {
-    az: { china:"Çin", turkey:"Türkiyə", iran:"İran", russia:"Rusiya", kz:"Qazaxıstan", hub:"Azərbaycan" },
-    ru: { china:"Китай", turkey:"Турция", iran:"Иран", russia:"Россия", kz:"Казахстан", hub:"Азербайджан" },
-    en: { china:"China", turkey:"Türkiye", iran:"Iran", russia:"Russia", kz:"Kazakhstan", hub:"Azerbaijan" }
+    az: { china:"Çin", russia:"Rusiya", kz:"Qazaxıstan", hub:"Azərbaycan" },
+    ru: { china:"Китай", russia:"Россия", kz:"Казахстан", hub:"Азербайджан" },
+    en: { china:"China", russia:"Russia", kz:"Kazakhstan", hub:"Azerbaijan" }
   };
   function lang(){ var l=localStorage.getItem("ascend_lang")||"az"; return NAMES[l]?l:"az"; }
 
   var HUB = { k:"hub", ll:[49.85, 40.41] };
   var ORIGINS = [
     { k:"china",  ll:[110, 35] },
-    { k:"turkey", ll:[32.9, 39.9] },
-    { k:"iran",   ll:[51.4, 35.7] },
     { k:"russia", ll:[37.6, 55.8] },
     { k:"kz",     ll:[71.4, 51.1] }
   ];
   // outgoing (hub -> world): Europe, Gulf, Central/East
   var OUT = [ [13.4, 52.5], [55.3, 25.3], [100, 30] ];
 
-  var HL = { China:1, Turkey:1, Iran:1, Russia:1, Kazakhstan:1 };
+  var HL = { China:1, Russia:1, Kazakhstan:1 };
 
   function build(el) {
     var d3 = window.d3, topojson = window.topojson;

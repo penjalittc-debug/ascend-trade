@@ -3,6 +3,26 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/turkiyeden-azerbaycana-yuk-dasima",
+      "destination": "/directions",
+      "permanent": true
+    },
+    {
+      "source": "/turkiyeden-azerbaycana-yuk-dasima.html",
+      "destination": "/directions",
+      "permanent": true
+    },
+    {
+      "source": "/irandan-azerbaycana-yuk-dasima",
+      "destination": "/directions",
+      "permanent": true
+    },
+    {
+      "source": "/irandan-azerbaycana-yuk-dasima.html",
+      "destination": "/directions",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true

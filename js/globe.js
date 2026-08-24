@@ -9,9 +9,9 @@
     if (!wrap) return;
 
     var NAMES = {
-      az: { china:"Çin", turkey:"Türkiyə", iran:"İran", russia:"Rusiya", kz:"Qazaxıstan", hub:"Azərbaycan" },
-      ru: { china:"Китай", turkey:"Турция", iran:"Иран", russia:"Россия", kz:"Казахстан", hub:"Азербайджан" },
-      en: { china:"China", turkey:"Türkiye", iran:"Iran", russia:"Russia", kz:"Kazakhstan", hub:"Azerbaijan" }
+      az: { china:"Çin", russia:"Rusiya", kz:"Qazaxıstan", hub:"Azərbaycan" },
+      ru: { china:"Китай", russia:"Россия", kz:"Казахстан", hub:"Азербайджан" },
+      en: { china:"China", russia:"Russia", kz:"Kazakhstan", hub:"Azerbaijan" }
     };
     function lang(){ var l=(localStorage.getItem("ascend_lang")||"az"); return NAMES[l]?l:"az"; }
 
@@ -64,8 +64,6 @@
     var L = NAMES[lang()];
     var pts = [
       { k:"china",  lat:34,   lon:108,  o:1 },
-      { k:"turkey", lat:39,   lon:33,   o:1 },
-      { k:"iran",   lat:33,   lon:53,   o:1 },
       { k:"russia", lat:55.7, lon:37.6, o:1 },
       { k:"kz",     lat:48,   lon:68,   o:1 },
       { k:"hub",    lat:40.4, lon:47.9, o:0, hub:1 }

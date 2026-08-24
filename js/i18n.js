@@ -13,11 +13,11 @@ window.I18N = {
     "bl.read":"Oxu","bl.back":"← Bloqa qayıt",
 
     /* hero */
-    "hero.badge":"Çin · Türkiyə · İran · Rusiya · Qazaxıstan → Azərbaycan",
+    "hero.badge":"Çin · Rusiya · Qazaxıstan → Azərbaycan",
     "hero.title":"Xarici ticarətiniz üçün açar-təslim həll — <span class='accent'>zəmanətlə</span>",
     "hero.sub":"Mal və fabrik axtarışı, öz brendiniz altında istehsal, Honq-Konq üzərindən qorunan ödəniş və 5 istiqamət üzrə çatdırılma. Vasitəçilər zənciri deyil — bir etibarlı tərəfdaş.",
     "hero.cta1":"Pulsuz konsultasiya","hero.cta2":"Xidmətlər",
-    "hero.stat1n":"5","hero.stat1l":"Daşıma istiqaməti",
+    "hero.stat1n":"3","hero.stat1l":"Daşıma istiqaməti",
     "hero.stat2n":"3","hero.stat2l":"Öz strukturumuz: Çin · Honq-Konq · RF",
     "hero.stat3n":"360°","hero.stat3l":"Açar-təslim təchizat zənciri",
     "hero.mapt":"Daşıma istiqamətləri","hero.mapc":"Bütün istiqamətlər — bir mərkəzdən idarə olunur",
@@ -32,7 +32,7 @@ window.I18N = {
     "hs.c1t":"Mal və təchizatçı axtarışı","hs.c1d":"Lazımi malı və yoxlanılmış istehsalçını birbaşa tapırıq, qiymət-keyfiyyəti müqayisə edirik, nümunə sifariş edib yoxlayırıq.",
     "hs.c2t":"Çində istehsal (OEM/ODM)","hs.c2d":"Məhsulun öz brendiniz altında istehsalı: zavodlarla danışıqlar, keyfiyyət nəzarəti və istehsal auditi.",
     "hs.c3t":"Təhlükəsiz sövdələşmə: maliyyə və hüquq","hs.c3d":"Honq-Konq ofisi vasitəsilə ödənişlərin qorunması, ixrac rəsmiləşdirilməsi və təchizatçılarla mübahisələrin həlli.",
-    "hs.c4t":"Logistika və gömrük","hs.c4d":"Birbaşa müqavilələrlə multimodal daşıma və Çin, Türkiyə, İran, Rusiya, Qazaxıstandan gömrük rəsmiləşdirilməsi.",
+    "hs.c4t":"Logistika və gömrük","hs.c4d":"Birbaşa müqavilələrlə multimodal daşıma və Çin, Rusiya, Qazaxıstandan gömrük rəsmiləşdirilməsi.",
     "hs.more":"Ətraflı",
 
     /* USP infrastructure */
@@ -94,14 +94,12 @@ window.I18N = {
     "pr.s4t":"Gömrük və təhvil","pr.s4d":"Rəsmiləşdirməni aparır, yükü qapınıza çatdırırıq.",
 
     /* directions preview */
-    "dp.eyebrow":"İstiqamətlər","dp.title":"5 ölkədən Azərbaycana daşıma",
+    "dp.eyebrow":"İstiqamətlər","dp.title":"3 ölkədən Azərbaycana daşıma",
     "dp.sub":"Hər istiqamət üzrə optimal nəqliyyat növü və marşrut seçirik.",
     "dp.viewall":"Bütün istiqamətlər",
-    "dir.china":"Çin","dir.turkey":"Türkiyə","dir.iran":"İran","dir.russia":"Rusiya","dir.kz":"Qazaxıstan",
+    "dir.china":"Çin","dir.russia":"Rusiya","dir.kz":"Qazaxıstan",
     "dir.toaz":"Azərbaycan",
     "dir.china.d":"İstehsalçı axtarışı, konsolidasiya və multimodal daşıma.",
-    "dir.turkey.d":"Sürətli avtomobil daşımaları və ekspress çatdırılma.",
-    "dir.iran.d":"Quru sərhəd keçidləri ilə etibarlı daşıma.",
     "dir.russia.d":"Avtomobil və dəmir yolu ilə müntəzəm yük axını.",
     "dir.kz.d":"Trans-Xəzər dəhlizi üzrə intermodal həllər.",
     "mode.auto":"Avtomobil","mode.rail":"Dəmir yolu","mode.sea":"Dəniz","mode.air":"Hava","mode.multi":"Multimodal",
@@ -111,7 +109,7 @@ window.I18N = {
     "cta.btn1":"Sorğu göndər","cta.btn2":"Bizə zəng edin",
 
     /* footer */
-    "ft.about":"XİF konsaltinq, malların və istehsalçıların axtarışı, Çin, Türkiyə, İran, Rusiya və Qazaxıstandan Azərbaycana yüklərin çatdırılması.",
+    "ft.about":"XİF konsaltinq, malların və istehsalçıların axtarışı, Çin, Rusiya və Qazaxıstandan Azərbaycana yüklərin çatdırılması.",
     "ft.nav":"Naviqasiya","ft.services":"Xidmətlər","ft.contact":"Əlaqə",
     "ft.svc1":"XİF konsaltinq","ft.svc2":"Malların axtarışı","ft.svc3":"İstehsalçı tapılması","ft.svc4":"Yük daşıma",
     "ft.rights":"Bütün hüquqlar qorunur.","ft.privacy":"Məxfilik siyasəti",
@@ -122,7 +120,7 @@ window.I18N = {
     "ab.hsub":"Ascend Trade & Logistics — Azərbaycanın xarici iqtisadi fəaliyyət və logistika üzrə konsaltinq şirkətidir.",
     "ab.eyebrow":"Şirkət haqqında","ab.title":"Bir komanda — bütün təchizat zənciri",
     "ab.p1":"Ascend Trade & Logistics Azərbaycan biznesinə xarici bazarlarda etibarlı və şəffaf işləmək imkanı yaradır. Biz malın axtarışından və istehsalçının seçimindən tutmuş gömrük rəsmiləşdirilməsi və qapıya çatdırılmaya qədər bütün prosesi öz üzərimizə götürürük.",
-    "ab.p2":"Çin, Türkiyə, İran, Rusiya və Qazaxıstan istiqamətləri üzrə yoxlanılmış tərəfdaşlar şəbəkəmiz sizə vaxta və büdcəyə qənaət etməyə imkan verir.",
+    "ab.p2":"Çin, Rusiya və Qazaxıstan istiqamətləri üzrə yoxlanılmış tərəfdaşlar şəbəkəmiz sizə vaxta və büdcəyə qənaət etməyə imkan verir.",
     "ab.mv1t":"Missiyamız","ab.mv1d":"Azərbaycan sahibkarları üçün xarici ticarəti aydın, təhlükəsiz və sərfəli etmək.",
     "ab.mv2t":"Vizyonumuz","ab.mv2d":"Regionda XİF və logistika üzrə ən etibarlı konsaltinq tərəfdaşı olmaq.",
     "ab.valt":"Dəyərlərimiz","ab.val1":"Şəffaflıq","ab.val1d":"Hər xərc və mərhələ açıqdır.","ab.val2":"Cavabdehlik","ab.val2d":"Verdiyimiz sözün arxasında dururuq.","ab.val3":"Nəticə","ab.val3d":"Prosesi deyil, nəticəni satırıq.","ab.val4":"Tərəfdaşlıq","ab.val4d":"Uzunmüddətli münasibət qururuq.",
@@ -147,11 +145,9 @@ window.I18N = {
 
     /* directions page */
     "dr.crumb":"İstiqamətlər","dr.htitle":"Daşıma istiqamətləri",
-    "dr.hsub":"Çin, Türkiyə, İran, Rusiya və Qazaxıstandan Azərbaycana — hər marşrut üzrə optimal həll.",
+    "dr.hsub":"Çin, Rusiya və Qazaxıstandan Azərbaycana — hər marşrut üzrə optimal həll.",
     "dr.transit":"Təxmini tranzit","dr.modes":"Nəqliyyat növləri","dr.days":"gün",
     "dr.china.long":"Çin istehsalçıları ilə birbaşa iş, yüklərin konsolidasiyası və Trans-Xəzər dəhlizi vasitəsilə multimodal daşıma. Fabrik axtarışı və keyfiyyət nəzarəti daxil.",
-    "dr.turkey.long":"Türkiyədən sürətli avtomobil daşımaları, ekspress çatdırılma və tam/qismən yükləmə (FTL/LTL) həlləri.",
-    "dr.iran.long":"İranla quru sərhəd keçidləri üzrə etibarlı avtomobil daşımaları və gömrük müşayiəti.",
     "dr.russia.long":"Rusiyadan avtomobil və dəmir yolu ilə müntəzəm yük axını, konsolidasiya və gömrük rəsmiləşdirilməsi.",
     "dr.kz.long":"Qazaxıstan və Mərkəzi Asiyadan Trans-Xəzər dəhlizi üzrə intermodal daşıma həlləri.",
     /* landing: Çin → Azərbaycan */
@@ -168,14 +164,6 @@ window.I18N = {
     "lp.f1t":"Multimodal marşrutlar","lp.f1d":"Avtomobil, dəmir yolu, dəniz və hava — yükünüz üçün ən sərfəli marşrut.",
     "lp.f2t":"Gömrük və sənədlər","lp.f2d":"İxrac rəsmiləşdirilməsi və Azərbaycanda gömrük müşayiəti tam bizim üzərimizdə.",
     "lp.f3t":"Açar-təslim","lp.f3d":"Sənədlərdən qapıya çatdırılmaya qədər bütün mərhələləri bir müqavilə ilə idarə edirik.",
-    /* landing: Türkiyə → Azərbaycan */
-    "lp.tr.crumb":"Türkiyə → Azərbaycan",
-    "lp.tr.htitle":"Türkiyədən Azərbaycana yük daşıma",
-    "lp.tr.hsub":"Türkiyədən Azərbaycana sürətli avtomobil və hava daşımaları — 5–8 gündə, gömrük rəsmiləşdirilməsi ilə açar-təslim.",
-    /* landing: İran → Azərbaycan */
-    "lp.ir.crumb":"İran → Azərbaycan",
-    "lp.ir.htitle":"İrandan Azərbaycana yük daşıma",
-    "lp.ir.hsub":"İrandan Azərbaycana quru sərhəd üzrə etibarlı avtomobil daşımaları — 4–7 gündə, gömrük müşayiəti ilə.",
     /* landing: Rusiya → Azərbaycan */
     "lp.ru.crumb":"Rusiya → Azərbaycan",
     "lp.ru.htitle":"Rusiyadan Azərbaycana yük daşıma",
@@ -187,7 +175,7 @@ window.I18N = {
     /* FAQ */
     "faq.eyebrow":"Suallar","faq.title":"Tez-tez verilən suallar",
     "faq.q1":"Çindən Azərbaycana çatdırılma nə qədər çəkir?",
-    "faq.a1":"Marşrutdan asılıdır: Çindən 18–25 gün, Türkiyədən 5–8, İrandan 4–7, Rusiyadan 6–10, Qazaxıstandan 12–18 gün. Dəqiq müddəti yükün həcmi və nəqliyyat növünə görə hesablama zamanı deyirik.",
+    "faq.a1":"Marşrutdan asılıdır: Çindən 18–25 gün, Rusiyadan 6–10, Qazaxıstandan 12–18 gün. Dəqiq müddəti yükün həcmi və nəqliyyat növünə görə hesablama zamanı deyirik.",
     "faq.q2":"Gömrük rəsmiləşdirilməsini siz həll edirsiniz?",
     "faq.a2":"Bəli. İxrac sənədləri, TN VED kodlarının təyini və Azərbaycanda idxal gömrüyü tam bizim üzərimizdədir. Siz gömrük prosedurları ilə məşğul olmursunuz.",
     "faq.q3":"Ödəniş necə aparılır?",
@@ -204,7 +192,7 @@ window.I18N = {
     "svc.m1t":"Dəniz daşımaları","svc.m1d":"Konteyner daşımaları (FCL/LCL) — böyük partiyalar üçün ən sərfəli variant. Tam konteyner və ya konsolidasiya ilə qismən yükləmə.",
     "svc.m2t":"Dəmir yolu","svc.m2d":"Trans-Xəzər dəhlizi ilə sürət və qiymət balansı. Çin və Mərkəzi Asiyadan müntəzəm intermodal daşıma.",
     "svc.m3t":"Hava daşımaları","svc.m3d":"Ən sürətli variant — təcili, qiymətli və ya kiçik həcmli yüklər üçün ekspress çatdırılma.",
-    "svc.m4t":"Avtomobil daşımaları","svc.m4d":"Türkiyə, İran və Rusiyadan çevik qapıdan-qapıya daşıma. Tam (FTL) və qismən (LTL) yükləmə.",
+    "svc.m4t":"Avtomobil daşımaları","svc.m4d":"Rusiyadan çevik qapıdan-qapıya daşıma. Tam (FTL) və qismən (LTL) yükləmə.",
     /* china — full cycle */
     "lp.cn.fulleye":"Tam dövr","lp.cn.fullt":"Çin ticarətinin tam dövrü — bir komandada",
     "lp.cn.fulld":"Malın axtarışından qapıya çatdırılmaya qədər bütün mərhələləri biz idarə edirik — siz vasitəçilərlə deyil, bir tərəfdaşla işləyirsiniz.",
@@ -221,20 +209,6 @@ window.I18N = {
     "lp.ru.s2":"Qismən yüklərin konsolidasiyası (LTL)",
     "lp.ru.s3":"Gömrük rəsmiləşdirilməsi və sənədləşmə",
     "lp.ru.s4":"Qapıya çatdırılma və müşayiət",
-    /* turkey — what we offer */
-    "lp.tr.whatt":"Türkiyədən daşımada nə təklif edirik",
-    "lp.tr.whatd":"Türkiyədən Azərbaycana sürətli və çevik daşıma — sənədləşmə və gömrük bizim üzərimizdə.",
-    "lp.tr.s1":"Sürətli avtomobil daşımaları və ekspress çatdırılma",
-    "lp.tr.s2":"Tam (FTL) və qismən (LTL) yükləmə",
-    "lp.tr.s3":"Hava yolu ilə təcili göndərişlər",
-    "lp.tr.s4":"Gömrük rəsmiləşdirilməsi və qapıya çatdırılma",
-    /* iran — what we offer */
-    "lp.ir.whatt":"İrandan daşımada nə təklif edirik",
-    "lp.ir.whatd":"İrandan quru sərhəd üzrə etibarlı daşıma və tam gömrük müşayiəti.",
-    "lp.ir.s1":"Quru sərhəd keçidləri ilə etibarlı avtomobil daşımaları",
-    "lp.ir.s2":"Gömrük müşayiəti və sənədləşmə",
-    "lp.ir.s3":"Qismən yüklərin konsolidasiyası",
-    "lp.ir.s4":"Qapıya çatdırılma və müşayiət",
     /* kazakhstan — what we offer */
     "lp.kz.whatt":"Qazaxıstandan daşımada nə təklif edirik",
     "lp.kz.whatd":"Mərkəzi Asiyadan Trans-Xəzər dəhlizi üzrə etibarlı intermodal daşıma.",
@@ -285,11 +259,11 @@ window.I18N = {
     "bl.hsub":"Практические гайды о торговле с Китаем, доставке и таможне.",
     "bl.read":"Читать","bl.back":"← Назад в блог",
 
-    "hero.badge":"Китай · Турция · Иран · Россия · Казахстан → Азербайджан",
+    "hero.badge":"Китай · Россия · Казахстан → Азербайджан",
     "hero.title":"Внешняя торговля под ключ — <span class='accent'>с гарантиями</span>",
     "hero.sub":"Поиск товара и фабрики, производство под вашим брендом, защищённая оплата через Гонконг и доставка по 5 направлениям. Не цепочка посредников — один надёжный партнёр.",
     "hero.cta1":"Бесплатная консультация","hero.cta2":"Наши услуги",
-    "hero.stat1n":"5","hero.stat1l":"Направлений доставки",
+    "hero.stat1n":"3","hero.stat1l":"Направлений доставки",
     "hero.stat2n":"3","hero.stat2l":"Свои структуры: Китай · Гонконг · РФ",
     "hero.stat3n":"360°","hero.stat3l":"Полный цикл под ключ",
     "hero.mapt":"Направления доставки","hero.mapc":"Все маршруты — из единого центра",
@@ -302,7 +276,7 @@ window.I18N = {
     "hs.c1t":"Поиск товаров и поставщиков","hs.c1d":"Находим нужный товар и проверенного производителя напрямую, сравниваем цену и качество, заказываем и проверяем образцы.",
     "hs.c2t":"Производство в Китае (OEM/ODM)","hs.c2d":"Выпуск продукции под вашим брендом: переговоры с заводами, контроль качества и аудит производств.",
     "hs.c3t":"Безопасная сделка: финансы и право","hs.c3d":"Защита платежей через офис в Гонконге, экспортное оформление и решение споров с поставщиками.",
-    "hs.c4t":"Логистика и таможня","hs.c4d":"Мультимодальная доставка по прямым контрактам и таможенное оформление из Китая, Турции, Ирана, России и Казахстана.",
+    "hs.c4t":"Логистика и таможня","hs.c4d":"Мультимодальная доставка по прямым контрактам и таможенное оформление из Китая, России и Казахстана.",
     "hs.more":"Подробнее",
 
     /* USP infrastructure */
@@ -360,14 +334,12 @@ window.I18N = {
     "pr.s3t":"Контракт и доставка","pr.s3d":"Заключаем договор, отправляем груз по оптимальному маршруту.",
     "pr.s4t":"Таможня и передача","pr.s4d":"Проводим оформление и доставляем груз до вашей двери.",
 
-    "dp.eyebrow":"Направления","dp.title":"Доставка из 5 стран в Азербайджан",
+    "dp.eyebrow":"Направления","dp.title":"Доставка из 3 стран в Азербайджан",
     "dp.sub":"По каждому направлению подбираем оптимальный транспорт и маршрут.",
     "dp.viewall":"Все направления",
-    "dir.china":"Китай","dir.turkey":"Турция","dir.iran":"Иран","dir.russia":"Россия","dir.kz":"Казахстан",
+    "dir.china":"Китай","dir.russia":"Россия","dir.kz":"Казахстан",
     "dir.toaz":"Азербайджан",
     "dir.china.d":"Поиск производителей, консолидация и мультимодальная доставка.",
-    "dir.turkey.d":"Быстрые автоперевозки и экспресс-доставка.",
-    "dir.iran.d":"Надёжные перевозки через сухопутные погранпереходы.",
     "dir.russia.d":"Регулярный грузопоток авто и ж/д транспортом.",
     "dir.kz.d":"Интермодальные решения по Транскаспийскому коридору.",
     "mode.auto":"Авто","mode.rail":"Ж/Д","mode.sea":"Море","mode.air":"Авиа","mode.multi":"Мультимодал",
@@ -375,7 +347,7 @@ window.I18N = {
     "cta.title":"Начнём ваш проект уже сегодня","cta.sub":"Поиск товара, расчёт и консультация — бесплатно. Отвечаем в течение 24 часов.",
     "cta.btn1":"Оставить заявку","cta.btn2":"Позвонить нам",
 
-    "ft.about":"Консалтинг ВЭД, поиск товаров и производителей, доставка грузов из Китая, Турции, Ирана, России и Казахстана в Азербайджан.",
+    "ft.about":"Консалтинг ВЭД, поиск товаров и производителей, доставка грузов из Китая, России и Казахстана в Азербайджан.",
     "ft.nav":"Навигация","ft.services":"Услуги","ft.contact":"Контакты",
     "ft.svc1":"Консалтинг ВЭД","ft.svc2":"Поиск товаров","ft.svc3":"Поиск производителей","ft.svc4":"Доставка грузов",
     "ft.rights":"Все права защищены.","ft.privacy":"Политика конфиденциальности",
@@ -385,7 +357,7 @@ window.I18N = {
     "ab.hsub":"Ascend Trade & Logistics — азербайджанская консалтинговая компания в сфере ВЭД и логистики.",
     "ab.eyebrow":"О компании","ab.title":"Одна команда — вся цепочка поставок",
     "ab.p1":"Ascend Trade & Logistics помогает бизнесу в Азербайджане работать на внешних рынках надёжно и прозрачно. Мы берём на себя весь процесс — от поиска товара и подбора производителя до таможенного оформления и доставки до двери.",
-    "ab.p2":"Сеть проверенных партнёров по направлениям Китай, Турция, Иран, Россия и Казахстан позволяет экономить ваше время и бюджет.",
+    "ab.p2":"Сеть проверенных партнёров по направлениям Китай, Россия и Казахстан позволяет экономить ваше время и бюджет.",
     "ab.mv1t":"Наша миссия","ab.mv1d":"Сделать внешнюю торговлю понятной, безопасной и выгодной для предпринимателей Азербайджана.",
     "ab.mv2t":"Наше видение","ab.mv2d":"Стать самым надёжным консалтинговым партнёром в сфере ВЭД и логистики в регионе.",
     "ab.valt":"Наши ценности","ab.val1":"Прозрачность","ab.val1d":"Каждый расход и этап открыты.","ab.val2":"Ответственность","ab.val2d":"Держим слово и отвечаем за результат.","ab.val3":"Результат","ab.val3d":"Продаём результат, а не процесс.","ab.val4":"Партнёрство","ab.val4d":"Строим долгосрочные отношения.",
@@ -408,11 +380,9 @@ window.I18N = {
     "sv.4f1":"Мультимодальная доставка и оптимизация маршрута","sv.4f2":"Консолидация (объединение) грузов","sv.4f3":"Таможенное оформление и документация","sv.4f4":"Доставка «от двери до двери» и страхование",
 
     "dr.crumb":"Направления","dr.htitle":"Направления доставки",
-    "dr.hsub":"Из Китая, Турции, Ирана, России и Казахстана в Азербайджан — оптимальное решение по каждому маршруту.",
+    "dr.hsub":"Из Китая, России и Казахстана в Азербайджан — оптимальное решение по каждому маршруту.",
     "dr.transit":"Примерный транзит","dr.modes":"Виды транспорта","dr.days":"дней",
     "dr.china.long":"Прямая работа с производителями Китая, консолидация грузов и мультимодальная доставка через Транскаспийский коридор. Включая поиск фабрик и контроль качества.",
-    "dr.turkey.long":"Быстрые автоперевозки из Турции, экспресс-доставка и решения полной/сборной загрузки (FTL/LTL).",
-    "dr.iran.long":"Надёжные автоперевозки через сухопутные погранпереходы с Ираном и таможенное сопровождение.",
     "dr.russia.long":"Регулярный грузопоток из России авто и ж/д транспортом, консолидация и таможенное оформление.",
     "dr.kz.long":"Интермодальные решения доставки из Казахстана и Центральной Азии по Транскаспийскому коридору.",
     /* landing: Китай → Азербайджан */
@@ -429,14 +399,6 @@ window.I18N = {
     "lp.f1t":"Мультимодальные маршруты","lp.f1d":"Авто, ж/д, море и авиа — самый выгодный маршрут для вашего груза.",
     "lp.f2t":"Таможня и документы","lp.f2d":"Экспортное оформление и таможенное сопровождение в Азербайджане — полностью на нас.",
     "lp.f3t":"Под ключ","lp.f3d":"От документов до доставки до двери — все этапы по одному договору.",
-    /* landing: Турция → Азербайджан */
-    "lp.tr.crumb":"Турция → Азербайджан",
-    "lp.tr.htitle":"Доставка грузов из Турции в Азербайджан",
-    "lp.tr.hsub":"Быстрые авто- и авиаперевозки из Турции в Азербайджан — за 5–8 дней, под ключ с таможней.",
-    /* landing: Иран → Азербайджан */
-    "lp.ir.crumb":"Иран → Азербайджан",
-    "lp.ir.htitle":"Доставка грузов из Ирана в Азербайджан",
-    "lp.ir.hsub":"Надёжные автоперевозки из Ирана в Азербайджан через сухопутную границу — за 4–7 дней, с таможенным сопровождением.",
     /* landing: Россия → Азербайджан */
     "lp.ru.crumb":"Россия → Азербайджан",
     "lp.ru.htitle":"Доставка грузов из России в Азербайджан",
@@ -448,7 +410,7 @@ window.I18N = {
     /* FAQ */
     "faq.eyebrow":"Вопросы","faq.title":"Частые вопросы",
     "faq.q1":"Сколько занимает доставка из Китая в Азербайджан?",
-    "faq.a1":"Зависит от маршрута: из Китая 18–25 дней, из Турции 5–8, из Ирана 4–7, из России 6–10, из Казахстана 12–18 дней. Точный срок называем при расчёте — по объёму груза и виду транспорта.",
+    "faq.a1":"Зависит от маршрута: из Китая 18–25 дней, из России 6–10, из Казахстана 12–18 дней. Точный срок называем при расчёте — по объёму груза и виду транспорта.",
     "faq.q2":"Растаможку вы берёте на себя?",
     "faq.a2":"Да. Экспортные документы, подбор кодов ТН ВЭД и импортная таможня в Азербайджане — полностью на нас. Вам не нужно заниматься таможенными процедурами.",
     "faq.q3":"Как происходит оплата?",
@@ -465,7 +427,7 @@ window.I18N = {
     "svc.m1t":"Морские перевозки","svc.m1d":"Контейнерные (FCL/LCL) — самый выгодный вариант для крупных партий. Полный контейнер или сборная загрузка через консолидацию.",
     "svc.m2t":"Ж/д перевозки","svc.m2d":"Баланс скорости и цены по Транскаспийскому коридору. Регулярная интермодальная доставка из Китая и Центральной Азии.",
     "svc.m3t":"Авиадоставка","svc.m3d":"Самый быстрый вариант — экспресс-доставка для срочных, ценных или небольших грузов.",
-    "svc.m4t":"Автоперевозки","svc.m4d":"Гибкая доставка от двери до двери из Турции, Ирана и России. Полная (FTL) и сборная (LTL) загрузка.",
+    "svc.m4t":"Автоперевозки","svc.m4d":"Гибкая доставка от двери до двери из России. Полная (FTL) и сборная (LTL) загрузка.",
     /* china — full cycle */
     "lp.cn.fulleye":"Полный цикл","lp.cn.fullt":"Полный цикл торговли с Китаем — в одной команде",
     "lp.cn.fulld":"От поиска товара до доставки до двери все этапы ведём мы — вы работаете не с цепочкой посредников, а с одним партнёром.",
@@ -482,20 +444,6 @@ window.I18N = {
     "lp.ru.s2":"Консолидация сборных грузов (LTL)",
     "lp.ru.s3":"Таможенное оформление и документооборот",
     "lp.ru.s4":"Доставка до двери и сопровождение",
-    /* turkey — what we offer */
-    "lp.tr.whatt":"Что предлагаем на направлении Турция",
-    "lp.tr.whatd":"Быстрая и гибкая доставка из Турции в Азербайджан — документы и таможня на нас.",
-    "lp.tr.s1":"Быстрые автоперевозки и экспресс-доставка",
-    "lp.tr.s2":"Полная (FTL) и сборная (LTL) загрузка",
-    "lp.tr.s3":"Срочные отправки авиатранспортом",
-    "lp.tr.s4":"Таможенное оформление и доставка до двери",
-    /* iran — what we offer */
-    "lp.ir.whatt":"Что предлагаем на направлении Иран",
-    "lp.ir.whatd":"Надёжная доставка из Ирана через сухопутную границу и полное таможенное сопровождение.",
-    "lp.ir.s1":"Надёжные автоперевозки через сухопутные погранпереходы",
-    "lp.ir.s2":"Таможенное сопровождение и документооборот",
-    "lp.ir.s3":"Консолидация сборных грузов",
-    "lp.ir.s4":"Доставка до двери и сопровождение",
     /* kazakhstan — what we offer */
     "lp.kz.whatt":"Что предлагаем на направлении Казахстан",
     "lp.kz.whatd":"Надёжная интермодальная доставка из Центральной Азии по Транскаспийскому коридору.",
@@ -545,11 +493,11 @@ window.I18N = {
     "bl.hsub":"Practical guides on China trade, freight and customs.",
     "bl.read":"Read","bl.back":"← Back to blog",
 
-    "hero.badge":"China · Türkiye · Iran · Russia · Kazakhstan → Azerbaijan",
+    "hero.badge":"China · Russia · Kazakhstan → Azerbaijan",
     "hero.title":"Turnkey foreign trade — <span class='accent'>with guarantees</span>",
     "hero.sub":"Product and factory sourcing, manufacturing under your brand, protected payment via Hong Kong and delivery across 5 routes. Not a chain of middlemen — one reliable partner.",
     "hero.cta1":"Free consultation","hero.cta2":"Our services",
-    "hero.stat1n":"5","hero.stat1l":"Delivery directions",
+    "hero.stat1n":"3","hero.stat1l":"Delivery directions",
     "hero.stat2n":"3","hero.stat2l":"Own entities: China · Hong Kong · Russia",
     "hero.stat3n":"360°","hero.stat3l":"End-to-end, turnkey",
     "hero.mapt":"Delivery directions","hero.mapc":"All routes — managed from one hub",
@@ -562,7 +510,7 @@ window.I18N = {
     "hs.c1t":"Product & supplier sourcing","hs.c1d":"We find the right product and a verified manufacturer directly, compare price and quality, order and inspect samples.",
     "hs.c2t":"Manufacturing in China (OEM/ODM)","hs.c2d":"Production under your own brand: factory negotiations, quality control and production audits.",
     "hs.c3t":"Secure deal: finance & legal","hs.c3d":"Payment protection via our Hong Kong office, export documentation and dispute resolution with suppliers.",
-    "hs.c4t":"Logistics & customs","hs.c4d":"Multimodal delivery on direct contracts and customs clearance from China, Türkiye, Iran, Russia and Kazakhstan.",
+    "hs.c4t":"Logistics & customs","hs.c4d":"Multimodal delivery on direct contracts and customs clearance from China, Russia and Kazakhstan.",
     "hs.more":"Learn more",
 
     /* USP infrastructure */
@@ -620,14 +568,12 @@ window.I18N = {
     "pr.s3t":"Contract & shipping","pr.s3d":"We sign the contract and ship the cargo via the optimal route.",
     "pr.s4t":"Customs & handover","pr.s4d":"We handle clearance and deliver the cargo to your door.",
 
-    "dp.eyebrow":"Directions","dp.title":"Delivery from 5 countries to Azerbaijan",
+    "dp.eyebrow":"Directions","dp.title":"Delivery from 3 countries to Azerbaijan",
     "dp.sub":"For each direction we pick the optimal transport mode and route.",
     "dp.viewall":"All directions",
-    "dir.china":"China","dir.turkey":"Türkiye","dir.iran":"Iran","dir.russia":"Russia","dir.kz":"Kazakhstan",
+    "dir.china":"China","dir.russia":"Russia","dir.kz":"Kazakhstan",
     "dir.toaz":"Azerbaijan",
     "dir.china.d":"Manufacturer search, consolidation and multimodal delivery.",
-    "dir.turkey.d":"Fast road transport and express delivery.",
-    "dir.iran.d":"Reliable transport via land border crossings.",
     "dir.russia.d":"Regular cargo flow by road and rail.",
     "dir.kz.d":"Intermodal solutions via the Trans-Caspian corridor.",
     "mode.auto":"Road","mode.rail":"Rail","mode.sea":"Sea","mode.air":"Air","mode.multi":"Multimodal",
@@ -635,7 +581,7 @@ window.I18N = {
     "cta.title":"Let's start your project today","cta.sub":"Product sourcing, quote and consultation — free. We reply within 24 hours.",
     "cta.btn1":"Get a quote","cta.btn2":"Call us",
 
-    "ft.about":"FEA consulting, product and manufacturer sourcing, cargo delivery from China, Türkiye, Iran, Russia and Kazakhstan to Azerbaijan.",
+    "ft.about":"FEA consulting, product and manufacturer sourcing, cargo delivery from China, Russia and Kazakhstan to Azerbaijan.",
     "ft.nav":"Navigation","ft.services":"Services","ft.contact":"Contact",
     "ft.svc1":"FEA consulting","ft.svc2":"Product sourcing","ft.svc3":"Manufacturer search","ft.svc4":"Cargo delivery",
     "ft.rights":"All rights reserved.","ft.privacy":"Privacy policy",
@@ -645,7 +591,7 @@ window.I18N = {
     "ab.hsub":"Ascend Trade & Logistics is an Azerbaijani consulting company in foreign trade and logistics.",
     "ab.eyebrow":"About the company","ab.title":"One team — the entire supply chain",
     "ab.p1":"Ascend Trade & Logistics helps businesses in Azerbaijan operate in foreign markets reliably and transparently. We take on the entire process — from product sourcing and manufacturer selection to customs clearance and door delivery.",
-    "ab.p2":"Our network of vetted partners across China, Türkiye, Iran, Russia and Kazakhstan lets you save time and budget.",
+    "ab.p2":"Our network of vetted partners across China, Russia and Kazakhstan lets you save time and budget.",
     "ab.mv1t":"Our mission","ab.mv1d":"To make foreign trade clear, safe and profitable for entrepreneurs in Azerbaijan.",
     "ab.mv2t":"Our vision","ab.mv2d":"To become the most reliable consulting partner in foreign trade and logistics in the region.",
     "ab.valt":"Our values","ab.val1":"Transparency","ab.val1d":"Every cost and stage is open.","ab.val2":"Accountability","ab.val2d":"We keep our word and own the result.","ab.val3":"Results","ab.val3d":"We sell results, not process.","ab.val4":"Partnership","ab.val4d":"We build long-term relationships.",
@@ -668,11 +614,9 @@ window.I18N = {
     "sv.4f1":"Multimodal delivery and route optimization","sv.4f2":"Cargo consolidation","sv.4f3":"Customs clearance and documentation","sv.4f4":"Door-to-door delivery and insurance",
 
     "dr.crumb":"Directions","dr.htitle":"Delivery directions",
-    "dr.hsub":"From China, Türkiye, Iran, Russia and Kazakhstan to Azerbaijan — an optimal solution for each route.",
+    "dr.hsub":"From China, Russia and Kazakhstan to Azerbaijan — an optimal solution for each route.",
     "dr.transit":"Approx. transit","dr.modes":"Transport modes","dr.days":"days",
     "dr.china.long":"Direct work with Chinese manufacturers, cargo consolidation and multimodal delivery via the Trans-Caspian corridor. Including factory search and quality control.",
-    "dr.turkey.long":"Fast road transport from Türkiye, express delivery and full/less-than-load (FTL/LTL) solutions.",
-    "dr.iran.long":"Reliable road transport via land border crossings with Iran and customs support.",
     "dr.russia.long":"Regular cargo flow from Russia by road and rail, consolidation and customs clearance.",
     "dr.kz.long":"Intermodal delivery solutions from Kazakhstan and Central Asia via the Trans-Caspian corridor.",
     /* landing: China → Azerbaijan */
@@ -689,14 +633,6 @@ window.I18N = {
     "lp.f1t":"Multimodal routes","lp.f1d":"Road, rail, sea and air — the most cost-effective route for your cargo.",
     "lp.f2t":"Customs & documents","lp.f2d":"Export clearance and customs support in Azerbaijan — fully handled by us.",
     "lp.f3t":"Turnkey","lp.f3d":"From documents to door delivery — all stages under one contract.",
-    /* landing: Türkiye → Azerbaijan */
-    "lp.tr.crumb":"Türkiye → Azerbaijan",
-    "lp.tr.htitle":"Cargo delivery from Türkiye to Azerbaijan",
-    "lp.tr.hsub":"Fast road and air transport from Türkiye to Azerbaijan — in 5–8 days, turnkey with customs.",
-    /* landing: Iran → Azerbaijan */
-    "lp.ir.crumb":"Iran → Azerbaijan",
-    "lp.ir.htitle":"Cargo delivery from Iran to Azerbaijan",
-    "lp.ir.hsub":"Reliable road transport from Iran to Azerbaijan via land border — in 4–7 days, with customs support.",
     /* landing: Russia → Azerbaijan */
     "lp.ru.crumb":"Russia → Azerbaijan",
     "lp.ru.htitle":"Cargo delivery from Russia to Azerbaijan",
@@ -708,7 +644,7 @@ window.I18N = {
     /* FAQ */
     "faq.eyebrow":"FAQ","faq.title":"Frequently asked questions",
     "faq.q1":"How long does delivery from China to Azerbaijan take?",
-    "faq.a1":"It depends on the route: 18–25 days from China, 5–8 from Türkiye, 4–7 from Iran, 6–10 from Russia, 12–18 from Kazakhstan. We confirm the exact time during the quote, based on cargo volume and transport mode.",
+    "faq.a1":"It depends on the route: 18–25 days from China, 6–10 from Russia, 12–18 from Kazakhstan. We confirm the exact time during the quote, based on cargo volume and transport mode.",
     "faq.q2":"Do you handle customs clearance?",
     "faq.a2":"Yes. Export documents, HS code classification and import customs in Azerbaijan are fully on us. You don't deal with customs procedures.",
     "faq.q3":"How does payment work?",
@@ -725,7 +661,7 @@ window.I18N = {
     "svc.m1t":"Sea freight","svc.m1d":"Container shipping (FCL/LCL) — the most cost-effective option for large batches. Full container or consolidated part-load.",
     "svc.m2t":"Rail freight","svc.m2d":"A balance of speed and cost via the Trans-Caspian corridor. Regular intermodal delivery from China and Central Asia.",
     "svc.m3t":"Air freight","svc.m3d":"The fastest option — express delivery for urgent, high-value or small shipments.",
-    "svc.m4t":"Road freight","svc.m4d":"Flexible door-to-door delivery from Türkiye, Iran and Russia. Full (FTL) and part (LTL) loads.",
+    "svc.m4t":"Road freight","svc.m4d":"Flexible door-to-door delivery from Russia. Full (FTL) and part (LTL) loads.",
     /* china — full cycle */
     "lp.cn.fulleye":"Full cycle","lp.cn.fullt":"The full cycle of China trade — under one team",
     "lp.cn.fulld":"From product sourcing to door delivery we handle every stage — you work with one partner, not a chain of middlemen.",
@@ -742,20 +678,6 @@ window.I18N = {
     "lp.ru.s2":"Consolidation of part-loads (LTL)",
     "lp.ru.s3":"Customs clearance and documentation",
     "lp.ru.s4":"Door delivery and support",
-    /* turkey — what we offer */
-    "lp.tr.whatt":"What we offer on the Türkiye route",
-    "lp.tr.whatd":"Fast and flexible delivery from Türkiye to Azerbaijan — documents and customs handled by us.",
-    "lp.tr.s1":"Fast road transport and express delivery",
-    "lp.tr.s2":"Full (FTL) and part (LTL) loads",
-    "lp.tr.s3":"Urgent shipments by air",
-    "lp.tr.s4":"Customs clearance and door delivery",
-    /* iran — what we offer */
-    "lp.ir.whatt":"What we offer on the Iran route",
-    "lp.ir.whatd":"Reliable delivery from Iran via the land border with full customs support.",
-    "lp.ir.s1":"Reliable road transport via land border crossings",
-    "lp.ir.s2":"Customs support and documentation",
-    "lp.ir.s3":"Consolidation of part-loads",
-    "lp.ir.s4":"Door delivery and support",
     /* kazakhstan — what we offer */
     "lp.kz.whatt":"What we offer on the Kazakhstan route",
     "lp.kz.whatd":"Reliable intermodal delivery from Central Asia via the Trans-Caspian corridor.",

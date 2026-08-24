@@ -13,6 +13,9 @@
       {href:"/idxal-gomruk-resmilesdirilmesi",     key:"nav.svc.u1"},
       {href:"/gomruk-rusumu-kalkulyatoru",         key:"nav.svc.u2"},
       {href:"/cin-anbari-konsolidasiya",           key:"nav.svc.u3"},
+      {href:"/cinde-mal-axtarisi",                 key:"nav.svc.u4"},
+      {href:"/fabrik-yoxlanisi",                   key:"nav.svc.u5"},
+      {href:"/sovdelesme-musayieti",               key:"nav.svc.u6"},
       {href:"/cin-azerbaycan-konteyner-dasinmasi", key:"nav.svc.mc"}
     ]},
     {href:"/directions",key:"nav.directions", id:"directions"},
@@ -103,14 +106,13 @@
 
   function footer(){
     const S = window.SITE || {};
-    /* Адрес — только на существующую страницу. У «Поиска товаров» (ft.svc2)
-       и «Поиска производителей» (ft.svc3) отдельных страниц пока нет, как и
-       у консалтинга ВЭД (ft.svc1) — они ведут на хаб /services. Появится
+    /* Адрес — только на существующую страницу. У консалтинга ВЭД (ft.svc1)
+       отдельной страницы пока нет — он ведёт на хаб /services. Появится
        страница — поменять адрес здесь, одной строкой. */
     const svc = [
       ["ft.svc1","/services"],                              // XİF konsaltinq — страницы нет
-      ["ft.svc2","/services"],                              // Malların axtarışı — страницы нет
-      ["ft.svc3","/services"],                              // İstehsalçı tapılması — страницы нет
+      ["ft.svc2","/cinde-mal-axtarisi"],                    // Malların axtarışı → U4
+      ["ft.svc3","/fabrik-yoxlanisi"],                      // İstehsalçı tapılması → U5
       ["ft.svc4","/cin-azerbaycan-konteyner-dasinmasi"]     // Yük daşıma → контейнерная доставка
     ].map(([k,h])=>`<li><a href="${h}" data-i18n="${k}"></a></li>`).join("");
     const nav = PAGES.map(p=>`<li><a href="${p.href}" data-i18n="${p.key}"></a></li>`).join("");

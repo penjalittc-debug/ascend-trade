@@ -744,7 +744,7 @@ button:focus:not(:focus-visible){outline:none}
 }
 
 /* мобильное меню: прокрутка обязательна — с раскрытым аккордеоном шесть пунктов,
-   пять подпунктов, языки и кнопка не помещаются в 667 px (§5.3 плана услуг) */
+   восемь подпунктов, языки и кнопка не помещаются в 667 px (§5.3 плана услуг) */
 .mobile-nav{justify-content:flex-start;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
 .m-drop-btn{
   display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;

@@ -60,6 +60,41 @@
     });
   }
 
+  /* nav dropdown «Xidmətlər»: десктоп — hover + фокус, тач — первый тап;
+     мобильное меню — аккордеон. Паттерн повторяет initLangSwitch. */
+  function initNavDrop(){
+    const drop = document.querySelector(".nav-drop");
+    if(drop){
+      const link = drop.querySelector(".nav-drop-link");
+      const coarse = ()=> !!(window.matchMedia && window.matchMedia("(hover: none)").matches);
+      let skipFocus = false;
+      const sync = ()=> link.setAttribute("aria-expanded", drop.classList.contains("open") ? "true" : "false");
+      const open = ()=>{ drop.classList.add("open"); sync(); };
+      const close = ()=>{ drop.classList.remove("open"); sync(); };
+      drop.addEventListener("mouseenter", ()=>{ if(!coarse()) open(); });
+      drop.addEventListener("mouseleave", ()=>{ if(!coarse() && !drop.contains(document.activeElement)) close(); });
+      /* Tab внутрь пункта раскрывает список — иначе с клавиатуры до него не дойти */
+      drop.addEventListener("focusin", ()=>{ if(skipFocus){ skipFocus = false; return; } open(); });
+      drop.addEventListener("focusout", e=>{ if(!drop.contains(e.relatedTarget)) close(); });
+      /* тач-планшет: первый тап раскрывает, второй уводит на /services */
+      link.addEventListener("click", e=>{
+        if(coarse() && !drop.classList.contains("open")){ e.preventDefault(); open(); }
+      });
+      document.addEventListener("click", e=>{ if(!drop.contains(e.target)) close(); });
+      document.addEventListener("keydown", e=>{
+        if(e.key === "Escape" && drop.classList.contains("open")){
+          close(); skipFocus = true; link.focus();
+        }
+      });
+    }
+    document.querySelectorAll(".m-drop-btn").forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        const opened = btn.parentElement.classList.toggle("open");
+        btn.setAttribute("aria-expanded", opened ? "true" : "false");
+      });
+    });
+  }
+
   /* header scroll + on-dark */
   function initHeader(){
     const header = document.querySelector(".header");
@@ -305,6 +340,7 @@
     apply(getLang());
     applyConfig();
     initLangSwitch();
+    initNavDrop();
     initHeader();
     initMenu();
     initReveal();

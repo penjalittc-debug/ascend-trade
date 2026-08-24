@@ -2,16 +2,34 @@
    Ascend Trade & Logistics — Shared header / footer (injected)
    ========================================================================== */
 (function(){
+  /* Пункт меню: {href, key, id}. Если у пункта есть children — он рендерится
+     дропдауном на десктопе и аккордеоном в мобильном меню.
+     Новая услуга добавляется одной строкой в children (порядок = порядок в меню). */
   const PAGES = [
     {href:"/",              key:"nav.home",       id:"home"},
     {href:"/about",     key:"nav.about",      id:"about"},
-    {href:"/services",  key:"nav.services",   id:"services"},
+    {href:"/services",  key:"nav.services",   id:"services", children:[
+      {href:"/services",                           key:"nav.svc.all"},
+      {href:"/idxal-gomruk-resmilesdirilmesi",     key:"nav.svc.u1"},
+      {href:"/gomruk-rusumu-kalkulyatoru",         key:"nav.svc.u2"},
+      {href:"/cin-anbari-konsolidasiya",           key:"nav.svc.u3"},
+      {href:"/cin-azerbaycan-konteyner-dasinmasi", key:"nav.svc.mc"}
+    ]},
     {href:"/directions",key:"nav.directions", id:"directions"},
     {href:"/blog",      key:"nav.blog",       id:"blog"},
     {href:"/contact",   key:"nav.contact",    id:"contact"}
   ];
+
+  /* Подпункты не различаются по data-page (у всех services/directions),
+     поэтому активный подпункт ищем по адресу страницы. cleanUrls: /services и
+     /services.html — одна и та же страница. */
+  function onPage(href){
+    const cur = String((window.location && window.location.pathname) || "/")
+      .replace(/\.html$/, "").replace(/(.)\/+$/, "$1");
+    return cur === href;
+  }
   const ICON = {
-    chevron:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>',
+    chevron:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>',
     phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.7 2z"/></svg>',
     mail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>',
     pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
@@ -23,12 +41,31 @@
   };
 
   function header(active){
-    const links = PAGES.map(p=>
-      `<a class="nav-link ${p.id===active?'active':''}" href="${p.href}" data-i18n="${p.key}"></a>`
+    /* подпункты одинаковы для обоих меню, отличается только класс контейнера */
+    const subLinks = p => p.children.map(c=>
+      `<a class="${onPage(c.href)?'active':''}" href="${c.href}" data-i18n="${c.key}"${onPage(c.href)?' aria-current="page"':''}></a>`
     ).join("");
-    const mlinks = PAGES.map(p=>
-      `<a class="${p.id===active?'active':''}" href="${p.href}" data-i18n="${p.key}"></a>`
-    ).join("");
+
+    const links = PAGES.map(p=>{
+      const cls = `nav-link ${p.id===active?'active':''}`;
+      if(!p.children) return `<a class="${cls}" href="${p.href}" data-i18n="${p.key}"></a>`;
+      /* родитель остаётся ссылкой на хаб: клик/Enter ведёт на страницу,
+         список раскрывается по наведению и по фокусу (js/app.js → initNavDrop) */
+      return `<div class="nav-drop">
+            <a class="${cls} nav-drop-link" id="nav-${p.id}-link" href="${p.href}"
+               aria-haspopup="true" aria-expanded="false" aria-controls="nav-${p.id}-menu"><span data-i18n="${p.key}"></span>${ICON.chevron}</a>
+            <div class="nav-drop-menu" id="nav-${p.id}-menu">${subLinks(p)}</div>
+          </div>`;
+    }).join("");
+
+    const mlinks = PAGES.map(p=>{
+      if(!p.children) return `<a class="${p.id===active?'active':''}" href="${p.href}" data-i18n="${p.key}"></a>`;
+      return `<div class="m-drop">
+          <button class="m-drop-btn ${p.id===active?'active':''}" type="button"
+                  aria-expanded="false" aria-controls="m-${p.id}-sub"><span data-i18n="${p.key}"></span>${ICON.chevron}</button>
+          <div class="m-sub" id="m-${p.id}-sub">${subLinks(p)}</div>
+        </div>`;
+    }).join("");
     const langBtns = [["az","🇦🇿"],["ru","🇷🇺"],["en","🇬🇧"]].map(([l,f])=>
       `<button data-lang="${l}"><span class="flag">${f}</span> ${({az:'Azərbaycan',ru:'Русский',en:'English'})[l]}</button>`
     ).join("");

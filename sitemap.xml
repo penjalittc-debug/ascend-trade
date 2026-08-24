@@ -3,6 +3,9 @@
   <url><loc>https://ascend.az/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://ascend.az/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://ascend.az/directions</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ascend.az/idxal-gomruk-resmilesdirilmesi</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ascend.az/gomruk-rusumu-kalkulyatoru</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ascend.az/cin-anbari-konsolidasiya</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://ascend.az/cin-azerbaycan-yuk-dasima</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://ascend.az/cin-azerbaycan-konteyner-dasinmasi</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://ascend.az/rusiyadan-azerbaycana-yuk-dasima</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>

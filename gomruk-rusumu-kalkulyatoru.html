@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gömrük rüsumu kalkulyatoru — idxal ödənişləri | Ascend</title>
+<meta name="description" content="Çindən idxal üzrə gömrük ödənişlərini hesablayın: rüsum 0/5/15 %, ƏDV 18 %, yığım. Hesablama təxminidir — yekun məbləği gömrük orqanı müəyyən edir.">
+<link rel="canonical" href="https://ascend.az/gomruk-rusumu-kalkulyatoru">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-c.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-c.png">
+<meta name="theme-color" content="#1F345A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ascend Trade & Logistics">
+<meta property="og:title" content="Gömrük rüsumu kalkulyatoru">
+<meta property="og:description" content="Rüsum, ƏDV və yığımı özünüz hesablayın. Mənbələr və yoxlama tarixi göstərilib — 24.08.2026.">
+<meta property="og:url" content="https://ascend.az/gomruk-rusumu-kalkulyatoru">
+<meta property="og:image" content="https://ascend.az/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Курс и ставки виджета живут в js/customs-calc.js (объект FX, дата 24.08.2026, срок годности 90 дней).
+     Даты в текстах (sp.u2.src.upd) обновлять вместе с ним — хвост П33 в content-plan.md. -->
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Customs duty calculation","name":"Gömrük rüsumu kalkulyatoru — idxal ödənişləri","description":"İdxal ödənişlərinin təxmini hesablanması: gömrük rüsumu 0/5/15 %, aksizli kateqoriyalar üçün aksiz, ƏDV 18 % və rəsmiləşdirmə yığımları. Yekun məbləği gömrük orqanı müəyyən edir.","provider":{"@type":"Organization","name":"Ascend Trade & Logistics","url":"https://ascend.az/"},"areaServed":{"@type":"Country","name":"Azerbaijan"},"url":"https://ascend.az/gomruk-rusumu-kalkulyatoru"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Ana səhifə","item":"https://ascend.az/"},{"@type":"ListItem","position":2,"name":"Xidmətlər","item":"https://ascend.az/services"},{"@type":"ListItem","position":3,"name":"Gömrük kalkulyatoru","item":"https://ascend.az/gomruk-rusumu-kalkulyatoru"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Niyə hesablama təxminidir?","acceptedAnswer":{"@type":"Answer","text":"Çünki yekun məbləği bu səhifə deyil, gömrük orqanı müəyyən edir — malın kodu və qəbul edilmiş gömrük dəyəri üzrə. Kalkulyator sizin daxil etdiyiniz rəqəmlərlə işləyir: dəyər, daşıma, dərəcə. Bu üç şeydən hər hansı biri rəsmiləşdirmə zamanı dəyişərsə, nəticə də dəyişir. Buna baxmayaraq rəqəmin dəyəri var: partiyanın 18 %, 24 % və ya 36 % ödəniş yükü ilə gələcəyini bilmək qərar üçün adətən kifayət edir."}},{"@type":"Question","name":"CIF nədir və gömrük dəyərinə nə daxildir?","acceptedAnswer":{"@type":"Answer","text":"CIF — beynəlxalq ticarətdə qiymətin göstərilmə şərtidir: malın dəyəri, sərhədədək daşıma və sığorta. Gömrük dəyəri adətən məhz bu bazadan hesablanır, yəni yalnız fakturadakı mal qiyməti deyil — fraxt da ora düşür. Azərbaycanda dəyər Gömrük Məcəlləsinin 220–221-ci maddələri və «Gömrük tarifi haqqında» qanunun 12-ci maddəsi üzrə, altı metodun ardıcıllığı ilə müəyyən edilir və bəyannamənin 45-ci qrafasında göstərilir. Praktik nəticə: alış qiymətini kalkulyatora yazıb daşımanı unutmaq — nəticəni özünüzə aşağı göstərmək deməkdir."}},{"@type":"Question","name":"Niyə hər şey malın kodundan asılıdır?","acceptedAnswer":{"@type":"Answer","text":"Çünki dərəcəni kod verir, ƏDV isə rüsumun üstündən hesablanır — yəni koddakı səhv iki dəfə işləyir. 0 %-lik koddan 15 %-lik koda keçid ümumi yükü 18,0 %-dən 35,7 %-ə qaldırır: fərq 15 deyil, 17,7 faiz bəndidir. Azərbaycan tarifində bu fərq süni deyil, siyasətdir: istehsal vasitələri əsasən 0 %-lə, istehlak malları isə 15 %-lə keçir. Ona görə eyni görünən iki mövqe tamamilə fərqli iqtisadiyyat verə bilər, və kodu sifarişdən əvvəl dəqiqləşdirmək lazımdır."}},{"@type":"Question","name":"Gömrük bəyan etdiyim dəyəri qəbul etməsə nə olur?","acceptedAnswer":{"@type":"Answer","text":"Prosedur metodikada yazılıb və müddətləri var. Bildiriş bəyannamənin qeydiyyatından sonra 24 saat ərzində gəlir. Razısınızsa — düzəlişi edir, fərqi ödəyirsiniz, mal buraxılır. Razı deyilsinizsə — cavab üçün 10 iş gününüz var, əlavə sənədləri isə qeydiyyatdan sonra 45 təqvim gününə qədər tam paketlə təqdim edirsiniz. Bu müddətdə mal yalnız təminat müqabilində buraxılır; təminat vermirsinizsə, buraxılış aparılmır. Sənədlər bəyan etdiyiniz dəyəri təsdiqləyirsə, təminat istifadə olunmur və geri qaytarılır; qərarla razılaşmırsınızsa, yuxarı gömrük orqanına və məhkəməyə müraciət hüququnuz qalır. Bizim işimiz bu ssenarinin qarşısını əvvəlcədən almaqdır: ödəniş sənədləri, ixrac bəyannaməsi və təchizatçının qiymət siyahısı sifariş anında yığılır."}}]}</script>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* якорные цели: шапка position:fixed 84px (70px в состоянии scrolled) */
+  #hesablama,#kalkulyator{scroll-margin-top:100px}
+  /* .crumb — display:flex без переноса: третий уровень уезжает за экран на 320px */
+  .crumb{flex-wrap:wrap}
+  /* строка результата в первом экране: длинное предложение, а не короткий чип — 100px-радиус на 320px выглядит блобом */
+  .hero-badge.sp-result{max-width:760px;align-items:flex-start;border-radius:var(--radius-lg);padding:14px 20px;font-size:.9rem;line-height:1.5;font-weight:400;letter-spacing:0;margin-bottom:0}
+  .hero-badge.sp-result .dot{margin-top:7px;flex:none}
+  /* блок 2: «подходит / не подходит» */
+  .sp-col h3{font-size:1.15rem;margin-bottom:20px}
+  .sp-col .aud-list{grid-template-columns:1fr;gap:14px}
+  .sp-no{display:flex;flex-direction:column;gap:14px}
+  .sp-no .pain-chip{border-radius:var(--radius-lg);align-items:flex-start;padding:16px 20px;font-weight:400;font-size:.95rem;line-height:1.55}
+  .sp-no .pain-chip:hover{transform:none;border-color:var(--line);color:var(--ink)}
+  .sp-no .pain-chip .x{margin-top:3px}
+  /* блок 3: виджет + «что считает / чего не считает» */
+  .sp-calc{max-width:760px;margin:0 auto}
+  .sp-calc .calc{padding:34px}
+  .sp-disc{max-width:760px;margin:26px auto 0;font-size:.86rem;color:var(--slate);background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px}
+  .sp-feats{display:flex;flex-direction:column;gap:16px;margin-top:4px}
+  .sp-feats .feat h4{font-size:1rem;font-weight:500;line-height:1.5;margin-bottom:0}
+  .feat .tick.no{background:rgba(90,101,119,.1);color:var(--slate)}
+  .sp-inc{margin-top:56px}
+  .sp-inc h3{font-size:1.25rem;margin-bottom:26px;text-align:center}
+  /* блок 5: состав расчёта */
+  .sp-quote{background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius-lg);padding:34px}
+  .sp-quote h3{margin-bottom:20px}
+  .sp-quote .sla{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);font-size:.97rem;color:var(--ink)}
+  .sp-quote .sla+p{margin-top:10px;font-size:.94rem;color:var(--ink)}
+  .sp-quote .btn{margin-top:24px}
+  .sp-note{max-width:860px;margin-top:26px;font-size:.82rem;color:var(--slate-light)}
+  /* блок 8: форма */
+  .sp-form{max-width:720px;margin:0 auto}
+  .sp-form textarea{min-height:96px}
+  .sp-req{color:var(--red)}
+  .sp-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .sp-actions .btn{flex:1;min-width:210px;justify-content:center}
+  @media(max-width:768px){
+    .sp-quote{padding:24px}
+    .sp-calc .calc{padding:24px}
+  }
+  /* глобальный .btn — white-space:nowrap; ru-подписи кнопок расчёта (до 39 знаков) на 320px не помещаются */
+  .sp-quote .btn,.sp-actions .btn{white-space:normal;text-align:center}
+  @media(max-width:480px){.page-hero .hero-cta .btn{white-space:normal;text-align:center}}
+  /* глобальный .page-hero не имеет мобильного медиазапроса: на 375×667 кнопки уезжают за экран */
+  @media(max-width:480px){
+    .page-hero{padding:126px 0 58px}
+    .page-hero .hero-cta{flex-direction:column;align-items:stretch;margin-top:22px!important}
+    .page-hero .hero-cta .btn{width:100%;justify-content:center}
+  }
+</style>
+</head>
+<body data-page="services">
+<a class="skip-link" href="#main" data-i18n="nav.skip">Əsas məzmuna keç</a>
+<div id="site-header"></div>
+<main id="main">
+
+<!-- 1. ПЕРВЫЙ ЭКРАН -->
+<section class="page-hero">
+  <div class="container">
+    <div class="crumb" data-reveal><a href="/" data-i18n="nav.home">Ana səhifə</a><span class="sep">/</span><a href="/services" data-i18n="nav.services">Xidmətlər</a><span class="sep">/</span><span data-i18n="sp.u2.crumb">Gömrük kalkulyatoru</span></div>
+    <h1 data-reveal data-i18n="sp.u2.h1">Gömrük rüsumu kalkulyatoru — idxal ödənişləri</h1>
+    <p data-reveal data-delay="1" data-i18n="sp.u2.hsub">Kalkulyator kommersiya partiyası üçün dövlətə ödənişləri hesablayır: gömrük rüsumu (0 %, 5 % və ya 15 %), aksizli kateqoriyalar üçün aksiz, ƏDV 18 % və rəsmiləşdirmə yığımları. Baza — gömrük dəyəri, yəni malın qiyməti üstəgəl sərhədədək daşıma və sığorta. Bu, bizim tarifimiz deyil — bu, dövlətin götürdüyüdür.</p>
+    <div class="hero-cta" data-reveal data-delay="2" style="margin-top:26px;margin-bottom:0">
+      <a class="btn btn-primary" href="#kalkulyator"><span data-i18n="sp.u2.cta1">Hesabla</span> ↓</a>
+      <a class="btn btn-outline-light" href="#hesablama"><span data-i18n="sp.u2.cta2">Dəqiq hesablama al</span> ↓</a>
+    </div>
+    <div style="margin-top:30px" data-reveal data-delay="3">
+      <span class="hero-badge sp-result"><span class="dot"></span><span data-i18n="sp.u2.result">Nəticədə görürsünüz: partiya hansı ödəniş yükü ilə gələcək — sifarişi verməzdən əvvəl.</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- 2. КОМУ ПОДХОДИТ / КОМУ НЕТ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow" data-i18n="sp.u2.fit.eyebrow">Kimin üçün</span>
+      <h2 data-i18n="sp.u2.fit.title">Bu kalkulyator kommersiya idxalı üçündür</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="sp-col" data-reveal data-delay="1">
+        <div class="aud-list">
+          <div class="aud-item"><span class="n">01</span><p data-i18n="sp.u2.fit.y1">Mağaza, onlayn satış və ya topdan üçün partiya gətirirsiniz və gəlirliliyi əvvəlcədən saymaq istəyirsiniz.</p></div>
+          <div class="aud-item"><span class="n">02</span><p data-i18n="sp.u2.fit.y2">İki fərqli kod arasında seçim edirsiniz və fərqin nə qədər olduğunu görmək lazımdır.</p></div>
+          <div class="aud-item"><span class="n">03</span><p data-i18n="sp.u2.fit.y3">Fiziki şəxsə düşən aylıq 300 USD limitini keçmisiniz və bundan sonra nə olacağını başa düşmək istəyirsiniz.</p></div>
+        </div>
+      </div>
+      <div class="sp-col" data-reveal data-delay="2">
+        <div class="sp-no">
+          <span class="pain-chip"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span data-i18n="sp.u2.fit.n1">Şəxsi avtomobilin rəsmiləşdirilməsi — tamamilə başqa hesabdır: orada rüsum mühərrikin həcminə görə hər sm³ üçün tutulur, üstünə mühərrik həcmi üzrə aksiz və Euro-4 tələbi gəlir. Bu kalkulyator avtomobil üçün deyil.</span></span>
+          <span class="pain-chip"><span class="x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M18 6 6 18M6 6l12 12"/></svg></span><span data-i18n="sp.u2.fit.n2">Fiziki şəxs adına gələn poçt bağlaması da ayrı qaydadır: bir şəxsə təqvim ayı ərzində ümumi gömrük dəyəri 300 ABŞ dollarınadək olan göndərişlər güzəştli qaydada keçir, bu məbləğə çatdırılma dəyəri də daxildir. Bu limit satış üçün gətirilən partiyaya aid deyil — mal satırsınızsa, bəyannamə ilə idxal lazımdır.</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ВИДЖЕТ + ЧТО СЧИТАЕТ / ЧЕГО НЕ СЧИТАЕТ -->
+<section class="section" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head center mx-auto" data-reveal>
+      <div class="center"><span class="eyebrow" data-i18n="sp.u2.calc.eyebrow">Hesablama</span></div>
+      <h2 id="kalkulyator" data-i18n="sp.u2.calc.title">Ödənişləri hesablayın</h2>
+      <p data-i18n="sp.u2.calc.sub">Malın kateqoriyasını seçin, dəyəri və fraxtı daxil edin — kalkulyator gömrük dəyərini (CIF), rüsumu, aksizli kateqoriyalar üçün aksizi, ƏDV 18 %-i və rəsmiləşdirmə yığımlarını ayrı-ayrı sətirlərlə göstərəcək. Dərəcəni kateqoriya verir; qrupun içində dərəcə konkret koddan asılı olanda kalkulyator bunu ayrıca xatırladır — kodu məhz buna görə sifarişdən əvvəl dəqiqləşdirmək lazımdır.</p>
+    </div>
+
+    <!-- виджет: разметка из docs/site/calc-widget-spec.md §2, логика — js/customs-calc.js -->
+    <div class="sp-calc">
+      <div class="calc form" data-customs-calc data-reveal>
+        <form class="calc-form" data-calc-form>
+
+          <div class="field">
+            <label for="cc-cat" data-i18n="calc.f.category">Malın kateqoriyası</label>
+            <select id="cc-cat" name="category" data-calc-field="category"></select>
+            <p class="calc-hint" data-calc-hint hidden></p>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="cc-goods" data-i18n="calc.f.goods">Malın dəyəri (invoys), USD</label>
+              <input id="cc-goods" name="goods" type="text" inputmode="decimal"
+                     autocomplete="off" data-calc-field="goods"
+                     data-i18n-ph="calc.ph.goods" placeholder="30000">
+            </div>
+            <div class="field">
+              <label for="cc-freight" data-i18n="calc.f.freight">Sərhədə qədər fraxt, USD</label>
+              <input id="cc-freight" name="freight" type="text" inputmode="decimal"
+                     autocomplete="off" data-calc-field="freight"
+                     data-i18n-ph="calc.ph.zero" placeholder="0">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="cc-ins">
+                <span data-i18n="calc.f.insurance">Sığorta, USD</span>
+                <span class="calc-opt">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span>
+              </label>
+              <input id="cc-ins" name="insurance" type="text" inputmode="decimal"
+                     autocomplete="off" data-calc-field="insurance"
+                     data-i18n-ph="calc.ph.zero" placeholder="0">
+            </div>
+            <div class="field">
+              <label for="cc-fx">
+                <span data-i18n="calc.f.fx">Məzənnə USD → AZN</span>
+                <span class="calc-opt">(<span data-i18n="ct.optional">istəyə bağlı</span>)</span>
+              </label>
+              <input id="cc-fx" name="fx" type="text" inputmode="decimal"
+                     autocomplete="off" data-calc-field="fx"
+                     data-i18n-ph="calc.ph.fx" placeholder="1,70">
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary"
+                  style="width:100%;justify-content:center" data-i18n="calc.btn">Ödənişləri hesabla</button>
+        </form>
+
+        <div class="calc-out" data-calc-out hidden aria-live="polite"></div>
+
+        <p class="form-note calc-disclaimer" style="font-size:.82rem;margin-top:18px"
+           data-i18n="calc.disclaimer">Təxmini hesablama — yalnız dövlətə ödənişlər: idxal rüsumu, aksiz, ƏDV 18 % və gömrük yığımları. Yekun məbləği gömrük orqanı HS koduna və gömrük dəyərinə görə müəyyən edir. Hesablamaya fraxt, broker xidmətləri, anbar saxlama və bizim xidmətlərimiz daxil deyil.</p>
+        <p class="form-note calc-source" style="font-size:.78rem;margin-top:10px" data-calc-source></p>
+      </div>
+    </div>
+
+    <p class="sp-disc" data-reveal data-i18n="sp.u2.disc">Hesablama təxminidir. Kalkulyator dövlətə ödənişləri göstərir — bu, Ascend-in tarifi deyil. Yekun məbləği gömrük orqanı malın kodu və gömrük dəyəri üzrə müəyyən edir. Manatla ödəniş hesablama tarixinə Azərbaycan Mərkəzi Bankının məzənnəsi ilə aparılır.</p>
+
+    <div class="sp-inc">
+      <h3 data-reveal data-i18n="sp.u2.inc.title">Nəyi sayır və nəyi saymır</h3>
+      <div class="grid grid-2">
+        <div data-reveal data-delay="1">
+          <div class="sp-feats">
+            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.inc.y1">Gömrük rüsumunu — seçilmiş kateqoriyanın dərəcəsi üzrə: 0 %, 5 % və ya 15 % — və aksizli kateqoriyalar üçün aksizi</h4></div></div>
+            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.inc.y2">ƏDV 18 % — gömrük dəyəri, rüsum və aksizin cəmindən</h4></div></div>
+            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.inc.y3">Rəsmiləşdirmə yığımı — dəyər diapazonuna görə 15 AZN-dən 1 000 AZN-dək, üstəgəl hər bəyannamə vərəqi üçün 30 AZN</h4></div></div>
+            <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.inc.y4">Ümumi yükü: dövlətə ödənişlərin cəmi — dollarla və manatla, sətir-sətir açılışı ilə</h4></div></div>
+          </div>
+        </div>
+        <div data-reveal data-delay="2">
+          <div class="sp-feats">
+            <div class="feat"><span class="tick no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><h4 data-i18n="sp.u2.inc.n1">Ascend-in xidmət haqqını — kalkulyator bizim qiymətimizi ümumiyyətlə saymır</h4></div></div>
+            <div class="feat"><span class="tick no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><h4 data-i18n="sp.u2.inc.n2">Ədəd və ya litr üzrə hesablanan aksizi: mobil cihazlar hər ədəd üçün 20 AZN, birdəfəlik elektron siqaretlər hər ədəd 2 AZN, maye hər litr 100 AZN — bunun üçün miqdar lazımdır, ona görə belə partiyaları ayrıca hesablayırıq</h4></div></div>
+            <div class="feat"><span class="tick no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><h4 data-i18n="sp.u2.inc.n3">İcazə və sertifikat üzrə dövlət rüsumlarını, ekspertiza haqlarını və anbarda saxlamanı</h4></div></div>
+            <div class="feat"><span class="tick no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><h4 data-i18n="sp.u2.inc.n4">Gömrük orqanının dəyəri düzəltmə ehtimalını: sizin daxil etdiyiniz dəyər qəbul olunmazsa, hesablama da dəyişir</h4></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ЧТО ВЛИЯЕТ НА ИТОГ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow" data-i18n="sp.u2.inf.eyebrow">Nə təsir edir</span>
+      <h2 data-i18n="sp.u2.inf.title">Yekun rəqəmi dörd şey müəyyən edir</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="usp" data-reveal data-delay="1">
+        <span class="u-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 7V4h16v3M9 20h6M12 4v16" stroke-width="1.6"/></svg></span>
+        <div><h3 data-i18n="sp.u2.inf.1t">Malın kodu</h3><p data-i18n="sp.u2.inf.1d">Ən böyük təsir buradadır. Bir qrupun içində dərəcə 0 %-dən 15 %-ə qədər dəyişir: məsələn, 24.08.2026 tarixinə yoxlanılmış nümunələrdə noutbuklar 5 %, tozsoranlar isə 15 % verirdi. Səhv kod 15 faiz bəndi rüsum, üstəgəl təxminən 2,7 bənd ƏDV deməkdir. Ona görə kodu təxmin etmək yox, sənədlə əsaslandırmaq lazımdır — mübahisəli hallarda isə DGK-dan məcburi qərar almaq.</p></div>
+      </div>
+      <div class="usp" data-reveal data-delay="2">
+        <span class="u-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7" stroke-width="1.6"/><path d="m21 21-4.3-4.3" stroke-width="1.6"/></svg></span>
+        <div><h3 data-i18n="sp.u2.inf.2t">Gömrük dəyəri və onun yoxlanması</h3><p data-i18n="sp.u2.inf.2d">Kalkulyatora daxil etdiyiniz dəyər sizin rəqəminizdir; gömrük onu öz bazaları ilə tutuşdurur. DGK-nın 21.01.2026 tarixli vahid metodikası mənbələri birbaşa sadalayır: avtomatlaşdırılmış risk təhlili sistemi, vahid idarəetmə sistemindəki əvvəlki bəyannamələr, beynəlxalq qiymət kataloqları, ölkə daxilindəki topdansatış qiymətləri və Vergi Xidmətinin məlumatları. Metodikanın 8.13.2-ci bəndi şübhə üçün əsaslardan birini belə yazır: eyni mal əvvəllər — həm sizin, həm başqa idxalçılar tərəfindən — daha yüksək qiymətlə gətirilibsə.</p></div>
+      </div>
+      <div class="usp" data-reveal data-delay="3">
+        <span class="u-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-width="1.6"/></svg></span>
+        <div><h3 data-i18n="sp.u2.inf.3t">Aksiz və xüsusi rejimlər</h3><p data-i18n="sp.u2.inf.3d">Bəzi kateqoriyalar rüsum və ƏDV-dən əlavə aksiz gətirir: mobil cihazlar hər ədəd üçün 20 AZN, təbii xəz məmulatları dəyərin 10 %-i, birdəfəlik elektron siqaretlər hər ədəd 2 AZN, maye hər litr 100 AZN. Bunlar həcmə görə sürətlə böyüyür: 5 000 birdəfəlik cihaz rüsum və ƏDV-dən əlavə 10 000 AZN aksiz deməkdir.</p></div>
+      </div>
+      <div class="usp" data-reveal data-delay="4">
+        <span class="u-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9" stroke-width="1.6"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z" stroke-width="1.6"/></svg></span>
+        <div><h3 data-i18n="sp.u2.inf.4t">Mənşə və güzəştlər</h3><p data-i18n="sp.u2.inf.4d">Azərbaycanın Çinlə sərbəst ticarət sazişi yoxdur, yəni Çin mənşəyi güzəşt vermir — kalkulyatorda Çin üçün ayrıca «güzəştli dərəcə» xanası olmamalıdır və yoxdur. Sazişlər bir sıra MDB ölkələri ilə işləyir və orada CT-1 forması tələb olunur. Müqayisə üçün: 2025-ci ildə Azərbaycan idxalının 12,5 %-i sazişlər üzrə rüsumsuz keçib, Çin bu siyahıda deyil.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. КОГДА ПОЯВЛЯЕТСЯ ТОЧНАЯ ЦИФРА -->
+<section class="section" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="split">
+      <div data-reveal>
+        <span class="eyebrow" data-i18n="sp.u2.pr.eyebrow">Dəqiq rəqəm</span>
+        <h2 style="margin-top:14px" data-i18n="sp.u2.pr.title">Kalkulyator qiymətləndirir, hesablama isə sənədlə gəlir</h2>
+        <p style="margin-top:16px" data-i18n="sp.u2.pr.sub">Kalkulyator sizə rəqəmin böyüklüyünü göstərir — bu, qərar üçün çox vaxt kifayətdir. Partiyanı həqiqətən götürürsünüzsə, mövqe siyahısını göndərin: kodu yoxlayır, dərəcəni əsaslandırır və ödənişləri sənəd əsasında hesablayırıq.</p>
+        <p style="margin-top:18px;font-size:.9rem" data-i18n="sp.u2.pr.no">Nə vəd etmirik: rüsum, ƏDV və yığımların yekun məbləğini gömrük orqanı malın kodu və gömrük dəyəri üzrə müəyyən edir. Hesablamamız təxminidir — və biz onu göndərişdən əvvəl verməyi qayda sayırıq, sonra yox.</p>
+      </div>
+      <div class="sp-quote" data-reveal data-delay="1" style="background:#fff">
+        <div class="sp-feats">
+          <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.pr.w1">Mövqe-mövqe kod və dərəcə, mübahisəli mövqelər işarələnmiş</h4></div></div>
+          <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.pr.w2">Rüsum, ƏDV, yığım və lazım gələrsə aksiz — hesablamanın tarixi ilə</h4></div></div>
+          <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.pr.w3">Hansı mövqenin icazə və ya sertifikat tələb etdiyi</h4></div></div>
+          <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.pr.w4">Daşıma və anbar — ayrıca sətirlərdə, ödənişlərlə qarışdırılmadan</h4></div></div>
+        </div>
+        <p class="sla" data-i18n="sp.u2.pr.sla">Mövqe siyahısını və sənədləri aldıqdan sonra hesablamanı <strong>12 saat ərzində</strong> göndəririk, qiymət isə <strong>7 gün</strong> qüvvədə qalır.</p>
+        <a class="btn btn-primary" href="#hesablama" data-i18n="sp.u2.pr.cta">Partiyanız üzrə dəqiq hesablama alın</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. НА ЧЁМ ПОСТРОЕН РАСЧЁТ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow" data-i18n="sp.u2.src.eyebrow">Mənbələr</span>
+      <h2 data-i18n="sp.u2.src.title">Hesablama nəyə əsaslanır</h2>
+    </div>
+    <div class="sp-feats" data-reveal data-delay="1" style="max-width:860px">
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.src.1">Rüsum dərəcələri — Nazirlər Kabinetinin 17.11.2017 tarixli 500 nömrəli qərarı, dəyişikliklərlə.</h4></div></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.src.2">ƏDV 18 % və vergitutma bazası — Vergi Məcəlləsinin 162-ci maddəsi.</h4></div></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.src.3">Yığımlar — Nazirlər Kabinetinin 26.04.2016 tarixli 168 nömrəli qərarı.</h4></div></div>
+      <div class="feat"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4 data-i18n="sp.u2.src.4">Gömrük dəyərinin müəyyən edilməsi və yoxlanması — DGK-nın 21.01.2026 tarixli vahid metodikası.</h4></div></div>
+    </div>
+    <p class="sp-note" data-reveal data-i18n="sp.u2.src.upd">Məlumat 24.08.2026 tarixinə uyğundur. Tarif tez-tez dəyişir, ona görə konkret kod üzrə dərəcəni hər sövdələşmədən əvvəl qüvvədə olan redaksiya ilə yoxlayırıq — kalkulyatorun rəqəmi qərar üçün, hesablamanın rəqəmi isə sənəd üçündür.</p>
+  </div>
+</section>
+
+<!-- 7. FAQ -->
+<section class="section" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head center mx-auto" data-reveal>
+      <div class="center"><span class="eyebrow" data-i18n="faq.eyebrow">Suallar</span></div>
+      <h2 data-i18n="faq.title">Tez-tez verilən suallar</h2>
+    </div>
+    <div class="faq" data-reveal data-delay="1">
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span data-i18n="sp.u2.fq.q1">Niyə hesablama təxminidir?</span><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="faq-a"><p data-i18n="sp.u2.fq.a1">Çünki yekun məbləği bu səhifə deyil, gömrük orqanı müəyyən edir — malın kodu və qəbul edilmiş gömrük dəyəri üzrə. Kalkulyator sizin daxil etdiyiniz rəqəmlərlə işləyir: dəyər, daşıma, dərəcə. Bu üç şeydən hər hansı biri rəsmiləşdirmə zamanı dəyişərsə, nəticə də dəyişir. Buna baxmayaraq rəqəmin dəyəri var: partiyanın 18 %, 24 % və ya 36 % ödəniş yükü ilə gələcəyini bilmək qərar üçün adətən kifayət edir.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span data-i18n="sp.u2.fq.q2">CIF nədir və gömrük dəyərinə nə daxildir?</span><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="faq-a"><p data-i18n="sp.u2.fq.a2">CIF — beynəlxalq ticarətdə qiymətin göstərilmə şərtidir: malın dəyəri, sərhədədək daşıma və sığorta. Gömrük dəyəri adətən məhz bu bazadan hesablanır, yəni yalnız fakturadakı mal qiyməti deyil — fraxt da ora düşür. Azərbaycanda dəyər Gömrük Məcəlləsinin 220–221-ci maddələri və «Gömrük tarifi haqqında» qanunun 12-ci maddəsi üzrə, altı metodun ardıcıllığı ilə müəyyən edilir və bəyannamənin 45-ci qrafasında göstərilir. Praktik nəticə: alış qiymətini kalkulyatora yazıb daşımanı unutmaq — nəticəni özünüzə aşağı göstərmək deməkdir.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span data-i18n="sp.u2.fq.q3">Niyə hər şey malın kodundan asılıdır?</span><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="faq-a"><p data-i18n="sp.u2.fq.a3">Çünki dərəcəni kod verir, ƏDV isə rüsumun üstündən hesablanır — yəni koddakı səhv iki dəfə işləyir. 0 %-lik koddan 15 %-lik koda keçid ümumi yükü 18,0 %-dən 35,7 %-ə qaldırır: fərq 15 deyil, 17,7 faiz bəndidir. Azərbaycan tarifində bu fərq süni deyil, siyasətdir: istehsal vasitələri əsasən 0 %-lə, istehlak malları isə 15 %-lə keçir. Ona görə eyni görünən iki mövqe tamamilə fərqli iqtisadiyyat verə bilər, və kodu sifarişdən əvvəl dəqiqləşdirmək lazımdır.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span data-i18n="sp.u2.fq.q4">Gömrük bəyan etdiyim dəyəri qəbul etməsə nə olur?</span><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="faq-a"><p data-i18n="sp.u2.fq.a4">Prosedur metodikada yazılıb və müddətləri var. Bildiriş bəyannamənin qeydiyyatından sonra 24 saat ərzində gəlir. Razısınızsa — düzəlişi edir, fərqi ödəyirsiniz, mal buraxılır. Razı deyilsinizsə — cavab üçün 10 iş gününüz var, əlavə sənədləri isə qeydiyyatdan sonra 45 təqvim gününə qədər tam paketlə təqdim edirsiniz. Bu müddətdə mal yalnız təminat müqabilində buraxılır; təminat vermirsinizsə, buraxılış aparılmır. Sənədlər bəyan etdiyiniz dəyəri təsdiqləyirsə, təminat istifadə olunmur və geri qaytarılır; qərarla razılaşmırsınızsa, yuxarı gömrük orqanına və məhkəməyə müraciət hüququnuz qalır. Bizim işimiz bu ssenarinin qarşısını əvvəlcədən almaqdır: ödəniş sənədləri, ixrac bəyannaməsi və təchizatçının qiymət siyahısı sifariş anında yığılır.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. ФОРМА -->
+<section class="section" id="hesablama">
+  <div class="container">
+    <div class="section-head center mx-auto" data-reveal>
+      <h2 data-i18n="sp.u2.fm.title">Partiyanız üzrə dəqiq hesablama</h2>
+      <p data-i18n="sp.u2.fm.sub">Mövqe siyahısını göndərin — kodu yoxlayır, dərəcəni sənədlə əsaslandırır və ödənişləri 12 saat ərzində hesablayırıq.</p>
+    </div>
+    <form class="form sp-form" data-reveal data-delay="1" data-ajax action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value=""><!-- заполняется из js/config.js (SITE.web3formsKey) -->
+      <input type="hidden" name="subject" value="Sorğu — Gömrük kalkulyatoru">
+      <input type="hidden" name="from_name" value="Ascend Trade & Logistics">
+      <input type="hidden" name="service" value="U2 kalkulyator">
+      <input type="hidden" name="page" value="/gomruk-rusumu-kalkulyatoru">
+      <input type="hidden" name="consent_version" value="2026-08-24">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="field"><label for="u2-phone"><span data-i18n="sp.form.l1">Telefon</span> <span class="sp-req" aria-hidden="true">*</span></label><input type="tel" id="u2-phone" name="phone" autocomplete="tel" placeholder="+994 XX XXX XX XX" data-i18n-ph="sp.form.p1" required></div>
+      <div class="field"><label for="u2-cargo"><span data-i18n="sp.form.l2">Yük və ya vəzifə</span> <span class="sp-req" aria-hidden="true">*</span></label><textarea id="u2-cargo" name="cargo" rows="2" placeholder="Nə gətirirsiniz, hansı həcmdə və neçə təchizatçıdan" data-i18n-ph="sp.form.p2" required></textarea></div>
+      <div class="field field-consent">
+        <label style="display:flex;align-items:flex-start;gap:10px;font-size:.85rem;font-weight:400;color:var(--slate);cursor:pointer">
+          <input type="checkbox" name="consent" required style="width:auto;margin-top:3px;flex:none;accent-color:var(--navy)">
+          <span data-i18n="lp.mc.consent">Telefonumun, yük haqqında verdiyim məlumatların və müraciət mətnimin bu sorğuya cavab vermək üçün emalına razıyam, o cümlədən məlumatların Web3Forms (ABŞ) xidmətinə ötürülməsinə. <a href='/privacy' target='_blank' rel='noopener'>Necə emal edirik</a>.</span>
+        </label>
+      </div>
+      <div class="sp-actions">
+        <button type="submit" class="btn btn-primary" data-i18n="sp.form.btn">Göndər</button>
+        <a class="btn btn-ghost" data-site="whatsapp-cta" href="https://wa.me/994516656575" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right:8px;vertical-align:-3px"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6-.3.3c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.1.1.6-.1 1.2z"/></svg><span data-i18n="sp.form.wa">Və ya WhatsApp-da yazın</span></a>
+      </div>
+      <p class="form-status" data-status role="status" aria-live="polite" hidden></p>
+      <p class="form-note" style="font-size:.82rem;margin-top:14px;text-align:left" data-i18n="sp.form.note">Cavab iş günü ərzində gəlir, hesablama isə siyahını aldıqdan sonra 12 saat ərzində.</p>
+    </form>
+  </div>
+</section>
+
+<!-- 8b. ДАЛЬШЕ -->
+<section class="section" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head center mx-auto" data-reveal>
+      <h2 data-i18n="sp.u2.nx.title">Bundan sonra nə oxumaq</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card" data-reveal data-delay="1">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-width="1.6"/><path d="m9 12 2 2 4-4" stroke-width="1.6"/></svg></div>
+        <h3 data-i18n="sp.u2.nx.1t">Gömrük rəsmiləşdirilməsi</h3><p data-i18n="sp.u2.nx.1d">Rəqəmi gördünüz — indi prosedur: sənədlər, icazələr və bəyannaməni kimin verdiyi.</p>
+        <a class="more" href="/idxal-gomruk-resmilesdirilmesi"><span data-i18n="hs.more">Ətraflı</span> →</a>
+      </div>
+      <div class="card" data-reveal data-delay="2">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 21h18M4 21V8l8-4 8 4v13M9 21v-6h6v6M9 11h6" stroke-width="1.6"/></svg></div>
+        <h3 data-i18n="sp.u2.nx.2t">Quançjouda anbar və konsolidasiya</h3><p data-i18n="sp.u2.nx.2d">Bir neçə təchizatçının bir göndərişdə birləşdirilməsi: bir bəyannamə, bir yığım.</p>
+        <a class="more" href="/cin-anbari-konsolidasiya"><span data-i18n="hs.more">Ətraflı</span> →</a>
+      </div>
+      <div class="card" data-reveal data-delay="3">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke-width="1.6"/><path d="M14 2v6h6M9 13h6M9 17h6" stroke-width="1.6"/></svg></div>
+        <h3 data-i18n="sp.u2.nx.3t">Gömrük rəsmiləşdirilməsi haqqında məqalə</h3><p data-i18n="sp.u2.nx.3d">Rüsumun hesablanması, dərəcələr və idxalçının ilk səhvləri.</p>
+        <a class="more" href="/blog-gomruk-resmilesdirilmesi"><span data-i18n="hs.more">Ətraflı</span> →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8c. CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta" data-reveal>
+      <h2 data-i18n="sp.u2.cta.title">Rəqəmi bilin — sonra qərar verin</h2>
+      <p data-i18n="sp.u2.cta.sub">Kalkulyator qiymətləndirir, biz isə sənədlə hesablayırıq. Mövqe siyahısını göndərin: hesablama 12 saat ərzində, qiymət 7 gün qüvvədə.</p>
+      <div class="btns">
+        <a class="btn btn-light" data-site="whatsapp-cta" href="https://wa.me/994516656575" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right:8px;vertical-align:-3px"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6-.3.3c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.1.1.6-.1 1.2z"/></svg><span data-i18n="hero.ctawa">WhatsApp-da yazın</span></a>
+        <a class="btn btn-outline-light" href="#hesablama" data-i18n="cta.btn1">Sorğu göndər</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/customs-calc.js"></script>
+<script src="js/components.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

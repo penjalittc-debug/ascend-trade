@@ -15,7 +15,7 @@ window.I18N = {
     /* hero */
     "hero.badge":"Çin · Rusiya · Qazaxıstan → Azərbaycan",
     "hero.title":"Xarici ticarətiniz üçün açar-təslim həll — <span class='accent'>zəmanətlə</span>",
-    "hero.sub":"Mal və fabrik axtarışı, öz brendiniz altında istehsal, Honq-Konq üzərindən qorunan ödəniş və 5 istiqamət üzrə çatdırılma. Vasitəçilər zənciri deyil — bir etibarlı tərəfdaş.",
+    "hero.sub":"Mal və fabrik axtarışı, öz brendiniz altında istehsal, Honq-Konq üzərindən qorunan ödəniş və 3 istiqamət üzrə çatdırılma. Vasitəçilər zənciri deyil — bir etibarlı tərəfdaş.",
     "hero.cta1":"Pulsuz konsultasiya","hero.cta2":"Xidmətlər",
     "hero.stat1n":"3","hero.stat1l":"Daşıma istiqaməti",
     "hero.stat2n":"3","hero.stat2l":"Öz strukturumuz: Çin · Honq-Konq · RF",
@@ -261,7 +261,7 @@ window.I18N = {
 
     "hero.badge":"Китай · Россия · Казахстан → Азербайджан",
     "hero.title":"Внешняя торговля под ключ — <span class='accent'>с гарантиями</span>",
-    "hero.sub":"Поиск товара и фабрики, производство под вашим брендом, защищённая оплата через Гонконг и доставка по 5 направлениям. Не цепочка посредников — один надёжный партнёр.",
+    "hero.sub":"Поиск товара и фабрики, производство под вашим брендом, защищённая оплата через Гонконг и доставка по 3 направлениям. Не цепочка посредников — один надёжный партнёр.",
     "hero.cta1":"Бесплатная консультация","hero.cta2":"Наши услуги",
     "hero.stat1n":"3","hero.stat1l":"Направлений доставки",
     "hero.stat2n":"3","hero.stat2l":"Свои структуры: Китай · Гонконг · РФ",
@@ -495,7 +495,7 @@ window.I18N = {
 
     "hero.badge":"China · Russia · Kazakhstan → Azerbaijan",
     "hero.title":"Turnkey foreign trade — <span class='accent'>with guarantees</span>",
-    "hero.sub":"Product and factory sourcing, manufacturing under your brand, protected payment via Hong Kong and delivery across 5 routes. Not a chain of middlemen — one reliable partner.",
+    "hero.sub":"Product and factory sourcing, manufacturing under your brand, protected payment via Hong Kong and delivery across 3 routes. Not a chain of middlemen — one reliable partner.",
     "hero.cta1":"Free consultation","hero.cta2":"Our services",
     "hero.stat1n":"3","hero.stat1l":"Delivery directions",
     "hero.stat2n":"3","hero.stat2l":"Own entities: China · Hong Kong · Russia",

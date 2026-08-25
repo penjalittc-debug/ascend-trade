@@ -15,11 +15,23 @@
     return LANGS.includes(l) ? l : null;
   }
 
+  /* Язык можно задать ссылкой: /?lang=en. По такой ссылке отправляем
+     иноязычного контрагента — ею пользуется шапка китайской страницы /zh.
+     try/catch: в тестовой песочнице location и URLSearchParams может не быть. */
+  function urlLang(){
+    try{
+      const l = new URLSearchParams(location.search).get("lang");
+      return LANGS.includes(l) ? l : null;
+    }catch(_){ return null; }
+  }
+
   function getLang(){
     /* apply() запишет его в localStorage — язык прилипнет к сессии и не
        собьётся при переходе на обычную страницу сайта */
     const fixed = fixedLang();
-    if(fixed) return fixed;
+    if(fixed) return fixed;          // статическая /ru/-страница важнее ?lang=
+    const fromUrl = urlLang();
+    if(fromUrl) return fromUrl;      // ?lang= важнее прошлого выбора в хранилище
     let l = localStorage.getItem("ascend_lang");
     if(!l){
       const nav = (navigator.language||"en").slice(0,2).toLowerCase();

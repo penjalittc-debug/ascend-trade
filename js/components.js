@@ -177,6 +177,9 @@
           <span class="f-legal-links">
             <a href="/privacy" data-i18n="ft.privacy"></a>
             <a href="/terms" data-i18n="ft.terms"></a>
+            <!-- Китайская партнёрская страница. Без data-i18n: иероглиф
+                 одинаков во всех трёх языках сайта, ключ был бы пустой тратой. -->
+            <a href="/zh" hreflang="zh-Hans">中文</a>
           </span>
         </div>
       </div>

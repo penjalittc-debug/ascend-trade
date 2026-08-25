@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!-- Китайская партнёрская страница. Автономна по построению:
+     js/components.js (рендерит азербайджанские шапку и подвал) и js/app.js
+     (механика языков знает только az/ru/en) НЕ подключаются, словари i18n тоже —
+     весь текст статический zh прямо в разметке. Отсюда своя мини-шапка,
+     свой мини-подвал и небольшой page-local скрипт на четыре задачи.
+     data-lang-fixed не ставим: значения "zh" эта механика не знает.
+     data-reveal не используем: без app.js блоки остались бы невидимыми. -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国—阿塞拜疆物流与清关合作伙伴 | Ascend</title>
+<meta name="description" content="我们在广州有自己的公司和集货仓，在巴库有团队。为中国工厂、货代公司和在阿塞拜疆经营的中国企业提供中阿运输、以买方公司名义的进口清关和境内配送。微信或电话联系。">
+<link rel="canonical" href="https://ascend.az/zh">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon-c.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-c.png">
+<meta name="theme-color" content="#1F345A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ascend Trade & Logistics">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="中国—阿塞拜疆物流与清关合作伙伴 | Ascend">
+<meta property="og:description" content="我们在广州有自己的公司和集货仓，在巴库有团队。中阿运输、以买方公司名义的进口清关、境内配送。微信或电话联系。">
+<meta property="og:url" content="https://ascend.az/zh">
+<meta property="og:image" content="https://ascend.az/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- hreflang не ставим: страница не перевод az-лендинга, а самостоятельный
+     материал для другого адресата. Организацию (Organization) в разметку тоже
+     не добавляем — вторая сущность конфликтовала бы с основным сайтом. -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-CN","mainEntity":[{"@type":"Question","name":"报关单出在谁的名下？","acceptedAnswer":{"@type":"Answer","text":"出在阿塞拜疆买方公司名下。由阿塞拜疆国家海关委员会注册名录内的报关代理提交，进口报关单和增值税缴纳凭证留在买方手里。我们不以自己的名义把货进口进来。"}},{"@type":"Question","name":"你们能先给个价吗？","acceptedAnswer":{"@type":"Answer","text":"需要品名、HS 编码（或者足够详细的描述）、体积和重量、发货地、收货方。齐全后 12 小时内报价，7 天内有效。运费之外，我们会把预估的关税和增值税单列出来，让您看到总额，而不只是海运费。最终税额由海关核定。"}},{"@type":"Question","name":"你们会验货吗？","acceptedAnswer":{"@type":"Answer","text":"会。装运前验货由我们自己的员工做，不外包。按客户要求安排，不是每一票都做。"}},{"@type":"Question","name":"阿塞拜疆对我这个品类有什么要求？","acceptedAnswer":{"@type":"Answer","text":"按 HS 编码逐项核对。部分品类需要卫生证书、注册或者许可，部分需要阿塞拜疆语标签。我们在下单前把清单给您；能不能获批由主管部门决定，我们不代替它做决定。"}}]}</script>
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  /* Шрифты: латиница остаётся фирменной (Sora/Inter из /css/fonts.css,
+     self-hosted, font-display:swap), иероглифы браузер добирает системным
+     CJK-шрифтом посимвольно — в сабсетах Inter/Sora их нет.
+     Google Fonts не подключаем: в материковом Китае они недоступны и страница
+     ждала бы таймаута. */
+  :root{
+    --ff-head:"Sora",system-ui,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+    --ff-body:"Inter",system-ui,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  }
+  /* CJK-набор: отрицательный трекинг и плотный интерлиньяж заголовков сайта
+     на иероглифах читаются плохо */
+  body{line-height:1.75}
+  h1,h2,h3,h4{letter-spacing:0;line-height:1.3}
+  h1{font-size:clamp(1.75rem,4.4vw,3rem)}
+  h2{font-size:clamp(1.45rem,3vw,2.3rem)}
+
+  /* мини-шапка: статическая, в потоке — фиксированной .header тут нет,
+     поэтому и компенсирующий отступ .page-hero не нужен */
+  .zh-head{background:#fff;border-bottom:1px solid var(--line)}
+  .zh-head .container{display:flex;align-items:center;gap:16px 22px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+  .zh-brand{display:flex;align-items:center;gap:14px;margin-right:auto}
+  .zh-brand img{height:36px;width:auto}
+  .zh-brand span{font-family:var(--ff-head);font-weight:600;font-size:.92rem;color:var(--navy)}
+  .zh-head nav{display:flex;gap:8px 20px;flex-wrap:wrap;font-family:var(--ff-head);font-size:.88rem}
+  .zh-head nav a{color:var(--slate);border-bottom:1px solid transparent}
+  .zh-head nav a:hover{color:var(--navy);border-bottom-color:var(--navy)}
+
+  .page-hero{padding:64px 0 72px}
+  .page-hero h1{max-width:none}
+  .zh-hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:44px;align-items:start}
+  .page-hero .zh-sub{max-width:640px;font-size:1.02rem;margin-top:20px}
+  .zh-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .zh-chips .hero-badge{margin-bottom:0}
+  .zh-hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+  .zh-hero-tel{margin-top:20px;font-size:.94rem;color:rgba(255,255,255,.78)}
+  .zh-hero-tel a{border-bottom:1px solid rgba(255,255,255,.35)}
+
+  /* QR — главный призыв к действию страницы */
+  .zh-qr{background:#fff;border-radius:var(--radius-lg);padding:24px;text-align:center;box-shadow:var(--shadow);scroll-margin-top:24px}
+  .zh-qr img{width:100%;max-width:220px;height:auto;margin:0 auto;border-radius:10px}
+  .zh-qr .zh-qr-t{display:block;margin-top:16px;font-family:var(--ff-head);font-weight:700;font-size:1.05rem;color:var(--ink)}
+  .zh-qr .zh-qr-p{margin-top:6px;font-size:.95rem;color:var(--navy);font-family:var(--ff-head);font-weight:600}
+  .zh-qr .zh-qr-n{margin-top:10px;font-size:.82rem;color:var(--slate-light)}
+  .zh-qr-lg{max-width:340px;margin:0 auto;border:1px solid var(--line)}
+  .zh-qr-lg img{max-width:260px}
+
+  .zh-list{max-width:880px}
+  .zh-list .feat+.feat{margin-top:26px}
+  .zh-list .feat p+p{margin-top:8px}
+  .zh-dir{align-items:stretch}
+  .zh-dir .card{display:flex;flex-direction:column}
+  .zh-dir .card>.zh-lead{font-size:.97rem;color:var(--ink);margin-bottom:14px}
+  .zh-ul{margin:0;padding:0}
+  .zh-ul li{position:relative;padding-left:20px;margin-bottom:10px;font-size:.95rem;color:var(--slate)}
+  .zh-ul li::before{content:"";position:absolute;left:0;top:.7em;width:7px;height:7px;border-radius:50%;background:var(--red)}
+  .zh-no{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);font-size:.9rem;color:var(--slate-light)}
+  .zh-no+.zh-no{border-top:none;padding-top:8px;margin-top:0}
+
+  .zh-steps{grid-template-columns:repeat(3,1fr)}
+  .zh-note{max-width:820px;margin-top:30px;font-size:.86rem;color:var(--slate-light)}
+
+  .zh-contacts{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+  .zh-cl li{display:flex;gap:12px;align-items:flex-start;margin-bottom:18px;font-size:1rem;color:var(--slate)}
+  .zh-cl .k{flex:none;min-width:112px;font-family:var(--ff-head);font-weight:600;color:var(--ink)}
+  .zh-cl a{border-bottom:1px solid var(--line)}
+  .zh-cl a:hover{border-bottom-color:var(--navy);color:var(--navy)}
+  .zh-chint{margin-top:6px;font-size:.9rem;color:var(--slate-light)}
+
+  .zh-form{max-width:720px;margin:0 auto}
+  .zh-form textarea{min-height:104px}
+  .zh-req{color:var(--red)}
+  .zh-opt{color:var(--slate-light);font-weight:400}
+
+  .zh-foot{background:var(--navy-900);color:rgba(255,255,255,.6);padding:38px 0;font-size:.88rem}
+  .zh-foot .container{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+  .zh-foot nav{display:flex;flex-wrap:wrap;gap:10px 20px;margin-left:auto}
+  .zh-foot a{color:rgba(255,255,255,.62)}
+  .zh-foot a:hover{color:#fff}
+  .zh-foot .zh-foot-n{flex-basis:100%;margin-top:6px;font-size:.82rem;color:rgba(255,255,255,.45)}
+
+  /* .zh-steps перебивает глобальный .steps по специфичности (два класса
+     против одного), поэтому раскладку шагов на узких экранах задаём здесь.
+     Линию между шагами (.step::before) глобальный style.css гасит сам с 1024px. */
+  @media(max-width:1024px){
+    .zh-hero-grid{grid-template-columns:1fr;gap:34px}
+    .zh-qr{max-width:340px}
+    .zh-contacts{grid-template-columns:1fr;gap:32px}
+  }
+  @media(max-width:768px){
+    .section{padding:64px 0}
+    .page-hero{padding:44px 0 54px}
+    .zh-steps{grid-template-columns:1fr}
+    .zh-form{padding:26px}
+  }
+  @media(max-width:480px){
+    .zh-brand img{height:30px}
+    .zh-brand span{font-size:.82rem}
+    .zh-hero-cta{flex-direction:column;align-items:stretch}
+    .zh-hero-cta .btn{width:100%;justify-content:center}
+    .zh-qr{padding:18px}
+    .zh-cl li{flex-direction:column;gap:2px}
+    .zh-cl .k{min-width:0}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+
+<!-- ШАПКА -->
+<header class="zh-head">
+  <div class="container">
+    <a class="zh-brand" href="/zh">
+      <img src="/assets/logo-main.png" alt="Ascend Trade &amp; Logistics" width="154" height="36">
+      <span>Ascend Trade &amp; Logistics — 阿塞拜疆</span>
+    </a>
+    <nav aria-label="语言">
+      <a href="/?lang=en" hreflang="en">English</a>
+      <a href="/" hreflang="az">主站（阿塞拜疆语）</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="zh-hero-grid">
+      <div>
+        <h1>中国到阿塞拜疆的运输、清关与境内配送 —— 广州、巴库两地都有我们的团队</h1>
+        <p class="zh-sub">我们在广州有自己的公司和集货仓，在巴库有团队和签合同的主体。中国—阿塞拜疆是我们的主线：海运、铁路（跨里海中间走廊）与空运。进口报关由阿塞拜疆国家海关委员会注册名录内的报关代理，以买方公司名义办理。</p>
+        <div class="zh-chips">
+          <span class="hero-badge"><span class="dot"></span><span>广州自有公司</span></span>
+          <span class="hero-badge"><span class="dot"></span><span>集货仓前 20 天免仓租</span></span>
+          <span class="hero-badge"><span class="dot"></span><span>清单齐全后 12 小时内报价</span></span>
+        </div>
+        <div class="zh-hero-cta">
+          <a class="btn btn-primary" href="#weixin">加微信详谈</a>
+          <a class="btn btn-outline-light" href="#hezuo">填写合作咨询 ↓</a>
+        </div>
+        <p class="zh-hero-tel">电话 / WhatsApp：<a data-site="phone" href="tel:">+994 51 665 65 75</a></p>
+      </div>
+      <!-- QR — основной канал: страницу чаще всего откроют внутри WeChat.
+           tabindex="-1": по якорю #weixin фокус должен уехать на блок, иначе
+           с клавиатуры кнопка «加微信详谈» только прокручивает страницу. -->
+      <div class="zh-qr" id="weixin" tabindex="-1">
+        <img src="/assets/wechat-qr.png" alt="Ascend WeChat 二维码" width="480" height="480" decoding="async">
+        <strong class="zh-qr-t">扫码添加微信</strong>
+        <p class="zh-qr-p">Ali · 广州</p>
+        <p class="zh-qr-n">在微信里长按图片即可识别</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. КТО МЫ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">关于我们</span>
+      <h2>我们是谁，怎么做事</h2>
+      <p>下面是我们这边的实际情况：谁做什么、以谁的名义报关、单证最后留在谁手里。</p>
+    </div>
+    <div class="zh-list">
+      <div class="feat">
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div>
+          <h4>广州的公司</h4>
+          <p>我们在广州有自己的公司和集货仓，日常操作由我们自己的团队做。需要核验的时候，可以直接向我们索取营业执照扫描件。</p>
+        </div>
+      </div>
+      <div class="feat">
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div>
+          <h4>巴库的合同主体</h4>
+          <p>阿塞拜疆一侧的合同和发票由我们在阿塞拜疆的公司出具。签约前，公司全称、税号（VÖEN）和注册地址都会写进合同，您也可以提前向我们索取。</p>
+        </div>
+      </div>
+      <div class="feat">
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div>
+          <h4>报关：由注册名录内的报关代理办理</h4>
+          <p>我们自己不是报关行。进口申报由阿塞拜疆国家海关委员会（DGK）注册名录内的报关代理提交，报关单出具在买方公司名下。关税按商品编码为 0%、5% 或 15%，进口环节增值税 18%，另有报关手续费。最终金额由海关按商品编码和完税价格核定；我们事先给出的是测算，不是承诺。</p>
+        </div>
+      </div>
+      <div class="feat">
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div>
+          <h4>广州的集货仓</h4>
+          <p>多个供应商的货可以集中到我们的仓库：签收、清点、称重、拍照入账，按需要重新包装和刷唛，然后一次发出。前 20 天免仓租。</p>
+        </div>
+      </div>
+      <div class="feat">
+        <span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <div>
+          <h4>谁跟您对接</h4>
+          <p>阿塞拜疆一侧的负责人：Hamlet Azizov。中国一侧：Ali，常驻广州，中文沟通。验厂和装运前验货由我们自己的员工去做，全国范围都可以走一趟。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ТРИ НАПРАВЛЕНИЯ -->
+<section class="section" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">合作方式</span>
+      <h2>三种合作方式</h2>
+      <p>下面三种我们都在做。您属于哪一种，直接说，我们按这条线回您。</p>
+    </div>
+    <div class="grid grid-3 zh-dir">
+
+      <div class="card">
+        <h3>中国工厂 / 出口企业 —— 把货送进阿塞拜疆</h3>
+        <p class="zh-lead">您有产品，阿塞拜疆有买家或者潜在买家，缺的是这条线上的执行。</p>
+        <ul class="zh-ul">
+          <li>运输、清关、境内配送一条线做完；进口报关以阿塞拜疆买方公司名义办理。</li>
+          <li>下单前按 HS 编码核对阿塞拜疆的准入要求：哪些品类需要卫生证书、注册或者许可，标签是否要阿塞拜疆语，包装和唛头怎么做。</li>
+          <li>协助您把对阿塞拜疆买家的供货跑顺：报价口径、发货节奏、单证清单、到货交接。</li>
+        </ul>
+        <p class="zh-no">我们不做的：不承诺替您找到买家，也不签独家经销。能不能获批、能不能放行由主管部门决定，我们做的是事先核对和申报准备。</p>
+        <p class="zh-no">货款结算由买卖双方按各自的合同安排；我们不代收代付货款。</p>
+      </div>
+
+      <div class="card">
+        <h3>中国货代 / 物流公司 —— 阿塞拜疆段的接货代理</h3>
+        <p class="zh-lead">您的货到了阿利亚特港（Alat）或者巴库，需要一个在当地实际做事的人。</p>
+        <ul class="zh-ul">
+          <li>接货、清关、境内配送、单证交接。</li>
+          <li>报关以收货公司名义、由注册名录内的报关代理提交。</li>
+          <li>按您的操作口径对接：预报、到货通知、放货条件、签收回单。</li>
+          <li>合作形式（代理协议、责任范围、保险）逐案确认。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>在阿塞拜疆经营的中国企业 —— 从中国采购与补货</h3>
+        <p class="zh-lead">公司在巴库，货源在国内，缺的是采购和运输这一段。</p>
+        <ul class="zh-ul">
+          <li>找货、找厂、比价；装运前验货，我们的员工可以到工厂现场。</li>
+          <li>广州集货、重新包装、刷唛，前 20 天免仓租。</li>
+          <li>海运 / 铁路 / 空运选线；进口报关以贵司在阿塞拜疆的公司名义办理。</li>
+          <li>单证留在贵司：进口报关单、增值税缴纳凭证、原产地文件（如该批货办理过）。</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 4. КАК НАЧАТЬ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">流程</span>
+      <h2>怎么开始</h2>
+    </div>
+    <div class="steps zh-steps">
+      <div class="step">
+        <div class="n">01</div>
+        <h3>加微信</h3>
+        <p>把情况说清楚：什么货、从哪里发、发给谁、大概多少体积或重量。中文沟通。</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h3>我们回一份具体方案</h3>
+        <p>走哪条线、需要哪些单证、哪些品类要提前办许可。清单齐全后 12 小时内给出报价，报价自出具之日起 7 天内有效。</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h3>试单或者见面</h3>
+        <p>先走一票试单，或者当面谈：广州或者巴库都可以。</p>
+      </div>
+    </div>
+    <p class="zh-note">自 2025 年 7 月 16 日起，中阿两国持普通护照人员互免签证（单次停留 30 天，180 天内累计不超过 90 天）；出行前请以两国主管部门的最新规定为准。</p>
+  </div>
+</section>
+
+<!-- 5. FAQ -->
+<section class="section" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head center mx-auto">
+      <h2>常见问题</h2>
+    </div>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>报关单出在谁的名下？</span><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="faq-a"><p>出在阿塞拜疆买方公司名下。由阿塞拜疆国家海关委员会注册名录内的报关代理提交，进口报关单和增值税缴纳凭证留在买方手里。我们不以自己的名义把货进口进来。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>你们能先给个价吗？</span><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="faq-a"><p>需要品名、HS 编码（或者足够详细的描述）、体积和重量、发货地、收货方。齐全后 12 小时内报价，7 天内有效。运费之外，我们会把预估的关税和增值税单列出来，让您看到总额，而不只是海运费。最终税额由海关核定。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>你们会验货吗？</span><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="faq-a"><p>会。装运前验货由我们自己的员工做，不外包。按客户要求安排，不是每一票都做。</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false"><span>阿塞拜疆对我这个品类有什么要求？</span><span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="faq-a"><p>按 HS 编码逐项核对。部分品类需要卫生证书、注册或者许可，部分需要阿塞拜疆语标签。我们在下单前把清单给您；能不能获批由主管部门决定，我们不代替它做决定。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. КОНТАКТЫ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center mx-auto">
+      <h2>联系方式</h2>
+    </div>
+    <div class="zh-contacts">
+      <div class="zh-qr zh-qr-lg">
+        <img src="/assets/wechat-qr.png" alt="Ascend WeChat 二维码" width="480" height="480" loading="lazy" decoding="async">
+        <strong class="zh-qr-t">扫码添加微信</strong>
+        <p class="zh-qr-p">Ali · 广州</p>
+        <p class="zh-qr-n">在微信里长按图片即可识别</p>
+      </div>
+      <div>
+        <ul class="zh-cl">
+          <li><span class="k">微信（首选）</span><span>扫二维码，或者在微信里长按图片识别。</span></li>
+          <li><span class="k">电话 / WhatsApp</span><a data-site="phone" href="tel:">+994 51 665 65 75</a></li>
+          <li><span class="k">邮箱</span><a data-site="email" href="mailto:">Penjalittc@gmail.com</a></li>
+          <li><span class="k">我们的团队</span><span>巴库（阿塞拜疆） · 广州（中国）</span></li>
+        </ul>
+        <p class="zh-chint">邮件或者 WhatsApp 不方便的话，直接加微信最快。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. ФОРМА -->
+<section class="section" id="hezuo" style="background:var(--bg-soft)">
+  <div class="container">
+    <div class="section-head center mx-auto">
+      <h2>合作咨询</h2>
+      <p>两分钟填完，我们回您。也可以直接加微信。</p>
+    </div>
+    <form class="form zh-form" id="zh-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value=""><!-- заполняется из js/config.js (SITE.web3formsKey) -->
+      <input type="hidden" name="subject" value="合作咨询 — Chinese partner inquiry">
+      <input type="hidden" name="from_name" value="Ascend Trade &amp; Logistics">
+      <input type="hidden" name="service" value="ZH partner">
+      <input type="hidden" name="page" value="/zh">
+      <input type="hidden" name="consent_version" value="2026-08-24">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="form-row">
+        <div class="field"><label for="zh-name">姓名 <span class="zh-req" aria-hidden="true">*</span></label><input type="text" id="zh-name" name="name" autocomplete="name" maxlength="80" required></div>
+        <div class="field"><label for="zh-company">公司名称 <span class="zh-opt">（选填）</span></label><input type="text" id="zh-company" name="company" autocomplete="organization" maxlength="120"></div>
+      </div>
+      <div class="field"><label for="zh-contact">微信号或电话 <span class="zh-req" aria-hidden="true">*</span></label><input type="text" id="zh-contact" name="contact" maxlength="80" required></div>
+      <div class="field"><label for="zh-message">需求说明 <span class="zh-req" aria-hidden="true">*</span></label><textarea id="zh-message" name="message" rows="3" maxlength="3000" placeholder="例如：我们是深圳的灯具厂，想把货发给巴库的买家，每月 2–3 个柜" required></textarea></div>
+      <div class="field field-consent">
+        <label style="display:flex;align-items:flex-start;gap:10px;font-size:.85rem;font-weight:400;color:var(--slate);cursor:pointer">
+          <input type="checkbox" name="consent" required style="width:auto;margin-top:3px;flex:none;accent-color:var(--navy)">
+          <span>我同意 Ascend Trade &amp; Logistics 为回复本次咨询而处理我提交的联系方式和留言，包括通过表单服务商 Web3Forms（美国）传输这些信息。详见<a href="/privacy" target="_blank" rel="noopener">《隐私政策》</a>。</span>
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">提交</button>
+      <p class="form-status" data-status role="status" aria-live="polite" hidden></p>
+      <p class="form-note" style="font-size:.82rem;margin-top:14px">《隐私政策》为阿塞拜疆语版本。需要中文说明可以直接问我们。</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="zh-foot">
+  <div class="container">
+    <span>© <span data-year>2026</span> Ascend Trade &amp; Logistics · 巴库 · 广州</span>
+    <nav aria-label="页脚">
+      <a href="/" hreflang="az">主站（阿塞拜疆语）</a>
+      <a href="/?lang=en" hreflang="en">English</a>
+      <a href="/privacy">隐私政策</a>
+    </nav>
+    <span class="zh-foot-n">本页为中文合作页面。网站其余内容为阿塞拜疆语、俄语和英语。</span>
+  </div>
+</footer>
+
+<script src="/js/config.js"></script>
+<script>
+/* Page-local: js/app.js на этой странице не подключён (он знает только az/ru/en).
+   Четыре задачи: контакты из js/config.js, год, аккордеон FAQ, отправка формы. */
+(function(){
+  var S = window.SITE || {};
+
+  /* 1. Контакты и ключ формы — единственный источник правды js/config.js */
+  var key = document.querySelector('input[name="access_key"]');
+  // и value, и defaultValue: после reset() форма вернула бы поле к пустому
+  if(key && S.web3formsKey) key.value = key.defaultValue = S.web3formsKey;
+  document.querySelectorAll('[data-site="phone"]').forEach(function(el){
+    if(!S.phone) return;
+    el.setAttribute("href", "tel:" + S.phone);
+    el.textContent = S.phoneDisplay || S.phone;
+  });
+  document.querySelectorAll('[data-site="email"]').forEach(function(el){
+    if(!S.email) return;
+    el.setAttribute("href", "mailto:" + S.email);
+    el.textContent = S.email;
+  });
+
+  /* 2. Год в подвале */
+  document.querySelectorAll("[data-year]").forEach(function(el){
+    el.textContent = new Date().getFullYear();
+  });
+
+  /* 3. FAQ — та же механика, что в js/app.js: max-height снимается после
+     анимации, иначе длинный ответ обрезался бы при повороте экрана */
+  document.querySelectorAll(".faq-q").forEach(function(q){
+    var item = q.parentElement, a = item.querySelector(".faq-a");
+    if(!a) return;
+    a.addEventListener("transitionend", function(e){
+      if(e.propertyName === "max-height" && item.classList.contains("open")) a.style.maxHeight = "none";
+    });
+    var toggle = function(){
+      var open = item.classList.contains("open");
+      if(open){
+        a.style.maxHeight = a.scrollHeight + "px";
+        void a.offsetHeight;
+        item.classList.remove("open");
+        a.style.maxHeight = null;
+      } else {
+        item.classList.add("open");
+        a.style.maxHeight = a.scrollHeight + "px";
+      }
+      q.setAttribute("aria-expanded", open ? "false" : "true");
+    };
+    q.addEventListener("click", toggle);
+    q.addEventListener("keydown", function(e){
+      if(e.key === "Enter" || e.key === " "){ e.preventDefault(); toggle(); }
+    });
+  });
+
+  /* 4. Форма — Web3Forms. Доступность api.web3forms.com из материкового Китая
+     не проверялась, поэтому текст ошибки уводит в WeChat, а не «попробуйте позже» */
+  var form = document.getElementById("zh-form");
+  if(!form) return;
+  var status = form.querySelector("[data-status]");
+  var MSG = {
+    ok:  "已收到。我们会尽快回复；如果 24 小时内没有回音，请直接加微信或来电。",
+    err: "发送失败。请直接加微信，或拨打 " + (S.phoneDisplay || "+994 51 665 65 75") + "。"
+  };
+  function say(kind){
+    if(!status) return;
+    status.hidden = false;
+    status.className = "form-status " + (kind === "ok" ? "ok" : "err");
+    status.textContent = MSG[kind];
+  }
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var btn = form.querySelector("button[type=submit]");
+    var orig = btn.textContent;
+    btn.disabled = true; btn.textContent = "发送中…";
+    fetch(form.action, { method:"POST", body:new FormData(form), headers:{ "Accept":"application/json" } })
+      .then(function(res){ return res.json().then(function(d){ return { ok:res.ok, d:d }; }, function(){ return { ok:false, d:{} }; }); })
+      .then(function(r){
+        if(r.ok && r.d.success){
+          say("ok"); form.reset();
+          if(window.gtag) gtag("event", "generate_lead", { form: "ZH partner" });
+        } else { say("err"); }
+      })
+      .catch(function(){ say("err"); })
+      .then(function(){ btn.disabled = false; btn.textContent = orig; });
+  });
+})();
+</script>
+</body>
+</html>

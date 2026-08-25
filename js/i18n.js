@@ -15,8 +15,8 @@ window.I18N = {
     "nav.svc.u5":"Fabrikin yoxlanılması",
     "nav.svc.u6":"Sövdələşmənin müşayiəti",
     "nav.svc.mc":"Konteyner daşınması",
-    "bl.crumb":"Bloq","bl.htitle":"Bloq — XİF və logistika bələdçiləri",
-    "bl.hsub":"Çinlə ticarət, yük daşıma və gömrük haqqında praktiki bələdçilər.",
+    "bl.crumb":"Bloq","bl.htitle":"Bloq — Çindən idxal, gömrük və daşıma bələdçiləri",
+    "bl.hsub":"Çindən idxal, karqo və rəsmi ticarət, gömrük rəsmiləşdirilməsi və daşıma müddətləri — praktiki bələdçilər.",
     "bl.read":"Oxu","bl.back":"← Bloqa qayıt",
 
     /* hero */
@@ -39,13 +39,13 @@ window.I18N = {
     "hs.c1t":"Mal və təchizatçı axtarışı","hs.c1d":"Lazımi malı və yoxlanılmış istehsalçını birbaşa tapırıq, qiymət-keyfiyyəti müqayisə edirik, nümunə sifariş edib yoxlayırıq.",
     "hs.c2t":"Çində istehsal (OEM/ODM)","hs.c2d":"Məhsulun öz brendiniz altında istehsalı: zavodlarla danışıqlar, keyfiyyət nəzarəti və istehsal auditi.",
     "hs.c3t":"Sövdələşmənin müşayiəti","hs.c3d":"Zavodun ödənişdən əvvəl yoxlanılması, yükləmədən əvvəl partiyanın nəzarəti, müqavilədə mərhələli ödəniş şərtləri və qüsur halında təchizatçı ilə danışıqlar.",
-    "hs.c4t":"Logistika və gömrük","hs.c4d":"Birbaşa müqavilələrlə multimodal daşıma və Çin, Rusiya, Qazaxıstandan gömrük rəsmiləşdirilməsi.",
+    "hs.c4t":"Logistika və gömrük","hs.c4d":"Birbaşa müqavilələrlə multimodal daşıma və Çin, Rusiya, Qazaxıstandan rəsmi idxal — gömrük rəsmiləşdirilməsi ilə birlikdə, bir müqavilə çərçivəsində.",
     "hs.more":"Ətraflı",
 
     /* home: idxalın forması (white import) */
     "wi.eyebrow":"İdxalın forması",
-    "wi.title":"Malı iki cür gətirmək olar. Fərq — sizdə qalan sənədlərdədir",
-    "wi.sub":"Kimin necə işlədiyini qiymətləndirmirik. Sadəcə göstəririk: rəsmi idxalda nə alırsınız və hansı risk sizin üzərinizdə qalır. Seçim sizindir.",
+    "wi.title":"Rəsmi idxal, yoxsa karqo? Fərq — sizdə qalan sənədlərdədir",
+    "wi.sub":"Karqo-bağlama və rəsmi idxal — iki fərqli iş. Kimin necə işlədiyini qiymətləndirmirik. Sadəcə göstəririk: rəsmi idxalda nə alırsınız və hansı risk sizin üzərinizdə qalır. Seçim sizindir.",
     "wi.1t":"Bəyannamə sizin şirkət adına",
     "wi.1d":"İdxal bəyannaməsi sizin şirkətiniz adına rəsmiləşdirilir, onu Dövlət Gömrük Komitəsinin reyestrindəki gömrük təmsilçisi təqdim edir. Müqavilə, hesab-faktura, ixrac bəyannaməsi, daşıma və ödəniş sənədləri — tam paket sizdə qalır. Yük başqa şəxsin adına rəsmiləşdirilirsə, bu sənədlərin heç biri sizdə olmur.",
     "wi.2t":"Gömrük dəyəri necə yoxlanılır",
@@ -131,9 +131,9 @@ window.I18N = {
     "cta.btn1":"Sorğu göndər","cta.btn2":"Bizə zəng edin",
 
     /* footer */
-    "ft.about":"XİF konsaltinq, malların və istehsalçıların axtarışı, Çin, Rusiya və Qazaxıstandan Azərbaycana yüklərin çatdırılması.",
+    "ft.about":"Xarici ticarət konsaltinqi, malların və istehsalçıların axtarışı, Çin, Rusiya və Qazaxıstandan Azərbaycana yüklərin çatdırılması.",
     "ft.nav":"Naviqasiya","ft.services":"Xidmətlər","ft.contact":"Əlaqə",
-    "ft.svc1":"XİF konsaltinq","ft.svc2":"Malların axtarışı","ft.svc3":"İstehsalçı tapılması","ft.svc4":"Yük daşıma",
+    "ft.svc1":"Xarici ticarət konsaltinqi","ft.svc2":"Malların axtarışı","ft.svc3":"İstehsalçı tapılması","ft.svc4":"Yük daşıma",
     "ft.rights":"Bütün hüquqlar qorunur.","ft.privacy":"Məxfilik siyasəti","ft.terms":"Xidmət şərtləri",
     /* реквизиты Ascend Consulting MMC добавить, когда владелец пришлёт VÖEN/адрес */
     "ft.legal":"",
@@ -146,7 +146,7 @@ window.I18N = {
     "ab.p1":"Ascend Trade & Logistics Azərbaycan biznesinə xarici bazarlarda etibarlı və şəffaf işləmək imkanı yaradır. Biz malın axtarışından və istehsalçının seçimindən tutmuş gömrük rəsmiləşdirilməsi və qapıya çatdırılmaya qədər bütün prosesi öz üzərimizə götürürük.",
     "ab.p2":"Çin, Rusiya və Qazaxıstan istiqamətləri üzrə yoxlanılmış tərəfdaşlar şəbəkəmiz sizə vaxta və büdcəyə qənaət etməyə imkan verir.",
     "ab.mv1t":"Missiyamız","ab.mv1d":"Azərbaycan sahibkarları üçün xarici ticarəti aydın, təhlükəsiz və sərfəli etmək.",
-    "ab.mv2t":"Vizyonumuz","ab.mv2d":"Regionda XİF və logistika üzrə ən etibarlı konsaltinq tərəfdaşı olmaq.",
+    "ab.mv2t":"Vizyonumuz","ab.mv2d":"Regionda xarici ticarət və logistika üzrə ən etibarlı konsaltinq tərəfdaşı olmaq.",
     "ab.valt":"Dəyərlərimiz","ab.val1":"Şəffaflıq","ab.val1d":"Hər xərc və mərhələ açıqdır.","ab.val2":"Cavabdehlik","ab.val2d":"Verdiyimiz sözün arxasında dururuq.","ab.val3":"Nəticə","ab.val3d":"Prosesi deyil, nəticəni satırıq.","ab.val4":"Tərəfdaşlıq","ab.val4d":"Uzunmüddətli münasibət qururuq.",
     "hero.ctawa":"WhatsApp-da yazın","ct.optional":"istəyə bağlı",
     "team.eye":"Komanda","team.title":"Ascend-i idarə edən komanda","team.sub":"Çin, Azərbaycan və beynəlxalq bazarlarda təcrübəli mütəxəssislər.","team.n1":"Pencəli Əzizov","team.r1":"Baş direktor (CEO), təsisçi","team.n2":"Çao Zhiming","team.r2":"Quançjou ofisinin direktoru, şərik","team.n3":"Lisa Vey","team.r3":"İqtisadiyyat üzrə direktor","team.soonn":"Tezliklə","team.soonr":"Komandaya qoşulur",
@@ -154,7 +154,7 @@ window.I18N = {
     /* services page */
     "sv.crumb":"Xidmətlər","sv.htitle":"Xarici ticarətin tam spektrli xidmətləri",
     "sv.hsub":"Konsaltinqdən çatdırılmaya qədər — bütün prosesləri bir komandaya həvalə edin.",
-    "sv.1eye":"01 — XİF Konsaltinq","sv.1t":"Xarici iqtisadi fəaliyyət üzrə konsaltinq",
+    "sv.1eye":"01 — Xarici ticarət konsaltinqi","sv.1t":"Xarici iqtisadi fəaliyyət üzrə konsaltinq",
     "sv.1d":"İdxal-ixrac əməliyyatlarının düzgün qurulması biznesin uğurunun əsasıdır. Bütün hüquqi və gömrük aspektlərini sizin üçün idarə edirik.",
     "sv.1f1":"İdxal-ixrac sxeminin qurulması","sv.1f2":"Kontraktların hazırlanması və valyuta nəzarəti","sv.1f3":"TN VED kodlarının təyini və gömrük rəsmiləşdirilməsi","sv.1f4":"Ödənişlərin sifarişdən əvvəl hesablanması",
     "sv.2eye":"02 — Malların axtarışı","sv.2t":"Mal axtarışı və təchizat (Sourcing)",
@@ -204,12 +204,12 @@ window.I18N = {
     "dr.tt.cta":"Yükünüz üçün hesablama alın",
     /* landing: Çin → Azərbaycan */
     "lp.cn.crumb":"Çin → Azərbaycan",
-    "lp.cn.htitle":"Çindən Azərbaycana yük daşıma",
-    "lp.cn.hsub":"Fabrik axtarışından gömrük rəsmiləşdirilməsinə qədər — Çindən Azərbaycana açar-təslim daşıma. Dəniz, dəmir yolu və hava marşrutları bir mərkəzdən.",
+    "lp.cn.htitle":"Çindən Azərbaycana yüklərin daşınması — fabrikdən qapıya, sənədlərlə",
+    "lp.cn.hsub":"Çindən Azərbaycana yük daşıma və gömrük rəsmiləşdirilməsi bir müqavilə ilə: fabrik axtarışı, Quançjouda konsolidasiya, dəniz, dəmir yolu və hava. Kargo-bağlama deyil — bəyannamə sizin şirkət adına.",
     "lp.cn.introt":"Çindən Bakıya birbaşa daşıma",
     "lp.cn.introd":"Çin istehsalçıları ilə birbaşa işləyirik: yükləri konsolidasiya edir, sənədləşməni hazırlayır və Trans-Xəzər dəhlizi ilə Azərbaycana çatdırırıq. Siz yalnız nəticəni alırsınız — qapıdan qapıya.",
     "lp.cn.f1t":"Multimodal marşrutlar","lp.cn.f1d":"Dəniz, dəmir yolu və hava — yükün həcminə və təcililiyinə görə optimal variant.",
-    "lp.cn.f2t":"Gömrük və sənədlər","lp.cn.f2d":"Çində ixrac rəsmiləşdirilməsi, malın gömrük kodunun seçimi və Azərbaycanda idxal bəyannaməsinin müşayiəti. Bəyannamə sizin şirkət adına rəsmiləşdirilir.",
+    "lp.cn.f2t":"Gömrük və sənədlər","lp.cn.f2d":"Çində ixrac rəsmiləşdirilməsi, malın gömrük kodunun seçimi və Azərbaycanda idxal bəyannaməsinin müşayiəti. Bəyannamə sizin şirkət adına rəsmiləşdirilir — karqo sxemində belə bir sənəd yaranmır.",
     "lp.cn.f3t":"Açar-təslim","lp.cn.f3d":"Fabrik axtarışı, yükləmədən əvvəl yoxlama, daşıma və gömrük rəsmiləşdirilməsi — bir müqavilə ilə.",
     /* landing pages — shared blocks */
     "lp.introt":"Birbaşa və etibarlı daşıma",
@@ -233,11 +233,13 @@ window.I18N = {
     "faq.q3":"Ödəniş necə aparılır?",
     "faq.a3":"Ödəniş şərtləri təchizatçı ilə müqavilədə sabitlənir: bir qayda olaraq istehsalın başlanması üçün avans, qalan hissə isə partiya yükləmədən əvvəlki yoxlamadan keçdikdən sonra. Bu şərtləri imzalanmadan əvvəl razılaşdırırıq və sənədlərin üst-üstə düşməsinə nəzarət edirik: müqavilə, hesab-faktura, ixrac bəyannaməsi və ödənişi alan tərəf eyni şəxs olmalıdır.",
     "faq.q4":"Minimal yük həcmi varmı?",
-    "faq.a4":"Xeyr, sabit minimum yoxdur. Həm kiçik partiyalar (konsolidasiya ilə), həm də tam konteyner daşımaları ilə işləyirik. Kiçik həcmlər üçün başqa müştərilərin yükü ilə birləşdirmə təklif edirik.",
+    "faq.a4":"Xeyr, sabit minimum yoxdur. Həm kiçik partiyalar (konsolidasiya ilə), həm də tam konteyner daşımaları ilə işləyirik. Kiçik həcmlər üçün başqa müştərilərin yükü ilə birləşdirmə təklif edirik. Bir-iki bağlama üçün karqo-poçt şirkətləri var — biz partiyalarla işləyirik.",
     "faq.q5":"Yalnız daşıma, yoxsa mal axtarışı da edirsiniz?",
     "faq.a5":"Hər ikisini. İstəsəniz yalnız daşımanı, istəsəniz tam dövrü — mal/fabrik axtarışı, keyfiyyət nəzarəti, ödəniş və çatdırılma — açar-təslim həyata keçiririk.",
     "faq.q6":"Yük zədələnərsə və ya uyğunsuzluq olarsa nə olur?",
     "faq.a6":"Əvvəlcə qeydə alırıq: foto, yoxlama hesabatı, anbarda qəbul aktı. Sonra sizin adınızdan təchizatçı ilə danışıqları aparırıq — partiyanın dəyişdirilməsi, düzəliş, endirim və ya geri qaytarma, müqavilədə hansı nəzərdə tutulubsa. Məhz buna görə təsdiqlənmiş nümunə və yükləmədən əvvəl yoxlama tələb edirik: yük Çindən çıxandan sonra təsir imkanı azalır.",
+    "faq.q7":"Siz karqo şirkətisiniz?",
+    "faq.a7":"Xeyr. Karqo — bağlamanın çatdırılmasıdır, alıcı adətən fiziki şəxs olur və sizin şirkət adına idxal bəyannaməsi yaranmır. Biz rəsmi idxalla işləyirik: yükün alıcısı sizin şirkətinizdir, bəyannaməni Dövlət Gömrük Komitəsinin reyestrindəki gömrük təmsilçisi sizin adınıza verir, ƏDV və rüsum sənədləri sizdə qalır. Ona görə minimal partiya bir bağlama deyil.",
     /* FAQ — birinci sualın dəhliz variantları (RU/KZ lendinqləri) */
     "faq.q1ru":"Rusiyadan Azərbaycana yük neçə gün çəkir?",
     "faq.a1ru":"Bu dəhliz Çin marşrutundan qısadır: yük Rusiyadan avtomobil və ya dəmir yolu ilə gəlir, Xəzər bərəsi burada yoxdur. Müddətə üç şey təsir edir: yükün Rusiyada toplanma nöqtəsi, Samur/Yalama keçidindəki növbə və gömrük rəsmiləşdirilməsi. Hamı üçün bir rəqəm demirik — yükləmə nöqtəsi, həcm və çəki məlum olandan sonra hesablama veririk; müqavilədə yola salma tarixi və çatma pəncərəsi sabitlənir.",
@@ -259,6 +261,10 @@ window.I18N = {
     "lp.cn.s4":"Yükləmədən əvvəl partiyanın yoxlanması və müqavilə üzrə mərhələli ödəniş",
     "lp.cn.s5":"Yüklərin konsolidasiyası və qablaşdırma",
     "lp.cn.s6":"Gömrük rəsmiləşdirilməsi və qapıya çatdırılma",
+    "lp.cn.fq.q1":"Malı bir neçə Çin təchizatçısından yığmaq olarmı?",
+    "lp.cn.fq.a1":"Bəli, topdan sifarişdə adətən elə olur. Quançjoudakı konsolidasiya anbarımızda yerləri sifariş nömrəsi üzrə qəbul edirik: sayır, ölçür, çəkir və fotoya alırıq, siyahı aparırıq — nə gəlib, nə gözlənilir. Sonra partiya bir göndərişlə yola düşür. İlk 20 gün saxlama pulsuzdur: bir təchizatçının gecikməsi qalan malın üstündən dərhal pul yandırmır.",
+    "lp.cn.fq.q2":"Çin Yeni ili göndərişə necə təsir edir?",
+    "lp.cn.fq.a2":"Bayram ərəfəsində zavodlar sifarişləri bağlayır, sonra 1–2 həftə dayanır, işə düşəndə isə növbə yaranır: 2027-ci ildə bayram 6 fevrala düşür. Bu pəncərəyə düşən sifarişi əvvəlcədən planlaşdırırıq — ya bayramdan əvvəl yola salırıq, ya da şüurlu şəkildə sonraya keçiririk. Hansı variantın sizə sərf etdiyini hesablamada müddət və qiymətlə birlikdə göstəririk.",
     /* russia — what we offer */
     "lp.ru.whateye":"Necə işləyirik","lp.ru.whatt":"Rusiyadan daşımada nə təklif edirik",
     "lp.ru.whatd":"Rusiya ilə müntəzəm yük axını, konsolidasiya, sənədləşmə və gömrük — hamısı bizim üzərimizdə.",
@@ -290,12 +296,12 @@ window.I18N = {
     "ab.valeye":"Prinsiplərimiz",
 
     /* contact page */
-    "ct.crumb":"Əlaqə","ct.htitle":"Bizimlə əlaqə saxlayın","ct.hsub":"Sorğunuzu göndərin — 24 saat ərzində sizinlə əlaqə saxlayaq.",
+    "ct.crumb":"Əlaqə","ct.htitle":"Bizimlə əlaqə saxlayın","ct.hsub":"Sorğunuzu göndərin — 24 saat ərzində sizinlə əlaqə saxlayaq. Çindən karqo, yoxsa rəsmi idxal — hansının sizə lazım olduğunu zəngdə dəqiqləşdiririk. Biz rəsmi idxalla işləyirik.",
     "ct.eyebrow":"Əlaqə","ct.title":"Layihənizi müzakirə edək",
     "ct.sub":"Sual verin və ya pulsuz hesablama sifariş edin. Komandamız kömək etməyə hazırdır.",
     "ct.phone":"Telefon","ct.email":"E-poçt","ct.addr":"Ünvan","ct.addrv":"Bakı, Azərbaycan","ct.hours":"İş saatları",
     "ct.fname":"Ad, Soyad","ct.femail":"E-poçt","ct.fphone":"Telefon","ct.fsubject":"Mövzu","ct.fmsg":"Mesajınız","ct.fsend":"Sorğunu göndər",
-    "ct.opt1":"XİF konsaltinq","ct.opt2":"Malların axtarışı","ct.opt3":"İstehsalçı tapılması","ct.opt4":"Yük daşıma","ct.opt5":"Digər",
+    "ct.opt1":"Xarici ticarət konsaltinqi","ct.opt2":"Malların axtarışı","ct.opt3":"İstehsalçı tapılması","ct.opt4":"Yük daşıma","ct.opt5":"Digər",
     "ct.note":"Məlumatların operatoru — Ascend Consulting MMC. Sorğu Web3Forms (ABŞ) vasitəsilə şirkətin poçt qutusuna gəlir və müraciət tarixindən 24 ay saxlanılır, sonra silinir. Razılığı istənilən vaxt <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a> ünvanına yazaraq geri götürə bilərsiniz — 7 iş günü ərzində cavab veririk. Tam mətn — <a href='/privacy' target='_blank' rel='noopener'>məxfilik siyasətində</a>.",
 
     /* privacy */
@@ -1171,8 +1177,8 @@ window.I18N = {
     "nav.svc.u5":"Проверка фабрики",
     "nav.svc.u6":"Сопровождение сделки",
     "nav.svc.mc":"Контейнерная доставка",
-    "bl.crumb":"Блог","bl.htitle":"Блог — гайды по ВЭД и логистике",
-    "bl.hsub":"Практические гайды о торговле с Китаем, доставке и таможне.",
+    "bl.crumb":"Блог","bl.htitle":"Блог — гайды по импорту из Китая, таможне и доставке",
+    "bl.hsub":"Импорт из Китая, карго и официальная торговля, таможенное оформление и сроки доставки — практические гайды.",
     "bl.read":"Читать","bl.back":"← Назад в блог",
 
     "hero.badge":"Китай · Россия · Казахстан → Азербайджан",
@@ -1192,13 +1198,13 @@ window.I18N = {
     "hs.c1t":"Поиск товаров и поставщиков","hs.c1d":"Находим нужный товар и проверенного производителя напрямую, сравниваем цену и качество, заказываем и проверяем образцы.",
     "hs.c2t":"Производство в Китае (OEM/ODM)","hs.c2d":"Выпуск продукции под вашим брендом: переговоры с заводами, контроль качества и аудит производств.",
     "hs.c3t":"Сопровождение сделки","hs.c3d":"Проверка фабрики до оплаты, инспекция партии перед отгрузкой, поэтапные условия оплаты в контракте и переговоры с поставщиком при браке.",
-    "hs.c4t":"Логистика и таможня","hs.c4d":"Мультимодальная доставка по прямым контрактам и таможенное оформление из Китая, России и Казахстана.",
+    "hs.c4t":"Логистика и таможня","hs.c4d":"Мультимодальная доставка по прямым контрактам и официальный ввоз из Китая, России и Казахстана — вместе с таможенным оформлением, в рамках одного договора.",
     "hs.more":"Подробнее",
 
     /* home: форма ввоза (white import) */
     "wi.eyebrow":"Форма ввоза",
-    "wi.title":"Товар можно привезти двумя способами. Разница — в документах, которые останутся у вас",
-    "wi.sub":"Мы не оцениваем, кто как работает. Показываем только одно: что вы получаете при официальном ввозе и какой риск остаётся на вас. Выбирать вам.",
+    "wi.title":"Официальный ввоз или карго? Разница — в документах, которые останутся у вас",
+    "wi.sub":"Карго-посылка и официальный ввоз — две разные вещи. Мы не оцениваем, кто как работает. Показываем только одно: что вы получаете при официальном ввозе и какой риск остаётся на вас. Выбирать вам.",
     "wi.1t":"Декларация на вашу компанию",
     "wi.1d":"Импортная декларация оформляется на вашу компанию, подаёт её таможенный представитель из реестра ГТК. Контракт, инвойс, экспортная декларация, транспортные и платёжные документы — полный пакет остаётся у вас. Если груз оформлен на другое лицо, ни одного из этих документов у вас не появляется.",
     "wi.2t":"Как проверяется таможенная стоимость",
@@ -1348,12 +1354,12 @@ window.I18N = {
     "dr.tt.cta":"Получить расчёт под ваш груз",
     /* landing: Китай → Азербайджан */
     "lp.cn.crumb":"Китай → Азербайджан",
-    "lp.cn.htitle":"Доставка грузов из Китая в Азербайджан",
-    "lp.cn.hsub":"От поиска фабрики до таможни — доставка из Китая в Азербайджан под ключ. Морские, ж/д и авиамаршруты из одного окна.",
+    "lp.cn.htitle":"Перевозка грузов из Китая в Азербайджан — от фабрики до двери, с документами",
+    "lp.cn.hsub":"Доставка грузов из Китая в Азербайджан и таможенное оформление по одному договору: поиск фабрики, консолидация в Гуанчжоу, море, ж/д и авиа. Это не карго-посылка — декларация оформляется на вашу компанию.",
     "lp.cn.introt":"Прямая доставка из Китая в Баку",
     "lp.cn.introd":"Работаем напрямую с производителями Китая: консолидируем грузы, готовим документы и доставляем в Азербайджан через Транскаспийский коридор. Вы получаете результат — от двери до двери.",
     "lp.cn.f1t":"Мультимодальные маршруты","lp.cn.f1d":"Море, ж/д и авиа — оптимальный вариант под объём и срочность груза.",
-    "lp.cn.f2t":"Таможня и документы","lp.cn.f2d":"Экспортное оформление в Китае, подбор кода товара и сопровождение импортной декларации в Азербайджане. Декларация оформляется на вашу компанию.",
+    "lp.cn.f2t":"Таможня и документы","lp.cn.f2d":"Экспортное оформление в Китае, подбор кода товара и сопровождение импортной декларации в Азербайджане. Декларация оформляется на вашу компанию — при карго-схеме такого документа просто не возникает.",
     "lp.cn.f3t":"Под ключ","lp.cn.f3d":"Поиск фабрики, инспекция перед отгрузкой, доставка и таможенное оформление — по одному договору.",
     /* landing pages — shared blocks */
     "lp.introt":"Прямая и надёжная доставка",
@@ -1377,11 +1383,13 @@ window.I18N = {
     "faq.q3":"Как происходит оплата?",
     "faq.a3":"Условия оплаты фиксируются в контракте с поставщиком: как правило, аванс на запуск производства и остаток после того, как партия прошла проверку перед отгрузкой. Эти условия согласуем до подписания и следим, чтобы документы сделки совпадали: контракт, инвойс, экспортная декларация и получатель платежа — одно и то же лицо.",
     "faq.q4":"Есть ли минимальный объём груза?",
-    "faq.a4":"Нет, фиксированного минимума нет. Работаем и с небольшими партиями (через консолидацию), и с полными контейнерами. Для малых объёмов предлагаем объединение с грузами других клиентов.",
+    "faq.a4":"Нет, фиксированного минимума нет. Работаем и с небольшими партиями (через консолидацию), и с полными контейнерами. Для малых объёмов предлагаем объединение с грузами других клиентов. Одна-две посылки — это карго-почтовые компании; мы работаем с партиями.",
     "faq.q5":"Вы только возите или ищете товар и фабрику?",
     "faq.a5":"И то, и другое. Можем сделать только доставку, а можем полный цикл — поиск товара/фабрики, контроль качества, оплату и доставку под ключ.",
     "faq.q6":"Что если груз повреждён или не соответствует?",
     "faq.a6":"Сначала фиксация: фотографии, отчёт инспекции, акт приёмки на складе. Дальше ведём переговоры с поставщиком от вашего имени — замена партии, доработка, скидка или возврат, что предусмотрено контрактом. Поэтому мы и настаиваем на утверждённом образце и проверке до отгрузки: после выхода груза из Китая рычагов меньше.",
+    "faq.q7":"Вы карго-компания?",
+    "faq.a7":"Нет. Карго — это доставка посылки: получатель обычно физическое лицо, и импортной декларации на вашу компанию не возникает. Мы работаем с официальным ввозом: получатель груза — ваша компания, декларацию на ваше имя подаёт таможенный представитель из реестра Государственного таможенного комитета, документы об уплате НДС и пошлины остаются у вас. Поэтому наша минимальная партия — не одна посылка.",
     /* FAQ — коридорные варианты первого вопроса (RU/KZ лендинги) */
     "faq.q1ru":"Сколько дней идёт груз из России в Азербайджан?",
     "faq.a1ru":"Этот коридор короче китайского: груз идёт автомобилем или по железной дороге, каспийского парома в нём нет. На срок влияют три вещи: точка отправки в России, очередь на переходе Самур / Ялама и таможенное оформление. Одну цифру для всех не называем — расчёт даём, когда известны точка отгрузки, объём и вес; в договоре фиксируем дату отправки и окно прибытия.",
@@ -1403,6 +1411,10 @@ window.I18N = {
     "lp.cn.s4":"Инспекция партии перед отгрузкой и поэтапная оплата по контракту",
     "lp.cn.s5":"Консолидация грузов и упаковка",
     "lp.cn.s6":"Таможенное оформление и доставка до двери",
+    "lp.cn.fq.q1":"Можно ли собрать товар от нескольких китайских поставщиков?",
+    "lp.cn.fq.a1":"Да, при оптовом заказе обычно так и бывает. На нашем складе консолидации в Гуанчжоу принимаем места по номеру заказа: считаем, измеряем, взвешиваем и фотографируем, ведём список — что пришло и что ещё ждём. Дальше партия уходит одной отправкой. Первые 20 дней хранения бесплатны: задержка одного поставщика не начинает сразу жечь деньги на остальном товаре.",
+    "lp.cn.fq.q2":"Как китайский Новый год влияет на отгрузку?",
+    "lp.cn.fq.a2":"Перед праздником фабрики закрывают заказы, потом 1–2 недели стоят, а на рестарте образуется очередь: в 2027 году праздник приходится на 6 февраля. Заказ, попадающий в это окно, мы планируем заранее — либо отгружаем до праздника, либо сознательно переносим на после. Какой вариант выгоднее именно вам, показываем в расчёте — со сроком и ценой.",
     /* russia — what we offer */
     "lp.ru.whateye":"Как работаем","lp.ru.whatt":"Что предлагаем на направлении Россия",
     "lp.ru.whatd":"Регулярный грузопоток из России, консолидация, документы и таможня — всё на нас.",
@@ -1433,7 +1445,7 @@ window.I18N = {
     "e404.h":"Страница не найдена","e404.sub":"Запрашиваемая страница не существует или была перемещена.","e404.btn":"На главную",
     "ab.valeye":"Наши принципы",
 
-    "ct.crumb":"Контакты","ct.htitle":"Свяжитесь с нами","ct.hsub":"Отправьте заявку — мы свяжемся с вами в течение 24 часов.",
+    "ct.crumb":"Контакты","ct.htitle":"Свяжитесь с нами","ct.hsub":"Отправьте заявку — мы свяжемся с вами в течение 24 часов. Карго из Китая или официальный ввоз — что именно вам нужно, разберём в разговоре. Мы работаем с официальным ввозом.",
     "ct.eyebrow":"Контакты","ct.title":"Обсудим ваш проект",
     "ct.sub":"Задайте вопрос или закажите бесплатный расчёт. Наша команда готова помочь.",
     "ct.phone":"Телефон","ct.email":"Эл. почта","ct.addr":"Адрес","ct.addrv":"Баку, Азербайджан","ct.hours":"Часы работы",
@@ -2314,8 +2326,8 @@ window.I18N = {
     "nav.svc.u5":"Factory checks",
     "nav.svc.u6":"Deal support",
     "nav.svc.mc":"Container shipping",
-    "bl.crumb":"Blog","bl.htitle":"Blog — foreign trade & logistics guides",
-    "bl.hsub":"Practical guides on China trade, freight and customs.",
+    "bl.crumb":"Blog","bl.htitle":"Blog — guides to importing from China, customs and shipping",
+    "bl.hsub":"Importing from China, cargo versus official trade, customs clearance and transit times — practical guides.",
     "bl.read":"Read","bl.back":"← Back to blog",
 
     "hero.badge":"China · Russia · Kazakhstan → Azerbaijan",
@@ -2335,13 +2347,13 @@ window.I18N = {
     "hs.c1t":"Product & supplier sourcing","hs.c1d":"We find the right product and a verified manufacturer directly, compare price and quality, order and inspect samples.",
     "hs.c2t":"Manufacturing in China (OEM/ODM)","hs.c2d":"Production under your own brand: factory negotiations, quality control and production audits.",
     "hs.c3t":"Deal support","hs.c3d":"Factory verification before payment, pre-shipment inspection, staged payment terms in the contract and negotiations with the supplier in case of defects.",
-    "hs.c4t":"Logistics & customs","hs.c4d":"Multimodal delivery on direct contracts and customs clearance from China, Russia and Kazakhstan.",
+    "hs.c4t":"Logistics & customs","hs.c4d":"Multimodal delivery on direct contracts and official import from China, Russia and Kazakhstan — customs clearance included, under a single contract.",
     "hs.more":"Learn more",
 
     /* home: import format (white import) */
     "wi.eyebrow":"Import format",
-    "wi.title":"There are two ways to bring goods in. The difference is the documents you are left holding",
-    "wi.sub":"We do not judge how anyone else works. We show one thing: what you get with official import and which risk stays with you. The choice is yours.",
+    "wi.title":"Official import or a cargo parcel? The difference is the documents you are left holding",
+    "wi.sub":"A cargo parcel and an official import are two different things. We do not judge how anyone else works. We show one thing: what you get with official import and which risk stays with you. The choice is yours.",
     "wi.1t":"The declaration is in your company's name",
     "wi.1d":"The import declaration is issued in your company's name and filed by a customs representative from the State Customs Committee register. Contract, invoice, export declaration, transport and payment documents — the full set stays with you. If the cargo is cleared in someone else's name, you end up holding none of them.",
     "wi.2t":"How the customs value is checked",
@@ -2421,9 +2433,9 @@ window.I18N = {
     "cta.title":"Let's start your project today","cta.sub":"Product sourcing, quote and consultation — free. We reply within 24 hours.",
     "cta.btn1":"Get a quote","cta.btn2":"Call us",
 
-    "ft.about":"FEA consulting, product and manufacturer sourcing, cargo delivery from China, Russia and Kazakhstan to Azerbaijan.",
+    "ft.about":"Foreign trade consulting, product and manufacturer sourcing, cargo delivery from China, Russia and Kazakhstan to Azerbaijan.",
     "ft.nav":"Navigation","ft.services":"Services","ft.contact":"Contact",
-    "ft.svc1":"FEA consulting","ft.svc2":"Product sourcing","ft.svc3":"Manufacturer search","ft.svc4":"Cargo delivery",
+    "ft.svc1":"Foreign trade consulting","ft.svc2":"Product sourcing","ft.svc3":"Manufacturer search","ft.svc4":"Cargo delivery",
     "ft.rights":"All rights reserved.","ft.privacy":"Privacy policy","ft.terms":"Terms of service",
     /* реквизиты Ascend Consulting MMC добавить, когда владелец пришлёт VÖEN/адрес */
     "ft.legal":"",
@@ -2442,7 +2454,7 @@ window.I18N = {
 
     "sv.crumb":"Services","sv.htitle":"A full spectrum of foreign-trade services",
     "sv.hsub":"From consulting to delivery — entrust every process to one team.",
-    "sv.1eye":"01 — FEA Consulting","sv.1t":"Foreign economic activity consulting",
+    "sv.1eye":"01 — Foreign trade consulting","sv.1t":"Foreign economic activity consulting",
     "sv.1d":"Properly organized import-export operations are the foundation of success. We handle all legal and customs aspects for you.",
     "sv.1f1":"Building the import-export scheme","sv.1f2":"Contract preparation and currency control","sv.1f3":"HS code determination and customs clearance","sv.1f4":"Payments calculated before you buy",
     "sv.2eye":"02 — Product sourcing","sv.2t":"Product sourcing & procurement",
@@ -2491,12 +2503,12 @@ window.I18N = {
     "dr.tt.cta":"Get a calculation for your cargo",
     /* landing: China → Azerbaijan */
     "lp.cn.crumb":"China → Azerbaijan",
-    "lp.cn.htitle":"Cargo delivery from China to Azerbaijan",
-    "lp.cn.hsub":"From factory sourcing to customs — turnkey delivery from China to Azerbaijan. Sea, rail and air routes from a single window.",
+    "lp.cn.htitle":"Freight from China to Azerbaijan — factory to door, with the documents",
+    "lp.cn.hsub":"Freight from China to Azerbaijan and customs clearance under one contract: factory sourcing, consolidation in Guangzhou, sea, rail and air. Not a cargo parcel — the declaration is issued in your company's name.",
     "lp.cn.introt":"Direct delivery from China to Baku",
     "lp.cn.introd":"We work directly with Chinese manufacturers: consolidate cargo, prepare documents and deliver to Azerbaijan via the Trans-Caspian corridor. You just get the result — door to door.",
     "lp.cn.f1t":"Multimodal routes","lp.cn.f1d":"Sea, rail and air — the optimal option for your cargo volume and urgency.",
-    "lp.cn.f2t":"Customs & documents","lp.cn.f2d":"Export clearance in China, HS code determination and support of the import declaration in Azerbaijan. The declaration is issued to your company.",
+    "lp.cn.f2t":"Customs & documents","lp.cn.f2d":"Export clearance in China, HS code determination and support of the import declaration in Azerbaijan. The declaration is issued to your company — under a cargo-parcel scheme no such document is ever created.",
     "lp.cn.f3t":"Turnkey","lp.cn.f3d":"Factory sourcing, pre-shipment inspection, delivery and customs clearance — under one contract.",
     /* landing pages — shared blocks */
     "lp.introt":"Direct and reliable delivery",
@@ -2520,11 +2532,13 @@ window.I18N = {
     "faq.q3":"How does payment work?",
     "faq.a3":"Payment terms are set in the supplier contract: typically an advance to start production and the balance once the batch has passed the pre-shipment check. We agree these terms before signing and make sure the deal documents match: contract, invoice, export declaration and payment recipient must be the same entity.",
     "faq.q4":"Is there a minimum cargo volume?",
-    "faq.a4":"No fixed minimum. We handle both small batches (via consolidation) and full containers. For small volumes we offer consolidation with other clients' cargo.",
+    "faq.a4":"No fixed minimum. We handle both small batches (via consolidation) and full containers. For small volumes we offer consolidation with other clients' cargo. One or two parcels is a job for cargo-post companies; we work with commercial consignments.",
     "faq.q5":"Do you only ship, or also source products and factories?",
     "faq.a5":"Both. We can do shipping only, or the full cycle — product/factory search, quality control, payment and delivery, turnkey.",
     "faq.q6":"What if the cargo is damaged or non-conforming?",
     "faq.a6":"First we document it: photos, the inspection report, the warehouse acceptance record. Then we negotiate with the supplier on your behalf — replacement, rework, discount or refund, whichever the contract provides. This is exactly why we insist on an approved sample and a pre-shipment check: once the cargo leaves China, there is less leverage.",
+    "faq.q7":"Are you a cargo company?",
+    "faq.a7":"No. Cargo delivery means parcels: the recipient is usually a private individual, and no import declaration in your company's name is created. We work with official imports: the consignee is your company, the declaration is filed in your name by a customs representative from the State Customs Committee register, and the VAT and duty documents stay with you. That is why our smallest consignment is not a single parcel.",
     /* FAQ — corridor-specific first question (RU/KZ landings) */
     "faq.q1ru":"How many days does cargo take from Russia to Azerbaijan?",
     "faq.a1ru":"This corridor is shorter than the Chinese one: cargo moves by road or rail and there is no Caspian ferry. Three things drive the time: the pickup point in Russia, the queue at the Samur / Yalama crossing and customs clearance. We do not quote one number for everyone — we issue a calculation once the pickup point, volume and weight are known; the contract fixes the departure date and an arrival window.",
@@ -2546,6 +2560,10 @@ window.I18N = {
     "lp.cn.s4":"Pre-shipment inspection and staged payment under the contract",
     "lp.cn.s5":"Cargo consolidation and packaging",
     "lp.cn.s6":"Customs clearance and door delivery",
+    "lp.cn.fq.q1":"Can you consolidate goods from several Chinese suppliers?",
+    "lp.cn.fq.a1":"Yes — with a wholesale order that is usually the case. At our consolidation warehouse in Guangzhou we receive the packages against your order number: we count, measure, weigh and photograph them and keep a running list of what has arrived and what is still expected. The batch then leaves as a single shipment. The first 20 days of storage are free, so one late supplier does not immediately start burning money on the rest of the goods.",
+    "lp.cn.fq.q2":"How does Chinese New Year affect shipping?",
+    "lp.cn.fq.a2":"Before the holiday factories stop taking orders, then stand idle for one to two weeks, and a queue builds up on restart: in 2027 the holiday falls on 6 February. An order that lands in that window we plan in advance — either shipped before the holiday or deliberately moved to after it. Which option works out better for you we show in the quote, with the timing and the price.",
     /* russia — what we offer */
     "lp.ru.whateye":"How we work","lp.ru.whatt":"What we offer on the Russia route",
     "lp.ru.whatd":"Regular cargo flow from Russia, consolidation, documents and customs — all handled by us.",
@@ -2576,12 +2594,12 @@ window.I18N = {
     "e404.h":"Page not found","e404.sub":"The page you are looking for doesn't exist or has moved.","e404.btn":"Back to home",
     "ab.valeye":"Our principles",
 
-    "ct.crumb":"Contact","ct.htitle":"Get in touch","ct.hsub":"Send a request — we'll get back to you within 24 hours.",
+    "ct.crumb":"Contact","ct.htitle":"Get in touch","ct.hsub":"Send a request — we'll get back to you within 24 hours. A cargo parcel or an official import: we'll work out on the call which one you actually need. We work with official imports.",
     "ct.eyebrow":"Contact","ct.title":"Let's discuss your project",
     "ct.sub":"Ask a question or order a free quote. Our team is ready to help.",
     "ct.phone":"Phone","ct.email":"Email","ct.addr":"Address","ct.addrv":"Baku, Azerbaijan","ct.hours":"Working hours",
     "ct.fname":"Full name","ct.femail":"Email","ct.fphone":"Phone","ct.fsubject":"Subject","ct.fmsg":"Your message","ct.fsend":"Send request",
-    "ct.opt1":"FEA consulting","ct.opt2":"Product sourcing","ct.opt3":"Manufacturer search","ct.opt4":"Cargo delivery","ct.opt5":"Other",
+    "ct.opt1":"Foreign trade consulting","ct.opt2":"Product sourcing","ct.opt3":"Manufacturer search","ct.opt4":"Cargo delivery","ct.opt5":"Other",
     "ct.note":"The data operator is Ascend Consulting MMC. The request goes through Web3Forms (USA), arrives at the company mailbox and is stored for 24 months from the date of the request, then deleted. You can withdraw consent by writing to <a href='mailto:Penjalittc@gmail.com'>Penjalittc@gmail.com</a> — we reply within 7 working days. Full text in the <a href='/privacy' target='_blank' rel='noopener'>privacy policy</a>.",
 
     /* privacy */

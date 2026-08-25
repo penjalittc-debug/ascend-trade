@@ -6,7 +6,20 @@
   const FLAGS = {az:"🇦🇿", ru:"🇷🇺", en:"🇬🇧"};
   const NAMES = {az:"Azərbaycan", ru:"Русский", en:"English"};
 
+  /* Страница со статическим текстом одного языка (например /ru/…) помечается
+     в разметке: <html lang="ru" data-lang-fixed="ru">. Тогда язык берётся
+     оттуда, а не из localStorage, — иначе посетитель с ascend_lang=az увидел бы
+     русский текст с азербайджанскими шапкой и подвалом. */
+  function fixedLang(){
+    const l = document.documentElement.getAttribute("data-lang-fixed");
+    return LANGS.includes(l) ? l : null;
+  }
+
   function getLang(){
+    /* apply() запишет его в localStorage — язык прилипнет к сессии и не
+       собьётся при переходе на обычную страницу сайта */
+    const fixed = fixedLang();
+    if(fixed) return fixed;
     let l = localStorage.getItem("ascend_lang");
     if(!l){
       const nav = (navigator.language||"en").slice(0,2).toLowerCase();
@@ -42,6 +55,13 @@
   }
 
   function initLangSwitch(){
+    /* Язык страницы зафиксирован разметкой — переключатель прячем в обоих меню:
+       статический текст без data-i18n он не перепишет, и вышла бы каша из двух
+       языков в одном экране. */
+    if(fixedLang()){
+      document.querySelectorAll(".lang, .mobile-lang").forEach(el=>{ el.style.display = "none"; });
+      return;
+    }
     const wrap = document.querySelector(".lang");
     if(wrap){
       const btn = wrap.querySelector(".lang-btn");

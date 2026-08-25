@@ -77,8 +77,8 @@
     <header class="header" data-dark>
       <div class="container header-inner">
         <a class="logo" href="/" aria-label="Ascend Trade & Logistics">
-          <img class="logo-dark" src="assets/logo-main.png" alt="Ascend Trade & Logistics">
-          <img class="logo-light" src="assets/logo-white.png" alt="Ascend Trade & Logistics">
+          <img class="logo-dark" src="/assets/logo-main.png" alt="Ascend Trade & Logistics">
+          <img class="logo-light" src="/assets/logo-white.png" alt="Ascend Trade & Logistics">
         </a>
         <nav class="nav">
           <div class="nav-links">${links}</div>
@@ -139,7 +139,7 @@
       <div class="container">
         <div class="footer-top">
           <div>
-            <img class="f-logo" src="assets/logo-white.png" alt="Ascend Trade & Logistics">
+            <img class="f-logo" src="/assets/logo-white.png" alt="Ascend Trade & Logistics">
             <p class="f-about" data-i18n="ft.about"></p>
             <div class="socials">${socials}</div>
           </div>

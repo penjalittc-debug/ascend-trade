@@ -757,5 +757,5 @@ button:focus:not(:focus-visible){outline:none}
 .m-drop.open .m-drop-btn svg{transform:rotate(180deg)}
 .m-sub{display:none;padding-left:18px}
 .m-drop.open .m-sub{display:block}
-.mobile-nav .m-sub a{font-size:1.05rem;font-weight:500;padding:9px 0;color:rgba(255,255,255,.86)}
+.mobile-nav .m-sub a{display:block;font-size:1.05rem;font-weight:500;padding:11px 0;color:rgba(255,255,255,.86);border-bottom:1px solid rgba(255,255,255,.08)}
 .mobile-nav .m-sub a:last-child{border-bottom:none}

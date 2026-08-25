@@ -759,3 +759,16 @@ button:focus:not(:focus-visible){outline:none}
 .m-drop.open .m-sub{display:block}
 .mobile-nav .m-sub a{display:block;font-size:1.05rem;font-weight:500;padding:11px 0;color:rgba(255,255,255,.86);border-bottom:1px solid rgba(255,255,255,.08)}
 .mobile-nav .m-sub a:last-child{border-bottom:none}
+
+/* Подпись группы внутри списка услуг («Daşıma»): не ссылка — значит без ховера,
+   без подчёркивания и вне таб-порядка. Кегль мельче подпунктов, цвет приглушён,
+   но 255,255,255,.62 по --navy-deep даёт 6,8:1 — выше требуемых 4,5:1.
+   Разметка: js/components.js → {sep:true} в children. */
+.nav-drop-menu .nav-drop-sep{
+  margin:12px 14px 4px;font-family:var(--ff-head);font-size:.72rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.62);
+}
+.mobile-nav .m-sub .m-sub-sep{
+  margin:16px 0 2px;font-family:var(--ff-head);font-size:.82rem;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.62);
+}

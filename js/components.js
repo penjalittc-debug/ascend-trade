@@ -4,7 +4,8 @@
 (function(){
   /* Пункт меню: {href, key, id}. Если у пункта есть children — он рендерится
      дропдауном на десктопе и аккордеоном в мобильном меню.
-     Новая услуга добавляется одной строкой в children (порядок = порядок в меню). */
+     Новая услуга добавляется одной строкой в children (порядок = порядок в меню).
+     Элемент {sep:true, key} — не ссылка, а подпись группы внутри списка. */
   const PAGES = [
     {href:"/",              key:"nav.home",       id:"home"},
     {href:"/about",     key:"nav.about",      id:"about"},
@@ -17,7 +18,13 @@
       {href:"/fabrik-yoxlanisi",                   key:"nav.svc.u5"},
       {href:"/sovdelesme-musayieti",               key:"nav.svc.u6"},
       {href:"/oem-odm-istehsal",                   key:"nav.svc.u7"},
-      {href:"/cin-azerbaycan-konteyner-dasinmasi", key:"nav.svc.mc"}
+      /* группа «Daşıma» — владелец 25.08.2026 не нашёл в услугах перевозки.
+         Контейнерная страница переехала сюда же: она про то же самое. */
+      {sep:true,                                    key:"nav.svc.sep"},
+      {href:"/cin-azerbaycan-yuk-dasima",            key:"nav.svc.cn"},
+      {href:"/rusiyadan-azerbaycana-yuk-dasima",     key:"nav.svc.ru"},
+      {href:"/qazaxistandan-azerbaycana-yuk-dasima", key:"nav.svc.kz"},
+      {href:"/cin-azerbaycan-konteyner-dasinmasi",   key:"nav.svc.mc"}
     ]},
     {href:"/directions",key:"nav.directions", id:"directions"},
     {href:"/blog",      key:"nav.blog",       id:"blog"},
@@ -45,9 +52,13 @@
   };
 
   function header(active){
-    /* подпункты одинаковы для обоих меню, отличается только класс контейнера */
-    const subLinks = p => p.children.map(c=>
-      `<a class="${onPage(c.href)?'active':''}" href="${c.href}" data-i18n="${c.key}"${onPage(c.href)?' aria-current="page"':''}></a>`
+    /* подпункты одинаковы для обоих меню, отличается только класс контейнера.
+       Подпись группы (sep) — не ссылка: кликать нечего, и в таб-порядок она
+       не попадает; sepCls отличается, потому что панели стилизуются врозь. */
+    const subLinks = (p, sepCls) => p.children.map(c=>
+      c.sep
+        ? `<div class="${sepCls}" data-i18n="${c.key}"></div>`
+        : `<a class="${onPage(c.href)?'active':''}" href="${c.href}" data-i18n="${c.key}"${onPage(c.href)?' aria-current="page"':''}></a>`
     ).join("");
 
     const links = PAGES.map(p=>{
@@ -58,7 +69,7 @@
       return `<div class="nav-drop">
             <a class="${cls} nav-drop-link" id="nav-${p.id}-link" href="${p.href}"
                aria-haspopup="true" aria-expanded="false" aria-controls="nav-${p.id}-menu"><span data-i18n="${p.key}"></span>${ICON.chevron}</a>
-            <div class="nav-drop-menu" id="nav-${p.id}-menu">${subLinks(p)}</div>
+            <div class="nav-drop-menu" id="nav-${p.id}-menu">${subLinks(p, "nav-drop-sep")}</div>
           </div>`;
     }).join("");
 
@@ -67,7 +78,7 @@
       return `<div class="m-drop">
           <button class="m-drop-btn ${p.id===active?'active':''}" type="button"
                   aria-expanded="false" aria-controls="m-${p.id}-sub"><span data-i18n="${p.key}"></span>${ICON.chevron}</button>
-          <div class="m-sub" id="m-${p.id}-sub">${subLinks(p)}</div>
+          <div class="m-sub" id="m-${p.id}-sub">${subLinks(p, "m-sub-sep")}</div>
         </div>`;
     }).join("");
     const langBtns = [["az","🇦🇿"],["ru","🇷🇺"],["en","🇬🇧"]].map(([l,f])=>

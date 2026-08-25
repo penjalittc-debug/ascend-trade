@@ -472,7 +472,10 @@
 <div id="site-footer"></div>
 
 <script src="/js/config.js"></script>
-<script src="/js/i18n.js"></script>
+<!-- Словарь один и сразу нужный: data-lang-fixed="ru" запрещает переключение
+     языка, поэтому az здесь был бы мёртвым весом. Тег синхронный — шапка и
+     подвал наполняются из I18N.ru в том же кадре, без ленивой догрузки. -->
+<script src="/js/i18n-ru.js"></script>
 <script src="/js/components.js"></script>
 <script src="/js/app.js"></script>
 </body>

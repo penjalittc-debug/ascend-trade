@@ -28,8 +28,15 @@
     return LANGS.includes(l) ? l : "az";
   }
 
-  function apply(lang){
-    const dict = window.I18N[lang] || window.I18N.az;
+  /* Словари разрезаны по языкам (js/i18n-az|ru|en.js): синхронно приходит
+     только az, остальные догружаются. Поэтому window.I18N[lang] может ещё не
+     существовать — откатываемся на az, а если нет и его (страница /ru/ грузит
+     один ru), на пустой словарь: разметка останется как есть, но не упадёт.
+     preview=true — промежуточная отрисовка запасным языком, пока едет словарь
+     выбранного: выбор пользователя в localStorage при этом не трогаем. */
+  function apply(lang, preview){
+    const D = window.I18N || {};
+    const dict = D[lang] || D.az || {};
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i18n]").forEach(el=>{
       const key = el.getAttribute("data-i18n");
@@ -51,7 +58,42 @@
     document.querySelectorAll("[data-lang]").forEach(b=>{
       b.classList.toggle("active", b.dataset.lang === lang);
     });
-    localStorage.setItem("ascend_lang", lang);
+    if(!preview) localStorage.setItem("ascend_lang", lang);
+  }
+
+  /* Подтягивает словарь языка, если его ещё нет в памяти, и зовёт done(ok).
+     Повторный вызов для уже загруженного языка — без сетевого запроса; пока
+     тег в полёте, вызовы копятся в очереди (двойной клик не даст двух загрузок).
+     Не доехал файл — done(false): остаёмся на текущем языке, страница цела. */
+  const waiting = {};
+  function withDict(lang, done){
+    const D = window.I18N || (window.I18N = {});
+    if(D[lang]){ done(true); return; }
+    if(waiting[lang]){ waiting[lang].push(done); return; }
+    waiting[lang] = [done];
+    const fire = ()=>{
+      const cbs = waiting[lang];
+      delete waiting[lang];              // сорвалось — следующий клик попробует снова
+      const ok = !!(window.I18N && window.I18N[lang]);
+      cbs.forEach(fn=> fn(ok));
+    };
+    const s = document.createElement("script");
+    s.src = "/js/i18n-" + lang + ".js";
+    s.onload = fire;
+    s.onerror = fire;
+    document.head.appendChild(s);
+  }
+
+  function setLang(lang){
+    withDict(lang, ok=>{ if(ok) apply(lang); });
+  }
+
+  /* строка из активного словаря — для подписей, которые ставит сам JS */
+  function t(key){
+    const D = window.I18N || {};
+    const dict = D[localStorage.getItem("ascend_lang") || "az"] || D.az || {};
+    const s = dict[key];
+    return s === undefined ? ((D.az || {})[key] !== undefined ? D.az[key] : key) : s;
   }
 
   function initLangSwitch(){
@@ -73,7 +115,7 @@
     // bind every language button (desktop dropdown + mobile menu)
     document.querySelectorAll("[data-lang]").forEach(b=>{
       b.addEventListener("click", ()=>{
-        apply(b.dataset.lang);
+        setLang(b.dataset.lang);
         if(wrap) wrap.classList.remove("open");
         document.body.classList.remove("menu-open");
       });
@@ -242,7 +284,7 @@
       const btn = form.querySelector("button[type=submit]");
       const orig = btn.textContent;
       const lead = formId();
-      btn.disabled = true; btn.textContent = "…";
+      btn.disabled = true; btn.textContent = t("ct.sending");
       try{
         const res = await fetch(form.action, { method:"POST", body:new FormData(form), headers:{ "Accept":"application/json" } });
         const data = await res.json().catch(()=>({}));
@@ -381,7 +423,13 @@
     if(typeof window.renderChrome === "function"){
       window.renderChrome(document.body.getAttribute("data-page") || "");
     }
-    apply(getLang());
+    /* Язык из хранилища может быть не тем, чей словарь уже в памяти. Тогда
+       сначала рисуем az (он здесь, ждать нечего) — шапка не мигает пустыми
+       ссылками и не прыгает вёрстка, — а поверх кладём нужный язык, когда
+       доедет его файл. */
+    const lang = getLang();
+    if(!(window.I18N && window.I18N[lang])) apply("az", true);
+    setLang(lang);
     applyConfig();
     initLangSwitch();
     initNavDrop();

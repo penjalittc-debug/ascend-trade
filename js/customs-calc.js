@@ -27,7 +27,7 @@
    «ПОДТВЕРДИТЬ у брокера»); здесь взята официальная шкала ПКМ АР № 168 (см. FEES).
 
    ПОДКЛЮЧЕНИЕ (порядок важен — модулю нужен window.I18N):
-     <script src="/js/i18n.js"></script>
+     <script src="/js/i18n-az.js"></script>   <!-- ru/en догружает js/app.js -->
      <script src="/js/customs-calc.js" defer></script>
      <script src="/js/app.js" defer></script>
    Инициализация автоматическая по атрибуту data-customs-calc.

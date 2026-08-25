@@ -237,6 +237,21 @@ body.menu-open .mobile-nav{transform:translateX(0)}
 .globe-label.hub{color:#fff;font-size:.82rem;background:rgba(178,37,43,.9);padding:3px 11px;border-radius:100px;box-shadow:0 4px 14px rgba(0,0,0,.35)}
 .globe-hint{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);font-size:.78rem;color:rgba(255,255,255,.6);text-align:center;white-space:nowrap;z-index:3}
 @media(max-width:768px){.globe-wrap{max-width:340px}.globe-label{font-size:.66rem}}
+/* hero главной: глобус и запасная плоская карта — в одном блоке фиксированной
+   высоты, поэтому подмена одного другим не двигает макет. Класс globe-on
+   ставит js/globe.js после успешной сборки сцены */
+.hero-stage{position:relative;height:clamp(380px,44vw,600px)}
+.hero-stage>.globe-wrap,.hero-stage>.map-wrap{position:absolute;inset:0;width:auto;max-width:none;height:auto;aspect-ratio:auto;margin:0}
+.hero-stage>.globe-wrap{display:none}
+.hero-stage.globe-on>.globe-wrap{display:block}
+.hero-stage.globe-on>.map-wrap{display:none}
+.hero-stage .globe-label{font-size:.82rem}
+.hero-stage .globe-label.hub{font-size:.95rem}
+@media(max-width:768px){
+  .hero-stage{height:clamp(360px,92vw,420px)}
+  .hero-stage .globe-label{font-size:.72rem}
+  .hero-stage .globe-label.hub{font-size:.82rem}
+}
 
 /* flat world map */
 .map-wrap{position:relative;width:100%;max-width:none;aspect-ratio:5/4;margin:0 auto;border-radius:22px;overflow:hidden;background:radial-gradient(120% 120% at 68% 32%,#1e386640,transparent),linear-gradient(160deg,#1a2f57,var(--navy-deep));border:1px solid rgba(255,255,255,.1);box-shadow:var(--shadow-lg)}

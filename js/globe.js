@@ -1,29 +1,50 @@
 /* ==========================================================================
    ASCEND — Interactive delivery globe (three.js r128)
    Countries → arcs → Azerbaijan hub
+
+   Подключается только на главной и только вместе с three.js (оба тега — defer).
+   Если three.js не доехал, WebGL недоступен или сборка сцены упала — выходим
+   молча: рядом в разметке лежит запасная плоская карта (.map-wrap + js/map.js),
+   она и остаётся видимой. Класс globe-on на .hero-stage ставится ТОЛЬКО после
+   успешной сборки; тогда же у запасной карты снимается класс world-map, чтобы
+   js/map.js не рисовал скрытый D3-слой впустую. Порядок гарантирован defer:
+   defer-скрипты отрабатывают до DOMContentLoaded, на котором стартует map.js.
    ========================================================================== */
 (function () {
-  function init() {
-    if (!window.THREE) return;
-    var wrap = document.getElementById("globe");
-    if (!wrap) return;
+  var NAMES = {
+    az: { china:"Çin", russia:"Rusiya", kz:"Qazaxıstan", hub:"Azərbaycan" },
+    ru: { china:"Китай", russia:"Россия", kz:"Казахстан", hub:"Азербайджан" },
+    en: { china:"China", russia:"Russia", kz:"Kazakhstan", hub:"Azerbaijan" }
+  };
 
-    var NAMES = {
-      az: { china:"Çin", russia:"Rusiya", kz:"Qazaxıstan", hub:"Azərbaycan" },
-      ru: { china:"Китай", russia:"Россия", kz:"Казахстан", hub:"Азербайджан" },
-      en: { china:"China", russia:"Russia", kz:"Kazakhstan", hub:"Azerbaijan" }
-    };
-    function lang(){ var l=(localStorage.getItem("ascend_lang")||"az"); return NAMES[l]?l:"az"; }
+  /* приоритет как в app.js: зафиксированный язык страницы → выбор пользователя
+     → <html lang> (его же правит app.js при переключении) */
+  function lang(){
+    var fixed = document.documentElement.getAttribute("data-lang-fixed");
+    if (NAMES[fixed]) return fixed;
+    var l = null;
+    try { l = localStorage.getItem("ascend_lang"); } catch (e) { l = null; }
+    if (!NAMES[l]) l = document.documentElement.getAttribute("lang");
+    return NAMES[l] ? l : "az";
+  }
 
-    var W = function(){ return wrap.clientWidth; };
-    var H = function(){ return wrap.clientHeight || wrap.clientWidth; };
+  function init(wrap) {
+    var W = function(){ return wrap.clientWidth || 1; };
+    var H = function(){ return wrap.clientHeight || wrap.clientWidth || 1; };
+
+    /* просили меньше движения — глобус собираем, но не вращаем: один статичный
+       кадр с дугами, перерисовка только на перетаскивание и resize */
+    var REDUCE = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
-    camera.position.set(0, 0, 3.15);
+    camera.position.set(0, 0, 3.4);
 
-    var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    /* на плотных экранах сглаживание почти не видно, а стоит дорого:
+       оставляем его только для обычных мониторов, pixelRatio режем до 2 */
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var renderer = new THREE.WebGLRenderer({ antialias: dpr < 1.5, alpha: true });
+    renderer.setPixelRatio(dpr);
     renderer.setSize(W(), H());
     wrap.appendChild(renderer.domElement);
 
@@ -128,10 +149,10 @@
     var qSpin = new THREE.Quaternion(), qDrag = new THREE.Quaternion();
 
     // interaction (drag) + gentle auto-rotate
-    var spin = true, drag = false, px = 0, py = 0, ry = 0, rx = 0;
+    var spin = !REDUCE, drag = false, px = 0, py = 0, ry = 0, rx = 0;
     function down(e){ drag = true; spin = false; px = (e.touches?e.touches[0]:e).clientX; py = (e.touches?e.touches[0]:e).clientY; }
-    function move(e){ if(!drag) return; var c = e.touches?e.touches[0]:e; ry += (c.clientX-px)*0.006; rx += (c.clientY-py)*0.006; rx=Math.max(-0.7,Math.min(0.7,rx)); px=c.clientX; py=c.clientY; }
-    function up(){ drag = false; setTimeout(function(){ spin = true; }, 2500); }
+    function move(e){ if(!drag) return; var c = e.touches?e.touches[0]:e; ry += (c.clientX-px)*0.006; rx += (c.clientY-py)*0.006; rx=Math.max(-0.7,Math.min(0.7,rx)); px=c.clientX; py=c.clientY; redrawOnce(); }
+    function up(){ drag = false; setTimeout(function(){ spin = !REDUCE; }, 2500); }
     renderer.domElement.addEventListener("mousedown", down);
     window.addEventListener("mousemove", move);
     window.addEventListener("mouseup", up);
@@ -139,16 +160,41 @@
     window.addEventListener("touchmove", move, {passive:true});
     window.addEventListener("touchend", up);
 
-    // resize
-    function resize(){ var w=W(), h=H(); renderer.setSize(w,h); camera.aspect=w/h; camera.updateProjectionMatrix(); }
-    window.addEventListener("resize", resize); resize();
+    /* без автовращения постоянного цикла нет — кадр перерисовываем по событию
+       (перетаскивание, resize), не чаще одного раза на кадр браузера */
+    var queued = false;
+    function redrawOnce(){
+      if (!REDUCE || queued) return;
+      queued = true;
+      requestAnimationFrame(function(){ queued = false; draw(0, performance.now()); });
+    }
 
-    // relabel on language change
+    /* Камеру отодвигаем ровно настолько, чтобы шар с подписями влезал при любой
+       пропорции блока: на мобиле он выше, чем шире, и без этого шар обрезался бы
+       по бокам. MV/MH — запас по вертикали и горизонтали в радиусах. */
+    var MV = 1.16, MH = 1.2;
+    function resize(){
+      var w = W(), h = H();
+      renderer.setSize(w, h);
+      camera.aspect = w / h;
+      var vt = Math.tan(camera.fov * Math.PI / 360);
+      camera.position.z = Math.max(MV / vt, MH / (vt * camera.aspect));
+      camera.updateProjectionMatrix();
+      if (REDUCE) draw(0, performance.now());
+    }
+    window.addEventListener("resize", resize);
+
+    /* язык переключается на клиенте: app.js переписывает <html lang> —
+       следим за атрибутом, как это делает js/customs-calc.js */
     var lastLang = lang();
-    function maybeRelabel(){
+    function relabel(){
       var cl = lang(); if (cl === lastLang) return; lastLang = cl;
       var dict = NAMES[cl];
       labels.forEach(function(o){ o.el.textContent = dict[o.el.dataset.k]; });
+      redrawOnce();
+    }
+    if (window.MutationObserver) {
+      new MutationObserver(relabel).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
     }
 
     // visibility pause
@@ -159,11 +205,8 @@
     }
 
     var tmp = new THREE.Vector3(), clock = performance.now();
-    function frame() {
-      requestAnimationFrame(frame);
-      if (!visible) { clock = performance.now(); return; }
-      var now = performance.now(), dt = Math.min((now - clock) / 1000, 0.05); clock = now;
 
+    function draw(dt, now) {
       if (spin) ry += dt * 0.12;
       qSpin.setFromAxisAngle(AXIS_Y, ry);
       qDrag.setFromAxisAngle(AXIS_X, rx);
@@ -183,7 +226,6 @@
       renderer.render(scene, camera);
 
       // labels
-      maybeRelabel();
       var w = W(), h = H();
       labels.forEach(function (o) {
         tmp.copy(o.pos).applyMatrix4(globe.matrixWorld);
@@ -196,9 +238,39 @@
         o.el.style.opacity = facing ? "1" : "0";
       });
     }
-    frame();
+
+    function frame() {
+      requestAnimationFrame(frame);
+      if (!visible) { clock = performance.now(); return; }
+      var now = performance.now(), dt = Math.min((now - clock) / 1000, 0.05); clock = now;
+      draw(dt, now);
+    }
+
+    resize();          // размер и дальность камеры под блок; в REDUCE рисует кадр
+    if (!REDUCE) frame();
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
-  else init();
+  function boot() {
+    var wrap = document.getElementById("globe");
+    if (!wrap) return;
+    var stage = wrap.closest ? wrap.closest(".hero-stage") : null;
+    if (!window.THREE) return;                    // библиотека не доехала — остаётся плоская карта
+    if (stage) stage.classList.add("globe-on");   // блоку нужен размер до сборки сцены
+    try {
+      init(wrap);
+    } catch (e) {
+      if (stage) stage.classList.remove("globe-on");   // нет WebGL — показываем плоскую карту
+      wrap.innerHTML = "";                             // недорисованная сцена в DOM не нужна
+      return;
+    }
+    /* глобус собрался — снимаем класс с запасной карты: js/map.js стартует
+       позже (DOMContentLoaded) и скрытый D3-слой рисовать уже не станет */
+    if (stage) {
+      var fb = stage.querySelector(".world-map");
+      if (fb) fb.classList.remove("world-map");
+    }
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+  else boot();
 })();

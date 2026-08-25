@@ -129,7 +129,7 @@ window.I18N.en = {
 
     "ft.about":"Foreign trade consulting, product and manufacturer sourcing, cargo delivery from China, Russia and Kazakhstan to Azerbaijan.",
     "ft.nav":"Navigation","ft.services":"Services","ft.contact":"Contact",
-    "ft.svc1":"Foreign trade consulting","ft.svc2":"Product sourcing","ft.svc3":"Manufacturer search","ft.svc4":"Cargo delivery",
+    "ft.svc1":"Foreign trade consulting","ft.svc2":"Product sourcing","ft.svc3":"Manufacturer search","ft.svc4":"Cargo delivery","ft.cats":"Product categories","ft.cat1":"Clothing & footwear","ft.cat2":"Electronics & tools","ft.cat3":"Home goods & toys",
     "ft.rights":"All rights reserved.","ft.privacy":"Privacy policy","ft.terms":"Terms of service",
     /* реквизиты Ascend Consulting MMC добавить, когда владелец пришлёт VÖEN/адрес */
     "ft.legal":"",

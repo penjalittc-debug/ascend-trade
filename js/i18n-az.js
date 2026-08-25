@@ -139,7 +139,7 @@ window.I18N.az = {
     /* footer */
     "ft.about":"Xarici ticarət konsaltinqi, malların və istehsalçıların axtarışı, Çin, Rusiya və Qazaxıstandan Azərbaycana yüklərin çatdırılması.",
     "ft.nav":"Naviqasiya","ft.services":"Xidmətlər","ft.contact":"Əlaqə",
-    "ft.svc1":"Xarici ticarət konsaltinqi","ft.svc2":"Malların axtarışı","ft.svc3":"İstehsalçı tapılması","ft.svc4":"Yük daşıma",
+    "ft.svc1":"Xarici ticarət konsaltinqi","ft.svc2":"Malların axtarışı","ft.svc3":"İstehsalçı tapılması","ft.svc4":"Yük daşıma","ft.cats":"Kateqoriyalar","ft.cat1":"Geyim və ayaqqabı","ft.cat2":"Elektronika və alət","ft.cat3":"Ev malları və oyuncaq",
     "ft.rights":"Bütün hüquqlar qorunur.","ft.privacy":"Məxfilik siyasəti","ft.terms":"Xidmət şərtləri",
     /* реквизиты Ascend Consulting MMC добавить, когда владелец пришлёт VÖEN/адрес */
     "ft.legal":"",

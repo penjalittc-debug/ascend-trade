@@ -116,6 +116,13 @@
       ["ft.svc3","/fabrik-yoxlanisi"],                      // İstehsalçı tapılması → U5
       ["ft.svc4","/cin-azerbaycan-konteyner-dasinmasi"]     // Yük daşıma → контейнерная доставка
     ].map(([k,h])=>`<li><a href="${h}" data-i18n="${k}"></a></li>`).join("");
+    /* Категории товаров — подсписок в колонке услуг (грид подвала не меняем).
+       Владелец 25.08.2026: категории не находились на сайте — выведены в подвал. */
+    const cats = [
+      ["ft.cat1","/cinden-geyim-ayaqqabi-idxali"],
+      ["ft.cat2","/cinden-elektronika-idxali"],
+      ["ft.cat3","/cinden-ev-mallari-idxali"]
+    ].map(([k,h])=>`<li><a href="${h}" data-i18n="${k}"></a></li>`).join("");
     const nav = PAGES.map(p=>`<li><a href="${p.href}" data-i18n="${p.key}"></a></li>`).join("");
 
     // socials — render only the ones that are configured (no dead "#" links)
@@ -151,6 +158,8 @@
           <div>
             <h4 data-i18n="ft.services"></h4>
             <ul class="f-links">${svc}</ul>
+            <h4 class="f-cats-h" data-i18n="ft.cats"></h4>
+            <ul class="f-links">${cats}</ul>
           </div>
           <div>
             <h4 data-i18n="ft.contact"></h4>

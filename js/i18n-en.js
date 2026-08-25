@@ -25,7 +25,7 @@ window.I18N.en = {
     "bl.read":"Read","bl.back":"← Back to blog",
 
     "hero.badge":"China · Russia · Kazakhstan → Azerbaijan",
-    "hero.title":"Sourcing and delivery from China to Azerbaijan — <span class='accent'>documents in your company's name</span>",
+    "hero.title":"Sourcing and delivery from China to Azerbaijan",
     "hero.sub":"We find the product and the factory, inspect the batch before shipment, ship it and clear customs. One contract instead of a chain of middlemen.",
     "hero.cta1":"Free consultation","hero.cta2":"Our services",
     "hero.stat1n":"3","hero.stat1l":"Delivery directions",

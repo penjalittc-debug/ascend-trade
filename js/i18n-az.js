@@ -27,7 +27,7 @@ window.I18N.az = {
 
     /* hero */
     "hero.badge":"Çin · Rusiya · Qazaxıstan → Azərbaycan",
-    "hero.title":"Çindən Azərbaycana alış və çatdırılma — <span class='accent'>sənədlər sizin şirkət adına</span>",
+    "hero.title":"Çindən Azərbaycana alış və çatdırılma",
     "hero.sub":"Malı və fabriki tapırıq, partiyanı yükləmədən əvvəl yoxlayırıq, daşıyırıq və gömrükdə rəsmiləşdiririk. Vasitəçilər zənciri əvəzinə bir müqavilə.",
     "hero.cta1":"Pulsuz konsultasiya","hero.cta2":"Xidmətlər",
     "hero.stat1n":"3","hero.stat1l":"Daşıma istiqaməti",

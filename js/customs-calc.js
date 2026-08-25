@@ -99,7 +99,8 @@
   /* ------------------------------------------------------------------------
      1. КУРС. Обновлять руками вместе с датой.
      [ФАКТ] ЦБ Азербайджана (cbar.az), бюллетень официальных курсов
-     на 24.08.2026: 1 ABŞ dolları = 1.7000 AZN. Сходится со значением
+     на 25.08.2026: 1 ABŞ dolları = 1.7000 AZN — курс подтверждён pm 25.08.2026,
+     значение не изменилось с бюллетеня за 24.08.2026. Сходится со значением
      в CLAUDE.md §0 и в Ascend-Kalkulyator.xlsx (C7 = 1.7).
      maxAgeDays: по CLAUDE.md §5 тариф старше 3 месяцев считается неактуальным.
      Просрочен — модуль НЕ показывает манаты и не считает сборы ГТК
@@ -108,7 +109,7 @@
      ------------------------------------------------------------------------ */
   var FX = {
     perUsd: 1.70,
-    date: "2026-08-24",
+    date: "2026-08-25",
     maxAgeDays: 90,
     source: "cbar.az"
   };
@@ -715,6 +716,14 @@
     obs.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
 
     fillSelect();
+    /* предвыбор категории: атрибут на блоке (категорийные лендинги K1–K3)
+       или ?cat= в адресе (ссылка «полный калькулятор» с этих же лендингов).
+       findCategory — обязательная защита: мусорный параметр игнорируется,
+       селект остаётся на плейсхолдере. category-pages-plan.md §3.4 */
+    var search = (typeof location !== "undefined" && location.search) || "";
+    var preset = root.getAttribute("data-calc-preset") ||
+                 (/[?&]cat=([a-z]+)/.exec(search) || [])[1];
+    if (preset && findCategory(preset)) select.value = preset;
     showHint();
     showSource();
     return { run: run, root: root };

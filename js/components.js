@@ -16,6 +16,7 @@
       {href:"/cinde-mal-axtarisi",                 key:"nav.svc.u4"},
       {href:"/fabrik-yoxlanisi",                   key:"nav.svc.u5"},
       {href:"/sovdelesme-musayieti",               key:"nav.svc.u6"},
+      {href:"/oem-odm-istehsal",                   key:"nav.svc.u7"},
       {href:"/cin-azerbaycan-konteyner-dasinmasi", key:"nav.svc.mc"}
     ]},
     {href:"/directions",key:"nav.directions", id:"directions"},

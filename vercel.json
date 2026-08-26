@@ -23,6 +23,41 @@
       "permanent": true
     },
     {
+      "source": "/service",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/logistic",
+      "destination": "/cin-azerbaycan-yuk-dasima",
+      "permanent": true
+    },
+    {
+      "source": "/cases",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/blogs",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/lang/zh",
+      "destination": "/zh",
+      "permanent": true
+    },
+    {
+      "source": "/lang/:code",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true

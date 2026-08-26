@@ -417,6 +417,28 @@
     }
   }
 
+  /* UTM-метки и рекламные click-id: запоминаем при входе на сайт (sessionStorage
+     переживает переходы между страницами, но не между визитами) и подставляем в
+     форму скрытыми полями — источник заявки виден в письме Web3Forms */
+  function initUtm(){
+    try{
+      const KEYS = ["utm_source","utm_medium","utm_campaign","utm_term","utm_content","gclid","fbclid"];
+      const q = new URLSearchParams(location.search);
+      const found = {};
+      KEYS.forEach(k=>{ const v = q.get(k); if(v) found[k] = v.slice(0,200); });
+      if(Object.keys(found).length) sessionStorage.setItem("ascend_utm", JSON.stringify(found));
+      const form = document.querySelector("form[data-ajax]");
+      if(!form) return;
+      const saved = JSON.parse(sessionStorage.getItem("ascend_utm") || "{}");
+      KEYS.forEach(k=>{
+        if(!saved[k] || form.querySelector('input[name="'+k+'"]')) return;
+        const inp = document.createElement("input");
+        inp.type = "hidden"; inp.name = k; inp.value = saved[k];
+        form.appendChild(inp);
+      });
+    }catch(_){ /* нет sessionStorage (приватный режим) или URL-API — форма работает без меток */ }
+  }
+
   /* fire analytics events on WhatsApp / phone clicks — importable as Google Ads conversions */
   function initTracking(){
     document.addEventListener("click", e=>{
@@ -451,6 +473,7 @@
     initCounters();
     initFaq();
     initForm();
+    initUtm();
     initLightbox();
     initYear();
     initTracking();

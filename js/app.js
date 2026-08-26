@@ -439,6 +439,35 @@
     }catch(_){ /* нет sessionStorage (приватный режим) или URL-API — форма работает без меток */ }
   }
 
+  /* Карта D3 — самое тяжёлое на странице (~120 КБ с CDN). Грузим её скрипты
+     только когда контейнер .world-map приближается к экрану: кто не листает
+     до карты, тот её и не качает. Порядок строгий: d3 → topojson → map.js */
+  function initMapLazy(){
+    const maps = document.querySelectorAll(".world-map");
+    if(!maps.length) return;
+    let started = false;
+    const CHAIN = [
+      ["https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js", "sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i"],
+      ["https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js", "sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67"],
+      ["/js/map.js?v=20260826b", null]
+    ];
+    function load(i){
+      if(i >= CHAIN.length) return;
+      const s = document.createElement("script");
+      s.src = CHAIN[i][0];
+      if(CHAIN[i][1]){ s.integrity = CHAIN[i][1]; s.crossOrigin = "anonymous"; }
+      s.onload = ()=>load(i+1);
+      document.head.appendChild(s);
+    }
+    function start(){ if(started) return; started = true; load(0); }
+    if("IntersectionObserver" in window){
+      const io = new IntersectionObserver(es=>{
+        if(es.some(e=>e.isIntersecting)){ io.disconnect(); start(); }
+      }, { rootMargin: "400px" });
+      maps.forEach(m=>io.observe(m));
+    } else start();
+  }
+
   /* fire analytics events on WhatsApp / phone clicks — importable as Google Ads conversions */
   function initTracking(){
     document.addEventListener("click", e=>{
@@ -474,6 +503,7 @@
     initFaq();
     initForm();
     initUtm();
+    initMapLazy();
     initLightbox();
     initYear();
     initTracking();
